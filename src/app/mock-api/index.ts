@@ -1,7 +1,7 @@
 
-import { DashboardApiModule } from './dashboard/api';
+import { DashboardMockApi } from './dashboard/api';
 
 
 export const mockApiServices = [
-    DashboardApiModule
+    DashboardMockApi
 ];

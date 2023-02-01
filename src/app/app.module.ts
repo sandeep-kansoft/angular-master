@@ -10,7 +10,6 @@ import { ErrorHandlerInterceptor } from './shared/interceptors/error-handler/err
 import { ErrorHandlerService } from './shared/services/error-handler/error-handler.service';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { DragulaModule, DragulaService } from 'ng2-dragula';
 import { ColorPickerModule } from 'ngx-color-picker';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -28,7 +27,6 @@ export function createTranslateLoader(http: HttpClient) {
     SharedModule,
     AppRoutingModule,
     NgbModule,
-    DragulaModule.forRoot(),
     HttpClientModule,
     AngularSvgIconModule.forRoot(),
     TranslateModule.forRoot({
