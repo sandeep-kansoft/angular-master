@@ -5,6 +5,7 @@ import { ComponentsModule } from './components/components.module';
 import { DirectivesModule } from './directives/directives.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ThemeService } from './services/theme.service';
 
 @NgModule({
   declarations: [],
@@ -16,6 +17,9 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     RouterModule,
     ReactiveFormsModule,
+  ],
+  providers:[
+    ThemeService
   ],
   exports: [
     CommonModule,

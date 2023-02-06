@@ -1,0 +1,119 @@
+@import "_button.scss";
+@import "../components/components";
+
+
+
+
+@mixin color-classes($theme) {
+  // $color: map-get($theme, color);
+  // $foreground: map-get($color, foreground);
+  // $text-color: map-get($foreground, 'text-color');
+  // $divider: map-get($foreground, divider);
+
+  // $background: map-get($color, background);
+  // $primary: map-get($color, primary);
+  // $accent: map-get($color, accent);
+  // $warn: map-get($color, warn);
+  // $unselected-chip: map-get($background, "unselected-chip");
+
+  // $button-text: map-get($foreground, 'button-text');
+  // $button-text-disable: map-get($foreground, 'button-text-disable');
+  // $heading:map-get($foreground, "heading");
+  // $description:map-get($foreground, "description");
+  // $text-light:map-get($foreground, "text-light");
+  // $icon-color:map-get($foreground, "icon-color");
+  // $outline-border:map-get($foreground, "outline-border");
+  // $outline-button-text-color:map-get($foreground, "outline-button-text-color");
+  // $white-color:map-get($foreground, "white-color");
+  // $input-text:map-get($foreground, "input-text");
+  // $error-border:map-get($foreground, "error-border");
+  // $error-text:map-get($foreground, "error-text");
+  // $background-color:map-get($background, 'body-background');
+
+
+  // // Body color
+  // // color: $text-color;
+
+  // .mat-heading-label {
+  //   color:  $heading !important;
+  // }
+
+  // .mat-description {
+  //   color: $description;
+  // }
+
+  // .mat-text {
+  //   color: $text-color;
+  // }
+
+  // .mat-text-light {
+  //   color: $text-light;
+  // }
+
+  // .mat-icon {
+  //   color: $icon-color;
+  // }
+  // .mat-button-outline {
+  //   border: 1px solid $outline-border;
+  //   color:  $outline-button-text-color;
+  //   background-color: $white-color;
+  // }
+  // .mat-input {
+  //   color: $input-text;
+  // }
+  // .mat-input-error {
+  //   border: 1px solid $error-border;
+  // }
+  // .mat-error-text {
+  //   color:  $error-text !important;
+  // }
+  // .text-primary {
+  //   color: $primary !important;
+  // }
+
+  // .text-accent {
+  //   color: $accent;
+  // }
+  // .text-warn {
+  //   color: $warn;
+  // }
+  // .text-white {
+  //   color: $base-white;
+  // }
+  // .mat-bg-primary {
+  //   background-color: $primary !important;
+  // }
+  // .mat-bg-accent {
+  //   background-color: $accent;
+  // }
+  // .mat-bg-warn {
+  //   background-color: $warn;
+  // }
+  // .mat-bg-chip {
+  //   background-color: $unselected-chip;
+  // }
+  // .branding {
+  //   border-bottom: 1px solid $divider;
+  // }
+  // .button-text {
+  //   color: $button-text;
+  // }
+  // .button-text-disbled{
+  //   color: $button-text-disable;
+  // }
+  // .body-background {
+  //   background: background-color;
+  // }
+}
+
+@mixin rfqcs-theme($theme) {
+  @include color-classes($theme);
+  @include button-classes($theme);
+  @include layout-classes($theme);
+  @include side-nav-classes($theme);
+  @include form-component-classes($theme);
+  @include list-component-classes($theme);
+  @include admin-layout-classes($theme);
+  @include alert-modal-classes($theme);
+  @include toast-classes($theme);
+}

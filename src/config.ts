@@ -1,5 +1,5 @@
 export const config = {
-    //localhost and palisis host
+    //localhost and rqfcs host
     apiUrlLocal: '/pit/',
-    apiUrlProd:'https://test.palisis.com/pit/'
+    apiUrlProd:''
   }

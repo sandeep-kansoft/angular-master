@@ -16,6 +16,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { environment } from '@environments/environment';
 import { FuseMockApiModule } from '@shared/lib/mock-api';
 import { mockApiServices } from '@app/mock-api';
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { LayoutsModule } from './layouts/layouts.module';
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, environment.languagePath, '.json');
 }
@@ -24,6 +26,7 @@ export function createTranslateLoader(http: HttpClient) {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    LayoutsModule,
     SharedModule,
     AppRoutingModule,
     NgbModule,

@@ -1,0 +1,48 @@
+@use 'sass:map';
+@import "_rfqcs.theme";
+@import "../colors";
+
+/* Create custom theme */
+.rfqcs-custom {
+  // Foreground Elements
+  $light-text: $primary-25;
+  $light-accent-text: rgba($base-white, 0.7);
+
+  // Background config
+  $dark-background: $gray-50;
+
+  $custom-theme: (color: (primary: $primary-600,
+      accent: $gray-600,
+      warn: $warning-600,
+      is-dark: false,
+      foreground: (heading:$gray-900,
+      ),
+      background: (background: $dark-background,
+      ),
+    ),
+  );
+
+  @include rfqcs-theme($custom-theme);
+
+}
+
+.rfqcs-dark {
+  // Foreground Elements
+  $light-text: $primary-25;
+  $light-accent-text: rgba($gray-800, 0.7);
+  // Background config
+  $dark-background: $gray-700;
+  $custom-theme: (color: (primary: $primary-600,
+      accent: $gray-600,
+      warn: $warning-600,
+      is-dark: true,
+      foreground: (heading:$gray-50,
+      ),
+      background: (background: $dark-background,
+      ),
+    ),
+  );
+
+  @include rfqcs-theme($custom-theme);
+
+}

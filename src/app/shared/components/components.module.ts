@@ -4,7 +4,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-const components = [SidebarComponent]
+import { HeaderComponent } from './header/header.component';
+const components = [SidebarComponent,HeaderComponent]
 
 
 @NgModule({
