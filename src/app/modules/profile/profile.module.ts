@@ -24,7 +24,7 @@ import { NotificationsComponent } from './settings/forms/notifications/notificat
 import { ProfileDetailsComponent } from './settings/forms/profile-details/profile-details.component';
 import { SignInMethodComponent } from './settings/forms/sign-in-method/sign-in-method.component';
 import { SettingsComponent } from './settings/settings.component';
-
+import { GridModule } from '@progress/kendo-angular-grid';
 @NgModule({
   declarations: [
     ProfileComponent,
@@ -52,7 +52,8 @@ import { SettingsComponent } from './settings/settings.component';
     DropdownMenusModule,
     WidgetsModule,
     CardsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    GridModule
   ],
 })
 export class ProfileModule { }

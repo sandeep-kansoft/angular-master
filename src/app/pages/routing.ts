@@ -45,7 +45,7 @@ const Routing: Routes = [
   },
   {
     path: '',
-    redirectTo: '/dashboard',
+    redirectTo: '/crafted/pages/profile',
     pathMatch: 'full',
   },
   {

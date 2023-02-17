@@ -10,6 +10,9 @@ import { TablesComponent } from './tables/tables.component';
 import { FeedsComponent } from './feeds/feeds.component';
 import { WidgetsModule } from '../../_metronic/partials';
 
+import { HttpClientModule } from '@angular/common/http';
+import { GridModule } from '@progress/kendo-angular-grid';
+
 @NgModule({
   declarations: [
     WidgetsExamplesComponent,
@@ -20,6 +23,11 @@ import { WidgetsModule } from '../../_metronic/partials';
     TablesComponent,
     FeedsComponent,
   ],
-  imports: [CommonModule, WidgetsExamplesRoutingModule, WidgetsModule],
+  imports: [
+    CommonModule, 
+    WidgetsExamplesRoutingModule, 
+    WidgetsModule, 
+    HttpClientModule,
+    GridModule],
 })
 export class WidgetsExamplesModule {}
