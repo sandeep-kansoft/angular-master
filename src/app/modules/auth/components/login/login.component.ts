@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.isLoading$ = this.authService.isLoading$;
     // redirect to home if already logged in
     if (this.authService.currentUserValue) {
-      this.router.navigate(['/']);
+      this.router.navigate(['/crafted/pages/profile/overview']);
     }
   }
 
@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.initForm();
     // get return url from route parameters or default to '/'
     this.returnUrl =
-      this.route.snapshot.queryParams['returnUrl'.toString()] || '/';
+      this.route.snapshot.queryParams['returnUrl'.toString()] || '/crafted/pages/profile/overview';
   }
 
   // convenience getter for easy access to form fields
@@ -79,7 +79,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       .pipe(first())
       .subscribe((user: UserModel | undefined) => {
         if (user) {
-          this.router.navigate([this.returnUrl]);
+          this.router.navigate(['/crafted/pages/profile/overview']);
         } else {
           this.hasError = true;
         }
