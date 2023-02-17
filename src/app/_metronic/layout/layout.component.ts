@@ -62,7 +62,7 @@ export class LayoutComponent implements OnInit, OnDestroy {
   appFooterContainerCSSClass: string = '';
   appFooterFixedDesktop: boolean;
   appFooterFixedMobile: boolean;
-
+  asideCSSClasses: string;
   // scrolltop
   scrolltopDisplay: boolean;
 
@@ -99,6 +99,7 @@ export class LayoutComponent implements OnInit, OnDestroy {
       .subscribe((config) => {
         this.updateProps(config);
       });
+      this.asideCSSClasses = this.layout.getStringCSSClasses('aside');
     this.unsubscribe.push(subscr);
   }
 
