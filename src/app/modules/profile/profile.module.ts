@@ -13,6 +13,17 @@ import {
   DropdownMenusModule,
   WidgetsModule,
 } from '../../_metronic/partials';
+import { CreateAndEditFormComponent } from './overview/create-and-edit-form/create-and-edit-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { OverviewEditorComponent } from './overview-editor/overview-editor.component';
+import { OverviewEditorCrudComponent } from './overview-editor/overview-editor-crud/overview-editor-crud.component';
+import { ConnectedAccountsComponent } from './settings/forms/connected-accounts/connected-accounts.component';
+import { DeactivateAccountComponent } from './settings/forms/deactivate-account/deactivate-account.component';
+import { EmailPreferencesComponent } from './settings/forms/email-preferences/email-preferences.component';
+import { NotificationsComponent } from './settings/forms/notifications/notifications.component';
+import { ProfileDetailsComponent } from './settings/forms/profile-details/profile-details.component';
+import { SignInMethodComponent } from './settings/forms/sign-in-method/sign-in-method.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +33,17 @@ import {
     CampaignsComponent,
     DocumentsComponent,
     ConnectionsComponent,
+    CreateAndEditFormComponent,
+    OverviewEditorCrudComponent,
+    OverviewEditorComponent,
+    SettingsComponent,
+    ProfileDetailsComponent,
+    ConnectedAccountsComponent,
+    DeactivateAccountComponent,
+    EmailPreferencesComponent,
+    NotificationsComponent,
+    SignInMethodComponent,
+
   ],
   imports: [
     CommonModule,
@@ -30,6 +52,7 @@ import {
     DropdownMenusModule,
     WidgetsModule,
     CardsModule,
+    ReactiveFormsModule
   ],
 })
-export class ProfileModule {}
+export class ProfileModule { }

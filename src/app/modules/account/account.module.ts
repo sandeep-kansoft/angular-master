@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InlineSVGModule } from 'ng-inline-svg-2';
-
 import { AccountRoutingModule } from './account-routing.module';
 import { AccountComponent } from '../account/account.component';
 import { OverviewComponent } from './overview/overview.component';
@@ -13,11 +12,16 @@ import { EmailPreferencesComponent } from './settings/forms/email-preferences/em
 import { NotificationsComponent } from './settings/forms/notifications/notifications.component';
 import { SignInMethodComponent } from './settings/forms/sign-in-method/sign-in-method.component';
 import { DropdownMenusModule, WidgetsModule } from '../../_metronic/partials';
+import { OverviewEditorComponent } from './overviewform/overview-editor.component';
+import { OverviewEditorCrudComponent } from './overviewform/overview-editor-crud/overview-editor-crud.component';
+import { CreateAndEditFormComponent } from './overview/create-and-edit-form/create-and-edit-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AccountComponent,
     OverviewComponent,
+    OverviewEditorComponent,
     SettingsComponent,
     ProfileDetailsComponent,
     ConnectedAccountsComponent,
@@ -25,6 +29,8 @@ import { DropdownMenusModule, WidgetsModule } from '../../_metronic/partials';
     EmailPreferencesComponent,
     NotificationsComponent,
     SignInMethodComponent,
+    OverviewEditorCrudComponent,
+    CreateAndEditFormComponent
   ],
   imports: [
     CommonModule,
@@ -32,6 +38,7 @@ import { DropdownMenusModule, WidgetsModule } from '../../_metronic/partials';
     InlineSVGModule,
     DropdownMenusModule,
     WidgetsModule,
+    ReactiveFormsModule 
   ],
 })
 export class AccountModule {}

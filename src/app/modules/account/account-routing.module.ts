@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { OverviewComponent } from './overview/overview.component';
 import { AccountComponent } from './account.component';
 import { SettingsComponent } from './settings/settings.component';
+import { OverviewEditorComponent } from './overviewform/overview-editor.component';
 
 const routes: Routes = [
   {
@@ -12,10 +13,17 @@ const routes: Routes = [
       {
         path: 'overview',
         component: OverviewComponent,
+        data: { layout: 'light-sidebar' },
       },
       {
         path: 'settings',
         component: SettingsComponent,
+        data: { layout: 'light-sidebar' },
+      },
+      {
+        path: 'overview1',
+        component: OverviewEditorComponent,
+        data: { layout: 'light-sidebar' },
       },
       { path: '', redirectTo: 'overview', pathMatch: 'full' },
       { path: '**', redirectTo: 'overview', pathMatch: 'full' },
