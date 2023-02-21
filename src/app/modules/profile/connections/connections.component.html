@@ -1,178 +1,87 @@
-<div class="d-flex flex-wrap flex-stack mb-6">
-  <h3 class="fw-bolder my-2">
-    My Contacts
-    <span class="fs-6 text-gray-400 fw-bold ms-1">(59)</span>
-  </h3>
+<form [formGroup]="ProductForm" class="form" (submit)="formSubmitHandler()">
+  <div class="card-body border-top p-9">
+    <div class="row mb-6">
+      <div class="col-12">
+        <label class="col-form-label required fw-bold fs-6">Product Name</label>
+        <input type="text" class="form-control form-control-lg form-control-solid" placeholder="ex : Chai"
+          formControlName="ProductName" value="" />
+      </div>
+    </div>
+    <div class="row mb-6">
+      <div class="col-12">
+        <label class="col-form-label fw-bold fs-6"><span class="required">Category</span></label>
+        <select formControlName="Category" class="form-select form-select-solid form-select-lg fw-bold">
+          <option *ngFor="let item of CategoryList" [value]="item.CategoryID">{{item.CategoryName}}</option>
+        </select>
+      </div>
 
-  <div class="d-flex my-2">
-    <select
-      name="status"
-      data-control="select2"
-      data-hide-search="true"
-      class="form-select form-select-white form-select-sm w-125px"
-    >
-      <option value="Online" selected>Online</option>
-      <option value="Pending">Pending</option>
-      <option value="Declined">Declined</option>
-      <option value="Accepted">Accepted</option>
-    </select>
-  </div>
-</div>
+    </div>
+    <div class="row mb-6">
+      <div class="col-12 mb-6">
+        <label class="col-form-label fw-bold fs-6"><span class="required">Supplier Id</span></label>
+        <input type="number" formControlName="SupplierID" class="form-control form-control-lg form-control-solid"
+          placeholder="" value="" />
+      </div>
+      <div class="col-12">
+        <label class="col-lg-4 col-form-label fw-bold fs-6"><span class="required">Quantity Per Unit</span></label>
+        <input type="number" formControlName="QuantityPerUnit" class="form-control form-control-lg form-control-solid"
+          placeholder="" name="companySite" value="" />
+      </div>
+    </div>
 
-<div class="row g-6 g-xl-9">
-  <div class="col-md-6 col-xxl-4">
-    <app-card3
-      avatar="./assets/media/avatars/300-6.jpg"
-      name="Emma Smith"
-      job="Art Director"
-      avgEarnings="$14,560"
-      totalEarnings="$236,400"
-    ></app-card3>
-  </div>
-  <div class="col-md-6 col-xxl-4">
-    <app-card3
-      color="danger"
-      name="Melody Macy"
-      job="Marketing Analytic"
-      avgEarnings="$14,560"
-      totalEarnings="$236,400"
-      [online]="true"
-    ></app-card3>
-  </div>
-  <div class="col-md-6 col-xxl-4">
-    <app-card3
-      avatar="./assets/media/avatars/300-1.jpg"
-      name="Max Smith"
-      job="Software Enginer"
-      avgEarnings="$14,560"
-      totalEarnings="$236,400"
-    ></app-card3>
-  </div>
-  <div class="col-md-6 col-xxl-4">
-    <app-card3
-      avatar="./assets/media/avatars/300-5.jpg"
-      name="Sean Bean"
-      job="Web Developer"
-      avgEarnings="$14,560"
-      totalEarnings="$236,400"
-    ></app-card3>
-  </div>
-  <div class="col-md-6 col-xxl-4">
-    <app-card3
-      avatar="./assets/media/avatars/300-25.jpg"
-      name="Brian Cox"
-      job="UI/UX Designer"
-      avgEarnings="$14,560"
-      totalEarnings="$236,400"
-    ></app-card3>
-  </div>
-  <div class="col-md-6 col-xxl-4">
-    <app-card3
-      color="warning"
-      name="Mikaela Collins"
-      job="Head Of Marketing"
-      avgEarnings="$14,560"
-      totalEarnings="$236,400"
-      [online]="true"
-    ></app-card3>
-  </div>
-  <div class="col-md-6 col-xxl-4">
-    <app-card3
-      avatar="./assets/media/avatars/300-9.jpg"
-      name="Francis Mitcham"
-      job="Software Arcitect"
-      avgEarnings="$14,560"
-      totalEarnings="$236,400"
-    ></app-card3>
-  </div>
-  <div class="col-md-6 col-xxl-4">
-    <app-card3
-      color="danger"
-      name="Olivia Wild"
-      job="System Admin"
-      avgEarnings="$14,560"
-      totalEarnings="$236,400"
-      [online]="true"
-    ></app-card3>
-  </div>
-  <div class="col-md-6 col-xxl-4">
-    <app-card3
-      color="primary"
-      name="Neil Owen"
-      job="Account Manager"
-      avgEarnings="$14,560"
-      totalEarnings="$236,400"
-      [online]="true"
-    ></app-card3>
-  </div>
-  <div class="col-md-6 col-xxl-4">
-    <app-card3
-      avatar="./assets/media/avatars/300-23.jpg"
-      name="Dan Wilson"
-      job="Web Desinger"
-      avgEarnings="$14,560"
-      totalEarnings="$236,400"
-    ></app-card3>
-  </div>
-  <div class="col-md-6 col-xxl-4">
-    <app-card3
-      color="danger"
-      name="Emma Bold"
-      job="Corporate Finance"
-      avgEarnings="$14,560"
-      totalEarnings="$236,400"
-      [online]="true"
-    ></app-card3>
-  </div>
-  <div class="col-md-6 col-xxl-4">
-    <app-card3
-      avatar="./assets/media/avatars/300-12.jpg"
-      name="Ana Crown"
-      job="Customer Relationship"
-      avgEarnings="$14,560"
-      totalEarnings="$236,400"
-    ></app-card3>
-  </div>
-</div>
 
-<div class="d-flex flex-stack flex-wrap pt-10">
-  <div class="fs-6 fw-bold text-gray-700">Showing 1 to 10 of 50 entries</div>
 
-  <ul class="pagination">
-    <li class="page-item previous">
-      <a class="page-link cursor-pointer">
-        <i class="previous"></i>
-      </a>
-    </li>
+    <div class="row mb-6">
+      <div class="col-12 mb-6">
+        <label class="col-form-label fw-bold fs-6"><span class="required">Unit Price</span></label>
+        <input class="form-control form-control-lg form-control-solid" formControlName="UnitPrice" placeholder=""
+          name="contactPhone" value="" />
+      </div>
+      <div class="col-12 mb-6">
+        <label class="col-form-label fw-bold fs-6"><span class="required">Unit in stock</span></label>
+        <input type="tel" class="form-control form-control-lg form-control-solid" formControlName="UnitsInStock"
+          placeholder="" name="contactPhone" value="" />
+      </div>
+      <div class="col-12">
+        <label class="col-lg-4 col-form-label fw-bold fs-6"><span class="required">Unit on order</span></label>
+        <input type="text" class="form-control form-control-lg form-control-solid" formControlName="UnitsOnOrder"
+          placeholder="" name="companySite" value="" />
+      </div>
+      <div class="col-12">
+        <label class="col-lg-4 col-form-label fw-bold fs-6"><span class="required">Reorder Level</span></label>
+        <input type="text" formControlName="ReorderLevel" class="form-control form-control-lg form-control-solid"
+          formControlName="ReorderLevel" placeholder="" name="companySite" value=" " />
+      </div>
 
-    <li class="page-item active">
-      <a class="page-link cursor-pointer"> 1 </a>
-    </li>
+      <div class="col-12">
+        <label class="col-lg-4 col-form-label fw-bold fs-6"><span class="required">Order date on</span></label>
+        <input formControlName="FirstOrderedOn" type="date" class="form-control form-control-lg form-control-solid"
+          placeholder="" />
+      </div>
 
-    <li class="page-item">
-      <a class="page-link cursor-pointer"> 2 </a>
-    </li>
 
-    <li class="page-item">
-      <a class="page-link cursor-pointer"> 3 </a>
-    </li>
+      <div class="d-flex align-items-center mt-3">
+        <label class="form-check form-check-inline form-check-solid me-5">
+          <input formControlName="Discontinued" class="form-check-input" name="communication[]" type="checkbox" />
+          <span class="fw-bold ps-2 fs-6">Discountinued</span></label>
 
-    <li class="page-item">
-      <a class="page-link cursor-pointer"> 4 </a>
-    </li>
+      </div>
+    </div>
 
-    <li class="page-item">
-      <a class="page-link cursor-pointer"> 5 </a>
-    </li>
+  </div>
+  <div class="card-footer d-flex justify-content-end py-6 px-9">
+    <button type="submit" class="btn btn-primary">
+      <ng-container *ngIf="!isLoading">Save Changes</ng-container>
+      <ng-container *ngIf="isLoading">
+        <span clas="indicator-progress" [style.display]="'block'">
+          Please wait...{{ " " }}
+          <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+        </span>
+      </ng-container>
+    </button>
+  </div>
 
-    <li class="page-item">
-      <a class="page-link cursor-pointer"> 6 </a>
-    </li>
+</form>
 
-    <li class="page-item next">
-      <a class="page-link cursor-pointer">
-        <i class="next"></i>
-      </a>
-    </li>
-  </ul>
-</div>
+
+<!-- end::Exolore drawer -->

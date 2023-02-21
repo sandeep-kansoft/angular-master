@@ -1,16 +1,35 @@
 import { Component, OnInit, SimpleChanges } from '@angular/core';
-
+import {
+  NavigationEnd,
+  NavigationError,
+  NavigationStart,
+  Router,
+  Event,
+} from '@angular/router';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
 })
 export class ProfileComponent implements OnInit {
-  constructor() {
-  //  console.log( window.location.href;)
+  currentRoute: string;
+
+  constructor(private router: Router) {
+   
   }
-  currentRoute = window.location.href;
-  ngOnInit(): void {}
-  ngOnChanges(changes: SimpleChanges){
-   console.log(changes)
+
+  ngOnInit(): void {
+    this.currentRoute = '';
+     this.router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+        this.currentRoute = event.url;
+        console.log(event);
+      }
+      if (event instanceof NavigationError) {
+        console.log(event.error);
+      }
+    });
+  }
+  ngOnChanges(changes: SimpleChanges) {
+    console.log(changes);
   }
 }
