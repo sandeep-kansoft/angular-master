@@ -1,4 +1,4 @@
-<!-- <button (click)="showToast()">click</button> -->
+<button (click)="showToast()" class="btn btn-sm">click</button>
 <div *ngIf="isFromOpen">
   <div class="card mb-5 mb-xl-10">
     <div class="card-header border-0 cursor-pointer" role="button" data-bs-toggle="collapse"
@@ -614,24 +614,28 @@
   [reorderable]="true" [resizable]="true" [skip]="state.skip" [pageSize]="pageSize" [pageable]="true"
   (dataStateChange)="onStateChange($event)" [sortable]="{
 allowUnsort: true,
-mode: 'multiple'}" [sort]="state.sort" (dataStateChange)="onStateChange($event)" (edit)="editHandler($event)"
-  (remove)="removeHandler($event)">
-  <kendo-grid-column field="id" title="ID" [width]="100"></kendo-grid-column>
-  <kendo-grid-column field="first_name" title="First Name" [width]="150"></kendo-grid-column>
-  <kendo-grid-column field="last_name" title="Last Name" [width]="150"></kendo-grid-column>
-  <kendo-grid-column field="contact_name" title="Contace Info" [width]="150"></kendo-grid-column>
-  <kendo-grid-column field="gender" title="Gender" [width]="150"></kendo-grid-column>
-  <kendo-grid-column field="timezone" title="TimeZone" [width]="100"></kendo-grid-column>
-  <kendo-grid-column field="company" title="Company" [width]="100"></kendo-grid-column>
-  <kendo-grid-column field="language" title="Language" [width]="100">
+mode: 'multiple'}" [sort]="state.sort" (dataStateChange)="onStateChange($event)">
+  <kendo-grid-column field="id" title="ID" [width]="columnWidth"></kendo-grid-column>
+  <kendo-grid-column field="first_name" title="First Name" [width]="columnWidth"></kendo-grid-column>
+  <kendo-grid-column field="last_name" title="Last Name" [width]="columnWidth"></kendo-grid-column>
+  <kendo-grid-column field="contact_name" title="Contace Info" [width]="columnWidth"></kendo-grid-column>
+  <kendo-grid-column field="gender" title="Gender" [width]="columnWidth"></kendo-grid-column>
+  <kendo-grid-column field="timezone" title="TimeZone" [width]="columnWidth"></kendo-grid-column>
+  <kendo-grid-column field="company" title="Company" [width]="columnWidth"></kendo-grid-column>
+  <kendo-grid-column field="language" title="Language" [width]="columnWidth">
 
   </kendo-grid-column>
-  <kendo-grid-column field="currency" title="Currency" [width]="100">
+  <kendo-grid-column field="currency" title="Currency" [width]="columnWidth">
   </kendo-grid-column>
   <kendo-grid-command-column title="Action" [width]="220">
-    <ng-template kendoGridCellTemplate let-isNew="isNew">
-      <button kendoGridEditCommand [primary]="true" class="btn btn-sm fw-bold btn-secondary">Edit</button>
-      <button kendoGridRemoveCommand class="btn btn-sm fw-bold btn-danger">Remove</button>
+    <ng-template kendoGridCellTemplate let-item>
+      <ng-container *ngIf="!checkMobileBrowser()">
+        <button  class="btn btn-sm fw-bold btn-secondary" (click)="editHandler(item)">Edit</button>
+        <button class="btn btn-sm fw-bold btn-danger" (click)="removeHandler(item)">Remove</button>
+      </ng-container>
+      <ng-container *ngIf="checkMobileBrowser()">
+        <button (click)="openPopup(item)">...</button>
+      </ng-container>
     </ng-template>
   </kendo-grid-command-column>
 

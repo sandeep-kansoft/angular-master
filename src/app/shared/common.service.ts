@@ -9,6 +9,7 @@ import { AlertModalComponent } from './components/alert-modal/alert-modal.compon
 export class CommonService {
   constructor(private modalService: NgbModal) {}
   toasts: any = [];
+  isMobileBrowser : boolean =  false;
   public toasterList$ = new BehaviorSubject([]);
   public currentToasterList$ = this.toasterList$.asObservable();
 
@@ -42,11 +43,17 @@ export class CommonService {
     this.toasterList$.next(this.toasts);
   }
   showToaster(comment: string, success: boolean, options: any = {}) {
+    debugger;
     if (comment != null && comment != undefined && comment != '') {
       setTimeout(() => {
         this.toasts.push({ comment, success, ...options });
         this.toasterList$.next(this.toasts);
       }, 100);
     }
+  }
+  
+  screenResize(width: any) {
+    const maxWidth: number = 990;
+    this.isMobileBrowser = width > maxWidth ? false : true;
   }
 }

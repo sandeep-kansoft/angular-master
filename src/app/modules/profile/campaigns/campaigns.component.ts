@@ -29,13 +29,14 @@ export class CampaignsComponent {
   public gridView: GridDataResult;
   public userdata: any[] = dummyUserData;
   public pageSize = 10;
+  columnWidth = 150;
   isFromOpen: boolean = false;
   constructor(
     private profileInfo: ProfileService,
     private ref: ChangeDetectorRef,
     private formBuilder: FormBuilder,
     private commonService: CommonService
-  ) {}
+  ) { }
   private editedRowIndex: number | undefined;
   public formGroup: FormGroup | undefined;
   public state: State = {
@@ -84,7 +85,9 @@ export class CampaignsComponent {
       this.userForm?.get('currency')?.setValue('');
     });
   }
-
+  checkMobileBrowser() {
+    return this.commonService.isMobileBrowser;
+  }
   public onStateChange(state: any) {
     this.state = state;
 
@@ -134,8 +137,8 @@ export class CampaignsComponent {
     args.sender.addRow(this.formGroup);
   }
 
-  public editHandler(args: EditEvent): void {
-    const { dataItem } = args;
+  public editHandler(dataItem: any): void {
+    console.log(dataItem)
     this.isFromOpen = true;
     console.log('data is ', dataItem);
     this.userForm?.get('first_name')?.setValue(dataItem.first_name);
@@ -149,41 +152,6 @@ export class CampaignsComponent {
     this.userForm?.get('currency')?.setValue(dataItem.currency);
 
     return;
-    // define all editable fields validators and default values
-    //const { dataItem } = args;
-
-    this.closeEditor(args.sender);
-
-    this.formGroup = new FormGroup({
-      ProductID: new FormControl(dataItem.ProductID),
-      ProductName: new FormControl(dataItem.ProductName, Validators.required),
-      SupplierID: new FormControl(dataItem.SupplierID, Validators.required),
-      QuantityPerUnit: new FormControl(
-        dataItem.QuantityPerUnit,
-        Validators.required
-      ),
-      UnitPrice: new FormControl(dataItem.UnitPrice, Validators.required),
-      ReorderLevel: new FormControl(dataItem.ReorderLevel, Validators.required),
-      CategoryID: new FormControl(
-        dataItem.Category.CategoryID,
-        Validators.required
-      ),
-      Category_Name: new FormControl(
-        dataItem.Category.CategoryName,
-        Validators.required
-      ),
-      Category_Description: new FormControl(dataItem.Category.Description),
-      UnitsInStock: new FormControl(dataItem.UnitsInStock),
-      Discontinued: new FormControl(dataItem.Discontinued),
-      UnitsOnOrder: new FormControl(''),
-      'Category.CategoryID': new FormControl(''),
-      'Category.CategoryName': new FormControl(''),
-      'Category.Description': new FormControl(''),
-    });
-
-    this.editedRowIndex = args.rowIndex;
-    // put the row in edit mode, with the `FormGroup` build above
-    // args.sender.editRow(args.rowIndex, this.formGroup);
   }
 
   public cancelHandler(args: CancelEvent): void {
@@ -234,12 +202,13 @@ export class CampaignsComponent {
     sender.closeRow(rowIndex);
   }
 
-  public removeHandler(args: RemoveEvent): void {
+  public removeHandler(dataItem: any): void {
     // remove the current dataItem from the current data source,
     // `editService` in this example
     //this.editService.remove();
+    console.log(dataItem)
     this.isFromOpen = false;
-    this.openAlert('TableItem', args);
+    this.openAlert('TableItem', dataItem);
   }
 
   private closeEditor(grid: GridComponent, rowIndex = this.editedRowIndex) {
@@ -289,25 +258,26 @@ export class CampaignsComponent {
     }
   }
 
-  openAlert(type: string, args: any) {
+  openAlert(type: string, dataItem: any) {
     this.commonService.confirmationInfoModal().then((result: any) => {
       //alert(result);
       switch (result) {
         case 'DELETE':
           if (type == 'TableItem') {
             let pd: any[] = JSON.parse(JSON.stringify(this.userdata));
-            this.userdata = pd.filter((val) => val.id != args.dataItem.id);
+            this.userdata = pd.filter((val) => val.id != dataItem.id);
             this.gridView = process(this.userdata, this.state);
           }
-
           break;
         default:
           break;
       }
     });
   }
-
+  openPopup(event: any) {
+    console.log('opening popup')
+  }
   showToast() {
-    this.commonService.showToaster('Data has been deleted', false);
+    this.commonService.showToaster('Data has been deleted', true);
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { CommonService } from '../../common.service';
 
 @Component({
@@ -8,11 +8,12 @@ import { CommonService } from '../../common.service';
 })
 export class ToasterComponent implements OnInit {
   toaster: any = [];
-  constructor(private commonService: CommonService) {}
+  constructor(private commonService: CommonService, private cdr: ChangeDetectorRef) {}
   ngOnInit(): void {
     this.commonService.currentToasterList$.subscribe({
       next: (toaster) => {
         this.toaster = toaster;
+        this.cdr.detectChanges();
       },
     });
   }
