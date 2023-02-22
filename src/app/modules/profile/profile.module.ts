@@ -27,6 +27,9 @@ import { SettingsComponent } from './settings/settings.component';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedComponentsModule } from 'src/app/shared/components/shared-components.module';
+
+
+
 @NgModule({
   declarations: [
     ProfileComponent,
@@ -57,7 +60,9 @@ import { SharedComponentsModule } from 'src/app/shared/components/shared-compone
     ReactiveFormsModule,
     GridModule,
     NgbModule ,
-    SharedComponentsModule
+    SharedComponentsModule,
+    
+    
     
     
   ],

@@ -21,6 +21,8 @@ import {
 } from '@angular/forms';
 import { BehaviorSubject } from 'rxjs';
 import { CommonService } from 'src/app/shared/common.service';
+
+
 @Component({
   selector: 'app-campaigns',
   templateUrl: './campaigns.component.html',
@@ -57,6 +59,10 @@ export class CampaignsComponent {
 
   public ngOnInit(): void {
     this.loadProducts();
+    // this.ngxLoader.start();
+    // setTimeout(() => {
+    //   this.ngxLoader.stop();
+    // }, 3000);
 
     // console.log("Here in child the data is ", this.userDetailInfo)
     this.userForm = this.formBuilder.group({
