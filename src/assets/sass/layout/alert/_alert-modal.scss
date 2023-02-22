@@ -1,3 +1,23 @@
+@mixin alert-modal-classes($theme) {
+  $color: map-get($theme, color);
+  $foreground: map-get($color, foreground);
+  $background: map-get($color, background);
+  
+  $primary: map-get($color, primary);
+  $accent: map-get($color, accent);
+  $warn: map-get($color, warn);
+  $description: map-get($foreground, 'description');
+  $heading: map-get($foreground, 'heading');
+  $error-700: map-get($foreground, 'error-text-2');
+  $white-color: map-get($background, 'white-color');
+  $error-text:  map-get($foreground, "error-text");
+  $offcanvas-backdrop: map-get($background, 'offcanvas-backdrop');
+  $body-icon-color: map-get($foreground, 'body-icon-color');
+  $is-dark: map-get($color, is-dark);
+  $input-group-text: map-get($foreground, 'input-group-text');
+  $alert-title: map-get($foreground, 'alert-title');
+  $alert-subtitle: map-get($foreground, 'alert-subtitle');
+
 
 
 .modal-dialog-centered {
@@ -153,23 +173,5 @@
   font-weight: 700;
 }
 
-.modal-dialog-centered .cs-btn-cancel {
-  font-family: $font-medium;
-  padding: 10px 16px;
-  font-size: $fs-16;
-  font-weight: $fw-500;
-  color: $cancel-btn-color;
-  background: $cancel-btn-background;
-  border: 1px solid $cancel-btn-border-error-modal;
-  border-radius: $radius-size-8;
-  line-height: 24px;
-  width:100%;
-}
-.modal-dialog-centered .cs-btn-cancel:focus-visible {
-  outline: none !important;
-}
-@media (max-width: 991.98px) {
-  .modal-dialog-centered .cs-btn-cancel {
-      border: 1px solid $cancel-btn-background;
-  }
+/* End */
 }
