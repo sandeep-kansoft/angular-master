@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { CommonService } from '../../common.service';
 
 @Component({
   selector: 'app-alert-modal',
@@ -10,16 +9,11 @@ import { CommonService } from '../../common.service';
 export class AlertModalComponent implements OnInit {
   isDarkTheme!: boolean;
 
-  constructor(public modal: NgbModal , private commonservices : CommonService) {}
+  constructor(public modal: NgbModal) {}
 
   ngOnInit(): void {}
 
   close(type: string) {
     this.modal.dismissAll(type);
   }
-
-isMobileView(){
-  return this.commonservices.isMobileBrowser
-}
-
 }
