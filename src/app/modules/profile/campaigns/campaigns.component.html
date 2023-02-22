@@ -309,7 +309,7 @@
             </div>
             <div class="col-md-6">
               <label class="col-form-label required fw-bold fs-6">Language</label>
-              <select formControlName="language" class="form-select form-select-solid form-select-lg" name="language">
+              <select formControlName="language" class="form-select form-select-solid form-select-lg" data-control="select2" name="language">
                 <option value="">Select a Language...</option>
                 <option value="id">Bahasa Indonesia - Indonesian</option>
                 <option value="msa">Bahasa Melayu - Malay</option>
@@ -617,10 +617,10 @@ allowUnsort: true,
 mode: 'multiple'}" [sort]="state.sort" (dataStateChange)="onStateChange($event)" (edit)="editHandler($event)"
   (remove)="removeHandler($event)">
   <kendo-grid-column field="id" title="ID" [width]="100"></kendo-grid-column>
-  <kendo-grid-column field="first_name" title="First Name" [width]="100"></kendo-grid-column>
-  <kendo-grid-column field="last_name" title="Last Name" [width]="100"></kendo-grid-column>
-  <kendo-grid-column field="contact_name" title="Contace Info" [width]="100"></kendo-grid-column>
-  <kendo-grid-column field="gender" title="Gender" [width]="100"></kendo-grid-column>
+  <kendo-grid-column field="first_name" title="First Name" [width]="150"></kendo-grid-column>
+  <kendo-grid-column field="last_name" title="Last Name" [width]="150"></kendo-grid-column>
+  <kendo-grid-column field="contact_name" title="Contace Info" [width]="150"></kendo-grid-column>
+  <kendo-grid-column field="gender" title="Gender" [width]="150"></kendo-grid-column>
   <kendo-grid-column field="timezone" title="TimeZone" [width]="100"></kendo-grid-column>
   <kendo-grid-column field="company" title="Company" [width]="100"></kendo-grid-column>
   <kendo-grid-column field="language" title="Language" [width]="100">
