@@ -14,8 +14,7 @@ import { environment } from 'src/environments/environment';
 // #fake-start#
 import { FakeAPIService } from './_fake/fake-api.service';
 import { SharedComponentsModule } from './shared/components/shared-components.module';
-import { NgxUiLoaderModule } from "ngx-ui-loader";
-
+import { Select2Module } from 'ng-select2-component';
 
 // #fake-end#
 
@@ -39,7 +38,6 @@ function appInitializer(authService: AuthService) {
     TranslateModule.forRoot(),
     HttpClientModule,
     ClipboardModule,
-    NgxUiLoaderModule,
     // #fake-start#
     environment.isMockEnabled
       ? HttpClientInMemoryWebApiModule.forRoot(FakeAPIService, {
@@ -52,10 +50,7 @@ function appInitializer(authService: AuthService) {
     InlineSVGModule.forRoot(),
     NgbModule,
     SharedComponentsModule,
-    // NgxUiLoaderModule
-
-
-  
+    Select2Module
   ],
   providers: [
     {

@@ -309,7 +309,8 @@
             </div>
             <div class="col-md-6">
               <label class="col-form-label required fw-bold fs-6">Language</label>
-              <select formControlName="language" class="form-select form-select-solid form-select-lg" data-control="select2" name="language">
+              <select formControlName="language" class="form-select form-select-solid form-select-lg"
+                data-control="select2" name="language">
                 <option value="">Select a Language...</option>
                 <option value="id">Bahasa Indonesia - Indonesian</option>
                 <option value="msa">Bahasa Melayu - Malay</option>
@@ -360,6 +361,23 @@
               </select>
             </div>
           </div>
+          <!--begin::Block-->
+          <div class="row mb-6">
+            <div class="col-md-6">
+              <label for="" class="form-label">Small size</label>
+              <select2 [overlay]="overlay" [data]="dataList" [value]="selectItem" (update)="update($event)"
+                (change)="change('change1', $event)" (blur)="blur('blur1', $event)" (focus)="focus('focus1', $event)"
+                (open)="open('open1', $event)" (close)="close('close1', $event)" (search)="search('search1', $event)"
+                resettable id="selec2-1">
+              </select2>
+            </div>
+            <div class="col-md-6">
+              <label for="" class="form-label">Multiple select</label>
+              <select2 [overlay]="overlay" [data]="dataList" multiple="true" id="selec2-10" [value]="selectItem">
+              </select2>
+            </div>
+          </div>
+          <!--end::Block-->
           <div class="row mb-6">
             <div class="col-md-6">
               <label class="col-form-label required fw-bold fs-6">Time Zone</label>
@@ -564,32 +582,60 @@
           </div>
           <div class="row">
             <div class="col-md-6">
-              <div class="input-group" id="kt_td_picker_simple" data-td-target-input="nearest"
-                data-td-target-toggle="nearest">
-                <input id="kt_td_picker_basic_input" type="text" class="form-control form-control-solid"
-                  data-td-target="#kt_td_picker_basic" />
-                <span class="input-group-text" data-td-target="#kt_td_picker_basic" data-td-toggle="datetimepicker">
-                  <i class="fas fa-calendar"></i>
-                </span>
+              <div class="input-group">
+                <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker
+                  [dayTemplate]="customDay" [markDisabled]="isDisabled" #d="ngbDatepicker" />
+                <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
               </div>
+
+             
             </div>
             <div class="col-md-6">
-              <select class="form-select form-select-solid" data-control="select2" data-placeholder="Select an option">
-                <option></option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-              </select>
-            </div>
-          </div>
-          <!-- <div class="row">
-            <div class="col-12">
-              <div class="fv-row">
-                <label class="col-form-label required fw-bold fs-6">Message</label>
-                <textarea type="text" class="form-control form-control-lg form-control-solid" placeholder="Message"
-                  rows="3"></textarea>
+              <div class="dp-hidden position-absolute">
+                <div class="input-group">
+                  <input
+                    name="datepicker"
+                    class="form-control"
+                    ngbDatepicker
+                    #datepicker="ngbDatepicker"
+                    [autoClose]="'outside'"
+                    (dateSelect)="onDateSelection($event)"
+                    [displayMonths]="2"
+                    [dayTemplate]="t"
+                    outsideDays="hidden"
+                    [startDate]="fromDate!"
+                    tabindex="-1"
+                  />
+                  <ng-template #t let-date let-focused="focused">
+                    <span
+                      class="custom-day"
+                      [class.focused]="focused"
+                      [class.range]="isRange(date)"
+                      [class.faded]="isHovered(date) || isInside(date)"
+                      (mouseenter)="hoveredDate = date"
+                      (mouseleave)="hoveredDate = null"
+                    >
+                      {{ date.day }}
+                    </span>
+                  </ng-template>
+                </div>
+              </div>
+              <div class="input-group">
+                <input
+                  #dpToDate
+                  class="form-control"
+                  placeholder="yyyy-mm-dd"
+                  name="dpToDate"
+                  [value]="formatter.format(fromDate) +' : '+ formatter.format(toDate)"
+                />
+                <button
+                  class="btn btn-outline-secondary bi bi-calendar3"
+                  (click)="datepicker.toggle()"
+                  type="button"
+                ></button>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
         <div class="card-footer d-flex flex-row justify-content-end py-6 px-9">
 
@@ -642,6 +688,13 @@
   
   
   </kendo-grid>
-
 </div>
 
+<ng-template #customDay let-date let-currentMonth="currentMonth" let-selected="selected"
+let-disabled="disabled" let-focused="focused">
+<span class="custom-day custom-datepicker" [class.weekend]="isWeekend(date)" [class.focused]="focused"
+  [class.bg-primary]="selected" [class.hidden]="date.month !== currentMonth"
+  [class.text-muted]="disabled">
+  {{ date.day }}
+</span>
+</ng-template>

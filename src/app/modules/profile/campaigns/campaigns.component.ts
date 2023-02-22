@@ -11,7 +11,7 @@ import {
   SaveEvent,
 } from '@progress/kendo-angular-grid';
 import { SortDescriptor } from '@progress/kendo-data-query';
-import { Category, dummyUserData } from './product';
+import { Category, data2, dummyUserData } from './product';
 import { ProfileService } from '../profile.service';
 import {
   FormBuilder,
@@ -21,8 +21,8 @@ import {
 } from '@angular/forms';
 import { BehaviorSubject } from 'rxjs';
 import { CommonService } from 'src/app/shared/common.service';
-
-
+import { Select2UpdateEvent } from 'ng-select2-component';
+import { NgbCalendar, NgbDate, NgbDateParserFormatter, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-campaigns',
   templateUrl: './campaigns.component.html',
@@ -33,12 +33,23 @@ export class CampaignsComponent {
   public pageSize = 10;
   columnWidth = 150;
   isFromOpen: boolean = false;
+  model: NgbDateStruct;
+  isDisabled = (date: NgbDate, current: any) => date.month !== current.month;
+	isWeekend = (date: NgbDate) => this.calendar.getWeekday(date) >= 6;
+  hoveredDate: NgbDate | null = null;
+	fromDate: NgbDate | null;
+	toDate: NgbDate | null;
   constructor(
     private profileInfo: ProfileService,
+    private calendar: NgbCalendar,
+    public formatter: NgbDateParserFormatter,
     private ref: ChangeDetectorRef,
     private formBuilder: FormBuilder,
     private commonService: CommonService
-  ) { }
+  ) { 
+    this.fromDate = calendar.getToday();
+		this.toDate = calendar.getNext(calendar.getToday(), 'd', 10);
+  }
   private editedRowIndex: number | undefined;
   public formGroup: FormGroup | undefined;
   public state: State = {
@@ -286,4 +297,64 @@ export class CampaignsComponent {
   showToast() {
     this.commonService.showToaster('Data has been deleted', true);
   }
+  overlay = false;
+  selectItem = 'CA';
+   dataList = data2
+  open(key: string, event: any) {
+    console.log(key, event);
+  }
+
+  close(key: string, event: any) {
+    console.log(key, event);
+  }
+
+  focus(key: string, event: any) {
+    console.log(key, event);
+  }
+
+  blur(key: string, event: any) {
+    console.log(key, event);
+  }
+
+  change(key: string, event: any) {
+    console.log(key, event);
+  }
+
+  search(key: string, event: any) {
+    console.log(key, event);
+  }
+  update( event: Select2UpdateEvent<any>) {
+   console.log(event)
+}
+onDateSelection(date: NgbDate) {
+  if (!this.fromDate && !this.toDate) {
+    this.fromDate = date;
+  } else if (this.fromDate && !this.toDate && date && date.after(this.fromDate)) {
+    this.toDate = date;
+  } else {
+    this.toDate = null;
+    this.fromDate = date;
+  }
+}
+
+isHovered(date: NgbDate) {
+  return (
+    this.fromDate && !this.toDate && this.hoveredDate && date.after(this.fromDate) && date.before(this.hoveredDate)
+  );
+}
+
+isInside(date: NgbDate) {
+  return this.toDate && date.after(this.fromDate) && date.before(this.toDate);
+}
+
+isRange(date: NgbDate) {
+  return (
+    date.equals(this.fromDate) ||
+    (this.toDate && date.equals(this.toDate)) ||
+    this.isInside(date) ||
+    this.isHovered(date)
+  );
+}
+
+
 }

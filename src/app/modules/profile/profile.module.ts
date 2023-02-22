@@ -25,11 +25,9 @@ import { ProfileDetailsComponent } from './settings/forms/profile-details/profil
 import { SignInMethodComponent } from './settings/forms/sign-in-method/sign-in-method.component';
 import { SettingsComponent } from './settings/settings.component';
 import { GridModule } from '@progress/kendo-angular-grid';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDatepickerModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedComponentsModule } from 'src/app/shared/components/shared-components.module';
-
-
-
+import { Select2Module } from 'ng-select2-component';
 @NgModule({
   declarations: [
     ProfileComponent,
@@ -61,10 +59,8 @@ import { SharedComponentsModule } from 'src/app/shared/components/shared-compone
     GridModule,
     NgbModule ,
     SharedComponentsModule,
-    
-    
-    
-    
+    Select2Module,
+    NgbDatepickerModule
   ],
 })
 export class ProfileModule {}
