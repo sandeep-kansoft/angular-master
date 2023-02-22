@@ -25,6 +25,8 @@ import { ProfileDetailsComponent } from './settings/forms/profile-details/profil
 import { SignInMethodComponent } from './settings/forms/sign-in-method/sign-in-method.component';
 import { SettingsComponent } from './settings/settings.component';
 import { GridModule } from '@progress/kendo-angular-grid';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SharedComponentsModule } from 'src/app/shared/components/shared-components.module';
 @NgModule({
   declarations: [
     ProfileComponent,
@@ -43,7 +45,7 @@ import { GridModule } from '@progress/kendo-angular-grid';
     EmailPreferencesComponent,
     NotificationsComponent,
     SignInMethodComponent,
-
+   
   ],
   imports: [
     CommonModule,
@@ -53,7 +55,11 @@ import { GridModule } from '@progress/kendo-angular-grid';
     WidgetsModule,
     CardsModule,
     ReactiveFormsModule,
-    GridModule
+    GridModule,
+    NgbModule ,
+    SharedComponentsModule
+    
+    
   ],
 })
-export class ProfileModule { }
+export class ProfileModule {}

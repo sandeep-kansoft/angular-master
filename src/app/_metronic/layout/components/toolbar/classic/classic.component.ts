@@ -1,5 +1,12 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
 import { Subscription } from 'rxjs';
+import { CommonService } from 'src/app/shared/common.service';
 import { LayoutService } from '../../../core/layout.service';
 
 @Component({
@@ -24,7 +31,11 @@ export class ClassicComponent implements OnInit, OnDestroy {
   filterButtonClass: string = '';
   daterangepickerButtonClass: string = '';
 
-  constructor(private layout: LayoutService) {}
+
+  constructor(
+    private layout: LayoutService,
+    private commonservice: CommonService
+  ) {}
 
   ngOnInit(): void {
     this.updateProps();
@@ -82,6 +93,10 @@ export class ClassicComponent implements OnInit, OnDestroy {
       : 'bg-body btn-color-gray-700 btn-active-color-primary';
   }
 
+  createButtonClick() {
+    this.commonservice.sendDataFromclassic('overview');
+  
+  }
   ngOnDestroy() {
     this.unsubscribe.forEach((sb) => sb.unsubscribe());
   }

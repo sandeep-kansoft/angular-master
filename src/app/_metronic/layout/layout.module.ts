@@ -4,6 +4,8 @@ import { InlineSVGModule } from 'ng-inline-svg-2';
 import { RouterModule, Routes } from '@angular/router';
 import {
   NgbDropdownModule,
+  NgbModal,
+  NgbModule,
   NgbProgressbarModule,
   NgbTooltipModule,
 } from '@ng-bootstrap/ng-bootstrap';
@@ -40,6 +42,7 @@ import { ClassicComponent } from './components/toolbar/classic/classic.component
 import { ExtendedComponent } from './components/toolbar/extended/extended.component';
 import { ReportsComponent } from './components/toolbar/reports/reports.component';
 import { SaasComponent } from './components/toolbar/saas/saas.component';
+import { SharedComponentsModule } from 'src/app/shared/components/shared-components.module';
 
 const routes: Routes = [
   {
@@ -73,6 +76,7 @@ const routes: Routes = [
     ExtendedComponent,
     ReportsComponent,
     SaasComponent,
+
   ],
   imports: [
     CommonModule,
@@ -88,7 +92,9 @@ const routes: Routes = [
     DropdownMenusModule,
     NgbTooltipModule,
     TranslateModule,
-    ThemeModeModule
+    ThemeModeModule,
+    NgbModule
+    
   ],
   exports: [RouterModule],
 })

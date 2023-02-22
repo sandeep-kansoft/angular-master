@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   private unsubscribe: Subscription[] = [];
   // Public props
   currentLayoutType: LayoutType | null;
-
+  asideDisplay: boolean = true;
   appHeaderDisplay: boolean;
   appHeaderDefaultFixedDesktop: boolean;
   appHeaderDefaultFixedMobile: boolean;
