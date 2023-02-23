@@ -16,6 +16,7 @@ import { OverviewEditorComponent } from './overviewform/overview-editor.componen
 import { OverviewEditorCrudComponent } from './overviewform/overview-editor-crud/overview-editor-crud.component';
 import { CreateAndEditFormComponent } from './overview/create-and-edit-form/create-and-edit-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PurchaseRequisitionComponent } from './purchase-requisition/purchase-requisition';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     NotificationsComponent,
     SignInMethodComponent,
     OverviewEditorCrudComponent,
-    CreateAndEditFormComponent
+    CreateAndEditFormComponent,
+    PurchaseRequisitionComponent  
   ],
   imports: [
     CommonModule,
