@@ -11,7 +11,7 @@ import {
   SaveEvent,
 } from '@progress/kendo-angular-grid';
 import { SortDescriptor } from '@progress/kendo-data-query';
-import { Category, data2, dummyUserData } from './product';
+import { Category, currencyRaw, data2, dummyUserData, LanguageListRaw, TimeZoneListRaw } from './product';
 import { ProfileService } from '../profile.service';
 import {
   FormBuilder,
@@ -22,7 +22,12 @@ import {
 import { BehaviorSubject } from 'rxjs';
 import { CommonService } from 'src/app/shared/common.service';
 import { Select2UpdateEvent } from 'ng-select2-component';
-import { NgbCalendar, NgbDate, NgbDateParserFormatter, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
+import {
+  NgbCalendar,
+  NgbDate,
+  NgbDateParserFormatter,
+  NgbDateStruct,
+} from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-campaigns',
   templateUrl: './campaigns.component.html',
@@ -32,13 +37,17 @@ export class CampaignsComponent {
   public userdata: any[] = dummyUserData;
   public pageSize = 10;
   columnWidth = 150;
+  id: number = 1001;
   isFromOpen: boolean = false;
+  isEditMode: boolean = false;
   model: NgbDateStruct;
   isDisabled = (date: NgbDate, current: any) => date.month !== current.month;
-	isWeekend = (date: NgbDate) => this.calendar.getWeekday(date) >= 6;
+  isWeekend = (date: NgbDate) => this.calendar.getWeekday(date) >= 6;
   hoveredDate: NgbDate | null = null;
-	fromDate: NgbDate | null;
-	toDate: NgbDate | null;
+  fromDate: NgbDate | null;
+  toDate: NgbDate | null;
+  tableContentLoading: boolean = false;
+
   constructor(
     private profileInfo: ProfileService,
     private calendar: NgbCalendar,
@@ -46,9 +55,9 @@ export class CampaignsComponent {
     private ref: ChangeDetectorRef,
     private formBuilder: FormBuilder,
     private commonService: CommonService
-  ) { 
+  ) {
     this.fromDate = calendar.getToday();
-		this.toDate = calendar.getNext(calendar.getToday(), 'd', 10);
+    this.toDate = calendar.getNext(calendar.getToday(), 'd', 10);
   }
   private editedRowIndex: number | undefined;
   public formGroup: FormGroup | undefined;
@@ -65,11 +74,17 @@ export class CampaignsComponent {
       filters: [],
     },
     skip: 0,
-    take: 5,
+    take: 10,
   };
 
   public ngOnInit(): void {
-    this.loadProducts();
+    this.tableContentLoading = true;
+    setTimeout(() => {
+      this.loadProducts();
+      this.tableContentLoading = false;
+      this.ref.detectChanges();
+    }, 2000);
+
     // this.ngxLoader.start();
     // setTimeout(() => {
     //   this.ngxLoader.stop();
@@ -91,6 +106,8 @@ export class CampaignsComponent {
 
     this.commonService.sendData.subscribe(() => {
       this.isFromOpen = true;
+      this.isEditMode = false;
+
       this.userForm?.get('first_name')?.setValue('');
       this.userForm?.get('last_name')?.setValue('');
       this.userForm?.get('contact_name')?.setValue('');
@@ -103,6 +120,10 @@ export class CampaignsComponent {
     });
   }
   checkMobileBrowser() {
+    console.log(
+      'this.commonService.isMobileBrowser',
+      this.commonService.isMobileBrowser
+    );
     return this.commonService.isMobileBrowser;
   }
   public onStateChange(state: any) {
@@ -155,8 +176,9 @@ export class CampaignsComponent {
   }
 
   public editHandler(dataItem: any): void {
-    console.log(dataItem)
+    console.log(dataItem);
     this.isFromOpen = true;
+    this.isEditMode = true;
     console.log('data is ', dataItem);
     this.userForm?.get('first_name')?.setValue(dataItem.first_name);
     this.userForm?.get('last_name')?.setValue(dataItem.last_name);
@@ -176,54 +198,45 @@ export class CampaignsComponent {
     this.closeEditor(args.sender, args.rowIndex);
   }
 
-  public saveHandler({ sender, rowIndex, formGroup, isNew }: SaveEvent): void {
-    const singleProduct = formGroup.value;
+  public saveHandler(): void {
+    const singleUser = this.userForm?.value;
 
     try {
       let payload = {
-        ProductID: parseInt(singleProduct.ProductID),
-        ProductName: singleProduct.ProductName,
-        SupplierID: parseInt(singleProduct.SupplierID),
-        CategoryID: parseInt(singleProduct.CategoryID),
-        QuantityPerUnit: parseInt(singleProduct.QuantityPerUnit),
-        UnitPrice: parseInt(singleProduct.UnitPrice),
-        UnitsInStock: parseInt(singleProduct.UnitsInStock),
-        UnitsOnOrder: parseInt(singleProduct.UnitsOnOrder),
-        ReorderLevel: parseInt(singleProduct.ReorderLevel),
-        Discontinued: false,
-        Category: {
-          CategoryID: parseInt(singleProduct['Category.CategoryID']),
-          CategoryName: singleProduct['Category.CategoryName'],
-          Description: singleProduct['Category.Description'],
-        },
+        id: singleUser?.id ? singleUser?.id : this.id + 1,
+        first_name: singleUser?.first_name,
+        last_name: singleUser?.last_name,
+        contact_name: singleUser?.contact_name,
+        gender: singleUser?.gender,
+        country: singleUser?.country,
+        timezone: singleUser?.timezone,
+        company: singleUser?.company,
+        language: singleUser?.language,
+        currency: singleUser?.currency,
       };
-
-      if (isNew) {
-        this.userdata.push(payload);
-      } else {
-        let index = this.userdata.findIndex(
-          (val) => val.ProductID == payload.ProductID
-        );
+      
+      if (this.isEditMode) {
+        let index = this.userdata.findIndex((val) => val.id == payload.id);
         if (index != -1) {
           this.userdata[index] = payload;
         }
+      } else {
+        this.userdata.push(payload);
       }
 
+      this.isFromOpen = false;
       this.gridView = process(this.userdata, this.state);
     } catch (ex) {
       console.log('Error occured while saving ', ex);
     }
-
-    // this.editService.save(product, isNew);
-
-    sender.closeRow(rowIndex);
   }
 
   public removeHandler(dataItem: any): void {
     // remove the current dataItem from the current data source,
     // `editService` in this example
     //this.editService.remove();
-    console.log(dataItem)
+    console.log('remove data item', dataItem);
+    console.log(dataItem);
     this.isFromOpen = false;
     this.openAlert('TableItem', dataItem);
   }
@@ -233,7 +246,6 @@ export class CampaignsComponent {
     grid.closeRow(rowIndex);
     // reset the helpers
     this.editedRowIndex = undefined;
-    this.formGroup = undefined;
   }
 
   // for edit and update form
@@ -284,6 +296,7 @@ export class CampaignsComponent {
             let pd: any[] = JSON.parse(JSON.stringify(this.userdata));
             this.userdata = pd.filter((val) => val.id != dataItem.id);
             this.gridView = process(this.userdata, this.state);
+            this.ref.detectChanges();
           }
           break;
         default:
@@ -292,14 +305,17 @@ export class CampaignsComponent {
     });
   }
   openPopup(event: any) {
-    console.log('opening popup')
+    console.log('opening popup');
   }
   showToast() {
     this.commonService.showToaster('Data has been deleted', true);
   }
   overlay = false;
   selectItem = 'CA';
-   dataList = data2
+  dataList = data2;
+  languageList = LanguageListRaw
+  timeZonelist = TimeZoneListRaw
+  currencyList = currencyRaw
   open(key: string, event: any) {
     console.log(key, event);
   }
@@ -323,38 +339,45 @@ export class CampaignsComponent {
   search(key: string, event: any) {
     console.log(key, event);
   }
-  update( event: Select2UpdateEvent<any>) {
-   console.log(event)
-}
-onDateSelection(date: NgbDate) {
-  if (!this.fromDate && !this.toDate) {
-    this.fromDate = date;
-  } else if (this.fromDate && !this.toDate && date && date.after(this.fromDate)) {
-    this.toDate = date;
-  } else {
-    this.toDate = null;
-    this.fromDate = date;
+  update(event: Select2UpdateEvent<any>) {
+    console.log(event);
   }
-}
+  onDateSelection(date: NgbDate) {
+    if (!this.fromDate && !this.toDate) {
+      this.fromDate = date;
+    } else if (
+      this.fromDate &&
+      !this.toDate &&
+      date &&
+      date.after(this.fromDate)
+    ) {
+      this.toDate = date;
+    } else {
+      this.toDate = null;
+      this.fromDate = date;
+    }
+  }
 
-isHovered(date: NgbDate) {
-  return (
-    this.fromDate && !this.toDate && this.hoveredDate && date.after(this.fromDate) && date.before(this.hoveredDate)
-  );
-}
+  isHovered(date: NgbDate) {
+    return (
+      this.fromDate &&
+      !this.toDate &&
+      this.hoveredDate &&
+      date.after(this.fromDate) &&
+      date.before(this.hoveredDate)
+    );
+  }
 
-isInside(date: NgbDate) {
-  return this.toDate && date.after(this.fromDate) && date.before(this.toDate);
-}
+  isInside(date: NgbDate) {
+    return this.toDate && date.after(this.fromDate) && date.before(this.toDate);
+  }
 
-isRange(date: NgbDate) {
-  return (
-    date.equals(this.fromDate) ||
-    (this.toDate && date.equals(this.toDate)) ||
-    this.isInside(date) ||
-    this.isHovered(date)
-  );
-}
-
-
+  isRange(date: NgbDate) {
+    return (
+      date.equals(this.fromDate) ||
+      (this.toDate && date.equals(this.toDate)) ||
+      this.isInside(date) ||
+      this.isHovered(date)
+    );
+  }
 }

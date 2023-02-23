@@ -2,15 +2,15 @@
   max-width: 463px !important;
 }
 .error-message-div p {
-  font-size: 1.125rem;;
+  font-size: 1.125rem;
   font-weight: 500;
-  color:  #101828ff;
+  color: #101828ff;
   margin-bottom: 0px;
-  .error-message-div p span {
+  .error-message-div p img {
     color: #f04438ff;
   }
 }
-.error-message-div span {
+.error-message-div img {
   font-size: 0.75rem;
   font-weight: 400;
   color: #667085ff;
@@ -112,8 +112,6 @@
   margin-right: 7px;
 }
 
-
-
 .cs-alert-subtitle-fw-700 {
   font-weight: 700;
 }
@@ -166,4 +164,87 @@
   color: #667085;
   font-size: 1.1rem !important;
   line-height: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .modal-dialog-mobile .modal-body {
+    background: transparent;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .modal-dialog-mobile .modal-body .custom-mobile-modal-body {
+    background: #ffffff;
+    padding: 1.25rem 0.85rem 1.25rem 0.85rem !important;
+    border-radius: 0.5rem;
+    margin-bottom: 0.25rem !important;
+  }
+  .modal-dialog-mobile {
+    // margin-left: 1.25vw !important;
+    // margin-right: 1.25vw !important;
+    bottom: 5% !important;
+    width: 100% !important;
+    // max-width: 100% !important;
+    border-radius: 8px;
+    z-index: 9999;
+    position: fixed !important;
+  }
+  .modal-dialog-mobile .btn-row-desktop {
+    display: none;
+  }
+  .modal-dialog-mobile .btn-row-mobile {
+    display: block;
+    bottom: 3vh;
+    left: 12vw !important;
+    right: 12vw !important;
+  }
+  .modal-dialog-mobile .btn-row-mobile button {
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-dialog-mobile {
+    // margin-left: 2vw !important;
+    // margin-right: 2vw !important;
+    bottom: 5% !important;
+    width: 99.5% !important;
+    // max-width: 100% !important;
+    border-radius: 8px;
+    z-index: 9999;
+    position: fixed !important;
+  }
+  .modal-dialog-mobile .modal-body {
+    background: transparent;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    position: fixed;
+    bottom: 0;
+    width: 99.5%;
+  }
+}
+.modal-dialog-centered.custom-dialog-modal p {
+  margin-bottom: 8px !important;
+}
+
+
+.cs-alert-subtitle-fw-700{
+  font-weight: 700;
+}
+.btn-row-desktop {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.modal-content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  pointer-events: auto;
+  background-clip: padding-box;
 }

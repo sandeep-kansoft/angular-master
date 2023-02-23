@@ -43,7 +43,7 @@ export class CommonService {
     this.toasterList$.next(this.toasts);
   }
   showToaster(comment: string, success: boolean, options: any = {}) {
-    debugger;
+  
     if (comment != null && comment != undefined && comment != '') {
       setTimeout(() => {
         this.toasts.push({ comment, success, ...options });

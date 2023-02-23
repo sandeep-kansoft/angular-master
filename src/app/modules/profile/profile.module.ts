@@ -28,6 +28,8 @@ import { GridModule } from '@progress/kendo-angular-grid';
 import { NgbDatepickerModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedComponentsModule } from 'src/app/shared/components/shared-components.module';
 import { Select2Module } from 'ng-select2-component';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+
 @NgModule({
   declarations: [
     ProfileComponent,
@@ -60,7 +62,8 @@ import { Select2Module } from 'ng-select2-component';
     NgbModule ,
     SharedComponentsModule,
     Select2Module,
-    NgbDatepickerModule
+    NgbDatepickerModule,
+    NgxSkeletonLoaderModule
   ],
 })
 export class ProfileModule {}

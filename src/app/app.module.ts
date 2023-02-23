@@ -15,6 +15,7 @@ import { environment } from 'src/environments/environment';
 import { FakeAPIService } from './_fake/fake-api.service';
 import { SharedComponentsModule } from './shared/components/shared-components.module';
 import { Select2Module } from 'ng-select2-component';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 // #fake-end#
 
@@ -50,7 +51,8 @@ function appInitializer(authService: AuthService) {
     InlineSVGModule.forRoot(),
     NgbModule,
     SharedComponentsModule,
-    Select2Module
+    Select2Module,
+    NgxSkeletonLoaderModule.forRoot()
   ],
   providers: [
     {
