@@ -15,30 +15,36 @@ bgi-no-repeat bgi-size-contain bgi-attachment-fixed"
 
   <!--begin::Body-->
   <div class="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-2 order-lg-1" style="background-image: url(./assets/media/auth/auth-bg.jpg);background-repeat: no-repeat;background-size: cover;">
-    <!--begin::Form-->
     <div class="d-flex flex-center flex-column flex-lg-row-fluid">
-      <a routerLink="/" class="mb-12"><img alt="Logo" src="./assets/media/wonder/AppLogo.png" class="h-45px" /></a>
-      <!--begin::Wrapper-->
-      <div class="<?php echo $params['wrapperClass']?> p-10">
-        <router-outlet></router-outlet>
+    <div class="new-outer-body-for-login w-lg-500px bg-white rounded shadow-sm">
+
+      
+      <!--begin::Form-->
+      <div class="d-flex flex-center flex-column flex-lg-row-fluid">
+        <a routerLink="/" class="mt-12"><img alt="Logo" src="./assets/media/wonder/AppLogo.png" class="h-45px" /></a>
+        <!--begin::Wrapper-->
+        <div class="<?php echo $params['wrapperClass']?>">
+          <router-outlet></router-outlet>
+        </div>
+        <!--end::Wrapper-->
       </div>
-      <!--end::Wrapper-->
+      <!--end::Form-->
+
+      <!--begin::Footer-->
+      <div class="d-flex flex-center flex-wrap px-5">
+        <!--begin::Links-->
+        <!-- <div class="d-flex fw-semibold text-primary fs-base">
+          <a href="#" class="px-5" target="_blank">Terms</a>
+
+          <a href="#" class="px-5" target="_blank">Plans</a>
+
+          <a href="#" class="px-5" target="_blank">Contact Us</a>
+        </div> -->
+        <!--end::Links-->
+      </div>
+      <!--end::Footer-->
     </div>
-    <!--end::Form-->
-
-    <!--begin::Footer-->
-    <div class="d-flex flex-center flex-wrap px-5">
-      <!--begin::Links-->
-      <!-- <div class="d-flex fw-semibold text-primary fs-base">
-        <a href="#" class="px-5" target="_blank">Terms</a>
-
-        <a href="#" class="px-5" target="_blank">Plans</a>
-
-        <a href="#" class="px-5" target="_blank">Contact Us</a>
-      </div> -->
-      <!--end::Links-->
-    </div>
-    <!--end::Footer-->
+  </div>
   </div>
   <!--end::Body-->
 
