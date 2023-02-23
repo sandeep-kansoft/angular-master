@@ -2,6 +2,11 @@ import { Routes } from '@angular/router';
 
 const Routing: Routes = [
   {
+    path: 'pr',
+    loadChildren: () =>
+      import('../modules/purchase-requisition/purchase-requisition.module').then((m) => m.PurchaseRequestModule),
+  },
+  {
     path: 'dashboard',
     loadChildren: () =>
       import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
@@ -45,7 +50,7 @@ const Routing: Routes = [
   },
   {
     path: '',
-    redirectTo: '/crafted/pages/profile',
+    redirectTo: '/pr',
     pathMatch: 'full',
   },
   {
