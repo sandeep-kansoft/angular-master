@@ -5,6 +5,9 @@ import { process, State } from '@progress/kendo-data-query';
 import { CommonService } from 'src/app/shared/common.service';
 import { PrGridDataDto } from '../pr-grid-view';
 import { SortDescriptor } from '@progress/kendo-data-query';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PrDetailViewComponent } from '../pr-detail-view/pr-detail-view.component';
+import { PrModalViewComponent } from '../pr-modal-view/pr-modal-view.component';
 
 @Component({
   selector: 'app-pr-overview',
@@ -16,7 +19,7 @@ export class PrOverviewComponent {
   public state: State = {
     sort: [
       {
-        field: 'prid',
+        field: 'sno',
         dir: 'asc',
       },
     ],
@@ -29,10 +32,15 @@ export class PrOverviewComponent {
   };
   prData: PrGridDataDto[] = PrGridData;
 
+  dropdownListdata = ['Preview', 'RFQ', 'Auction', 'Lines', 'History'];
+
   columnWidth = 150;
   pageSize = 10;
 
-  constructor(private commonService: CommonService) {}
+  constructor(
+    private commonService: CommonService,
+    private prDetailModel: NgbModal
+  ) {}
 
   public ngOnInit() {
     this.loadProducts();
@@ -70,5 +78,45 @@ export class PrOverviewComponent {
     );
     newState.sort.push(newSortDescriptor);
     this.loadProducts();
+  }
+
+  onModelClick(type: string, item: any) {
+    console.log('item', item);
+    switch (type) {
+      case 'Preview':
+        break;
+      case 'RFQ':
+        break;
+      case 'Auction':
+        break;
+      case 'Lines':
+        this.openLinesModel();
+        break;
+      case 'History':
+        this.openPrDetailModel();
+        break;
+
+      default:
+        break;
+    }
+  }
+
+  openPrDetailModel() {
+    this.prDetailModel.open(PrDetailViewComponent, {
+      centered: true,
+      fullscreen: true,
+      scrollable: true,
+    });
+  }
+
+  openLinesModel() {
+    this.prDetailModel.open(PrModalViewComponent, {
+      centered: true,
+      fullscreen: true,
+      scrollable: true,
+    });
+  }
+  showdata(data: any) {
+    console.log('data', data);
   }
 }

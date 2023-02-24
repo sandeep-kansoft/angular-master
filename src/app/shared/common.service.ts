@@ -29,7 +29,7 @@ export class CommonService {
   confirmationInfoModal() {
     this.clearToaster();
     return this.modalService
-      .open(AlertModalComponent, { centered: true })
+      .open(AlertModalComponent, { centered: true  , })
       .result.then(
         (result) => {},
         (reason) => {

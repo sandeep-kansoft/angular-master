@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { GridDataResult } from '@progress/kendo-angular-grid';
-import { SortDescriptor, process,  State } from '@progress/kendo-data-query';
+import { SortDescriptor, process, State } from '@progress/kendo-data-query';
 import { CommonService } from 'src/app/shared/common.service';
 import { PrGridDataDto } from '../pr-grid-view';
 import { PrLinesData } from './data';
@@ -8,7 +9,7 @@ import { PrLinesData } from './data';
 @Component({
   selector: 'app-pr-modal-view',
   templateUrl: './pr-modal-view.component.html',
-  styleUrls: ['./pr-modal-view.component.scss']
+  styleUrls: ['./pr-modal-view.component.scss'],
 })
 export class PrModalViewComponent {
   public gridView: GridDataResult;
@@ -31,7 +32,7 @@ export class PrModalViewComponent {
   columnWidth = 150;
   pageSize = 10;
 
-  constructor(private commonService: CommonService) {}
+  constructor(private commonService: CommonService,public modal: NgbModal) {}
 
   public ngOnInit() {
     this.loadProducts();
@@ -69,5 +70,9 @@ export class PrModalViewComponent {
     );
     newState.sort.push(newSortDescriptor);
     this.loadProducts();
+  }
+
+  closeModel() {
+    this.modal.dismissAll();
   }
 }

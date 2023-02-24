@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-pr-detail-view',
@@ -8,7 +9,10 @@ import { Component } from '@angular/core';
 export class PrDetailViewComponent {
   PrdetailItem!: PrDetails;
 
-  constructor() {}
+  constructor(public modal: NgbModal) {}
+  closeModel() {
+    this.modal.dismissAll();
+  }
 }
 
 type PrDetails = {

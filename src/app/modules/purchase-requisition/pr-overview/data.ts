@@ -16,6 +16,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 38370,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 1,
   },
   {
     prid: 66854,
@@ -32,6 +33,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 2,
   },
   {
     prid: 66789,
@@ -48,6 +50,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 3,
   },
   {
     prid: 66778,
@@ -64,6 +67,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 4,
   },
   {
     prid: 66775,
@@ -80,6 +84,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 100000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 5,
   },
   {
     prid: 66774,
@@ -96,6 +101,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 6,
   },
   {
     prid: 66772,
@@ -112,6 +118,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 17460,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 7,
   },
   {
     prid: 66768,
@@ -129,6 +136,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 8,
   },
   {
     prid: 66750,
@@ -145,6 +153,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 85000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 9,
   },
   {
     prid: 66667,
@@ -161,6 +170,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4260,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 10,
   },
   {
     prid: 66611,
@@ -177,6 +187,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20755,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 11,
   },
   {
     prid: 66592,
@@ -193,6 +204,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 12,
   },
   {
     prid: 66587,
@@ -209,6 +221,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3800000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 13,
   },
   {
     prid: 66426,
@@ -225,6 +238,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2250,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 14,
   },
   {
     prid: 66405,
@@ -242,6 +256,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 56000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 15,
   },
   {
     prid: 66394,
@@ -258,6 +273,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 37500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 16,
   },
   {
     prid: 66367,
@@ -274,6 +290,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 17,
   },
   {
     prid: 66311,
@@ -291,6 +308,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8910,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 18,
   },
   {
     prid: 66225,
@@ -307,6 +325,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 67500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 19,
   },
   {
     prid: 66148,
@@ -323,6 +342,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 31000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 20,
   },
   {
     prid: 66039,
@@ -340,6 +360,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 68000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 21,
   },
   {
     prid: 66029,
@@ -356,6 +377,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 32159.28,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 22,
   },
   {
     prid: 66005,
@@ -373,6 +395,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 23,
   },
   {
     prid: 65908,
@@ -389,6 +412,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 41200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 24,
   },
   {
     prid: 65903,
@@ -405,6 +429,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 60000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 25,
   },
   {
     prid: 65839,
@@ -421,6 +446,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 33000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 26,
   },
   {
     prid: 65833,
@@ -438,6 +464,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 27,
   },
   {
     prid: 65790,
@@ -454,6 +481,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5850,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 28,
   },
   {
     prid: 65754,
@@ -470,6 +498,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 80000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 29,
   },
   {
     prid: 65747,
@@ -486,6 +515,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 110000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 30,
   },
   {
     prid: 65736,
@@ -503,6 +533,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30656,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 31,
   },
   {
     prid: 65701,
@@ -519,6 +550,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4700,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 32,
   },
   {
     prid: 65683,
@@ -535,6 +567,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 11916,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 33,
   },
   {
     prid: 65630,
@@ -551,6 +584,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 34,
   },
   {
     prid: 65595,
@@ -568,6 +602,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 32000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 35,
   },
   {
     prid: 65594,
@@ -584,6 +619,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 36,
   },
   {
     prid: 65549,
@@ -600,6 +636,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 104000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 37,
   },
   {
     prid: 65498,
@@ -616,6 +653,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 38,
   },
   {
     prid: 65483,
@@ -632,6 +670,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 90000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 39,
   },
   {
     prid: 65477,
@@ -648,6 +687,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 40,
   },
   {
     prid: 65460,
@@ -664,6 +704,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 372620,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 41,
   },
   {
     prid: 65457,
@@ -680,6 +721,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 125000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 42,
   },
   {
     prid: 65365,
@@ -696,6 +738,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 600000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 43,
   },
   {
     prid: 65331,
@@ -713,6 +756,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 270000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 44,
   },
   {
     prid: 65329,
@@ -729,6 +773,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 945500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 45,
   },
   {
     prid: 65287,
@@ -745,6 +790,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14435,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 46,
   },
   {
     prid: 65221,
@@ -761,6 +807,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 47,
   },
   {
     prid: 65198,
@@ -777,6 +824,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 680000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 48,
   },
   {
     prid: 65128,
@@ -793,6 +841,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 23827,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 49,
   },
   {
     prid: 65127,
@@ -809,6 +858,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 133000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 50,
   },
   {
     prid: 65068,
@@ -826,6 +876,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 36500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 51,
   },
   {
     prid: 65067,
@@ -842,6 +893,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 47200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 52,
   },
   {
     prid: 65062,
@@ -858,6 +910,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 187000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 53,
   },
   {
     prid: 65041,
@@ -874,6 +927,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 91500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 54,
   },
   {
     prid: 65030,
@@ -890,6 +944,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 55,
   },
   {
     prid: 64939,
@@ -907,6 +962,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 44994,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 56,
   },
   {
     prid: 64892,
@@ -923,6 +979,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1353000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 57,
   },
   {
     prid: 64890,
@@ -939,6 +996,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 730000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 58,
   },
   {
     prid: 64851,
@@ -955,6 +1013,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 59,
   },
   {
     prid: 64827,
@@ -971,6 +1030,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 60,
   },
   {
     prid: 64815,
@@ -988,6 +1048,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 46000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 61,
   },
   {
     prid: 64767,
@@ -1004,6 +1065,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10030,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 62,
   },
   {
     prid: 64754,
@@ -1020,6 +1082,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 40132,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 63,
   },
   {
     prid: 64596,
@@ -1036,6 +1099,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 37800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 64,
   },
   {
     prid: 64529,
@@ -1052,6 +1116,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 65,
   },
   {
     prid: 64515,
@@ -1068,6 +1133,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 66,
   },
   {
     prid: 64480,
@@ -1084,6 +1150,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 48000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 67,
   },
   {
     prid: 64431,
@@ -1100,6 +1167,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 19500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 68,
   },
   {
     prid: 64385,
@@ -1117,6 +1185,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 69,
   },
   {
     prid: 64360,
@@ -1133,6 +1202,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 165000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 70,
   },
   {
     prid: 64357,
@@ -1149,6 +1219,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 607000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 71,
   },
   {
     prid: 64356,
@@ -1165,6 +1236,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 200000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 72,
   },
   {
     prid: 64355,
@@ -1181,6 +1253,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 439000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 73,
   },
   {
     prid: 64354,
@@ -1197,6 +1270,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 885000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 74,
   },
   {
     prid: 64306,
@@ -1213,6 +1287,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15140,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 75,
   },
   {
     prid: 64224,
@@ -1229,6 +1304,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 144000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 76,
   },
   {
     prid: 64213,
@@ -1245,6 +1321,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 135000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 77,
   },
   {
     prid: 63998,
@@ -1261,6 +1338,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 195000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 78,
   },
   {
     prid: 63939,
@@ -1277,6 +1355,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 19200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 79,
   },
   {
     prid: 63925,
@@ -1293,6 +1372,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 39240,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 80,
   },
   {
     prid: 63875,
@@ -1310,6 +1390,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 80000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 81,
   },
   {
     prid: 63870,
@@ -1327,6 +1408,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35793,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 82,
   },
   {
     prid: 63868,
@@ -1343,6 +1425,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 28000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 83,
   },
   {
     prid: 63826,
@@ -1360,6 +1443,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 52000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 84,
   },
   {
     prid: 63608,
@@ -1376,6 +1460,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 61250,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 85,
   },
   {
     prid: 63568,
@@ -1392,6 +1477,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 19890,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 86,
   },
   {
     prid: 63539,
@@ -1409,6 +1495,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 600000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 87,
   },
   {
     prid: 63495,
@@ -1425,6 +1512,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 68600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 88,
   },
   {
     prid: 63438,
@@ -1441,6 +1529,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 245000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 89,
   },
   {
     prid: 63398,
@@ -1457,6 +1546,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 90,
   },
   {
     prid: 63396,
@@ -1473,6 +1563,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 91,
   },
   {
     prid: 63324,
@@ -1490,6 +1581,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 250000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 92,
   },
   {
     prid: 63294,
@@ -1507,6 +1599,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 40000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 93,
   },
   {
     prid: 63240,
@@ -1523,6 +1616,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 16000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 94,
   },
   {
     prid: 62981,
@@ -1539,6 +1633,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 31411.22,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 95,
   },
   {
     prid: 62962,
@@ -1555,6 +1650,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 95000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 96,
   },
   {
     prid: 62664,
@@ -1571,6 +1667,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 16800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 97,
   },
   {
     prid: 62621,
@@ -1588,6 +1685,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 46500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 98,
   },
   {
     prid: 62551,
@@ -1604,6 +1702,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 66000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 99,
   },
   {
     prid: 62547,
@@ -1620,6 +1719,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 100,
   },
   {
     prid: 62546,
@@ -1636,6 +1736,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 75000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 101,
   },
   {
     prid: 62370,
@@ -1652,6 +1753,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 102,
   },
   {
     prid: 62369,
@@ -1669,6 +1771,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30512,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 103,
   },
   {
     prid: 62361,
@@ -1685,6 +1788,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 44200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 104,
   },
   {
     prid: 62353,
@@ -1701,6 +1805,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 27000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 105,
   },
   {
     prid: 62289,
@@ -1717,6 +1822,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 34410,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 106,
   },
   {
     prid: 62223,
@@ -1733,6 +1839,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 107,
   },
   {
     prid: 62195,
@@ -1750,6 +1857,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2080,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 108,
   },
   {
     prid: 62168,
@@ -1766,6 +1874,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 60000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 109,
   },
   {
     prid: 62141,
@@ -1782,6 +1891,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24660,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 110,
   },
   {
     prid: 62125,
@@ -1798,6 +1908,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22470,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 111,
   },
   {
     prid: 62097,
@@ -1814,6 +1925,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 112,
   },
   {
     prid: 62086,
@@ -1830,6 +1942,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 36000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 113,
   },
   {
     prid: 61917,
@@ -1846,6 +1959,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 43000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 114,
   },
   {
     prid: 61838,
@@ -1862,6 +1976,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 49000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 115,
   },
   {
     prid: 61808,
@@ -1878,6 +1993,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 116,
   },
   {
     prid: 61800,
@@ -1894,6 +2010,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 40150,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 117,
   },
   {
     prid: 61791,
@@ -1910,6 +2027,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 56000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 118,
   },
   {
     prid: 61778,
@@ -1926,6 +2044,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 49035,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 119,
   },
   {
     prid: 61772,
@@ -1942,6 +2061,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 38000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 120,
   },
   {
     prid: 61735,
@@ -1958,6 +2078,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 121,
   },
   {
     prid: 61725,
@@ -1974,6 +2095,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 147787.2,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 122,
   },
   {
     prid: 61702,
@@ -1990,6 +2112,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1300000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 123,
   },
   {
     prid: 61696,
@@ -2006,6 +2129,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 325605,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
+    sno: 124,
   },
   {
     prid: 61673,
@@ -2022,6 +2146,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 125,
   },
   {
     prid: 61668,
@@ -2039,6 +2164,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 126,
   },
   {
     prid: 61663,
@@ -2055,6 +2181,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 127,
   },
   {
     prid: 61626,
@@ -2072,6 +2199,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 62000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 128,
   },
   {
     prid: 61525,
@@ -2089,6 +2217,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 300000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 129,
   },
   {
     prid: 61509,
@@ -2105,6 +2234,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 19000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 130,
   },
   {
     prid: 61472,
@@ -2121,6 +2251,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 131,
   },
   {
     prid: 61407,
@@ -2137,6 +2268,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 60000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 132,
   },
   {
     prid: 61381,
@@ -2153,6 +2285,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 400000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 133,
   },
   {
     prid: 61309,
@@ -2170,6 +2303,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 57400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 134,
   },
   {
     prid: 61307,
@@ -2187,6 +2321,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 135,
   },
   {
     prid: 61272,
@@ -2203,6 +2338,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 136,
   },
   {
     prid: 61271,
@@ -2219,6 +2355,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 137,
   },
   {
     prid: 61268,
@@ -2235,6 +2372,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 138,
   },
   {
     prid: 61177,
@@ -2251,6 +2389,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2700,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 139,
   },
   {
     prid: 61110,
@@ -2267,6 +2406,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 16550,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 140,
   },
   {
     prid: 61062,
@@ -2283,6 +2423,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 99000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 141,
   },
   {
     prid: 61049,
@@ -2299,6 +2440,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 142,
   },
   {
     prid: 61022,
@@ -2316,6 +2458,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 40000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 143,
   },
   {
     prid: 60995,
@@ -2332,6 +2475,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 144,
   },
   {
     prid: 60977,
@@ -2348,6 +2492,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 700,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 145,
   },
   {
     prid: 60959,
@@ -2364,6 +2509,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 421180,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 146,
   },
   {
     prid: 60935,
@@ -2381,6 +2527,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 147,
   },
   {
     prid: 60862,
@@ -2397,6 +2544,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 75000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 148,
   },
   {
     prid: 60861,
@@ -2413,6 +2561,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 26200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 149,
   },
   {
     prid: 60739,
@@ -2429,6 +2578,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 33800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 150,
   },
   {
     prid: 60625,
@@ -2445,6 +2595,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7030,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 151,
   },
   {
     prid: 60606,
@@ -2461,6 +2612,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 74000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 152,
   },
   {
     prid: 60600,
@@ -2478,6 +2630,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 153,
   },
   {
     prid: 60557,
@@ -2495,6 +2648,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 154,
   },
   {
     prid: 60512,
@@ -2512,6 +2666,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 40097.4,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 155,
   },
   {
     prid: 60509,
@@ -2528,6 +2683,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 41400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 156,
   },
   {
     prid: 60477,
@@ -2544,6 +2700,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9018,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 157,
   },
   {
     prid: 60453,
@@ -2560,6 +2717,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 158,
   },
   {
     prid: 60395,
@@ -2576,6 +2734,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 125000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 159,
   },
   {
     prid: 60382,
@@ -2593,6 +2752,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 160,
   },
   {
     prid: 60201,
@@ -2609,6 +2769,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 31908,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 161,
   },
   {
     prid: 60091,
@@ -2625,6 +2786,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 162,
   },
   {
     prid: 60035,
@@ -2641,6 +2803,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 42500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 163,
   },
   {
     prid: 59970,
@@ -2657,6 +2820,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 75600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 164,
   },
   {
     prid: 59925,
@@ -2673,6 +2837,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 165,
   },
   {
     prid: 59905,
@@ -2689,6 +2854,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24589.3,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 166,
   },
   {
     prid: 59902,
@@ -2705,6 +2871,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 48000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 167,
   },
   {
     prid: 59842,
@@ -2721,6 +2888,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 190000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 168,
   },
   {
     prid: 59841,
@@ -2737,6 +2905,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 50000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 169,
   },
   {
     prid: 59840,
@@ -2753,6 +2922,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 209000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 170,
   },
   {
     prid: 59809,
@@ -2769,6 +2939,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 171,
   },
   {
     prid: 59805,
@@ -2785,6 +2956,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3500000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 172,
   },
   {
     prid: 59792,
@@ -2801,6 +2973,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 42000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 173,
   },
   {
     prid: 59789,
@@ -2817,6 +2990,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 46000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 174,
   },
   {
     prid: 59684,
@@ -2833,6 +3007,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 48000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 175,
   },
   {
     prid: 59574,
@@ -2850,6 +3025,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 71880,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 176,
   },
   {
     prid: 59556,
@@ -2867,6 +3043,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 23000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 177,
   },
   {
     prid: 59554,
@@ -2884,6 +3061,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 23000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 178,
   },
   {
     prid: 59538,
@@ -2900,6 +3078,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 179,
   },
   {
     prid: 59535,
@@ -2916,6 +3095,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 98820,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 180,
   },
   {
     prid: 59496,
@@ -2932,6 +3112,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 181,
   },
   {
     prid: 59462,
@@ -2948,6 +3129,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 52326,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 182,
   },
   {
     prid: 59394,
@@ -2964,6 +3146,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 183,
   },
   {
     prid: 59387,
@@ -2981,6 +3164,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10812,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 184,
   },
   {
     prid: 59364,
@@ -2997,6 +3181,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 90250,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 185,
   },
   {
     prid: 59347,
@@ -3013,6 +3198,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 450,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 186,
   },
   {
     prid: 59223,
@@ -3029,6 +3215,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5700,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 187,
   },
   {
     prid: 59221,
@@ -3045,6 +3232,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 49000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 188,
   },
   {
     prid: 59202,
@@ -3061,6 +3249,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 26760,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 189,
   },
   {
     prid: 59184,
@@ -3077,6 +3266,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 190,
   },
   {
     prid: 59159,
@@ -3094,6 +3284,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 191,
   },
   {
     prid: 59158,
@@ -3111,6 +3302,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 89000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 192,
   },
   {
     prid: 59115,
@@ -3127,6 +3319,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7946.2,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 193,
   },
   {
     prid: 58999,
@@ -3143,6 +3336,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 49308,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 194,
   },
   {
     prid: 58990,
@@ -3159,6 +3353,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 29500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 195,
   },
   {
     prid: 58989,
@@ -3175,6 +3370,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 23960,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 196,
   },
   {
     prid: 58886,
@@ -3191,6 +3387,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 343600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 197,
   },
   {
     prid: 58854,
@@ -3207,6 +3404,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 67500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 198,
   },
   {
     prid: 58820,
@@ -3223,6 +3421,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6782,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 199,
   },
   {
     prid: 58766,
@@ -3239,6 +3438,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 23500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 200,
   },
   {
     prid: 58763,
@@ -3256,6 +3456,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12962.5,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 201,
   },
   {
     prid: 58762,
@@ -3272,6 +3473,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 135800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 202,
   },
   {
     prid: 58749,
@@ -3288,6 +3490,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6050,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 203,
   },
   {
     prid: 58741,
@@ -3304,6 +3507,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 204,
   },
   {
     prid: 58725,
@@ -3320,6 +3524,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 23208,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 205,
   },
   {
     prid: 58717,
@@ -3336,6 +3541,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 206,
   },
   {
     prid: 58708,
@@ -3352,6 +3558,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 80000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 207,
   },
   {
     prid: 58696,
@@ -3369,6 +3576,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 208,
   },
   {
     prid: 58670,
@@ -3385,6 +3593,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 55000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 209,
   },
   {
     prid: 58564,
@@ -3401,6 +3610,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 48000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 210,
   },
   {
     prid: 58562,
@@ -3417,6 +3627,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 32000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 211,
   },
   {
     prid: 58523,
@@ -3433,6 +3644,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 19500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 212,
   },
   {
     prid: 58482,
@@ -3450,6 +3662,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 31000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 213,
   },
   {
     prid: 58478,
@@ -3466,6 +3679,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6137,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 214,
   },
   {
     prid: 58451,
@@ -3483,6 +3697,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 48100,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 215,
   },
   {
     prid: 58414,
@@ -3499,6 +3714,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 216,
   },
   {
     prid: 58314,
@@ -3515,6 +3731,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 217,
   },
   {
     prid: 58259,
@@ -3531,6 +3748,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 42930,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 218,
   },
   {
     prid: 58235,
@@ -3548,6 +3766,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 219,
   },
   {
     prid: 58190,
@@ -3565,6 +3784,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 220,
   },
   {
     prid: 58169,
@@ -3581,6 +3801,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 70000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 221,
   },
   {
     prid: 58123,
@@ -3597,6 +3818,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 222,
   },
   {
     prid: 58027,
@@ -3613,6 +3835,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 36000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 223,
   },
   {
     prid: 57962,
@@ -3629,6 +3852,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 224,
   },
   {
     prid: 57900,
@@ -3645,6 +3869,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 90000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 225,
   },
   {
     prid: 57899,
@@ -3662,6 +3887,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 226,
   },
   {
     prid: 57882,
@@ -3678,6 +3904,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 16000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 227,
   },
   {
     prid: 57830,
@@ -3694,6 +3921,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 670000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 228,
   },
   {
     prid: 57827,
@@ -3710,6 +3938,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3770,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 229,
   },
   {
     prid: 57778,
@@ -3727,6 +3956,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 76500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 230,
   },
   {
     prid: 57761,
@@ -3743,6 +3973,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 231,
   },
   {
     prid: 57757,
@@ -3759,6 +3990,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 51450,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 232,
   },
   {
     prid: 57750,
@@ -3775,6 +4007,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 233,
   },
   {
     prid: 57746,
@@ -3792,6 +4025,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 234,
   },
   {
     prid: 57742,
@@ -3808,6 +4042,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 23697,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 235,
   },
   {
     prid: 57704,
@@ -3824,6 +4059,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 99000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 236,
   },
   {
     prid: 57696,
@@ -3840,6 +4076,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 237,
   },
   {
     prid: 57620,
@@ -3856,6 +4093,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 238,
   },
   {
     prid: 57617,
@@ -3872,6 +4110,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 239,
   },
   {
     prid: 57470,
@@ -3888,6 +4127,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 62500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 240,
   },
   {
     prid: 57376,
@@ -3904,6 +4144,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 241,
   },
   {
     prid: 57308,
@@ -3920,6 +4161,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 36000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 242,
   },
   {
     prid: 57305,
@@ -3936,6 +4178,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 243,
   },
   {
     prid: 57281,
@@ -3952,6 +4195,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 244,
   },
   {
     prid: 57258,
@@ -3969,6 +4213,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8700,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 245,
   },
   {
     prid: 57251,
@@ -3985,6 +4230,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14350,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 246,
   },
   {
     prid: 57248,
@@ -4001,6 +4247,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 63000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 247,
   },
   {
     prid: 57210,
@@ -4017,6 +4264,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 248,
   },
   {
     prid: 57155,
@@ -4033,6 +4281,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 249,
   },
   {
     prid: 57145,
@@ -4049,6 +4298,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 250,
   },
   {
     prid: 57125,
@@ -4065,6 +4315,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2370000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 251,
   },
   {
     prid: 57005,
@@ -4081,6 +4332,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 252,
   },
   {
     prid: 57001,
@@ -4097,6 +4349,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 45000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 253,
   },
   {
     prid: 56992,
@@ -4113,6 +4366,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 254,
   },
   {
     prid: 56808,
@@ -4130,6 +4384,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 255,
   },
   {
     prid: 56780,
@@ -4146,6 +4401,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5290,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 256,
   },
   {
     prid: 56677,
@@ -4162,6 +4418,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 31200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 257,
   },
   {
     prid: 56539,
@@ -4179,6 +4436,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 258,
   },
   {
     prid: 56510,
@@ -4195,6 +4453,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 259,
   },
   {
     prid: 56506,
@@ -4211,6 +4470,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18794.3,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 260,
   },
   {
     prid: 56499,
@@ -4227,6 +4487,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9700,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 261,
   },
   {
     prid: 56468,
@@ -4244,6 +4505,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 45000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 262,
   },
   {
     prid: 56453,
@@ -4260,6 +4522,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 86750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 263,
   },
   {
     prid: 56425,
@@ -4276,6 +4539,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 264,
   },
   {
     prid: 56291,
@@ -4292,6 +4556,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1340326,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 265,
   },
   {
     prid: 56278,
@@ -4308,6 +4573,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 57000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 266,
   },
   {
     prid: 56161,
@@ -4324,6 +4590,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 267,
   },
   {
     prid: 55965,
@@ -4340,6 +4607,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 268,
   },
   {
     prid: 55955,
@@ -4356,6 +4624,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 269,
   },
   {
     prid: 55951,
@@ -4372,6 +4641,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 270,
   },
   {
     prid: 55933,
@@ -4388,6 +4658,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 271,
   },
   {
     prid: 55920,
@@ -4404,6 +4675,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 17481,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 272,
   },
   {
     prid: 55919,
@@ -4420,6 +4692,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 227650,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 273,
   },
   {
     prid: 55912,
@@ -4436,6 +4709,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 274,
   },
   {
     prid: 55801,
@@ -4453,6 +4727,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 275,
   },
   {
     prid: 55692,
@@ -4469,6 +4744,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 17670,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 276,
   },
   {
     prid: 55594,
@@ -4486,6 +4762,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20447,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 277,
   },
   {
     prid: 55593,
@@ -4502,6 +4779,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 278,
   },
   {
     prid: 55576,
@@ -4518,6 +4796,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 130000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 279,
   },
   {
     prid: 55516,
@@ -4534,6 +4813,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 280,
   },
   {
     prid: 55487,
@@ -4550,6 +4830,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 281,
   },
   {
     prid: 55462,
@@ -4567,6 +4848,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 282,
   },
   {
     prid: 55407,
@@ -4583,6 +4865,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4840,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 283,
   },
   {
     prid: 55398,
@@ -4599,6 +4882,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 350000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 284,
   },
   {
     prid: 55361,
@@ -4615,6 +4899,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 390000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 285,
   },
   {
     prid: 55348,
@@ -4631,6 +4916,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 72600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 286,
   },
   {
     prid: 55347,
@@ -4647,6 +4933,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 33000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 287,
   },
   {
     prid: 55277,
@@ -4663,6 +4950,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20972.2,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 288,
   },
   {
     prid: 55258,
@@ -4679,6 +4967,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 50000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 289,
   },
   {
     prid: 55251,
@@ -4695,6 +4984,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6250,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 290,
   },
   {
     prid: 55227,
@@ -4711,6 +5001,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 810000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 291,
   },
   {
     prid: 55226,
@@ -4728,6 +5019,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 292,
   },
   {
     prid: 55054,
@@ -4744,6 +5036,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 293,
   },
   {
     prid: 55036,
@@ -4760,6 +5053,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 64022,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 294,
   },
   {
     prid: 55029,
@@ -4776,6 +5070,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1850000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 295,
   },
   {
     prid: 55021,
@@ -4792,6 +5087,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 117500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 296,
   },
   {
     prid: 55020,
@@ -4808,6 +5104,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 297,
   },
   {
     prid: 55018,
@@ -4824,6 +5121,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 298,
   },
   {
     prid: 54959,
@@ -4840,6 +5138,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 46604,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 299,
   },
   {
     prid: 54958,
@@ -4856,6 +5155,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 300,
   },
   {
     prid: 54952,
@@ -4873,6 +5173,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 39617,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 301,
   },
   {
     prid: 54919,
@@ -4889,6 +5190,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3150,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 302,
   },
   {
     prid: 54914,
@@ -4905,6 +5207,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 303,
   },
   {
     prid: 54912,
@@ -4921,6 +5224,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13422,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 304,
   },
   {
     prid: 54709,
@@ -4937,6 +5241,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15678,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 305,
   },
   {
     prid: 54695,
@@ -4953,6 +5258,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 87040,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 306,
   },
   {
     prid: 54694,
@@ -4969,6 +5275,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 27200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 307,
   },
   {
     prid: 54664,
@@ -4985,6 +5292,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 70500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 308,
   },
   {
     prid: 54653,
@@ -5002,6 +5310,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 57000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 309,
   },
   {
     prid: 54641,
@@ -5019,6 +5328,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 48500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 310,
   },
   {
     prid: 54600,
@@ -5035,6 +5345,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 47300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 311,
   },
   {
     prid: 54544,
@@ -5051,6 +5362,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 190000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 312,
   },
   {
     prid: 54537,
@@ -5068,6 +5380,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 28500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 313,
   },
   {
     prid: 54534,
@@ -5085,6 +5398,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18018,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 314,
   },
   {
     prid: 54392,
@@ -5101,6 +5415,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 884,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 315,
   },
   {
     prid: 54388,
@@ -5117,6 +5432,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12216,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 316,
   },
   {
     prid: 54320,
@@ -5133,6 +5449,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 37300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 317,
   },
   {
     prid: 54299,
@@ -5149,6 +5466,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 318,
   },
   {
     prid: 54263,
@@ -5166,6 +5484,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 49000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 319,
   },
   {
     prid: 54258,
@@ -5182,6 +5501,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 66000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 320,
   },
   {
     prid: 54224,
@@ -5198,6 +5518,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 124000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 321,
   },
   {
     prid: 54213,
@@ -5214,6 +5535,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 95000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 322,
   },
   {
     prid: 54198,
@@ -5231,6 +5553,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 323,
   },
   {
     prid: 54099,
@@ -5247,6 +5570,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 48964,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 324,
   },
   {
     prid: 54001,
@@ -5264,6 +5588,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 325,
   },
   {
     prid: 53982,
@@ -5280,6 +5605,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 685750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 326,
   },
   {
     prid: 53949,
@@ -5297,6 +5623,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35148,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 327,
   },
   {
     prid: 53937,
@@ -5313,6 +5640,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 11250,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 328,
   },
   {
     prid: 53901,
@@ -5329,6 +5657,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 329,
   },
   {
     prid: 53806,
@@ -5345,6 +5674,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 80460,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 330,
   },
   {
     prid: 53743,
@@ -5361,6 +5691,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 331,
   },
   {
     prid: 53710,
@@ -5377,6 +5708,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 163800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 332,
   },
   {
     prid: 53676,
@@ -5393,6 +5725,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 67920,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 333,
   },
   {
     prid: 53652,
@@ -5409,6 +5742,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 58350,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 334,
   },
   {
     prid: 53623,
@@ -5425,6 +5759,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25478.28,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 335,
   },
   {
     prid: 53492,
@@ -5441,6 +5776,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 16000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 336,
   },
   {
     prid: 53333,
@@ -5457,6 +5793,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 337,
   },
   {
     prid: 53321,
@@ -5473,6 +5810,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 338,
   },
   {
     prid: 53314,
@@ -5489,6 +5827,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 339,
   },
   {
     prid: 53313,
@@ -5506,6 +5845,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 340,
   },
   {
     prid: 53283,
@@ -5522,6 +5862,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 75200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 341,
   },
   {
     prid: 53243,
@@ -5538,6 +5879,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 342,
   },
   {
     prid: 53237,
@@ -5554,6 +5896,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 638956,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 343,
   },
   {
     prid: 53236,
@@ -5570,6 +5913,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3850,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 344,
   },
   {
     prid: 53117,
@@ -5586,6 +5930,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 345,
   },
   {
     prid: 53080,
@@ -5602,6 +5947,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 346,
   },
   {
     prid: 53019,
@@ -5618,6 +5964,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 62000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 347,
   },
   {
     prid: 53017,
@@ -5634,6 +5981,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 348,
   },
   {
     prid: 52977,
@@ -5650,6 +5998,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 349,
   },
   {
     prid: 52929,
@@ -5666,6 +6015,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 19008,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 350,
   },
   {
     prid: 52906,
@@ -5682,6 +6032,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 351,
   },
   {
     prid: 52796,
@@ -5698,6 +6049,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 53300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 352,
   },
   {
     prid: 52747,
@@ -5714,6 +6066,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 39825,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 353,
   },
   {
     prid: 52745,
@@ -5730,6 +6083,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3864,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 354,
   },
   {
     prid: 52743,
@@ -5746,6 +6100,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 21149,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 355,
   },
   {
     prid: 52697,
@@ -5762,6 +6117,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 73400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 356,
   },
   {
     prid: 52621,
@@ -5778,6 +6134,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 163800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 357,
   },
   {
     prid: 52594,
@@ -5794,6 +6151,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 163800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 358,
   },
   {
     prid: 52562,
@@ -5810,6 +6168,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 31000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 359,
   },
   {
     prid: 52514,
@@ -5826,6 +6185,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 34380,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 360,
   },
   {
     prid: 52503,
@@ -5842,6 +6202,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 361,
   },
   {
     prid: 52425,
@@ -5858,6 +6219,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 42972,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 362,
   },
   {
     prid: 52213,
@@ -5874,6 +6236,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 100000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 363,
   },
   {
     prid: 52201,
@@ -5890,6 +6253,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 32000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 364,
   },
   {
     prid: 52105,
@@ -5906,6 +6270,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 46000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 365,
   },
   {
     prid: 51976,
@@ -5923,6 +6288,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 21000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 366,
   },
   {
     prid: 51969,
@@ -5939,6 +6305,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 94000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 367,
   },
   {
     prid: 51963,
@@ -5955,6 +6322,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 16934,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 368,
   },
   {
     prid: 51952,
@@ -5971,6 +6339,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 39099,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 369,
   },
   {
     prid: 51951,
@@ -5987,6 +6356,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 31408,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 370,
   },
   {
     prid: 51698,
@@ -6004,6 +6374,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 102000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 371,
   },
   {
     prid: 51690,
@@ -6020,6 +6391,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 372,
   },
   {
     prid: 51654,
@@ -6036,6 +6408,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 373,
   },
   {
     prid: 51651,
@@ -6052,6 +6425,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 42200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 374,
   },
   {
     prid: 51648,
@@ -6068,6 +6442,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30214,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 375,
   },
   {
     prid: 51579,
@@ -6084,6 +6459,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 80000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 376,
   },
   {
     prid: 51578,
@@ -6100,6 +6476,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 377,
   },
   {
     prid: 51544,
@@ -6116,6 +6493,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 21900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 378,
   },
   {
     prid: 51448,
@@ -6132,6 +6510,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 39300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 379,
   },
   {
     prid: 51418,
@@ -6148,6 +6527,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 32000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 380,
   },
   {
     prid: 51395,
@@ -6164,6 +6544,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 381,
   },
   {
     prid: 51340,
@@ -6180,6 +6561,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 50000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 382,
   },
   {
     prid: 51312,
@@ -6196,6 +6578,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1850,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 383,
   },
   {
     prid: 51276,
@@ -6212,6 +6595,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6960,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 384,
   },
   {
     prid: 51141,
@@ -6228,6 +6612,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 26892,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 385,
   },
   {
     prid: 51133,
@@ -6244,6 +6629,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 59000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 386,
   },
   {
     prid: 51132,
@@ -6261,6 +6647,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30530,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 387,
   },
   {
     prid: 51053,
@@ -6277,6 +6664,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 388,
   },
   {
     prid: 51052,
@@ -6293,6 +6681,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 19500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 389,
   },
   {
     prid: 51011,
@@ -6309,6 +6698,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3150,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 390,
   },
   {
     prid: 50979,
@@ -6325,6 +6715,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 208175.5,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 391,
   },
   {
     prid: 50933,
@@ -6342,6 +6733,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 37000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 392,
   },
   {
     prid: 50932,
@@ -6358,6 +6750,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 393,
   },
   {
     prid: 50923,
@@ -6374,6 +6767,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2100,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 394,
   },
   {
     prid: 50815,
@@ -6390,6 +6784,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 16500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 395,
   },
   {
     prid: 50715,
@@ -6406,6 +6801,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 396,
   },
   {
     prid: 50704,
@@ -6422,6 +6818,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1956,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 397,
   },
   {
     prid: 50601,
@@ -6438,6 +6835,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 55785,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 398,
   },
   {
     prid: 50563,
@@ -6454,6 +6852,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 50000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 399,
   },
   {
     prid: 50545,
@@ -6470,6 +6869,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 190000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 400,
   },
   {
     prid: 50531,
@@ -6486,6 +6886,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 49900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 401,
   },
   {
     prid: 50320,
@@ -6502,6 +6903,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 402,
   },
   {
     prid: 50278,
@@ -6518,6 +6920,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 403,
   },
   {
     prid: 50258,
@@ -6535,6 +6938,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 404,
   },
   {
     prid: 50250,
@@ -6551,6 +6955,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12140,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 405,
   },
   {
     prid: 50192,
@@ -6567,6 +6972,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 406,
   },
   {
     prid: 50137,
@@ -6583,6 +6989,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 92000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 407,
   },
   {
     prid: 50071,
@@ -6599,6 +7006,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 470732.22,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 408,
   },
   {
     prid: 50068,
@@ -6615,6 +7023,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 409,
   },
   {
     prid: 50055,
@@ -6631,6 +7040,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 21535,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 410,
   },
   {
     prid: 49934,
@@ -6647,6 +7057,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 411,
   },
   {
     prid: 49903,
@@ -6663,6 +7074,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 412,
   },
   {
     prid: 49859,
@@ -6679,6 +7091,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8448,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 413,
   },
   {
     prid: 49852,
@@ -6695,6 +7108,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 414,
   },
   {
     prid: 49848,
@@ -6711,6 +7125,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7850,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 415,
   },
   {
     prid: 49827,
@@ -6727,6 +7142,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 31150,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 416,
   },
   {
     prid: 49811,
@@ -6743,6 +7159,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 40000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 417,
   },
   {
     prid: 49788,
@@ -6759,6 +7176,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 43422,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 418,
   },
   {
     prid: 49787,
@@ -6775,6 +7193,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10674,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 419,
   },
   {
     prid: 49786,
@@ -6791,6 +7210,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12540,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 420,
   },
   {
     prid: 49731,
@@ -6807,6 +7227,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 421,
   },
   {
     prid: 49712,
@@ -6823,6 +7244,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 422,
   },
   {
     prid: 49701,
@@ -6839,6 +7261,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 423,
   },
   {
     prid: 49698,
@@ -6855,6 +7278,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7100,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 424,
   },
   {
     prid: 49598,
@@ -6871,6 +7295,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 82500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 425,
   },
   {
     prid: 49566,
@@ -6887,6 +7312,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 426,
   },
   {
     prid: 49558,
@@ -6903,6 +7329,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 23120,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 427,
   },
   {
     prid: 49529,
@@ -6919,6 +7346,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1131.6,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 428,
   },
   {
     prid: 49521,
@@ -6935,6 +7363,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 16000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 429,
   },
   {
     prid: 49409,
@@ -6951,6 +7380,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7920,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 430,
   },
   {
     prid: 49378,
@@ -6967,6 +7397,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 48600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 431,
   },
   {
     prid: 49220,
@@ -6983,6 +7414,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 87980,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 432,
   },
   {
     prid: 48952,
@@ -6999,6 +7431,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20873,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 433,
   },
   {
     prid: 48932,
@@ -7015,6 +7448,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 434,
   },
   {
     prid: 48868,
@@ -7031,6 +7465,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 435,
   },
   {
     prid: 48860,
@@ -7047,6 +7482,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 436,
   },
   {
     prid: 48841,
@@ -7063,6 +7499,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 298660,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 437,
   },
   {
     prid: 48783,
@@ -7079,6 +7516,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 438,
   },
   {
     prid: 48752,
@@ -7095,6 +7533,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 439,
   },
   {
     prid: 48738,
@@ -7112,6 +7551,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 27900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 440,
   },
   {
     prid: 48618,
@@ -7128,6 +7568,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 441,
   },
   {
     prid: 48617,
@@ -7144,6 +7585,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 230000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 442,
   },
   {
     prid: 48606,
@@ -7161,6 +7603,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 68000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 443,
   },
   {
     prid: 48604,
@@ -7177,6 +7620,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 444,
   },
   {
     prid: 48572,
@@ -7193,6 +7637,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5850,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 445,
   },
   {
     prid: 48503,
@@ -7209,6 +7654,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 39984,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 446,
   },
   {
     prid: 48495,
@@ -7225,6 +7671,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 11000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 447,
   },
   {
     prid: 48470,
@@ -7242,6 +7689,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 32000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 448,
   },
   {
     prid: 48404,
@@ -7258,6 +7706,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 59930,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 449,
   },
   {
     prid: 48353,
@@ -7274,6 +7723,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22414,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 450,
   },
   {
     prid: 48352,
@@ -7290,6 +7740,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7150,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 451,
   },
   {
     prid: 48271,
@@ -7306,6 +7757,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 49500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 452,
   },
   {
     prid: 48265,
@@ -7322,6 +7774,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2340,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 453,
   },
   {
     prid: 48258,
@@ -7338,6 +7791,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 66000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 454,
   },
   {
     prid: 48255,
@@ -7355,6 +7809,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 72000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 455,
   },
   {
     prid: 48244,
@@ -7372,6 +7827,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 97360,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 456,
   },
   {
     prid: 48242,
@@ -7388,6 +7844,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 11400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 457,
   },
   {
     prid: 48238,
@@ -7405,6 +7862,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1000000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 458,
   },
   {
     prid: 48201,
@@ -7421,6 +7879,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7744,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 459,
   },
   {
     prid: 48183,
@@ -7438,6 +7897,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 62000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 460,
   },
   {
     prid: 48112,
@@ -7454,6 +7914,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6147.3,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 461,
   },
   {
     prid: 48095,
@@ -7470,6 +7931,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 73000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 462,
   },
   {
     prid: 48029,
@@ -7486,6 +7948,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 43750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 463,
   },
   {
     prid: 47998,
@@ -7502,6 +7965,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 73500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 464,
   },
   {
     prid: 47977,
@@ -7518,6 +7982,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 99000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 465,
   },
   {
     prid: 47943,
@@ -7534,6 +7999,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 466,
   },
   {
     prid: 47929,
@@ -7550,6 +8016,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 250000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 467,
   },
   {
     prid: 47917,
@@ -7566,6 +8033,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 27500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    sno: 468,
   },
   {
     prid: 47908,
@@ -7583,6 +8051,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 40535,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 469,
   },
   {
     prid: 47888,
@@ -7600,6 +8069,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5280,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 470,
   },
   {
     prid: 47887,
@@ -7617,6 +8087,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 67500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 471,
   },
   {
     prid: 47885,
@@ -7633,6 +8104,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 17092,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 472,
   },
   {
     prid: 47875,
@@ -7649,6 +8121,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 93750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 473,
   },
   {
     prid: 47828,
@@ -7665,6 +8138,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14822,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 474,
   },
   {
     prid: 47767,
@@ -7681,6 +8155,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 88385,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 475,
   },
   {
     prid: 47643,
@@ -7697,6 +8172,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4780,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 476,
   },
   {
     prid: 47593,
@@ -7713,6 +8189,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 477,
   },
   {
     prid: 47584,
@@ -7729,6 +8206,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14823,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 478,
   },
   {
     prid: 47573,
@@ -7745,6 +8223,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 479,
   },
   {
     prid: 47568,
@@ -7761,6 +8240,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22579.6,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 480,
   },
   {
     prid: 47494,
@@ -7777,6 +8257,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 62920,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 481,
   },
   {
     prid: 47487,
@@ -7794,6 +8275,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 64040,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 482,
   },
   {
     prid: 47486,
@@ -7810,6 +8292,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 210100,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 483,
   },
   {
     prid: 47474,
@@ -7826,6 +8309,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 23480,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 484,
   },
   {
     prid: 47456,
@@ -7843,6 +8327,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 250000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 485,
   },
   {
     prid: 47400,
@@ -7859,6 +8344,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 38000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 486,
   },
   {
     prid: 47330,
@@ -7875,6 +8361,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 71706.25,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 487,
   },
   {
     prid: 47231,
@@ -7891,6 +8378,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 38644.72,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 488,
   },
   {
     prid: 47230,
@@ -7908,6 +8396,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 42250,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 489,
   },
   {
     prid: 47195,
@@ -7924,6 +8413,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 490,
   },
   {
     prid: 47099,
@@ -7940,6 +8430,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 16250,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 491,
   },
   {
     prid: 46920,
@@ -7956,6 +8447,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 492,
   },
   {
     prid: 46897,
@@ -7972,6 +8464,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 248000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 493,
   },
   {
     prid: 46871,
@@ -7988,6 +8481,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 464000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 494,
   },
   {
     prid: 46846,
@@ -8004,6 +8498,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 112500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 495,
   },
   {
     prid: 46831,
@@ -8020,6 +8515,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 220000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 496,
   },
   {
     prid: 46633,
@@ -8036,6 +8532,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 497,
   },
   {
     prid: 46632,
@@ -8052,6 +8549,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2110,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 498,
   },
   {
     prid: 46541,
@@ -8068,6 +8566,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 46000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 499,
   },
   {
     prid: 46497,
@@ -8084,6 +8583,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 40000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 500,
   },
   {
     prid: 46470,
@@ -8101,6 +8601,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 501,
   },
   {
     prid: 46466,
@@ -8118,6 +8619,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 502,
   },
   {
     prid: 46448,
@@ -8134,6 +8636,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 146413,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 503,
   },
   {
     prid: 46431,
@@ -8151,6 +8654,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 504,
   },
   {
     prid: 46430,
@@ -8167,6 +8671,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 45716,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 505,
   },
   {
     prid: 46397,
@@ -8184,6 +8689,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7650,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 506,
   },
   {
     prid: 46350,
@@ -8200,6 +8706,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 507,
   },
   {
     prid: 46328,
@@ -8216,6 +8723,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 46000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 508,
   },
   {
     prid: 46314,
@@ -8232,6 +8740,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 33500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 509,
   },
   {
     prid: 46265,
@@ -8248,6 +8757,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 510,
   },
   {
     prid: 46252,
@@ -8264,6 +8774,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 51000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 511,
   },
   {
     prid: 46228,
@@ -8280,6 +8791,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 265000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 512,
   },
   {
     prid: 46227,
@@ -8296,6 +8808,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 38000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 513,
   },
   {
     prid: 46181,
@@ -8312,6 +8825,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 514,
   },
   {
     prid: 46179,
@@ -8329,6 +8843,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5250,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 515,
   },
   {
     prid: 46178,
@@ -8345,6 +8860,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22616,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 516,
   },
   {
     prid: 46170,
@@ -8361,6 +8877,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 517,
   },
   {
     prid: 46154,
@@ -8377,6 +8894,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 61835,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 518,
   },
   {
     prid: 46153,
@@ -8393,6 +8911,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 519,
   },
   {
     prid: 46131,
@@ -8409,6 +8928,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 520,
   },
   {
     prid: 46102,
@@ -8426,6 +8946,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 521,
   },
   {
     prid: 46025,
@@ -8442,6 +8963,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 190000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 522,
   },
   {
     prid: 46006,
@@ -8458,6 +8980,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 170000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 523,
   },
   {
     prid: 45946,
@@ -8474,6 +8997,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 152713.44,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 524,
   },
   {
     prid: 45936,
@@ -8490,6 +9014,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10950,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 525,
   },
   {
     prid: 45903,
@@ -8506,6 +9031,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 47000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 526,
   },
   {
     prid: 45856,
@@ -8523,6 +9049,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 31417.88,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 527,
   },
   {
     prid: 45829,
@@ -8539,6 +9066,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 19668,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 528,
   },
   {
     prid: 45820,
@@ -8555,6 +9083,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 377000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 529,
   },
   {
     prid: 45818,
@@ -8571,6 +9100,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 843800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 530,
   },
   {
     prid: 45816,
@@ -8587,6 +9117,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 531,
   },
   {
     prid: 45815,
@@ -8604,6 +9135,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 96000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 532,
   },
   {
     prid: 45780,
@@ -8620,6 +9152,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 66900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 533,
   },
   {
     prid: 45670,
@@ -8636,6 +9169,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 102800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 534,
   },
   {
     prid: 45521,
@@ -8652,6 +9186,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 535,
   },
   {
     prid: 45483,
@@ -8669,6 +9204,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13971,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 536,
   },
   {
     prid: 45431,
@@ -8685,6 +9221,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 11700,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 537,
   },
   {
     prid: 45256,
@@ -8701,6 +9238,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 440000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 538,
   },
   {
     prid: 45254,
@@ -8718,6 +9256,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 500000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 539,
   },
   {
     prid: 45220,
@@ -8735,6 +9274,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 199035,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 540,
   },
   {
     prid: 45212,
@@ -8751,6 +9291,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 90600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 541,
   },
   {
     prid: 45195,
@@ -8767,6 +9308,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 26000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 542,
   },
   {
     prid: 45159,
@@ -8783,6 +9325,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 17000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 543,
   },
   {
     prid: 45132,
@@ -8799,6 +9342,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 544,
   },
   {
     prid: 45125,
@@ -8815,6 +9359,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 77130,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 545,
   },
   {
     prid: 44942,
@@ -8832,6 +9377,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 546,
   },
   {
     prid: 44735,
@@ -8848,6 +9394,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22784,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 547,
   },
   {
     prid: 44729,
@@ -8864,6 +9411,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 548,
   },
   {
     prid: 44650,
@@ -8880,6 +9428,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15267,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 549,
   },
   {
     prid: 44531,
@@ -8896,6 +9445,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10012,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 550,
   },
   {
     prid: 44518,
@@ -8912,6 +9462,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 500000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 551,
   },
   {
     prid: 44473,
@@ -8928,6 +9479,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 552,
   },
   {
     prid: 44448,
@@ -8944,6 +9496,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 553,
   },
   {
     prid: 44446,
@@ -8960,6 +9513,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 554,
   },
   {
     prid: 44354,
@@ -8976,6 +9530,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6150,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 555,
   },
   {
     prid: 44242,
@@ -8993,6 +9548,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4380,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 556,
   },
   {
     prid: 44227,
@@ -9009,6 +9565,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13804,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 557,
   },
   {
     prid: 44212,
@@ -9026,6 +9583,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 558,
   },
   {
     prid: 44167,
@@ -9043,6 +9601,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 559,
   },
   {
     prid: 44016,
@@ -9060,6 +9619,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 23620,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 560,
   },
   {
     prid: 44001,
@@ -9076,6 +9636,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 561,
   },
   {
     prid: 43984,
@@ -9092,6 +9653,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1072650,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 562,
   },
   {
     prid: 43932,
@@ -9108,6 +9670,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15832.5,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 563,
   },
   {
     prid: 43896,
@@ -9124,6 +9687,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 21500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 564,
   },
   {
     prid: 43872,
@@ -9140,6 +9704,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 565,
   },
   {
     prid: 43871,
@@ -9156,6 +9721,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 566,
   },
   {
     prid: 43861,
@@ -9172,6 +9738,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 59000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 567,
   },
   {
     prid: 43857,
@@ -9188,6 +9755,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 164036.8,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 568,
   },
   {
     prid: 43760,
@@ -9204,6 +9772,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 372000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 569,
   },
   {
     prid: 43749,
@@ -9221,6 +9790,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 365000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 570,
   },
   {
     prid: 43748,
@@ -9237,6 +9807,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 365000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 571,
   },
   {
     prid: 43745,
@@ -9253,6 +9824,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 60965.4,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 572,
   },
   {
     prid: 43717,
@@ -9269,6 +9841,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6732,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 573,
   },
   {
     prid: 43715,
@@ -9285,6 +9858,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 62605,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 574,
   },
   {
     prid: 43650,
@@ -9301,6 +9875,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 575,
   },
   {
     prid: 43590,
@@ -9317,6 +9892,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24985,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 576,
   },
   {
     prid: 43559,
@@ -9333,6 +9909,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 23500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 577,
   },
   {
     prid: 43558,
@@ -9349,6 +9926,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 32510,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 578,
   },
   {
     prid: 43556,
@@ -9365,6 +9943,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 32000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 579,
   },
   {
     prid: 43499,
@@ -9381,6 +9960,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15257,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 580,
   },
   {
     prid: 43399,
@@ -9397,6 +9977,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 581,
   },
   {
     prid: 43328,
@@ -9413,6 +9994,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 582,
   },
   {
     prid: 43129,
@@ -9429,6 +10011,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 105236,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 583,
   },
   {
     prid: 43106,
@@ -9445,6 +10028,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 73500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 584,
   },
   {
     prid: 43063,
@@ -9461,6 +10045,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5880,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 585,
   },
   {
     prid: 43062,
@@ -9477,6 +10062,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 75000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 586,
   },
   {
     prid: 42866,
@@ -9493,6 +10079,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 26400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 587,
   },
   {
     prid: 42837,
@@ -9509,6 +10096,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 660,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 588,
   },
   {
     prid: 42826,
@@ -9526,6 +10114,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 43000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 589,
   },
   {
     prid: 42801,
@@ -9542,6 +10131,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 17500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 590,
   },
   {
     prid: 42800,
@@ -9558,6 +10148,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7565,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 591,
   },
   {
     prid: 42782,
@@ -9574,6 +10165,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 38880,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 592,
   },
   {
     prid: 42764,
@@ -9590,6 +10182,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 133128.5,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 593,
   },
   {
     prid: 42698,
@@ -9606,6 +10199,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 594,
   },
   {
     prid: 42688,
@@ -9622,6 +10216,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8448,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 595,
   },
   {
     prid: 42486,
@@ -9638,6 +10233,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 31756.5,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 596,
   },
   {
     prid: 42424,
@@ -9655,6 +10251,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 597,
   },
   {
     prid: 42406,
@@ -9671,6 +10268,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 11176.9,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 598,
   },
   {
     prid: 42353,
@@ -9687,6 +10285,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 29000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 599,
   },
   {
     prid: 42292,
@@ -9703,6 +10302,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 64000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 600,
   },
   {
     prid: 42284,
@@ -9720,6 +10320,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 601,
   },
   {
     prid: 42232,
@@ -9736,6 +10337,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 602,
   },
   {
     prid: 42036,
@@ -9752,6 +10354,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 16057.5,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 603,
   },
   {
     prid: 42034,
@@ -9768,6 +10371,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 604,
   },
   {
     prid: 42023,
@@ -9784,6 +10388,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 605,
   },
   {
     prid: 41993,
@@ -9800,6 +10405,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 606,
   },
   {
     prid: 41973,
@@ -9816,6 +10422,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25676,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 607,
   },
   {
     prid: 41970,
@@ -9832,6 +10439,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3630,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 608,
   },
   {
     prid: 41956,
@@ -9848,6 +10456,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 31500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 609,
   },
   {
     prid: 41954,
@@ -9864,6 +10473,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 17910,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 610,
   },
   {
     prid: 41913,
@@ -9880,6 +10490,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 40000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 611,
   },
   {
     prid: 41863,
@@ -9896,6 +10507,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3765,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 612,
   },
   {
     prid: 41831,
@@ -9913,6 +10525,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7250,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 613,
   },
   {
     prid: 41799,
@@ -9929,6 +10542,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 28000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 614,
   },
   {
     prid: 41797,
@@ -9945,6 +10559,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7565,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 615,
   },
   {
     prid: 41796,
@@ -9961,6 +10576,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 27600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 616,
   },
   {
     prid: 41780,
@@ -9977,6 +10593,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1831,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 617,
   },
   {
     prid: 41635,
@@ -9993,6 +10610,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 120000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 618,
   },
   {
     prid: 41596,
@@ -10009,6 +10627,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3600000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 619,
   },
   {
     prid: 41581,
@@ -10025,6 +10644,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 49200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 620,
   },
   {
     prid: 41577,
@@ -10042,6 +10662,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18679,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 621,
   },
   {
     prid: 41550,
@@ -10058,6 +10679,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4560,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 622,
   },
   {
     prid: 41540,
@@ -10074,6 +10696,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 160000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 623,
   },
   {
     prid: 41533,
@@ -10091,6 +10714,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 39624,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 624,
   },
   {
     prid: 41531,
@@ -10108,6 +10732,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6811,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 625,
   },
   {
     prid: 41511,
@@ -10125,6 +10750,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 19600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 626,
   },
   {
     prid: 41508,
@@ -10142,6 +10768,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 21110,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 627,
   },
   {
     prid: 41487,
@@ -10158,6 +10785,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 628,
   },
   {
     prid: 41397,
@@ -10174,6 +10802,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 629,
   },
   {
     prid: 41376,
@@ -10190,6 +10819,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 76000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 630,
   },
   {
     prid: 41366,
@@ -10206,6 +10836,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 28000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 631,
   },
   {
     prid: 41355,
@@ -10222,6 +10853,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14996,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 632,
   },
   {
     prid: 41313,
@@ -10238,6 +10870,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 115000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 633,
   },
   {
     prid: 41268,
@@ -10254,6 +10887,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 634,
   },
   {
     prid: 41266,
@@ -10270,6 +10904,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 42000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 635,
   },
   {
     prid: 41264,
@@ -10286,6 +10921,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24098,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 636,
   },
   {
     prid: 41227,
@@ -10302,6 +10938,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 220000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 637,
   },
   {
     prid: 41218,
@@ -10318,6 +10955,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 638,
   },
   {
     prid: 41146,
@@ -10335,6 +10973,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 432000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 639,
   },
   {
     prid: 41126,
@@ -10351,6 +10990,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 72095,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 640,
   },
   {
     prid: 40821,
@@ -10367,6 +11007,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 69354,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 641,
   },
   {
     prid: 40520,
@@ -10383,6 +11024,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 96672,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 642,
   },
   {
     prid: 40519,
@@ -10399,6 +11041,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 61429,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 643,
   },
   {
     prid: 40474,
@@ -10415,6 +11058,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 644,
   },
   {
     prid: 40367,
@@ -10431,6 +11075,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 645,
   },
   {
     prid: 40361,
@@ -10447,6 +11092,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15215,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 646,
   },
   {
     prid: 40336,
@@ -10464,6 +11110,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 23760,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 647,
   },
   {
     prid: 40310,
@@ -10480,6 +11127,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22215,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 648,
   },
   {
     prid: 40269,
@@ -10496,6 +11144,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 649,
   },
   {
     prid: 40211,
@@ -10513,6 +11162,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 11175,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 650,
   },
   {
     prid: 40206,
@@ -10529,6 +11179,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 651,
   },
   {
     prid: 40204,
@@ -10545,6 +11196,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 652,
   },
   {
     prid: 40203,
@@ -10561,6 +11213,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1054.5,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 653,
   },
   {
     prid: 40189,
@@ -10577,6 +11230,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 654,
   },
   {
     prid: 40171,
@@ -10594,6 +11248,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14060,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 655,
   },
   {
     prid: 39989,
@@ -10610,6 +11265,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 19500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 656,
   },
   {
     prid: 39988,
@@ -10627,6 +11283,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22727,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 657,
   },
   {
     prid: 39974,
@@ -10644,6 +11301,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 36300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 658,
   },
   {
     prid: 39819,
@@ -10660,6 +11318,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 659,
   },
   {
     prid: 39815,
@@ -10676,6 +11335,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3920,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 660,
   },
   {
     prid: 39811,
@@ -10692,6 +11352,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 661,
   },
   {
     prid: 39793,
@@ -10709,6 +11370,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 62500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 662,
   },
   {
     prid: 39682,
@@ -10725,6 +11387,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 16525,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 663,
   },
   {
     prid: 39639,
@@ -10741,6 +11404,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 32098,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 664,
   },
   {
     prid: 39636,
@@ -10757,6 +11421,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7565,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 665,
   },
   {
     prid: 39635,
@@ -10773,6 +11438,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1467,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 666,
   },
   {
     prid: 39628,
@@ -10789,6 +11455,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3740,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 667,
   },
   {
     prid: 39606,
@@ -10805,6 +11472,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 19000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 668,
   },
   {
     prid: 39527,
@@ -10821,6 +11489,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 669,
   },
   {
     prid: 39478,
@@ -10837,6 +11506,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 670,
   },
   {
     prid: 39476,
@@ -10854,6 +11524,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 671,
   },
   {
     prid: 39474,
@@ -10871,6 +11542,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 672,
   },
   {
     prid: 39470,
@@ -10887,6 +11559,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 11220,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 673,
   },
   {
     prid: 39336,
@@ -10903,6 +11576,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 63976,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 674,
   },
   {
     prid: 39099,
@@ -10919,6 +11593,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 31851.9,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 675,
   },
   {
     prid: 39046,
@@ -10935,6 +11610,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2565,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 676,
   },
   {
     prid: 39025,
@@ -10951,6 +11627,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4650,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 677,
   },
   {
     prid: 38960,
@@ -10967,6 +11644,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6825,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 678,
   },
   {
     prid: 38853,
@@ -10983,6 +11661,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 679,
   },
   {
     prid: 38651,
@@ -11000,6 +11679,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 591912,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 680,
   },
   {
     prid: 38650,
@@ -11017,6 +11697,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 800000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 681,
   },
   {
     prid: 38630,
@@ -11033,6 +11714,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 104000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 682,
   },
   {
     prid: 38629,
@@ -11049,6 +11731,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10870,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 683,
   },
   {
     prid: 38592,
@@ -11065,6 +11748,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 684,
   },
   {
     prid: 38579,
@@ -11081,6 +11765,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 45000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 685,
   },
   {
     prid: 38513,
@@ -11097,6 +11782,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 17880,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 686,
   },
   {
     prid: 38374,
@@ -11114,6 +11800,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 687,
   },
   {
     prid: 38108,
@@ -11130,6 +11817,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 41484,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 688,
   },
   {
     prid: 38084,
@@ -11146,6 +11834,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 102520,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 689,
   },
   {
     prid: 38046,
@@ -11162,6 +11851,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1870,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 690,
   },
   {
     prid: 38032,
@@ -11178,6 +11868,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 691,
   },
   {
     prid: 38026,
@@ -11195,6 +11886,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30010,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 692,
   },
   {
     prid: 38011,
@@ -11212,6 +11904,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5100,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 693,
   },
   {
     prid: 37932,
@@ -11228,6 +11921,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18757.5,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 694,
   },
   {
     prid: 37921,
@@ -11244,6 +11938,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 695,
   },
   {
     prid: 37872,
@@ -11261,6 +11956,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1200000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 696,
   },
   {
     prid: 37864,
@@ -11277,6 +11973,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 697,
   },
   {
     prid: 37831,
@@ -11293,6 +11990,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 698,
   },
   {
     prid: 37783,
@@ -11309,6 +12007,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 100000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 699,
   },
   {
     prid: 37757,
@@ -11325,6 +12024,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 73320,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 700,
   },
   {
     prid: 37693,
@@ -11341,6 +12041,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3630,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 701,
   },
   {
     prid: 37661,
@@ -11357,6 +12058,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 702,
   },
   {
     prid: 37642,
@@ -11373,6 +12075,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 40500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 703,
   },
   {
     prid: 37637,
@@ -11390,6 +12093,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 704,
   },
   {
     prid: 37627,
@@ -11407,6 +12111,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 17370,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 705,
   },
   {
     prid: 37613,
@@ -11423,6 +12128,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 706,
   },
   {
     prid: 37611,
@@ -11439,6 +12145,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1700,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 707,
   },
   {
     prid: 37470,
@@ -11456,6 +12163,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 11425,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 708,
   },
   {
     prid: 37397,
@@ -11472,6 +12180,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 49780,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 709,
   },
   {
     prid: 37295,
@@ -11488,6 +12197,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 50250,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 710,
   },
   {
     prid: 37250,
@@ -11505,6 +12215,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 711,
   },
   {
     prid: 37225,
@@ -11521,6 +12232,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 47520,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 712,
   },
   {
     prid: 37217,
@@ -11537,6 +12249,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9755,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 713,
   },
   {
     prid: 37147,
@@ -11554,6 +12267,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 93750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 714,
   },
   {
     prid: 37146,
@@ -11570,6 +12284,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 715,
   },
   {
     prid: 37036,
@@ -11587,6 +12302,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8050,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 716,
   },
   {
     prid: 37032,
@@ -11604,6 +12320,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 32534,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 717,
   },
   {
     prid: 36860,
@@ -11620,6 +12337,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 33759.5,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 718,
   },
   {
     prid: 36851,
@@ -11637,6 +12355,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 719,
   },
   {
     prid: 36821,
@@ -11653,6 +12372,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 720,
   },
   {
     prid: 36818,
@@ -11669,6 +12389,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 721,
   },
   {
     prid: 36814,
@@ -11685,6 +12406,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20640,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 722,
   },
   {
     prid: 36803,
@@ -11701,6 +12423,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 38000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 723,
   },
   {
     prid: 36778,
@@ -11717,6 +12440,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 724,
   },
   {
     prid: 36736,
@@ -11733,6 +12457,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 60040,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 725,
   },
   {
     prid: 36715,
@@ -11749,6 +12474,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 740000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 726,
   },
   {
     prid: 36661,
@@ -11765,6 +12491,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 90000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 727,
   },
   {
     prid: 36592,
@@ -11781,6 +12508,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9590,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 728,
   },
   {
     prid: 36569,
@@ -11797,6 +12525,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 70000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 729,
   },
   {
     prid: 36517,
@@ -11813,6 +12542,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 237500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 730,
   },
   {
     prid: 36499,
@@ -11829,6 +12559,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 64000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 731,
   },
   {
     prid: 36360,
@@ -11845,6 +12576,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 732,
   },
   {
     prid: 36199,
@@ -11861,6 +12593,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 733,
   },
   {
     prid: 36198,
@@ -11877,6 +12610,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 734,
   },
   {
     prid: 36060,
@@ -11894,6 +12628,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 59000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 735,
   },
   {
     prid: 36051,
@@ -11910,6 +12645,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6950,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 736,
   },
   {
     prid: 36029,
@@ -11926,6 +12662,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 26000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 737,
   },
   {
     prid: 35942,
@@ -11942,6 +12679,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2920,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 738,
   },
   {
     prid: 35940,
@@ -11958,6 +12696,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 29924.4,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 739,
   },
   {
     prid: 35824,
@@ -11975,6 +12714,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 46800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 740,
   },
   {
     prid: 35821,
@@ -11991,6 +12731,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 741,
   },
   {
     prid: 35797,
@@ -12008,6 +12749,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 742,
   },
   {
     prid: 35682,
@@ -12024,6 +12766,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5575,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 743,
   },
   {
     prid: 35647,
@@ -12040,6 +12783,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1176,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 744,
   },
   {
     prid: 35620,
@@ -12057,6 +12801,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 67000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 745,
   },
   {
     prid: 35608,
@@ -12074,6 +12819,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22680,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 746,
   },
   {
     prid: 35563,
@@ -12090,6 +12836,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 300000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 747,
   },
   {
     prid: 35534,
@@ -12106,6 +12853,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 748,
   },
   {
     prid: 35424,
@@ -12122,6 +12870,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 61350,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 749,
   },
   {
     prid: 35404,
@@ -12138,6 +12887,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 17625,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 750,
   },
   {
     prid: 35355,
@@ -12155,6 +12905,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 26190,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 751,
   },
   {
     prid: 35297,
@@ -12171,6 +12922,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 59504,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 752,
   },
   {
     prid: 35294,
@@ -12188,6 +12940,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 80000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 753,
   },
   {
     prid: 35260,
@@ -12205,6 +12958,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 754,
   },
   {
     prid: 35257,
@@ -12221,6 +12975,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 72000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 755,
   },
   {
     prid: 35176,
@@ -12237,6 +12992,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1887,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 756,
   },
   {
     prid: 35163,
@@ -12254,6 +13010,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 757,
   },
   {
     prid: 35103,
@@ -12271,6 +13028,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 27097,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 758,
   },
   {
     prid: 35032,
@@ -12287,6 +13045,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 313926,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 759,
   },
   {
     prid: 35030,
@@ -12303,6 +13062,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 39300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 760,
   },
   {
     prid: 35011,
@@ -12319,6 +13079,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 72000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 761,
   },
   {
     prid: 35008,
@@ -12335,6 +13096,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 50400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 762,
   },
   {
     prid: 34729,
@@ -12351,6 +13113,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 763,
   },
   {
     prid: 34650,
@@ -12368,6 +13131,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22417.4,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 764,
   },
   {
     prid: 34634,
@@ -12385,6 +13149,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 76000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 765,
   },
   {
     prid: 34630,
@@ -12401,6 +13166,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 83874,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 766,
   },
   {
     prid: 34553,
@@ -12417,6 +13183,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 570000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 767,
   },
   {
     prid: 34545,
@@ -12433,6 +13200,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 176000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 768,
   },
   {
     prid: 34505,
@@ -12450,6 +13218,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 769,
   },
   {
     prid: 34393,
@@ -12466,6 +13235,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 45080,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 770,
   },
   {
     prid: 34339,
@@ -12482,6 +13252,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8068,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 771,
   },
   {
     prid: 34328,
@@ -12498,6 +13269,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 69400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 772,
   },
   {
     prid: 34308,
@@ -12514,6 +13286,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 58800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 773,
   },
   {
     prid: 34263,
@@ -12531,6 +13304,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12690,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 774,
   },
   {
     prid: 34262,
@@ -12548,6 +13322,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 775,
   },
   {
     prid: 34246,
@@ -12564,6 +13339,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 62550,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 776,
   },
   {
     prid: 34238,
@@ -12581,6 +13357,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 777,
   },
   {
     prid: 34205,
@@ -12598,6 +13375,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 36110,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 778,
   },
   {
     prid: 34201,
@@ -12614,6 +13392,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5850,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 779,
   },
   {
     prid: 34189,
@@ -12630,6 +13409,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 780,
   },
   {
     prid: 34145,
@@ -12646,6 +13426,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 150000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 781,
   },
   {
     prid: 34101,
@@ -12662,6 +13443,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 782,
   },
   {
     prid: 34089,
@@ -12678,6 +13460,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 783,
   },
   {
     prid: 33858,
@@ -12694,6 +13477,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 67000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 784,
   },
   {
     prid: 33826,
@@ -12711,6 +13495,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 785,
   },
   {
     prid: 33763,
@@ -12727,6 +13512,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 786,
   },
   {
     prid: 33687,
@@ -12743,6 +13529,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13473,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 787,
   },
   {
     prid: 33667,
@@ -12759,6 +13546,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 89610,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 788,
   },
   {
     prid: 33575,
@@ -12775,6 +13563,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 220000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 789,
   },
   {
     prid: 33544,
@@ -12792,6 +13581,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 82815,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 790,
   },
   {
     prid: 33516,
@@ -12808,6 +13598,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 152713.44,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 791,
   },
   {
     prid: 33492,
@@ -12824,6 +13615,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 152713.44,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 792,
   },
   {
     prid: 33489,
@@ -12840,6 +13632,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 793,
   },
   {
     prid: 33461,
@@ -12856,6 +13649,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 94500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 794,
   },
   {
     prid: 33434,
@@ -12872,6 +13666,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 62404,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 795,
   },
   {
     prid: 33390,
@@ -12888,6 +13683,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 69000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 796,
   },
   {
     prid: 33349,
@@ -12904,6 +13700,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 65800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 797,
   },
   {
     prid: 33300,
@@ -12920,6 +13717,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 798,
   },
   {
     prid: 33290,
@@ -12936,6 +13734,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13520,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 799,
   },
   {
     prid: 33250,
@@ -12952,6 +13751,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 800,
   },
   {
     prid: 33229,
@@ -12969,6 +13769,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 56875,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 801,
   },
   {
     prid: 33227,
@@ -12986,6 +13787,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 45000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 802,
   },
   {
     prid: 33127,
@@ -13002,6 +13804,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 70000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 803,
   },
   {
     prid: 33089,
@@ -13019,6 +13822,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 804,
   },
   {
     prid: 33015,
@@ -13035,6 +13839,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 120080,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 805,
   },
   {
     prid: 32989,
@@ -13051,6 +13856,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 27775,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 806,
   },
   {
     prid: 32946,
@@ -13067,6 +13873,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3150,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 807,
   },
   {
     prid: 32894,
@@ -13083,6 +13890,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 33177.5,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 808,
   },
   {
     prid: 32871,
@@ -13099,6 +13907,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 140000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 809,
   },
   {
     prid: 32834,
@@ -13116,6 +13925,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 27955.6,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 810,
   },
   {
     prid: 32830,
@@ -13132,6 +13942,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7100,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 811,
   },
   {
     prid: 32750,
@@ -13148,6 +13959,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 50250,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 812,
   },
   {
     prid: 32749,
@@ -13164,6 +13976,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 200000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 813,
   },
   {
     prid: 32748,
@@ -13181,6 +13994,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 38052,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 814,
   },
   {
     prid: 32741,
@@ -13197,6 +14011,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 127700,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 815,
   },
   {
     prid: 32739,
@@ -13213,6 +14028,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 593000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 816,
   },
   {
     prid: 32705,
@@ -13230,6 +14046,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 32587.5,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 817,
   },
   {
     prid: 32654,
@@ -13246,6 +14063,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 11300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 818,
   },
   {
     prid: 32635,
@@ -13263,6 +14081,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 58000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 819,
   },
   {
     prid: 32601,
@@ -13280,6 +14099,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18490,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 820,
   },
   {
     prid: 32576,
@@ -13296,6 +14116,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3591.98,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 821,
   },
   {
     prid: 32545,
@@ -13313,6 +14134,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 68600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 822,
   },
   {
     prid: 32528,
@@ -13329,6 +14151,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 823,
   },
   {
     prid: 32447,
@@ -13345,6 +14168,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 39120,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 824,
   },
   {
     prid: 32416,
@@ -13361,6 +14185,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 40300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 825,
   },
   {
     prid: 32415,
@@ -13377,6 +14202,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 36770,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 826,
   },
   {
     prid: 32404,
@@ -13393,6 +14219,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 45085,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 827,
   },
   {
     prid: 32382,
@@ -13409,6 +14236,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1035,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 828,
   },
   {
     prid: 32300,
@@ -13425,6 +14253,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 28500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 829,
   },
   {
     prid: 32196,
@@ -13441,6 +14270,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 143000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 830,
   },
   {
     prid: 32123,
@@ -13457,6 +14287,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3559.32,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 831,
   },
   {
     prid: 31975,
@@ -13473,6 +14304,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 87000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 832,
   },
   {
     prid: 31948,
@@ -13490,6 +14322,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 150000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 833,
   },
   {
     prid: 31916,
@@ -13506,6 +14339,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2940,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 834,
   },
   {
     prid: 31913,
@@ -13523,6 +14357,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 74500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 835,
   },
   {
     prid: 31883,
@@ -13539,6 +14374,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 73350,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 836,
   },
   {
     prid: 31820,
@@ -13555,6 +14391,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2228,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 837,
   },
   {
     prid: 31730,
@@ -13571,6 +14408,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 838,
   },
   {
     prid: 31727,
@@ -13587,6 +14425,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 15000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 839,
   },
   {
     prid: 31724,
@@ -13603,6 +14442,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 11560,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 840,
   },
   {
     prid: 31720,
@@ -13619,6 +14459,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 80000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 841,
   },
   {
     prid: 31677,
@@ -13635,6 +14476,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 39525,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 842,
   },
   {
     prid: 31672,
@@ -13651,6 +14493,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 130000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 843,
   },
   {
     prid: 31663,
@@ -13668,6 +14511,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 844,
   },
   {
     prid: 31613,
@@ -13685,6 +14529,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 16500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 845,
   },
   {
     prid: 31611,
@@ -13701,6 +14546,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5000000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 846,
   },
   {
     prid: 31594,
@@ -13718,6 +14564,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 97445,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 847,
   },
   {
     prid: 31551,
@@ -13734,6 +14581,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 848,
   },
   {
     prid: 31549,
@@ -13750,6 +14598,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24520,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 849,
   },
   {
     prid: 31532,
@@ -13767,6 +14616,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 49000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 850,
   },
   {
     prid: 31528,
@@ -13783,6 +14633,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 380000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 851,
   },
   {
     prid: 31479,
@@ -13799,6 +14650,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 32905,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 852,
   },
   {
     prid: 31452,
@@ -13815,6 +14667,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 11540,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 853,
   },
   {
     prid: 31446,
@@ -13831,6 +14684,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 38000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 854,
   },
   {
     prid: 31427,
@@ -13847,6 +14701,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12868,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 855,
   },
   {
     prid: 31365,
@@ -13863,6 +14718,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 127583,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 856,
   },
   {
     prid: 31353,
@@ -13880,6 +14736,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5000000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 857,
   },
   {
     prid: 31323,
@@ -13896,6 +14753,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 345700,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 858,
   },
   {
     prid: 31286,
@@ -13912,6 +14770,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 859,
   },
   {
     prid: 31246,
@@ -13928,6 +14787,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 66000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 860,
   },
   {
     prid: 31195,
@@ -13944,6 +14804,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 250000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 861,
   },
   {
     prid: 31079,
@@ -13960,6 +14821,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 26300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 862,
   },
   {
     prid: 31057,
@@ -13976,6 +14838,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 26000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 863,
   },
   {
     prid: 31023,
@@ -13992,6 +14855,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 102300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 864,
   },
   {
     prid: 30898,
@@ -14008,6 +14872,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 865,
   },
   {
     prid: 30878,
@@ -14024,6 +14889,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 866,
   },
   {
     prid: 30861,
@@ -14040,6 +14906,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20209,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 867,
   },
   {
     prid: 30832,
@@ -14056,6 +14923,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 48600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 868,
   },
   {
     prid: 30781,
@@ -14072,6 +14940,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 52000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 869,
   },
   {
     prid: 30779,
@@ -14088,6 +14957,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 85552,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 870,
   },
   {
     prid: 30751,
@@ -14104,6 +14974,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 40000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 871,
   },
   {
     prid: 30743,
@@ -14120,6 +14991,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10405,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 872,
   },
   {
     prid: 30703,
@@ -14136,6 +15008,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 873,
   },
   {
     prid: 30687,
@@ -14152,6 +15025,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3280,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 874,
   },
   {
     prid: 30541,
@@ -14168,6 +15042,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 69039,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 875,
   },
   {
     prid: 30476,
@@ -14184,6 +15059,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 85285,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 876,
   },
   {
     prid: 30475,
@@ -14200,6 +15076,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 68000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 877,
   },
   {
     prid: 30456,
@@ -14216,6 +15093,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 444150,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 878,
   },
   {
     prid: 30448,
@@ -14232,6 +15110,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 86750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 879,
   },
   {
     prid: 30422,
@@ -14248,6 +15127,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 880,
   },
   {
     prid: 30387,
@@ -14264,6 +15144,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 881,
   },
   {
     prid: 30386,
@@ -14281,6 +15162,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 63000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 882,
   },
   {
     prid: 30369,
@@ -14297,6 +15179,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 120000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 883,
   },
   {
     prid: 30287,
@@ -14313,6 +15196,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 300000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 884,
   },
   {
     prid: 30235,
@@ -14329,6 +15213,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 28850,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 885,
   },
   {
     prid: 30228,
@@ -14346,6 +15231,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 200000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 886,
   },
   {
     prid: 30224,
@@ -14362,6 +15248,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 90000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 887,
   },
   {
     prid: 30223,
@@ -14378,6 +15265,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 500000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 888,
   },
   {
     prid: 30198,
@@ -14394,6 +15282,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 60882,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 889,
   },
   {
     prid: 30118,
@@ -14410,6 +15299,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 46035,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 890,
   },
   {
     prid: 30107,
@@ -14426,6 +15316,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 891,
   },
   {
     prid: 30055,
@@ -14442,6 +15333,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 120000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 892,
   },
   {
     prid: 29907,
@@ -14458,6 +15350,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 430606,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 893,
   },
   {
     prid: 29900,
@@ -14475,6 +15368,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 894,
   },
   {
     prid: 29879,
@@ -14491,6 +15385,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 66850,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 895,
   },
   {
     prid: 29871,
@@ -14507,6 +15402,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 36000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 896,
   },
   {
     prid: 29868,
@@ -14522,6 +15418,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 76000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 897,
   },
   {
     prid: 29748,
@@ -14538,6 +15435,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 29800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 898,
   },
   {
     prid: 29713,
@@ -14554,6 +15452,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 188121,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 899,
   },
   {
     prid: 29693,
@@ -14570,6 +15469,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 40915,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 900,
   },
   {
     prid: 29687,
@@ -14586,6 +15486,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 17600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 901,
   },
   {
     prid: 29669,
@@ -14603,6 +15504,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 50000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 902,
   },
   {
     prid: 29623,
@@ -14619,6 +15521,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5570,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 903,
   },
   {
     prid: 29608,
@@ -14635,6 +15538,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 41696,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 904,
   },
   {
     prid: 29548,
@@ -14652,6 +15556,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 58325,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 905,
   },
   {
     prid: 29541,
@@ -14668,6 +15573,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 28800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 906,
   },
   {
     prid: 29521,
@@ -14684,6 +15590,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 907,
   },
   {
     prid: 29471,
@@ -14700,6 +15607,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 27500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 908,
   },
   {
     prid: 29425,
@@ -14716,6 +15624,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 60000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 909,
   },
   {
     prid: 29413,
@@ -14732,6 +15641,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 910,
   },
   {
     prid: 29409,
@@ -14748,6 +15658,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 62956,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 911,
   },
   {
     prid: 29378,
@@ -14764,6 +15675,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 21600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 912,
   },
   {
     prid: 29377,
@@ -14780,6 +15692,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 65500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 913,
   },
   {
     prid: 29271,
@@ -14796,6 +15709,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 38880,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 914,
   },
   {
     prid: 29263,
@@ -14812,6 +15726,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 915,
   },
   {
     prid: 29258,
@@ -14828,6 +15743,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 77500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 916,
   },
   {
     prid: 29257,
@@ -14844,6 +15760,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5950,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 917,
   },
   {
     prid: 29233,
@@ -14860,6 +15777,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 99000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 918,
   },
   {
     prid: 29178,
@@ -14876,6 +15794,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 919,
   },
   {
     prid: 29169,
@@ -14892,6 +15811,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 920,
   },
   {
     prid: 29157,
@@ -14908,6 +15828,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 921,
   },
   {
     prid: 29132,
@@ -14924,6 +15845,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 37098,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 922,
   },
   {
     prid: 29122,
@@ -14940,6 +15862,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3924,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 923,
   },
   {
     prid: 29086,
@@ -14956,6 +15879,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 50206,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 924,
   },
   {
     prid: 29062,
@@ -14973,6 +15897,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 925,
   },
   {
     prid: 29045,
@@ -14990,6 +15915,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 92650,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 926,
   },
   {
     prid: 29020,
@@ -15006,6 +15932,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 927,
   },
   {
     prid: 29005,
@@ -15022,6 +15949,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 165000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 928,
   },
   {
     prid: 29004,
@@ -15038,6 +15966,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 929,
   },
   {
     prid: 28939,
@@ -15054,6 +15983,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 70000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 930,
   },
   {
     prid: 18926,
@@ -15070,6 +16000,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 931,
   },
   {
     prid: 8841,
@@ -15086,6 +16017,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25277,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 932,
   },
   {
     prid: 8756,
@@ -15102,6 +16034,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 38046,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 933,
   },
   {
     prid: 8703,
@@ -15118,6 +16051,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18550,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 934,
   },
   {
     prid: 8701,
@@ -15134,6 +16068,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 253000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 935,
   },
   {
     prid: 8594,
@@ -15150,6 +16085,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3580,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 936,
   },
   {
     prid: 8560,
@@ -15167,6 +16103,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 937,
   },
   {
     prid: 8548,
@@ -15183,6 +16120,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 34343,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 938,
   },
   {
     prid: 8512,
@@ -15199,6 +16137,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1550,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 939,
   },
   {
     prid: 8485,
@@ -15215,6 +16154,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6795,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 940,
   },
   {
     prid: 8479,
@@ -15231,6 +16171,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10162,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 941,
   },
   {
     prid: 8477,
@@ -15247,6 +16188,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10450,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 942,
   },
   {
     prid: 8468,
@@ -15263,6 +16205,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 87000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 943,
   },
   {
     prid: 8436,
@@ -15279,6 +16222,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 40425,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 944,
   },
   {
     prid: 8307,
@@ -15295,6 +16239,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 87800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 945,
   },
   {
     prid: 8306,
@@ -15311,6 +16256,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35395,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 946,
   },
   {
     prid: 8244,
@@ -15327,6 +16273,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1800,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 947,
   },
   {
     prid: 8230,
@@ -15344,6 +16291,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 68080,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 948,
   },
   {
     prid: 8228,
@@ -15361,6 +16309,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 949,
   },
   {
     prid: 8187,
@@ -15377,6 +16326,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 34578,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 950,
   },
   {
     prid: 8162,
@@ -15393,6 +16343,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 31750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 951,
   },
   {
     prid: 8125,
@@ -15409,6 +16360,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7657,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 952,
   },
   {
     prid: 8053,
@@ -15425,6 +16377,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 27900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 953,
   },
   {
     prid: 7995,
@@ -15441,6 +16394,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 52799,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 954,
   },
   {
     prid: 7982,
@@ -15457,6 +16411,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 955,
   },
   {
     prid: 7977,
@@ -15473,6 +16428,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4100,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 956,
   },
   {
     prid: 7963,
@@ -15489,6 +16445,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12624,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 957,
   },
   {
     prid: 7884,
@@ -15505,6 +16462,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 7881,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 958,
   },
   {
     prid: 7861,
@@ -15521,6 +16479,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 37500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 959,
   },
   {
     prid: 7825,
@@ -15537,6 +16496,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 960,
   },
   {
     prid: 7791,
@@ -15553,6 +16513,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 32485,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 961,
   },
   {
     prid: 7689,
@@ -15569,6 +16530,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 100000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 962,
   },
   {
     prid: 7677,
@@ -15585,6 +16547,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 17660,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 963,
   },
   {
     prid: 7583,
@@ -15601,6 +16564,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 43900,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 964,
   },
   {
     prid: 7548,
@@ -15617,6 +16581,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 23174,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 965,
   },
   {
     prid: 7545,
@@ -15633,6 +16598,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 69000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 966,
   },
   {
     prid: 7542,
@@ -15649,6 +16615,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20196,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 967,
   },
   {
     prid: 7541,
@@ -15665,6 +16632,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 38880,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 968,
   },
   {
     prid: 7434,
@@ -15681,6 +16649,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2610,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 969,
   },
   {
     prid: 7430,
@@ -15697,6 +16666,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 12000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 970,
   },
   {
     prid: 7427,
@@ -15713,6 +16683,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6350,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 971,
   },
   {
     prid: 7410,
@@ -15729,6 +16700,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 85520,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 972,
   },
   {
     prid: 7378,
@@ -15745,6 +16717,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6880,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 973,
   },
   {
     prid: 7374,
@@ -15761,6 +16734,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 44908,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 974,
   },
   {
     prid: 7369,
@@ -15777,6 +16751,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 11196,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 975,
   },
   {
     prid: 7360,
@@ -15793,6 +16768,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5727,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 976,
   },
   {
     prid: 7344,
@@ -15809,6 +16785,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 70000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 977,
   },
   {
     prid: 7303,
@@ -15825,6 +16802,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 28258,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 978,
   },
   {
     prid: 7302,
@@ -15841,6 +16819,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 41000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 979,
   },
   {
     prid: 7300,
@@ -15857,6 +16836,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 63200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 980,
   },
   {
     prid: 7289,
@@ -15873,6 +16853,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 32990,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 981,
   },
   {
     prid: 7280,
@@ -15889,6 +16870,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 24000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 982,
   },
   {
     prid: 7279,
@@ -15905,6 +16887,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9175,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 983,
   },
   {
     prid: 7274,
@@ -15922,6 +16905,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 984,
   },
   {
     prid: 7268,
@@ -15938,6 +16922,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 985,
   },
   {
     prid: 7242,
@@ -15954,6 +16939,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 87000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 986,
   },
   {
     prid: 7202,
@@ -15970,6 +16956,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3132,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 987,
   },
   {
     prid: 7176,
@@ -15986,6 +16973,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 49064,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 988,
   },
   {
     prid: 7154,
@@ -16002,6 +16990,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 29000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 989,
   },
   {
     prid: 7127,
@@ -16018,6 +17007,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2150000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 990,
   },
   {
     prid: 7125,
@@ -16034,6 +17024,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 991,
   },
   {
     prid: 7086,
@@ -16050,6 +17041,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 240000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 992,
   },
   {
     prid: 7078,
@@ -16066,6 +17058,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 993,
   },
   {
     prid: 7074,
@@ -16082,6 +17075,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 994,
   },
   {
     prid: 6998,
@@ -16098,6 +17092,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 85000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 995,
   },
   {
     prid: 6983,
@@ -16114,6 +17109,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 996,
   },
   {
     prid: 6969,
@@ -16130,6 +17126,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 65000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 997,
   },
   {
     prid: 6950,
@@ -16146,6 +17143,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14450,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 998,
   },
   {
     prid: 6939,
@@ -16162,6 +17160,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 8090,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 999,
   },
   {
     prid: 6919,
@@ -16178,6 +17177,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 58750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1000,
   },
   {
     prid: 6905,
@@ -16194,6 +17194,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 64300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1001,
   },
   {
     prid: 6766,
@@ -16210,6 +17211,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1300109,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1002,
   },
   {
     prid: 6761,
@@ -16226,6 +17228,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 29000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1003,
   },
   {
     prid: 6652,
@@ -16243,6 +17246,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1004,
   },
   {
     prid: 6644,
@@ -16259,6 +17263,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 21297,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1005,
   },
   {
     prid: 6618,
@@ -16275,6 +17280,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 38000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1006,
   },
   {
     prid: 6580,
@@ -16291,6 +17297,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6534,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1007,
   },
   {
     prid: 6572,
@@ -16307,6 +17314,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1210,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1008,
   },
   {
     prid: 6538,
@@ -16323,6 +17331,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 296467,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1009,
   },
   {
     prid: 6531,
@@ -16339,6 +17348,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 379787,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1010,
   },
   {
     prid: 6511,
@@ -16355,6 +17365,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1011,
   },
   {
     prid: 6483,
@@ -16371,6 +17382,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 115360,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1012,
   },
   {
     prid: 6479,
@@ -16387,6 +17399,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 118000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1013,
   },
   {
     prid: 6469,
@@ -16403,6 +17416,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 44000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1014,
   },
   {
     prid: 6400,
@@ -16419,6 +17433,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9674,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1015,
   },
   {
     prid: 6397,
@@ -16435,6 +17450,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14272,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1016,
   },
   {
     prid: 6383,
@@ -16451,6 +17467,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 33510,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1017,
   },
   {
     prid: 6358,
@@ -16467,6 +17484,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1018,
   },
   {
     prid: 6351,
@@ -16483,6 +17501,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 19200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1019,
   },
   {
     prid: 6315,
@@ -16499,6 +17518,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 6295,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1020,
   },
   {
     prid: 6291,
@@ -16515,6 +17535,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 29750,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1021,
   },
   {
     prid: 6268,
@@ -16531,6 +17552,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 73027,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1022,
   },
   {
     prid: 6247,
@@ -16547,6 +17569,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 48000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1023,
   },
   {
     prid: 6246,
@@ -16563,6 +17586,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 606000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1024,
   },
   {
     prid: 6240,
@@ -16579,6 +17603,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 41909,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1025,
   },
   {
     prid: 6239,
@@ -16595,6 +17620,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14654,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1026,
   },
   {
     prid: 6238,
@@ -16611,6 +17637,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 5000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1027,
   },
   {
     prid: 6174,
@@ -16627,6 +17654,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3100,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1028,
   },
   {
     prid: 6131,
@@ -16643,6 +17671,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 450,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1029,
   },
   {
     prid: 6130,
@@ -16659,6 +17688,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 11500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1030,
   },
   {
     prid: 6127,
@@ -16675,6 +17705,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 916000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1031,
   },
   {
     prid: 6066,
@@ -16691,6 +17722,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 62000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1032,
   },
   {
     prid: 6063,
@@ -16707,6 +17739,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25165,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1033,
   },
   {
     prid: 6054,
@@ -16723,6 +17756,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 80000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1034,
   },
   {
     prid: 6008,
@@ -16739,6 +17773,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 78270,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1035,
   },
   {
     prid: 5990,
@@ -16755,6 +17790,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 100000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1036,
   },
   {
     prid: 5984,
@@ -16771,6 +17807,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 56656,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1037,
   },
   {
     prid: 5931,
@@ -16787,6 +17824,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3600,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1038,
   },
   {
     prid: 5930,
@@ -16803,6 +17841,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 21000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1039,
   },
   {
     prid: 5929,
@@ -16819,6 +17858,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 36000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1040,
   },
   {
     prid: 5899,
@@ -16836,6 +17876,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1041,
   },
   {
     prid: 5881,
@@ -16852,6 +17893,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 96500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1042,
   },
   {
     prid: 5874,
@@ -16868,6 +17910,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 54220,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1043,
   },
   {
     prid: 5821,
@@ -16884,6 +17927,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2400,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1044,
   },
   {
     prid: 5744,
@@ -16900,6 +17944,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 20000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1045,
   },
   {
     prid: 5734,
@@ -16915,6 +17960,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1046,
   },
   {
     prid: 5714,
@@ -16931,6 +17977,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 76000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1047,
   },
   {
     prid: 5712,
@@ -16947,6 +17994,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 74180,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1048,
   },
   {
     prid: 5544,
@@ -16963,6 +18011,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 113500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1049,
   },
   {
     prid: 5510,
@@ -16979,6 +18028,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 4500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1050,
   },
   {
     prid: 5490,
@@ -16994,6 +18044,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 2100,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1051,
   },
   {
     prid: 5482,
@@ -17010,6 +18061,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 90000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1052,
   },
   {
     prid: 5390,
@@ -17026,6 +18078,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 44000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1053,
   },
   {
     prid: 5385,
@@ -17041,6 +18094,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 26040,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1054,
   },
   {
     prid: 5382,
@@ -17056,6 +18110,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 52500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1055,
   },
   {
     prid: 5313,
@@ -17072,6 +18127,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 29300,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1056,
   },
   {
     prid: 5281,
@@ -17087,6 +18143,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 193177,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1057,
   },
   {
     prid: 5262,
@@ -17102,6 +18159,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 140000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1058,
   },
   {
     prid: 5210,
@@ -17118,6 +18176,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 22500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1059,
   },
   {
     prid: 5208,
@@ -17134,6 +18193,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 65000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1060,
   },
   {
     prid: 5207,
@@ -17150,6 +18210,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 30500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1061,
   },
   {
     prid: 5158,
@@ -17166,6 +18227,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 13000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1062,
   },
   {
     prid: 5084,
@@ -17182,6 +18244,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 1700,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1063,
   },
   {
     prid: 5072,
@@ -17197,6 +18260,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 25500,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1064,
   },
   {
     prid: 5066,
@@ -17212,6 +18276,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 10890,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1065,
   },
   {
     prid: 5035,
@@ -17228,6 +18293,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 18000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1066,
   },
   {
     prid: 5024,
@@ -17244,6 +18310,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 26670,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1067,
   },
   {
     prid: 5007,
@@ -17259,6 +18326,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 80000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1068,
   },
   {
     prid: 4983,
@@ -17275,6 +18343,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 3000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1069,
   },
   {
     prid: 4827,
@@ -17291,6 +18360,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 102179.2,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1070,
   },
   {
     prid: 4824,
@@ -17307,6 +18377,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 14000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1071,
   },
   {
     prid: 4745,
@@ -17323,6 +18394,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 331292,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1072,
   },
   {
     prid: 1916,
@@ -17339,6 +18411,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 9200,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1073,
   },
   {
     prid: 1802,
@@ -17354,6 +18427,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 157605,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1074,
   },
   {
     prid: 1765,
@@ -17370,6 +18444,7 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 35000,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1075,
   },
   {
     prid: 1758,
@@ -17385,5 +18460,6 @@ export const PrGridData: PrGridDataDto[] = [
     TotalValue: 19217,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Closed',
+    sno: 1076,
   },
 ];

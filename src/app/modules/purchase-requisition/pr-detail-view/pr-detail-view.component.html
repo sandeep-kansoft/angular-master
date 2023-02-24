@@ -1,418 +1,23 @@
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_2">
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_2">
     Launch demo modal
 </button>
+ -->
 
 
-
-<div class="modal bg-white fade" tabindex="-1" id="kt_modal_2">
+<!-- <div class="modal bg-white fade" tabindex="-1" id="kt_modal_2">
     <div class="modal-dialog modal-fullscreen">
         <div class="modal-content shadow-none">
             <div class="modal-header">
                 <h5 class="modal-title">Purchase Requisition Item Detail</h5>
 
-                <!--begin::Close-->
                 <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
                     aria-label="Close">
                     <span class="svg-icon svg-icon-2x"></span>
                 </div>
-                <!--end::Close-->
             </div>
 
             <div class="modal-body">
-                <div>
-                    <div class="card mb-5 mb-xl-10">
-                        <div class="card-header border-0 cursor-pointer" role="button"
-                            data-bs-target="#kt_account_profile_details" aria-expanded="true"
-                            aria-controls="kt_account_profile_details">
-                            <div class="card-title m-0">
-                                <h3 class="fw-bolder m-0">Purchase Requisition Header</h3>
-                            </div>
-                        </div>
-                        <div id="kt_account_profile_details" class="collapse show">
-                            <form class="form">
-                                <div class="card-body border-top p-9">
 
-                                    <div class="row mb-4">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Site</span></label>
-                                            <input type="text" class="form-control form-control-lg " />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">PR Number </label>
-                                            <input type="text" class="form-control form-control-lg " />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Pr Type</span></label>
-                                            <input type="text" class="form-control form-control-lg " />
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row mb-4">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">Pr Sub Type</label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Request (Created)
-                                                    Date</span></label>
-                                            <input type="text" class="form-control form-control-lg " name="contactPhone"
-                                                v />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">Project Id</label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                    </div>
-
-
-                                    <div class="row mb-6">
-                                        <div class="">
-                                            <label class="col-form-label fw-bold fs-6"><span>Pr
-                                                    Name/Description</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                    </div>
-
-
-                                    <div class="row mb-4">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>TEFR ID</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">Consumption Date</label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-6">
-                                        <div class="">
-                                            <label class="col-form-label fw-bold fs-6"><span>Business Justification -
-                                                    Details</span></label>
-                                            <textarea type="" class="form-control form-control-lg "
-                                                name="contactPhone"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Work Order
-                                                    Number</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">Total Value</label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Status</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                    </div>
-                                    <div class="row mb-auto">
-
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">Requester</label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                        <div class="col-md-8">
-                                            <label class="col-form-label fw-bold fs-6"><span>Department</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-auto">
-                                        <div class="col-md-12">
-                                            <label class="col-form-label   fw-bold fs-6">Attachment</label>
-                                            <div class="d-flex flex-row">
-                                                <div class="form-control form-control-lg rounded-end-0">
-                                                    File Name :
-                                                </div>
-                                                <div style="border-left-color: #ffffff;"
-                                                    class="form-control form-control-lg rounded-start-0   ">
-                                                    Remarks :
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
-                        <!-- Purchase Requisition Line start -->
-                        <div class="card-header border-0 cursor-pointer" role="button"
-                            data-bs-target="#kt_account_profile_details" aria-expanded="true"
-                            aria-controls="kt_account_profile_details">
-                            <div class="card-title m-0">
-                                <h3 class="fw-bolder m-0">Purchase Requisition Line</h3>
-                            </div>
-                        </div>
-                        <div id="kt_account_profile_details" class="collapse show">
-                            <form class="form">
-                                <div class="card-body border-top p-9">
-
-                                    <div class="row mb-4">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Item ID</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Pending PO :</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Pending PR :</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-
-
-
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>In Process PR
-                                                    :</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Available Stock
-                                                    :</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Stock In Other WareHouse
-                                                    :</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-
-
-
-                                    </div>
-
-
-                                    <div class="row mb-6">
-                                        <div class="">
-                                            <label class="col-form-label fw-bold fs-6"><span>Product
-                                                    Description</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-6">
-                                        <div class="">
-                                            <label class="col-form-label fw-bold fs-6"><span>Product Long
-                                                    Description</span></label>
-                                            <textarea type="" class="form-control form-control-lg "
-                                                name="contactPhone"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-4">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Status</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">No of ManPower </label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Quantity</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-4">
-
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">UOM</label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Unit Price</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">Net Amount</label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row mb-4">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Last Purchase
-                                                    Price</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>
-                                                    Currency</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-
-                                    </div>
-                                    <div class="col-md-12">
-                                        <label class="col-form-label  fw-bold fs-6">Remark</label>
-                                        <input type="text" class="form-control form-control-lg " name="company" />
-                                    </div>
-
-                                    <div class="row mb-4">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">Consumption Date</label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Delivery
-                                                    Name</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">Procument
-                                                Category</label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                    </div>
-
-
-                                    <div class="row ">
-                                        <div class="col-md-8">
-                                            <label class="col-form-label fw-bold fs-6"><span>Delivery
-                                                    Address</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">State</label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                    </div>
-                                    <div class="row mb-6">
-                                        <div class="">
-                                            <label class="col-form-label fw-bold fs-6"><span>Business Justification -
-                                                    Details</span></label>
-                                            <textarea type="" class="form-control form-control-lg "
-                                                name="contactPhone"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-4">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Attention
-                                                    information</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">Project ID</label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">Ledger Account </label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>GLA</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">TEFR ID </label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-4">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Business
-                                                    unit</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">
-                                                Cost Center
-                                            </label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Cost Center
-                                                    Group</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-4">
-
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">Department</label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Inventory
-                                                    Site</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">invetory
-                                                warehouse</label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-md-4">
-                                            <label class="col-form-label fw-bold fs-6"><span>Inventory item
-                                                    Configuration</span></label>
-                                            <input type="tel" class="form-control form-control-lg "
-                                                name="contactPhone" />
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="col-form-label  fw-bold fs-6">Inventory warehouse
-                                                location</label>
-                                            <input type="text" class="form-control form-control-lg " name="company" />
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-auto">
-                                        <div class="col-md-12">
-                                            <label class="col-form-label   fw-bold fs-6">Attachment</label>
-                                            <div class="d-flex flex-row">
-                                                <div class="form-control form-control-lg">
-                                                    File Name :
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-
-                </div>
 
             </div>
 
@@ -421,4 +26,378 @@
             </div>
         </div>
     </div>
+</div> -->
+
+<div class="container-fluid overflow-auto">
+    <div class="card mb-5 mb-xl-10">
+        <div class="card-header border-0 cursor-pointer" role="button" aria-expanded="true"
+            aria-controls="kt_account_profile_details">
+            <div class="card-title m-0">
+                <h3 class="fw-bolder m-0">Purchase Requisition Header</h3>
+            </div>
+            <div class="card-title m-0" (click)="closeModel()">
+                <img width="30px" height="30px" class="justify-content-center "
+                    src='../../../../assets/media/wonder/x.svg' />
+            </div>
+        </div>
+        <div id="kt_account_profile_details" class="collapse show">
+            <form class="form">
+                <div class="card-body border-top p-9">
+
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <label class="col-form-label fw-bold fs-6"><span>Site</span></label>
+                            <input type="text" class="form-control form-control-lg " />
+                        </div>
+                        <div class="col-md-3">
+                            <label class="col-form-label  fw-bold fs-6">PR Number </label>
+                            <input type="text" class="form-control form-control-lg " />
+                        </div>
+                        <div class="col-md-3">
+                            <label class="col-form-label fw-bold fs-6"><span>Pr Type</span></label>
+                            <input type="text" class="form-control form-control-lg " />
+                        </div>
+                        <div class="col-md-3">
+                            <label class="col-form-label  fw-bold fs-6">Pr Sub Type</label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+
+                    </div>
+
+                    <div class="row mb-4">
+
+                        <div class="col-md-3">
+                            <label class="col-form-label fw-bold fs-6"><span>Request (Created)
+                                    Date</span></label>
+                            <input type="text" class="form-control form-control-lg " name="contactPhone" v />
+                        </div>
+                        <div class="col-md-3">
+                            <label class="col-form-label  fw-bold fs-6">Project Id</label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="col-form-label fw-bold fs-6"><span>Pr
+                                    Name/Description</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-6">
+                        <div class="">
+                            <label class="col-form-label fw-bold fs-6"><span>Pr
+                                    Name/Description</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>TEFR ID</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">Consumption Date</label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-6">
+                        <div class="">
+                            <label class="col-form-label fw-bold fs-6"><span>Business Justification -
+                                    Details</span></label>
+                            <textarea type="" class="form-control form-control-lg " name="contactPhone"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Work Order
+                                    Number</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">Total Value</label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Status</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                    </div>
+                    <div class="row mb-auto">
+
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">Requester</label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                        <div class="col-md-8">
+                            <label class="col-form-label fw-bold fs-6"><span>Department</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-auto">
+                        <div class="col-md-12">
+                            <label class="col-form-label   fw-bold fs-6">Attachment</label>
+                            <div class="d-flex flex-row">
+                                <div class="form-control form-control-lg rounded-end-0">
+                                    File Name :
+                                </div>
+                                <div style="border-left-color: #ffffff;"
+                                    class="form-control form-control-lg rounded-start-0   ">
+                                    Remarks :
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <!-- Purchase Requisition Line start -->
+        <div class="card-header border-0 cursor-pointer" role="button" data-bs-target="#kt_account_profile_details"
+            aria-expanded="true" aria-controls="kt_account_profile_details">
+            <div class="card-title m-0">
+                <h3 class="fw-bolder m-0">Purchase Requisition Line</h3>
+            </div>
+        </div>
+        <div id="kt_account_profile_details" class="collapse show">
+            <form class="form">
+                <div class="card-body border-top p-9">
+
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Item ID</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Pending PO :</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Pending PR :</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+
+
+
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>In Process PR
+                                    :</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Available Stock
+                                    :</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Stock In Other WareHouse
+                                    :</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="row mb-6">
+                        <div class="">
+                            <label class="col-form-label fw-bold fs-6"><span>Product
+                                    Description</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-6">
+                        <div class="">
+                            <label class="col-form-label fw-bold fs-6"><span>Product Long
+                                    Description</span></label>
+                            <textarea type="" class="form-control form-control-lg " name="contactPhone"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Status</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">No of ManPower </label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Quantity</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">UOM</label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Unit Price</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">Net Amount</label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Last Purchase
+                                    Price</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>
+                                    Currency</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+
+                    </div>
+                    <div class="col-md-12">
+                        <label class="col-form-label  fw-bold fs-6">Remark</label>
+                        <input type="text" class="form-control form-control-lg " name="company" />
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">Consumption Date</label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Delivery
+                                    Name</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">Procument
+                                Category</label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                    </div>
+
+
+                    <div class="row ">
+                        <div class="col-md-8">
+                            <label class="col-form-label fw-bold fs-6"><span>Delivery
+                                    Address</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">State</label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                    </div>
+                    <div class="row mb-6">
+                        <div class="">
+                            <label class="col-form-label fw-bold fs-6"><span>Business Justification -
+                                    Details</span></label>
+                            <textarea type="" class="form-control form-control-lg " name="contactPhone"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Attention
+                                    information</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">Project ID</label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">Ledger Account </label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>GLA</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">TEFR ID </label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Business
+                                    unit</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">
+                                Cost Center
+                            </label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Cost Center
+                                    Group</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">Department</label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Inventory
+                                    Site</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">invetory
+                                warehouse</label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <label class="col-form-label fw-bold fs-6"><span>Inventory item
+                                    Configuration</span></label>
+                            <input type="tel" class="form-control form-control-lg " name="contactPhone" />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="col-form-label  fw-bold fs-6">Inventory warehouse
+                                location</label>
+                            <input type="text" class="form-control form-control-lg " name="company" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-auto">
+                        <div class="col-md-12">
+                            <label class="col-form-label   fw-bold fs-6">Attachment</label>
+                            <div class="d-flex flex-row">
+                                <div class="form-control form-control-lg">
+                                    File Name :
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
 </div>
