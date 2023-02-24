@@ -20,7 +20,7 @@
         <kendo-grid-command-column title="History" [width]="150">
             <ng-template kendoGridCellTemplate let-item>
                 <ng-container>
-                    <button class="btn btn-sm fw-bold  btn-primary">History</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_2">History</button>
                 </ng-container>
             </ng-template>
 
@@ -57,4 +57,26 @@
 
 
     </kendo-grid>
+</div>
+
+
+<div class="modal bg-white fade" tabindex="-1" id="kt_modal_2">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content shadow-none">
+            <div class="modal-header">
+                <h5 class="modal-title">PR Line Item for PR :PR23014419</h5>
+
+                <!--begin::Close-->
+                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                </div>
+                <!--end::Close-->
+            </div>
+
+            <div class="modal-body">
+                <app-pr-modal-view></app-pr-modal-view>
+            </div>
+        </div>
+    </div>
 </div>
