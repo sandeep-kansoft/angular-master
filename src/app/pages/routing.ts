@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 const Routing: Routes = [
   {
-    path: 'pr',
+    path: 'purchase-requisition/pr-overview',
     loadChildren: () =>
       import('../modules/purchase-requisition/purchase-requisition.module').then((m) => m.PurchaseRequestModule),
   },
@@ -48,11 +48,11 @@ const Routing: Routes = [
       import('../modules/apps/chat/chat.module').then((m) => m.ChatModule),
     data: { layout: 'light-sidebar' },
   },
-  {
-    path: '',
-    redirectTo: '/pr',
-    pathMatch: 'full',
-  },
+  // {
+  //   path: '',
+  //   redirectTo: '/PurchaseRequisition/PrOverview',
+  //   pathMatch: 'full',
+  // },
   {
     path: '**',
     redirectTo: 'error/404',
