@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.isLoading$ = this.authService.isLoading$;
     // redirect to home if already logged in
     if (this.authService.currentUserValue) {
-      this.router.navigate(['/crafted/pages/profile/overview']);
+      this.router.navigate(['/purchase-requisition/pr-overview']);
     }
   }
 
@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.initForm();
     // get return url from route parameters or default to '/'
     this.returnUrl =
-      this.route.snapshot.queryParams['returnUrl'.toString()] || '/crafted/pages/profile/overview';
+      this.route.snapshot.queryParams['returnUrl'.toString()] || '/purchase-requisition/pr-overview';
   }
 
   // convenience getter for easy access to form fields
