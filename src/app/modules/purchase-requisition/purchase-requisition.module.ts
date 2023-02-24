@@ -6,6 +6,7 @@ import { PrModalViewComponent } from './pr-modal-view/pr-modal-view.component';
 import { PrGridViewComponent } from './pr-grid-view/pr-grid-view.component';
 import { PrDetailViewComponent } from './pr-detail-view/pr-detail-view.component';
 import { PrOverviewComponent } from './pr-overview/pr-overview.component';
+import { GridModule } from '@progress/kendo-angular-grid';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PrOverviewComponent } from './pr-overview/pr-overview.component';
   ],
   imports: [
     CommonModule,
-    PurchaseRequestRoutingModule
+    PurchaseRequestRoutingModule,
+    GridModule
   ]
 })
 export class PurchaseRequestModule { }
