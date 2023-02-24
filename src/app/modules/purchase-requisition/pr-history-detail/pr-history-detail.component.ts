@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 import { GridDataResult } from '@progress/kendo-angular-grid';
 import { SortDescriptor, process, State } from '@progress/kendo-data-query';
 import { CommonService } from 'src/app/shared/common.service';
-import { PrDetailViewComponent } from '../pr-detail-view/pr-detail-view.component';
-import { PrGridDataDto } from '../pr-grid-view';
-import { PrLinesData } from './data';
+import { historyData } from './historydata';
 
 @Component({
-  selector: 'app-pr-modal-view',
-  templateUrl: './pr-modal-view.component.html',
-  styleUrls: ['./pr-modal-view.component.scss'],
+  selector: 'app-pr-history-detail',
+  templateUrl: './pr-history-detail.component.html',
+  styleUrls: ['./pr-history-detail.component.scss'],
 })
-export class PrModalViewComponent {
+export class PrHistoryDetailComponent {
   public gridView: GridDataResult;
   public state: State = {
     sort: [
@@ -28,7 +27,7 @@ export class PrModalViewComponent {
     skip: 0,
     take: 10,
   };
-  prData: PrGridDataDto[] = PrLinesData;
+  historyDataLocal: any = historyData;
   dropdownListdata = ['RFQT', 'AUCTION', 'VIEW', 'VIEW HISTORICAL DATA'];
   columnWidth = 150;
   pageSize = 10;
@@ -44,7 +43,7 @@ export class PrModalViewComponent {
   }
 
   private loadProducts(): void {
-    this.gridView = process(this.prData, this.state);
+    this.gridView = process(this.historyDataLocal, this.state);
   }
 
   checkMobileBrowser() {
@@ -54,10 +53,6 @@ export class PrModalViewComponent {
     );
     return this.commonService.isMobileBrowser;
   }
-
-  editHandler(item: PrGridDataDto) {}
-
-  removeHandler(item: PrGridDataDto) {}
 
   public onStateChange(state: any) {
     this.state = state;
@@ -79,30 +74,5 @@ export class PrModalViewComponent {
 
   closeModel() {
     this.modal.dismissAll();
-  }
-
-  dropDownMenuClickHandler(type: string, data: any) {
-    switch (type) {
-      case 'RFQT':
-        break;
-      case 'AUCTION':
-        break;
-      case 'VIEW':
-        this.showHistoryModel();
-        break;
-      case 'VIEW HISTORICAL DATA':
-        break;
-
-      default:
-        break;
-    }
-  }
-
-  showHistoryModel() {
-    this.prDetailModel.open(PrDetailViewComponent, {
-      centered: true,
-      fullscreen: true,
-      scrollable: true,
-    });
   }
 }

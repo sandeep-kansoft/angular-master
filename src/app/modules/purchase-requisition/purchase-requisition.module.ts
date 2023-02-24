@@ -8,13 +8,15 @@ import { PrDetailViewComponent } from './pr-detail-view/pr-detail-view.component
 import { PrOverviewComponent } from './pr-overview/pr-overview.component';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PrHistoryDetailComponent } from './pr-history-detail/pr-history-detail.component';
 
 @NgModule({
   declarations: [
     PrOverviewComponent,
     PrModalViewComponent,
     PrGridViewComponent,
-    PrDetailViewComponent
+    PrDetailViewComponent,
+    PrHistoryDetailComponent
   ],
   imports: [
     CommonModule,

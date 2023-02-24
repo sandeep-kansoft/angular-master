@@ -8,6 +8,7 @@ import { SortDescriptor } from '@progress/kendo-data-query';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { PrDetailViewComponent } from '../pr-detail-view/pr-detail-view.component';
 import { PrModalViewComponent } from '../pr-modal-view/pr-modal-view.component';
+import { PrHistoryDetailComponent } from '../pr-history-detail/pr-history-detail.component';
 
 @Component({
   selector: 'app-pr-overview',
@@ -38,7 +39,9 @@ export class PrOverviewComponent {
 
   constructor(
     private commonService: CommonService,
-    private prDetailModel: NgbModal
+    private prDetailModel: NgbModal,
+    private prLineViewModel: NgbModal,
+    private prHistoryModel: NgbModal
   ) {}
 
   public ngOnInit() {
@@ -92,7 +95,7 @@ export class PrOverviewComponent {
         this.openLinesModel();
         break;
       case 'History':
-        this.openPrDetailModel();
+        this.openHistoryModel();
         break;
 
       default:
@@ -100,16 +103,24 @@ export class PrOverviewComponent {
     }
   }
 
-  openPrDetailModel() {
-    this.prDetailModel.open(PrDetailViewComponent, {
+  // openPrDetailModel() {
+  //   this.prDetailModel.open(PrDetailViewComponent, {
+  //     centered: true,
+  //     fullscreen: true,
+  //     scrollable: true,
+  //   });
+  // }
+
+  openLinesModel() {
+    this.prLineViewModel.open(PrModalViewComponent, {
       centered: true,
       fullscreen: true,
       scrollable: true,
     });
   }
 
-  openLinesModel() {
-    this.prDetailModel.open(PrModalViewComponent, {
+  openHistoryModel() {
+    this.prHistoryModel.open(PrHistoryDetailComponent, {
       centered: true,
       fullscreen: true,
       scrollable: true,
