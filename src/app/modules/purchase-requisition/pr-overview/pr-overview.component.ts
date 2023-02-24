@@ -16,6 +16,10 @@ import { PrModalViewComponent } from '../pr-modal-view/pr-modal-view.component';
 })
 export class PrOverviewComponent {
   public gridView: GridDataResult;
+  dropdownListdata = ['Preview', 'RFQ', 'Auction', 'Lines', 'History'];
+  columnWidth = 150;
+  pageSize = 100;
+
   public state: State = {
     sort: [
       {
@@ -28,14 +32,9 @@ export class PrOverviewComponent {
       filters: [],
     },
     skip: 0,
-    take: 10,
+    take: this.pageSize,
   };
   prData: PrGridDataDto[] = PrGridData;
-
-  dropdownListdata = ['Preview', 'RFQ', 'Auction', 'Lines', 'History'];
-
-  columnWidth = 150;
-  pageSize = 10;
 
   constructor(
     private commonService: CommonService,

@@ -1,4 +1,3 @@
-
 export const PrLinesData: any = [
   {
     LINE_NO: 66989,
@@ -15,8 +14,32 @@ export const PrLinesData: any = [
     TotalValue: 38370,
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'In Process',
+    QUANTITY: 20,
+    IN_PROCESS_QUANTITY: 10,
+    USED_QUANITTY: 2,
+    REMANING_QUANITTY: 1,
+    RATE: 20,
+    AMOUNT: 100.0,
+    STATUS: 'PENDING',
+    REQ_STATUS: 'PENDING',
+    REQ_NO: '123665',
+    PO_NO: 12313,
+    STATE: 'Haryana',
   },
   {
+    LINE_NO: 66963,
+    ITEM_CODE: 'PR230123132',
+    STATE: 'Haryana',
+    PO_NO: 12363,
+    REQ_NO: '123665',
+    REQ_STATUS: 'PENDING',
+    STATUS: 'PENDING',
+    AMOUNT: 100.0,
+    RATE: 20,
+    REMANING_QUANITTY: 1,
+    IN_PROCESS_QUANTITY: 2,
+    USED_QUANITTY: 1,
+    QUANTITY: 12,
     prid: 66854,
     PR_NUM: 'PR23014484',
     DESCRIPTION: 'Pneumatic Fittings for Bag Filter Modification',
@@ -32,4 +55,31 @@ export const PrLinesData: any = [
     AssignBuyer: 'VIJAY CHAPLOT',
     BUYERSTATUS: 'Pending',
   },
+];
+
+const PR_RequestionLineDetail = [
+//  { {
+//     Site: '',
+//     PRNumber: '',
+//     PRTYpe: '',
+//     PrSubType: '',
+//     RequestDate: '',
+//     ProjectDate: '',
+//     ProjectId: '',
+//     PR: '',
+//     TEFRID: '',
+//     ConsumptionDate: '',
+//     BusinessJustificationDate: '',
+//     workOrderNumber: '',
+//     TotalValue: '',
+//     Status: ' ',
+//     Reqeuster: ' ',
+//     Department: '',
+
+
+
+   
+
+
+//   },}
 ];

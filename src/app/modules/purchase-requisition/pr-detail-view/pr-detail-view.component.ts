@@ -11,7 +11,7 @@ export class PrDetailViewComponent {
 
   constructor(public modal: NgbModal) {}
   closeModel() {
-    this.modal.dismissAll();
+    this.modal.dismissAll()
   }
 }
 
