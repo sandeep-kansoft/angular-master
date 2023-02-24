@@ -3,7 +3,7 @@ import { GridDataResult } from '@progress/kendo-angular-grid';
 import { SortDescriptor, process,  State } from '@progress/kendo-data-query';
 import { CommonService } from 'src/app/shared/common.service';
 import { PrGridDataDto } from '../pr-grid-view';
-import { PrGridData } from '../pr-overview/data';
+import { PrLinesData } from './data';
 
 @Component({
   selector: 'app-pr-modal-view',
@@ -26,7 +26,7 @@ export class PrModalViewComponent {
     skip: 0,
     take: 10,
   };
-  prData: PrGridDataDto[] = PrGridData;
+  prData: PrGridDataDto[] = PrLinesData;
 
   columnWidth = 150;
   pageSize = 10;
