@@ -157,6 +157,20 @@
 // .modal-fullscreen .card-gray {
 //   background-color: #f5f8fa !important;
 // }
+.fullscreen-back-icon svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+.fullscreen-back-icon svg path {
+  stroke: #c90c0f;
+}
+.modal-fullscreen .col-form-label {
+  padding-top: calc(0.475rem + 1px) !important;
+  padding-bottom: calc(0.475rem + 1px) !important;
+}
+.modal-fullscreen .card .card-header {
+  min-height: 50px !important;
+}
 
 /* Wrapper */
 [data-kt-app-header-fixed=true] .app-wrapper,
