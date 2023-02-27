@@ -3,13 +3,13 @@
         <div class="card-header cursor-pointer" role="button" data-bs-target="#kt_account_profile_details"
             aria-expanded="true" aria-controls="kt_account_profile_details">
             <div class="card-title m-0">
-                <img width="24px" (click)="closeModel()" height="24px" *ngIf="isFormVisible || isHistoricalDataVisible"
-                    class="justify-content-center " src='../../../../assets/media/wonder/arrow-left.svg' />
+                <span (click)="closeModel()" *ngIf="isFormVisible || isHistoricalDataVisible"
+                    class="justify-content-center "
+                    [inlineSVG]="'../../../../assets/media/wonder/arrow-left.svg'"></span>
                 <h3 class="fw-bolder m-0" *ngIf="!isFormVisible && !isHistoricalDataVisible">{{'Lines'}}</h3>
             </div>
             <div class="card-title m-0" (click)="closeModel()">
-                <img width="30px" height="30px" class="justify-content-center "
-                    src='../../../../assets/media/wonder/x.svg' />
+                <span class="justify-content-center " [inlineSVG]="'../../../../assets/media/wonder/cross.svg'"></span>
             </div>
         </div>
         <div class="card-body" *ngIf="!isFormVisible && !isHistoricalDataVisible">

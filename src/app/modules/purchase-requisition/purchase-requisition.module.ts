@@ -9,20 +9,21 @@ import { PrOverviewComponent } from './pr-overview/pr-overview.component';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PrHistoryDetailComponent } from './pr-history-detail/pr-history-detail.component';
-
+import { InlineSVGModule } from 'ng-inline-svg-2';
 @NgModule({
   declarations: [
     PrOverviewComponent,
     PrModalViewComponent,
     PrGridViewComponent,
     PrDetailViewComponent,
-    PrHistoryDetailComponent
+    PrHistoryDetailComponent,
   ],
   imports: [
     CommonModule,
     PurchaseRequestRoutingModule,
     GridModule,
-    NgbModule
-  ]
+    NgbModule,
+    InlineSVGModule,
+  ],
 })
-export class PurchaseRequestModule { }
+export class PurchaseRequestModule {}
