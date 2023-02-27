@@ -5,7 +5,7 @@ import { SortDescriptor, process, State } from '@progress/kendo-data-query';
 import { CommonService } from 'src/app/shared/common.service';
 import { PrDetailViewComponent } from '../pr-detail-view/pr-detail-view.component';
 import { PrGridDataDto } from '../pr-grid-view';
-import { PrLinesData } from './data';
+import { PohistoryData, PrLinesData } from './data';
 
 @Component({
   selector: 'app-pr-modal-view',
@@ -14,6 +14,7 @@ import { PrLinesData } from './data';
 })
 export class PrModalViewComponent {
   public gridView: GridDataResult;
+  public PoHistorydataGridView: GridDataResult;
   public state: State = {
     sort: [
       {
@@ -33,6 +34,24 @@ export class PrModalViewComponent {
   columnWidth = 150;
   pageSize = 10;
   isFormVisible: boolean = false;
+  viewPoHistoryData = [];
+
+  public PoHistorydata: State = {
+    sort: [
+      {
+        field: 'Vendor_Code',
+        dir: 'asc',
+      },
+    ],
+    filter: {
+      logic: 'and',
+      filters: [],
+    },
+    skip: 0,
+    take: 10,
+  };
+
+  public isHistoricalDataVisible: boolean = false;
 
   constructor(
     private commonService: CommonService,
@@ -42,10 +61,15 @@ export class PrModalViewComponent {
 
   public ngOnInit() {
     this.loadProducts();
+    this.loadPoHistorydataProducts();
   }
 
   private loadProducts(): void {
     this.gridView = process(this.prData, this.state);
+  }
+
+  private loadPoHistorydataProducts(): void {
+    this.PoHistorydataGridView = process(PohistoryData, this.PoHistorydata);
   }
 
   checkMobileBrowser() {
@@ -81,6 +105,8 @@ export class PrModalViewComponent {
   closeModel() {
     if (this.isFormVisible) {
       this.isFormVisible = false;
+    } else if (this.isHistoricalDataVisible) {
+      this.isHistoricalDataVisible = false;
     } else {
       this.modal.dismissAll();
     }
@@ -97,6 +123,7 @@ export class PrModalViewComponent {
         //this.showHistoryModel();
         break;
       case 'VIEW HISTORICAL DATA':
+        this.isHistoricalDataVisible = true;
         break;
 
       default:

@@ -58,28 +58,68 @@ export const PrLinesData: any = [
 ];
 
 const PR_RequestionLineDetail = [
-//  { {
-//     Site: '',
-//     PRNumber: '',
-//     PRTYpe: '',
-//     PrSubType: '',
-//     RequestDate: '',
-//     ProjectDate: '',
-//     ProjectId: '',
-//     PR: '',
-//     TEFRID: '',
-//     ConsumptionDate: '',
-//     BusinessJustificationDate: '',
-//     workOrderNumber: '',
-//     TotalValue: '',
-//     Status: ' ',
-//     Reqeuster: ' ',
-//     Department: '',
+  //  { {
+  //     Site: '',
+  //     PRNumber: '',
+  //     PRTYpe: '',
+  //     PrSubType: '',
+  //     RequestDate: '',
+  //     ProjectDate: '',
+  //     ProjectId: '',
+  //     PR: '',
+  //     TEFRID: '',
+  //     ConsumptionDate: '',
+  //     BusinessJustificationDate: '',
+  //     workOrderNumber: '',
+  //     TotalValue: '',
+  //     Status: ' ',
+  //     Reqeuster: ' ',
+  //     Department: '',
+  //   },}
+];
 
+// export let PohistoryData = [
+//   {
+//     Vendor_Code: '107812',
+//     Vendor_Name: 'M.R.Organisation Limited',
+//     PO_No: '102PO2205339',
+//     PO_Confirmation_Date: '12/10/2021',
+//     PO_Qty: '3.00',
+//     UOM: 'NOS',
+//     Unit_Price: '2000.00',
+//     Discount: '20.00',
+//   },
+// ];
 
-
-   
-
-
-//   },}
+export let PohistoryData = [
+  {
+    Vendor_Code: '109339',
+    Vendor_Name: 'Cable Connectronics',
+    PO_No: '102PO2308947',
+    PO_Confirmation_Date: '14/02/2023',
+    PO_Qty: '2.00',
+    UOM: 'NOS',
+    Unit_Price: '750.00',
+    Discount: '0.00',
+  },
+  {
+    Vendor_Code: '109339',
+    Vendor_Name: 'Cable Connectronics',
+    PO_No: '102PO2307716',
+    PO_Confirmation_Date: '02/01/2023',
+    PO_Qty: '10.00',
+    UOM: 'NOS',
+    Unit_Price: '750.00',
+    Discount: '0.00',
+  },
+  {
+    Vendor_Code: '102608',
+    Vendor_Name: 'Instrumentation store',
+    PO_No: '102PO2200635',
+    PO_Confirmation_Date: '13/04/2021',
+    PO_Qty: '5.00',
+    UOM: 'NOS',
+    Unit_Price: '1115.00',
+    Discount: '0.00',
+  },
 ];

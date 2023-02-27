@@ -3,14 +3,18 @@
         <div class="card-header cursor-pointer" role="button" data-bs-target="#kt_account_profile_details"
             aria-expanded="true" aria-controls="kt_account_profile_details">
             <div class="card-title m-0">
-                <h3 class="fw-bolder m-0">{{isFormVisible ? 'Purchase Requisition Header' :'Lines'}}</h3>
+                <img width="24px" (click)="closeModel()" height="24px" *ngIf="isFormVisible || isHistoricalDataVisible"
+                    class="justify-content-center " src='../../../../assets/media/wonder/arrow-left.svg' />
+                <h3 class="fw-bolder m-0" *ngIf="!isFormVisible && !isHistoricalDataVisible">{{'Lines'}}</h3>
             </div>
             <div class="card-title m-0" (click)="closeModel()">
                 <img width="30px" height="30px" class="justify-content-center "
                     src='../../../../assets/media/wonder/x.svg' />
             </div>
         </div>
-        <div class="card-body" *ngIf="!isFormVisible">
+        <div class="card-body" *ngIf="!isFormVisible && !isHistoricalDataVisible">
+
+
             <kendo-grid [data]="gridView" [group]="state.group" [filter]="state.filter" [filterable]="false"
                 [reorderable]="true" [resizable]="true" [skip]="state.skip" [pageSize]="pageSize" [pageable]="true"
                 (dataStateChange)="onStateChange($event)" [sortable]="{
@@ -63,6 +67,40 @@
         <div class="card-body" *ngIf="isFormVisible">
             <app-pr-detail-view></app-pr-detail-view>
         </div>
+
+        <!-- View Po History Data -->
+        <div class="card-body" *ngIf="isHistoricalDataVisible">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <label class="col-form-label fw-bold fs-6"><span>Item Code</span></label>
+                    <input disabled type="text" class="form-control form-control-lg " value="10000135532" />
+                </div>
+                <div class="col-md-6">
+                    <label class="col-form-label  fw-bold fs-6">Item Description </label>
+                    <input disabled type="text" class="form-control form-control-lg "
+                        value="KIT, COMPRESSOR REPAIR; TYPE: MAINTENANCE OF AUX.VALVE; MANUFACTURER PART NO: 400940.2, MANUFACTURER: KAESER" />
+                </div>
+            </div>
+            <kendo-grid [data]="PoHistorydataGridView" [group]="state.group" [filter]="state.filter"
+                [filterable]="false" [reorderable]="true" [resizable]="true" [skip]="state.skip" [pageSize]="pageSize"
+                [pageable]="true" (dataStateChange)="onStateChange($event)" [sortable]="{
+    allowUnsort: true,
+    mode: 'multiple'}" [sort]="state.sort" (dataStateChange)="onStateChange($event)">
+                <kendo-grid-column field="Vendor_Code" title="VENDOR CODE" [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column field="Vendor_Name" title="VENDOR NAME" [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column field="PO_No" title="PO NUMBER" [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column field="PO_Confirmation_Date" title="PO CONFIRMATION DATE"
+                    [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column field="PO_Qty" title="PO QUANTITY" [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column field="UOM" title="UOM" [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column field="Unit_Price" title="UNIT PRICE" [width]="columnWidth">
+                </kendo-grid-column>
+                <kendo-grid-column field="Discount" title="DISCOUNT" [width]="columnWidth"></kendo-grid-column>
+
+
+            </kendo-grid>
+        </div>
+
 
     </div>
 
