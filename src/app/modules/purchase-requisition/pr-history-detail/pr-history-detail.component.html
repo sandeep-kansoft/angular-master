@@ -1,6 +1,6 @@
 <div class="container-fluid overflow-auto">
     <div class="card mb-5 mb-xl-10">
-        <div class="card-header border-0 cursor-pointer" role="button" data-bs-target="#kt_account_profile_details"
+        <div class="card-header cursor-pointer" role="button" data-bs-target="#kt_account_profile_details"
             aria-expanded="true" aria-controls="kt_account_profile_details">
             <div class="card-title m-0">
                 <h3 class="fw-bolder m-0">PR Status</h3>
@@ -10,8 +10,8 @@
                     src='../../../../assets/media/wonder/x.svg' />
             </div>
         </div>
-
-        <kendo-grid [data]="gridView" [group]="state.group" [filter]="state.filter" [filterable]="false"
+        <div class="card-body">
+            <kendo-grid [data]="gridView" [group]="state.group" [filter]="state.filter" [filterable]="false"
             [reorderable]="true" [resizable]="true" [skip]="state.skip" [pageSize]="pageSize" [pageable]="true"
             (dataStateChange)="onStateChange($event)" [sortable]="{
     allowUnsort: true,
@@ -34,6 +34,8 @@
             <kendo-grid-column field="Remarks" title="REMARKS" [width]="columnWidth"></kendo-grid-column>
 
         </kendo-grid>
+        </div>
+        
     </div>
 
 </div>
