@@ -1,9 +1,9 @@
 <div class="container-fluid overflow-auto p-0">
     <div class="card mb-5 mb-xl-10 card-gray">
-        <div class="card-header cursor-pointer" role="button" data-bs-target="#kt_account_profile_details"
+        <div class="card-header cursor-pointer border-0" role="button" data-bs-target="#kt_account_profile_details"
             aria-expanded="true" aria-controls="kt_account_profile_details">
             <div class="card-title m-0">
-                <span (click)="closeModel()" *ngIf="isFormVisible" class="justify-content-center "
+                <span (click)="closeModel()" *ngIf="isFormVisible" class="justify-content-center fullscreen-back-icon"
                     [inlineSVG]="'../../../../assets/media/wonder/arrow-left.svg'"></span>
                 <h3 class="fw-bolder m-0" *ngIf="!isFormVisible && !isHistoricalDataVisible">{{'Lines'}}</h3>
                 <h3 class="fw-bolder m-0" *ngIf="isHistoricalDataVisible">{{'View PO History Data'}}</h3>
