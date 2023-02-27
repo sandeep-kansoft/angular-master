@@ -20,7 +20,7 @@ export class PrOverviewComponent {
   dropdownListdata = ['Preview', 'RFQ', 'Auction', 'Lines', 'History'];
   columnWidth = 150;
   pageSize = 100;
-
+  serachText: string = '';
   public state: State = {
     sort: [
       {

@@ -32,6 +32,7 @@ export class PrModalViewComponent {
   dropdownListdata = ['RFQT', 'AUCTION', 'VIEW', 'VIEW HISTORICAL DATA'];
   columnWidth = 150;
   pageSize = 10;
+  isFormVisible: boolean = false;
 
   constructor(
     private commonService: CommonService,
@@ -78,7 +79,11 @@ export class PrModalViewComponent {
   }
 
   closeModel() {
-    this.modal.dismissAll();
+    if (this.isFormVisible) {
+      this.isFormVisible = false;
+    } else {
+      this.modal.dismissAll();
+    }
   }
 
   dropDownMenuClickHandler(type: string, data: any) {
@@ -88,7 +93,8 @@ export class PrModalViewComponent {
       case 'AUCTION':
         break;
       case 'VIEW':
-        this.showHistoryModel();
+        this.isFormVisible = true;
+        //this.showHistoryModel();
         break;
       case 'VIEW HISTORICAL DATA':
         break;
