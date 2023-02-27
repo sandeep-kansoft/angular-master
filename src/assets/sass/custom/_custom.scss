@@ -88,6 +88,13 @@
 }
 
 
+
+
+/* common css */
+.border-radius-0 {
+  border-radius: 0px !important;
+}
+
 /* Login image & overlay starts */
 .login-image {
   background-image: url(../../media/auth/auth-bg.jpg);
@@ -137,6 +144,7 @@
   }
 }
 
+
 /* top header */
 .app-header {
   display: none !important;
@@ -166,3 +174,4 @@
   background: #c90c0f;
     color: #fff;
 }
+
