@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/modules/auth';
 import { environment } from '../../../../../../environments/environment';
 
 @Component({
@@ -9,7 +10,12 @@ import { environment } from '../../../../../../environments/environment';
 export class SidebarFooterComponent implements OnInit {
   appPreviewChangelogUrl: string = environment.appPreviewChangelogUrl;
 
-  constructor() {}
+  constructor(private auth: AuthService, private chr: ChangeDetectorRef) {}
 
   ngOnInit(): void {}
+  logout() {
+    this.auth.logout();
+    document.location.reload();
+    this.chr.detectChanges();
+  }
 }

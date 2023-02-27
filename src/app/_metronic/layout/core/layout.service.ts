@@ -16,7 +16,7 @@ import { ActivatedRoute } from '@angular/router';
 
 const LAYOUT_CONFIG_LOCAL_STORAGE_KEY = `${environment.appVersion}-layoutConfig`;
 const BASE_LAYOUT_TYPE_LOCAL_STORAGE_KEY = `${environment.appVersion}-baseLayoutType`;
-const defaultBaseLayoutType: LayoutType = 'dark-sidebar';
+const defaultBaseLayoutType: LayoutType = 'light-sidebar';
 const defaultLayoutConfig: ILayout = DarkSidebarConfig;
 
 export function getEmptyHTMLAttributes(): HTMLAttributesType {
