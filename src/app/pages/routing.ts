@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 const Routing: Routes = [
   {
-    path: 'purchase-requisition/pr-overview',
+    path: 'purchase-requisition',
     loadChildren: () =>
       import('../modules/purchase-requisition/purchase-requisition.module').then((m) => m.PurchaseRequestModule),
   },

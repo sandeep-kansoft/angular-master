@@ -2,28 +2,32 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PrDetailViewComponent } from './pr-detail-view/pr-detail-view.component';
 import { PrGridViewComponent } from './pr-grid-view/pr-grid-view.component';
+import { PrMinMaxComponent } from './pr-min-max/pr-min-max.component';
 import { PrOverviewComponent } from './pr-overview/pr-overview.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: PrOverviewComponent,
     children: [
       {
-        path: 'grid',
-        component: PrGridViewComponent,
+        path: 'overview',
+        component: PrOverviewComponent,
       },
       {
         path: 'detailed',
         component: PrDetailViewComponent,
       },
+      {
+        path: 'min-max',
+        component: PrMinMaxComponent,
+      },
       { path: '', redirectTo: 'grid', pathMatch: 'full' },
-      { path: '**', redirectTo: 'overview', pathMatch: 'full' },
+      // { path: '**', redirectTo: 'overview', pathMatch: 'full' },
     ],
   },
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class PurchaseRequestRoutingModule { }
+export class PurchaseRequestRoutingModule {}
