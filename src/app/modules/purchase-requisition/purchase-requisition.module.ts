@@ -6,7 +6,7 @@ import { PrModalViewComponent } from './pr-modal-view/pr-modal-view.component';
 import { PrGridViewComponent } from './pr-grid-view/pr-grid-view.component';
 import { PrDetailViewComponent } from './pr-detail-view/pr-detail-view.component';
 import { PrOverviewComponent } from './pr-overview/pr-overview.component';
-import { GridModule } from '@progress/kendo-angular-grid';
+import { ExcelModule, GridModule } from '@progress/kendo-angular-grid';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PrHistoryDetailComponent } from './pr-history-detail/pr-history-detail.component';
 import { InlineSVGModule } from 'ng-inline-svg-2';
@@ -30,6 +30,7 @@ import { DemoPageComponent } from './demo-page/demo-page.component';
     GridModule,
     NgbModule,
     InlineSVGModule,
+    ExcelModule,
   ],
 })
 export class PurchaseRequestModule {}

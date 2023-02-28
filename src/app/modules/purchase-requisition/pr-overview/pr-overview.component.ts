@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GridDataResult } from '@progress/kendo-angular-grid';
+import { ExcelExportEvent, GridDataResult } from '@progress/kendo-angular-grid';
 import { PrGridData } from './data';
 import { process, State } from '@progress/kendo-data-query';
 import { CommonService } from 'src/app/shared/common.service';
@@ -9,7 +9,9 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { PrDetailViewComponent } from '../pr-detail-view/pr-detail-view.component';
 import { PrModalViewComponent } from '../pr-modal-view/pr-modal-view.component';
 import { PrHistoryDetailComponent } from '../pr-history-detail/pr-history-detail.component';
-
+import { Workbook } from '@progress/kendo-angular-excel-export';
+import { saveAs } from '@progress/kendo-file-saver';
+import { Observable ,zip } from 'rxjs';
 @Component({
   selector: 'app-pr-overview',
   templateUrl: './pr-overview.component.html',
@@ -129,4 +131,67 @@ export class PrOverviewComponent {
   showdata(data: any) {
     console.log('data', data);
   }
+
+  // public onExcelExport(args: ExcelExportEvent): void {
+  //   // Prevent automatically saving the file. We will save it manually after we fetch and add the details
+  //   args.preventDefault();
+
+  //   // this.loading = true;
+
+  //   const observables = [];
+  //   const workbook = args.workbook;
+  //   const rows = workbook.sheets[0].rows;
+
+  //   // Get the default header styles.
+  //   // Aternatively set custom styles for the details
+  //   // https://www.telerik.com/kendo-angular-ui/components/excelexport/api/WorkbookSheetRowCell/
+  //   const headerOptions = rows[0].cells[0];
+
+  //   const data = this.gridView.data;
+
+  //   // Fetch the data for all details
+  //   for (let idx = 0; idx < data.length; idx++) {
+  //     observables.push(this.productService.fetchForCategory(data[idx]));
+  //   }
+
+  //   zip.apply(Observable, observables).subscribe((result: GridDataResult[]) => {
+  //     // add the detail data to the generated master sheet rows
+  //     // loop backwards in order to avoid changing the rows index
+  //     for (let idx = result.length - 1; idx >= 0; idx--) {
+  //       const products = (<GridDataResult>result[idx]).data;
+
+  //       // add the detail data
+  //       for (
+  //         let productIdx = products.length - 1;
+  //         productIdx >= 0;
+  //         productIdx--
+  //       ) {
+  //         const product = products[productIdx];
+  //         rows.splice(idx + 2, 0, {
+  //           cells: [
+  //             {},
+  //             { value: product.ProductID },
+  //             { value: product.ProductName },
+  //           ],
+  //         });
+  //       }
+
+  //       // add the detail header
+  //       rows.splice(idx + 2, 0, {
+  //         cells: [
+  //           {},
+  //           Object.assign({}, headerOptions, { value: 'Product ID' }),
+  //           Object.assign({}, headerOptions, { value: 'Product Name' }),
+  //         ],
+  //       });
+  //     }
+
+  //     // create a Workbook and save the generated data URL
+  //     // https://www.telerik.com/kendo-angular-ui/components/excelexport/api/Workbook/
+  //     new Workbook(workbook).toDataURL().then((dataUrl: string) => {
+  //       // https://www.telerik.com/kendo-angular-ui/components/filesaver/
+  //       saveAs(dataUrl, 'Categories.xlsx');
+  //     });
+  //   });
+  // }
 }
