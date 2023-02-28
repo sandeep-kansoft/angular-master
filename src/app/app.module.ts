@@ -16,6 +16,11 @@ import { FakeAPIService } from './_fake/fake-api.service';
 import { SharedComponentsModule } from './shared/components/shared-components.module';
 import { Select2Module } from 'ng-select2-component';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import { TokenInterceptor } from './shared/interceptors/token.interceptors';
+import { ErrorInterceptor } from './shared/interceptors/error.interceptors';
+import { HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ErrorHandler } from '@angular/core';
+import { ErrorHandlerService } from './shared/error-handler.service';
 
 // #fake-end#
 
@@ -27,9 +32,6 @@ function appInitializer(authService: AuthService) {
     });
   };
 }
-
-
-
 
 @NgModule({
   declarations: [AppComponent],
@@ -52,7 +54,7 @@ function appInitializer(authService: AuthService) {
     NgbModule,
     SharedComponentsModule,
     Select2Module,
-    NgxSkeletonLoaderModule.forRoot()
+    NgxSkeletonLoaderModule.forRoot(),
   ],
   providers: [
     {
@@ -60,6 +62,17 @@ function appInitializer(authService: AuthService) {
       useFactory: appInitializer,
       multi: true,
       deps: [AuthService],
+    },
+    { provide: ErrorHandler, useClass: ErrorHandlerService },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true,
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ErrorInterceptor,
+      multi: true,
     },
   ],
   bootstrap: [AppComponent],
