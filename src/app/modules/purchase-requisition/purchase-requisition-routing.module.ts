@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PrAllViewComponent } from './pr-all-view/pr-all-view.component';
 import { PrDetailViewComponent } from './pr-detail-view/pr-detail-view.component';
 import { PrGridViewComponent } from './pr-grid-view/pr-grid-view.component';
 import { PrMinMaxComponent } from './pr-min-max/pr-min-max.component';
@@ -20,6 +21,10 @@ const routes: Routes = [
       {
         path: 'min-max',
         component: PrMinMaxComponent,
+      },
+      {
+        path: 'pr-all',
+        component: PrAllViewComponent,
       },
       { path: '', redirectTo: 'grid', pathMatch: 'full' },
       // { path: '**', redirectTo: 'overview', pathMatch: 'full' },
