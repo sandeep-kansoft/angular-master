@@ -1,0 +1,67 @@
+<div class="card">
+    <div class="card-body">
+        <kendo-grid [groupable]="true" [data]="gridView" [group]="state.group" [filter]="state.filter"
+            [filterable]="true" [reorderable]="true" [resizable]="true" [skip]="state.skip" [pageSize]="pageSize"
+            [pageable]="true" (dataStateChange)="onStateChange($event)" [sortable]="{
+        allowUnsort: true,
+        mode: 'multiple'}" [sort]="state.sort" (dataStateChange)="onStateChange($event)">
+            <kendo-grid-column field="prid" title="SR NO" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Site" title="SITE" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Warehouse" title="WAREHOUSE" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Buyer_Group" title="BUYER GROUP" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Item_Group" title="ITEM GROUP" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="PPO_No" title="PPO NUMBER" [width]="columnWidth"></kendo-grid-column>
+            <!-- <kendo-grid-column field="PROJECT_NAME" title="PROJECT ID" [width]="columnWidth"></kendo-grid-column> -->
+            <kendo-grid-column field="PPO_Date" title="PPO DATE" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Item_Code" title="ITEM CODE" [width]="columnWidth"> </kendo-grid-column>
+            <kendo-grid-column field="Item_Description" title="ITEM DESCRIPTION"
+                [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Config" title="CONFIG" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="UOM" title="UOM" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Min_Order_Qty" title="MIN ORDER QTY" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Max_Order_Qty" title="MAX ORDER QTY" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="On_Hand_Qty_in_Main_Store_Warehouse" title="ON HAND QTY IN MAIN STORE WAREHOUSE"
+                [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Required_Qty" title="REQUIRED QTY" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="On_Hand_Qty_in_Other_Store_Warehouse" title="ON HAND QTY IN OTHER STORE WAREHOUSE"
+                [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Pending_PO" title="PENDING PO" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="PO_In_Process" title="PO IN PROCESS" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="In_Process_PR" title="IN PROCESS PR" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="NetOrder_Qty" title="NET ORDER QTY" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Ordered_Qty" title="ORDER QTY" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Order_Qty" title="PENDING PR" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Pending_PR" title="PR INTERVIEW" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="PR_InReview" title="LAST PURCHASE PRICE"
+                [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Last_Purchase_Price" title="PO AMOUNT" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="PPO_Amount" title="LAST PO NO" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Last_PO_No" title="LAST PO DATE" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Vendor_Name" title="VENDOR NAME" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="Total_Consumption_for_365_days" title="TOTAL CONSUMPTION FOR 365 DAYS"
+                [width]="columnWidth"></kendo-grid-column>
+        </kendo-grid>
+    </div>
+</div>
+
+
+<div class="modal bg-white fade" tabindex="-1" id="kt_modal_2">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content shadow-none">
+            <div class="modal-header">
+                <h5 class="modal-title">PR Line Item for PR :PR23014419</h5>
+
+                <!--begin::Close-->
+                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                </div>
+                <!--end::Close-->
+            </div>
+
+            <div class="modal-body">
+                <app-pr-modal-view></app-pr-modal-view>
+            </div>
+        </div>
+    </div>
+</div>

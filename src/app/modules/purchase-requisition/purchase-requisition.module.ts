@@ -12,6 +12,7 @@ import { PrHistoryDetailComponent } from './pr-history-detail/pr-history-detail.
 import { InlineSVGModule } from 'ng-inline-svg-2';
 import { PrMinMaxComponent } from './pr-min-max/pr-min-max.component';
 import { PrAllViewComponent } from './pr-all-view/pr-all-view.component';
+import { DemoPageComponent } from './demo-page/demo-page.component';
 @NgModule({
   declarations: [
     PrOverviewComponent,
@@ -21,6 +22,7 @@ import { PrAllViewComponent } from './pr-all-view/pr-all-view.component';
     PrHistoryDetailComponent,
     PrMinMaxComponent,
     PrAllViewComponent,
+    DemoPageComponent,
   ],
   imports: [
     CommonModule,
