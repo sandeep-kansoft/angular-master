@@ -1,8 +1,9 @@
 <div class="card">
-    <div class="card-body">
-        <kendo-grid [columnMenu]="{ filter: true }" [groupable]="true" [data]="gridView" [group]="state.group"
-            [filter]="state.filter" [filterable]="false" [reorderable]="true" [resizable]="true" [skip]="state.skip"
-            [pageSize]="pageSize" [pageable]="true" (dataStateChange)="onStateChange($event)" [sortable]="{
+    <div class="card-body ">
+        <kendo-grid class="fixedHeader" [columnMenu]="{ filter: true }" [groupable]="false" [data]="gridView"
+            [group]="state.group" [filter]="state.filter" [filterable]="false" [reorderable]="true" [resizable]="true"
+            [skip]="state.skip" [pageSize]="pageSize" [pageable]="true" (dataStateChange)="onStateChange($event)"
+            [sortable]="{
         allowUnsort: true,           mode: 'multiple' }" [sort]="state.sort" (dataStateChange)="onStateChange($event)">
             <!-- <ng-template kendoGridToolbarTemplate>
                 <button type="button" kendoGridExcelCommand icon="file-excel">Export to Excel</button>
