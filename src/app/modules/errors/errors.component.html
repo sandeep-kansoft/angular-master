@@ -1,0 +1,22 @@
+<!--begin::Authentication - -->
+<div class="d-flex flex-column flex-center flex-column-fluid">
+  <!--begin::Content-->
+  <div class="d-flex flex-column flex-center text-center p-10">
+    <!--begin::Wrapper-->
+    <div class="card card-flush  w-lg-650px py-5">
+      <a (click)="routeToDashboard()" class="mb-10 pt-lg-20 cursor-pointer">
+        <img
+          alt="Logo"
+          src="./assets/media/wonder/AppLogo.png"
+          class="h-50px mb-5"
+        />
+      </a>
+      <div class="card-body py-15 py-lg-20">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    <!--end::Wrapper-->
+  </div>
+  <!--end::Content-->
+</div>
+<!--end::Authentication - -->

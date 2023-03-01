@@ -1,0 +1,36 @@
+<div class="modal-dialog modal-dialog-centered custom-dialog-modal modal-dialog-mobile" role="document">
+    <div class="modal-content custom-modal-class">
+        <div class="modal-body py-4">
+            <div class="d-flex custom-mobile-modal-body mb-4">
+                <img class=" me-3" src="assets/media/wonder/alert-info.svg" />
+
+                <div class="my-2">
+                    <p class="cs-alert-title">{{'Do you really want to delete this?' }}</p>
+                    <span class="cs-alert-sub-title">{{'Please note that your action can not be undone.'}}</span>
+                </div>
+            </div>
+            <div *ngIf="!isMobileView()" class="d-flex flex-row  btn-row-desktop">
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="column-six">
+                        <button (click)="close('CLOSE')" class="btn cs-btn-cancel"
+                            data-bs-dismiss="modal">{{'Cancel'}}</button>
+                    </div>
+                    <div class="column-six">
+                        <button type="button" (click)="close('DELETE')" class="btn delete-btn"
+                            data-bs-dismiss="modal">{{'Delete'}}</button>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="isMobileView()" class="btn-row-mobile row mx-0">
+                <div class="col-12 px-0">
+                    <button type="button" (click)="close('DELETE')" class="btn delete-btn"
+                        data-bs-dismiss="modal">{{'Delete'}}</button>
+                </div>
+                <div class="col-12 px-0">
+                    <button type="button" (click)="close('CLOSE')" class="btn cs-btn-cancel"
+                        data-bs-dismiss="modal">{{'Cancel' }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

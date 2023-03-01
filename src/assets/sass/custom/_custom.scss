@@ -1,0 +1,194 @@
+.demo{
+    display: flex;
+}
+.custom-day {
+    text-align: center;
+    padding: 0.185rem 0.25rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    width: 2rem;
+}
+.custom-day:hover,
+.custom-day.focused {
+    background-color: #e6e6e6;
+}
+.weekend {
+    background-color: #f0ad4e;
+    border-radius: 1rem;
+    color: white;
+}
+.hidden {
+    display: none;
+}
+.custom-datepicker .ngb-dp-header {
+    padding: 0;
+  }
+  .custom-datepicker .ngb-dp-content {
+    display: grid;
+    
+    grid-template-columns: auto auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+  }
+  ngb-datepicker
+  {
+    border:none !important;
+  }
+  .custom-day {
+    text-align: center;
+    padding: 0.185rem 0.25rem;
+    border-radius: 1rem;
+    display: inline-block;
+    width: 2rem;
+  }
+  .ngb-dp-weekday
+  {
+    color:#000000 !important;
+  }
+  .ngb-dp-weekdays
+  {
+    border:none !important;
+    background-color: transparent !important;
+  }
+  .ngb-dp-month
+  {
+    border:none !important;
+  }
+  .custom-day:hover, .custom-day.focused {
+    background-color: #e6e6e6;
+    border-radius: 1rem;
+  }
+  .bg-primary {
+    background-color: #f0ad4e !important;
+    border-radius: 1rem !important;
+  }
+  .dp-hidden {
+    width: 0;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+.custom-day {
+    text-align: center;
+    padding: 0.185rem 0.25rem;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+}
+.custom-day.focused {
+    background-color: #e6e6e6;
+}
+.custom-day.range,
+.custom-day:hover {
+    background-color: rgb(2, 117, 216);
+    color: white;
+}
+.custom-day.faded {
+    background-color: rgba(2, 117, 216, 0.5);
+}
+
+
+
+
+/* common css */
+.border-radius-0 {
+  border-radius: 0px !important;
+}
+.text-primary {
+  color: #ec1c24;
+}
+
+/* Login image & overlay starts */
+.login-image {
+  background-image: url(../../media/auth/auth-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+@media (max-width: 991.98px) {
+  .login-image {
+    background-position: top right;
+  }
+}
+@media (max-width: 767px) {
+  .login-image {
+    background-position: top right;
+  }
+  .background-position-top-right {
+    background-position: top right !important;
+  }
+  // .signin-form {
+  //   padding: 20px 20px 20px 20px;
+  // }
+}
+.login-bg-overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 35%, rgba(0,0,0,0.5) 100%);
+}
+@media (max-width: 991.98px) {
+  .login-bg-overlay {
+    background: transparent !important;
+  }
+}
+@media (max-width: 767px) {
+  .login-bg-overlay {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 35%, rgba(0,0,0,0.5) 100%);
+  }
+}
+/* Login image & overlay end */
+
+/* Inner page main container */
+@media (min-width: 1400px) {
+  .container-xxl {
+    max-width: 100% !important;
+  }
+}
+
+
+/* top header */
+.app-header {
+  display: none !important;
+}
+
+/* full screen popup */
+// .modal-content {
+//   background-color: #f5f8fa !important;
+// }
+// .modal-fullscreen .card-gray {
+//   background-color: #f5f8fa !important;
+// }
+.fullscreen-back-icon svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+.fullscreen-back-icon svg path {
+  stroke: #c90c0f;
+}
+.modal-fullscreen .col-form-label {
+  padding-top: calc(0.475rem + 1px) !important;
+  padding-bottom: calc(0.475rem + 1px) !important;
+}
+.modal-fullscreen .card .card-header {
+  min-height: 50px !important;
+}
+
+/* Wrapper */
+[data-kt-app-header-fixed=true] .app-wrapper,
+.app-wrapper {
+  margin-top: 0px !important;
+}
+
+
+/* Kendo  Grid */
+// .k-grid .k-grid-header .k-table-th {
+//   background: #c90c0f;
+//   color: #fff;
+// }
+.k-filtercell-operator .k-dropdown-operator .k-input-button {
+  background: #c90c0f;
+    color: #fff;
+}
+
