@@ -24,6 +24,7 @@ export class PrOverviewComponent {
   public gridView: GridDataResult;
   dropdownListdata = ['Preview', 'RFQ', 'Auction', 'Lines', 'History'];
   columnWidth = 150;
+  headerStyle = 'fw-bold';
   smallColumnWidth = 120;
   longColumnWidth = 200;
   pageSize = 100;

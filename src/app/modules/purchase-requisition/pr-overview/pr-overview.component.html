@@ -11,8 +11,8 @@
                         to Excel</button>
                 </div>
             </ng-template>
-            <kendo-grid-column [filterable]="false" field="sno" title="SR NO" [width]="110">
-            </kendo-grid-column> <kendo-grid-command-column title="ACTIONS" [width]="110">
+            <kendo-grid-column [headerClass]="headerStyle" [filterable]="false" field="sno" title="SR NO" [width]="110">
+            </kendo-grid-column> <kendo-grid-command-column [headerClass]="headerStyle" title="ACTIONS" [width]="110">
                 <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
                         <div ngbDropdown autoClose="'outside'" container="body">
@@ -35,7 +35,7 @@
                     </ng-container>
                 </ng-template>
             </kendo-grid-command-column>
-            <kendo-grid-command-column title="PR NO" [width]="smallColumnWidth">
+            <kendo-grid-command-column [headerClass]="headerStyle" title="STATUS" [width]="smallColumnWidth">
                 <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
                         <span [ngClass]="showBadgeStatusColorClass(item.BUYERSTATUS)"
@@ -44,7 +44,7 @@
                 </ng-template>
             </kendo-grid-command-column>
 
-            <kendo-grid-command-column title="STATUS" [width]="columnWidth">
+            <kendo-grid-command-column [headerClass]="headerStyle" title="PR NO" [width]="columnWidth">
                 <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
                         <a (click)="onModelClick('Lines',item);"
@@ -52,35 +52,43 @@
                     </ng-container>
                 </ng-template>
             </kendo-grid-command-column>
-            <!-- <kendo-grid-column field="prid" title="PR NO" [width]="columnWidth"></kendo-grid-column> -->
-            <kendo-grid-column field="DESCRIPTION" title="PR DESCRIPTION" [width]="longColumnWidth"></kendo-grid-column>
-            <!-- <kendo-grid-column field="CREATION_DATE" title="CREATED DATE" [width]="130"></kendo-grid-column> -->
-            <kendo-grid-column field="CREATION_DATE" [width]="220" title="CREATED DATE">
+            <!-- <kendo-grid-column [headerClass]="headerStyle" field="prid" title="PR NO" [width]="columnWidth"></kendo-grid-column> -->
+            <kendo-grid-column [headerClass]="headerStyle" field="DESCRIPTION" title="PR DESCRIPTION"
+                [width]="longColumnWidth"></kendo-grid-column>
+            <!-- <kendo-grid-column [headerClass]="headerStyle" field="CREATION_DATE" title="CREATED DATE" [width]="130"></kendo-grid-column> -->
+            <kendo-grid-column [headerClass]="headerStyle" field="CREATION_DATE" [width]="220" title="CREATED DATE">
                 <ng-template kendoGridCellTemplate let-dataItem>
                     {{dataItem.CREATION_DATE | date: 'MM/dd/yyyy'}}
                 </ng-template>
             </kendo-grid-column>
-            <kendo-grid-column field="ApprovedDate" [width]="220" title="APPROVED DATE">
+            <kendo-grid-column [headerClass]="headerStyle" field="ApprovedDate" [width]="220" title="APPROVED DATE">
                 <ng-template kendoGridCellTemplate let-dataItem>
                     {{dataItem.ApprovedDate | date: 'MM/dd/yyyy'}}
                 </ng-template>
             </kendo-grid-column>
-            <!-- <kendo-grid-column field="ApprovedDate" title="APPROVED DATE" [width]="130"></kendo-grid-column> -->
-            <kendo-grid-column field="SiteName" title="SITE" [width]="columnWidth"></kendo-grid-column>
-            <!-- <kendo-grid-column field="PROJECT_NAME" title="PROJECT ID" [width]="columnWidth"></kendo-grid-column> -->
-            <kendo-grid-column field="DEPARTMENTNAME" title="DEPARTMENT" [width]="longColumnWidth"></kendo-grid-column>
-            <kendo-grid-column field="PRTYPE" title="PR TYPE" [width]="columnWidth"> </kendo-grid-column>
-            <kendo-grid-column field="REQUESTED_BY" title="REQUEST BY" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="TotalValue" title="TOTAL VALUE" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="AssignBuyer" title="ASSIGN TO" [width]="columnWidth"></kendo-grid-column>
+            <!-- <kendo-grid-column [headerClass]="headerStyle" field="ApprovedDate" title="APPROVED DATE" [width]="130"></kendo-grid-column> -->
+            <kendo-grid-column [headerClass]="headerStyle" field="SiteName" title="SITE"
+                [width]="columnWidth"></kendo-grid-column>
+            <!-- <kendo-grid-column [headerClass]="headerStyle" field="PROJECT_NAME" title="PROJECT ID" [width]="columnWidth"></kendo-grid-column> -->
+            <kendo-grid-column [headerClass]="headerStyle" field="DEPARTMENTNAME" title="DEPARTMENT"
+                [width]="longColumnWidth"></kendo-grid-column>
+            <kendo-grid-column [headerClass]="headerStyle" field="PRTYPE" title="PR TYPE" [width]="columnWidth">
+            </kendo-grid-column>
+            <kendo-grid-column [headerClass]="headerStyle" field="REQUESTED_BY" title="REQUEST BY"
+                [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column [headerClass]="headerStyle" field="TotalValue" title="TOTAL VALUE"
+                [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column [headerClass]="headerStyle" field="AssignBuyer" title="ASSIGN TO"
+                [width]="columnWidth"></kendo-grid-column>
 
-            <kendo-grid-column field="BUYERSTATUS" title="HISTORY" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column [headerClass]="headerStyle" field="BUYERSTATUS" title="HISTORY"
+                [width]="columnWidth"></kendo-grid-column>
             <kendo-grid-excel pages fileName="PR.xlsx" [fetchData]="allData"></kendo-grid-excel>
         </kendo-grid>
     </div>
 </div>
 
-
+<!-- Pr line Model Start -->
 <div class="modal bg-white fade" tabindex="-1" id="kt_modal_2">
     <div class="modal-dialog modal-fullscreen">
         <div class="modal-content shadow-none">
@@ -101,3 +109,4 @@
         </div>
     </div>
 </div>
+<!-- Pr line Model End -->
