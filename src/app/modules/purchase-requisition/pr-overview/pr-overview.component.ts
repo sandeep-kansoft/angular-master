@@ -9,9 +9,12 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { PrDetailViewComponent } from '../pr-detail-view/pr-detail-view.component';
 import { PrModalViewComponent } from '../pr-modal-view/pr-modal-view.component';
 import { PrHistoryDetailComponent } from '../pr-history-detail/pr-history-detail.component';
-import { Workbook } from '@progress/kendo-angular-excel-export';
+import {
+  ExcelExportData,
+  Workbook,
+} from '@progress/kendo-angular-excel-export';
 import { saveAs } from '@progress/kendo-file-saver';
-import { Observable ,zip } from 'rxjs';
+import { Observable, zip } from 'rxjs';
 @Component({
   selector: 'app-pr-overview',
   templateUrl: './pr-overview.component.html',
@@ -21,6 +24,8 @@ export class PrOverviewComponent {
   public gridView: GridDataResult;
   dropdownListdata = ['Preview', 'RFQ', 'Auction', 'Lines', 'History'];
   columnWidth = 150;
+  smallColumnWidth = 120;
+  longColumnWidth = 200;
   pageSize = 100;
   serachText: string = '';
   public state: State = {
@@ -44,7 +49,9 @@ export class PrOverviewComponent {
     private prDetailModel: NgbModal,
     private prLineViewModel: NgbModal,
     private prHistoryModel: NgbModal
-  ) {}
+  ) {
+    this.allData = this.allData.bind(this);
+  }
 
   public ngOnInit() {
     this.loadProducts();
@@ -132,6 +139,24 @@ export class PrOverviewComponent {
     console.log('data', data);
   }
 
+  showBadgeStatusColorClass(type: string): string {
+    let color: string = '';
+    switch (type) {
+      case 'In Process':
+        color = 'badge-success';
+        break;
+      case 'Pending':
+        color = 'badge-warning';
+        break;
+      case 'Closed':
+        color = 'badge-danger';
+        break;
+
+      default:
+        break;
+    }
+    return color;
+  }
   // public onExcelExport(args: ExcelExportEvent): void {
   //   // Prevent automatically saving the file. We will save it manually after we fetch and add the details
   //   args.preventDefault();
@@ -195,6 +220,11 @@ export class PrOverviewComponent {
   //   });
   // }
 
+  public allData(): ExcelExportData {
+    const result: ExcelExportData = {
+      data: process(this.prData, { sort: this.state.sort }).data,
+    };
 
-  
+    return result;
+  }
 }

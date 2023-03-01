@@ -1,10 +1,12 @@
 export interface PrGridDataDto {
+
+  
   sno: number;
   prid: number;
   PR_NUM: string;
   DESCRIPTION?: string | null;
-  CREATION_DATE: string;
-  ApprovedDate: string;
+  CREATION_DATE: Date|string;
+  ApprovedDate: Date |string;
   SiteName: number;
   PROJECT_NAME: string;
   DEPARTMENTNAME: string;
