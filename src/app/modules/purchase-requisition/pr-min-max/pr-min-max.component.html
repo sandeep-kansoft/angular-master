@@ -1,45 +1,79 @@
+<div class="contains">
+    <div class="row mb-4">
+        <div class="col-md-3" style="display: flex; height: 40px;white-space:nowrap;margin-bottom: 8px;">
+            <label class="col-form-label fw-bold fs-6" style="margin-right: 20px;"><span>From Date:</span></label>
+            <input disabled type="text" class="form-control form-control-lg " value="Start Date" />
+        </div>
+
+        <div class="col-md-3 " style="display: flex; height: 40px; white-space:nowrap;margin-bottom: 8px; ">
+            <label class="col-form-label  fw-bold fs-6" style="margin-right: 20px;">To Date: </label>
+            <input disabled type="text" class="form-control form-control-lg " value="End Date" />
+        </div>
+
+        <div class="col-md-6" style="display: flex; height: 60px;white-space:nowrap;margin-bottom: 8px;">
+            <input disabled type="text" class="form-control form-control-lg " style="height: 40px;"
+                value="Search with pr no/DEPARTMENT" />
+            <button class="btn btn-lg fw-bold  btn-primary" style="margin-left:8px;height: 45px; ">Search</button>
+        </div>
+
+    </div>
+</div>
+
+
+
 <div class="card">
     <div class="card-body">
-        <kendo-grid [groupable]="true" [data]="gridView" [group]="state.group" [filter]="state.filter"
-            [filterable]="true" [reorderable]="true" [resizable]="true" [skip]="state.skip" [pageSize]="pageSize"
-            [pageable]="true" (dataStateChange)="onStateChange($event)" [sortable]="{
-        allowUnsort: true,
-        mode: 'multiple'}" [sort]="state.sort" (dataStateChange)="onStateChange($event)">
-            <kendo-grid-column field="prid" title="SR NO" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Site" title="SITE" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Warehouse" title="WAREHOUSE" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Buyer_Group" title="BUYER GROUP" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Item_Group" title="ITEM GROUP" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="PPO_No" title="PPO NUMBER" [width]="columnWidth"></kendo-grid-column>
+        <kendo-grid class="fixed-header" [columnMenu]="{ filter: true ,sort : true  }" [groupable]="true"
+            [data]="gridView" [group]="state.group" [filter]="state.filter" [filterable]="false" [reorderable]="true"
+            [resizable]="true" [skip]="state.skip" [pageSize]="pageSize" [pageable]="true"
+            (dataStateChange)="onStateChange($event)" [sortable]="{
+        allowUnsort: true,           mode: 'multiple' }" [sort]="state.sort" (dataStateChange)="onStateChange($event)" >
+        <ng-template kendoGridToolbarTemplate>
+            <div class="excel-export">
+                <button type="button" kendoGridExcelCommand class="btn btn-primary btn-sm" icon="file-excel">Export
+                    to Excel</button>
+            </div>
+        </ng-template>
+            <kendo-grid-column field="prid" title="SR NO" [width]="columnWidth" [headerClass]="headerStyle">
+                <ng-template kendoGridCellTemplate let-rowIndex="rowIndex">
+                    {{rowIndex+1}}
+                </ng-template>
+            </kendo-grid-column>
+            <kendo-grid-column field="Site" title="SITE" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Warehouse" title="WAREHOUSE" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Buyer_Group" title="BUYER GROUP" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Item_Group" title="ITEM GROUP" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="PPO_No" title="PPO NUMBER" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
             <!-- <kendo-grid-column field="PROJECT_NAME" title="PROJECT ID" [width]="columnWidth"></kendo-grid-column> -->
-            <kendo-grid-column field="PPO_Date" title="PPO DATE" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Item_Code" title="ITEM CODE" [width]="columnWidth"> </kendo-grid-column>
+            <kendo-grid-column field="PPO_Date" title="PPO DATE" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Item_Code" title="ITEM CODE" [width]="columnWidth"[headerClass]="headerStyle"> </kendo-grid-column>
             <kendo-grid-column field="Item_Description" title="ITEM DESCRIPTION"
-                [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Config" title="CONFIG" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="UOM" title="UOM" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Min_Order_Qty" title="MIN ORDER QTY" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Max_Order_Qty" title="MAX ORDER QTY" [width]="columnWidth"></kendo-grid-column>
+                [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Config" title="CONFIG" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="UOM" title="UOM" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Min_Order_Qty" title="MIN ORDER QTY" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Max_Order_Qty" title="MAX ORDER QTY" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
             <kendo-grid-column field="On_Hand_Qty_in_Main_Store_Warehouse" title="ON HAND QTY IN MAIN STORE WAREHOUSE"
-                [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Required_Qty" title="REQUIRED QTY" [width]="columnWidth"></kendo-grid-column>
+                [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Required_Qty" title="REQUIRED QTY" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
             <kendo-grid-column field="On_Hand_Qty_in_Other_Store_Warehouse" title="ON HAND QTY IN OTHER STORE WAREHOUSE"
-                [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Pending_PO" title="PENDING PO" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="PO_In_Process" title="PO IN PROCESS" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="In_Process_PR" title="IN PROCESS PR" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="NetOrder_Qty" title="NET ORDER QTY" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Ordered_Qty" title="ORDER QTY" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Order_Qty" title="PENDING PR" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Pending_PR" title="PR INTERVIEW" [width]="columnWidth"></kendo-grid-column>
+                [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Pending_PO" title="PENDING PO" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="PO_In_Process" title="PO IN PROCESS" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="In_Process_PR" title="IN PROCESS PR" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="NetOrder_Qty" title="NET ORDER QTY" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Ordered_Qty" title="ORDER QTY" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Order_Qty" title="PENDING PR" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Pending_PR" title="PR INTERVIEW" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
             <kendo-grid-column field="PR_InReview" title="LAST PURCHASE PRICE"
-                [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Last_Purchase_Price" title="PO AMOUNT" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="PPO_Amount" title="LAST PO NO" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Last_PO_No" title="LAST PO DATE" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Vendor_Name" title="VENDOR NAME" [width]="columnWidth"></kendo-grid-column>
+                [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Last_Purchase_Price" title="PO AMOUNT" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="PPO_Amount" title="LAST PO NO" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Last_PO_No" title="LAST PO DATE" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Vendor_Name" title="VENDOR NAME" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
             <kendo-grid-column field="Total_Consumption_for_365_days" title="TOTAL CONSUMPTION FOR 365 DAYS"
-                [width]="columnWidth"></kendo-grid-column>
+                [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+                <kendo-grid-excel pages fileName="PR.xlsx" [fetchData]="allData"></kendo-grid-excel>
         </kendo-grid>
     </div>
 </div>

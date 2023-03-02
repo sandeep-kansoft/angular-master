@@ -19,7 +19,7 @@
     </div>
 </div>
 
-<div class="card" *ngIf="replytype==='1'">
+<div class="card" *ngIf="replytype=='1'">
     <div class="card-body">
         <kendo-grid class="fixed-header" [columnMenu]="{ filter: true }" [groupable]="true" [data]="gridView"
             [group]="state.group" [filter]="state.filter" [filterable]="false" [reorderable]="true" [resizable]="true"
@@ -32,17 +32,19 @@
                         to Excel</button>
                 </div>
             </ng-template>
-            <kendo-grid-column [filterable]="false" field="sno" title="SR NO" [width]="110">
+            <kendo-grid-column [filterable]="false" field="sno" title="SR NO" [width]="110" [headerClass]="headerStyle">
                 <ng-template kendoGridCellTemplate let-rowIndex="rowIndex">
                     {{rowIndex+1}}
                 </ng-template>
             </kendo-grid-column>
-            <kendo-grid-command-column title="ACTIONS" [width]="110">
+            <kendo-grid-command-column title="ACTIONS" [width]="110" [headerClass]="headerStyle">
                 <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
                         <div ngbDropdown autoClose="'outside'" container="body">
                             <button ngbDropdownToggle class="btn btn-sm fw-bold" type="button"
-                                data-bs-auto-close="outside">&nbsp; &nbsp;&nbsp;&nbsp;<span class="justify-content-center" [inlineSVG]="'../../../../assets/media/wonder/ellipsis.svg'"></span>
+                                data-bs-auto-close="outside">&nbsp; &nbsp;&nbsp;&nbsp;<span
+                                    class="justify-content-center"
+                                    [inlineSVG]="'../../../../assets/media/wonder/ellipsis.svg'"></span>
                             </button>
 
 
@@ -60,10 +62,11 @@
                 </ng-template>
             </kendo-grid-command-column>
 
-            <kendo-grid-command-column title="PR NO" [width]="150" field="PR No">
+            <kendo-grid-command-column title="PR NO" [width]="150" field="PR No" [headerClass]="headerStyle">
                 <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
-                        <a class="link-primary text-decoration-underline text-center" (click)="prnoclicked()">{{item['PR No']}}
+                        <a class="link-primary text-decoration-underline text-center" (click)="onModelClick('Lines',item);">{{item['PR
+                            No']}}
                         </a>
 
                     </ng-container>
@@ -72,26 +75,26 @@
 
             </kendo-grid-command-column>
 
-            <kendo-grid-column title="STATUS" [width]="columnWidth">
+            <kendo-grid-column title="STATUS" [width]="columnWidth" [headerClass]="headerStyle">
                 <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
                         <span [ngClass]="showBadgeStatusColorClass(item.Status)" class="badge">{{item.Status}}</span>
                     </ng-container>
                 </ng-template>
             </kendo-grid-column>
-            <kendo-grid-column field="PR Description" title="PR DESCRIPTION" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Created Date" title="CREATED DATE" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Site" title="SITE" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Project ID" title="PROJECT ID" [width]="columnWidth"></kendo-grid-column>
-            <!-- <kendo-grid-column field="PROJECT_NAME" title="PROJECT ID" [width]="columnWidth"></kendo-grid-column> -->
-            <kendo-grid-column field="Department" title="DEPARTMENT" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="PR Type" title="PR TYPE" [width]="columnWidth"> </kendo-grid-column>
-            <kendo-grid-column field="PR Sub Type" title="PRSUBTYPE" [width]="columnWidth"> </kendo-grid-column>
-            <kendo-grid-column field="Requested By" title="REQUESTED BY" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Total Value" title="TOTAL VALUE" [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column field="Assign To" title="ASSIGN TO" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="PR Description" title="PR DESCRIPTION" [width]="columnWidth" [headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Created Date" title="CREATED DATE" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Site" title="SITE" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Project ID" title="PROJECT ID" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <!-- <kendo-grid-column field="PROJECT_NAME" title="PROJECT ID" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column> -->
+            <kendo-grid-column field="Department" title="DEPARTMENT" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="PR Type" title="PR TYPE" [width]="columnWidth"[headerClass]="headerStyle"> </kendo-grid-column>
+            <kendo-grid-column field="PR Sub Type" title="PRSUBTYPE" [width]="columnWidth"[headerClass]="headerStyle"> </kendo-grid-column>
+            <kendo-grid-column field="Requested By" title="REQUESTED BY" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Total Value" title="TOTAL VALUE" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="Assign To" title="ASSIGN TO" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
 
-            <kendo-grid-column field="History" title="HISTORY" [width]="columnWidth"></kendo-grid-column>
+            <kendo-grid-column field="History" title="HISTORY" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
 
 
 

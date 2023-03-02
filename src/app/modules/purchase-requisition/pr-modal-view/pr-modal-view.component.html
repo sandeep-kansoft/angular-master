@@ -15,7 +15,7 @@
         <div class="card-body" *ngIf="!isFormVisible && !isHistoricalDataVisible">
 
 
-            <kendo-grid [data]="gridView" [columnMenu]="{ filter: true ,sort : true  }" [group]="state.group"
+            <kendo-grid   [data]="gridView" [columnMenu]="{ filter: true ,sort : true  }" [group]="state.group"
                 [filter]="state.filter" [filterable]="false" [reorderable]="true" [resizable]="true" [skip]="state.skip"
                 [pageSize]="pageSize" [pageable]="true" (dataStateChange)="onStateChange($event)" [sortable]="{
     allowUnsort: true,
@@ -109,21 +109,21 @@
                         value="KIT, COMPRESSOR REPAIR; TYPE: MAINTENANCE OF AUX.VALVE; MANUFACTURER PART NO: 400940.2, MANUFACTURER: KAESER" />
                 </div>
             </div>
-            <kendo-grid [data]="PoHistorydataGridView" [group]="state.group" [filter]="state.filter"
+            <kendo-grid [data]="PoHistorydataGridView" [columnMenu]="{ filter: true ,sort : true  }"  [group]="state.group" [filter]="state.filter"
                 [filterable]="false" [reorderable]="true" [resizable]="true" [skip]="state.skip" [pageSize]="pageSize"
                 [pageable]="true" (dataStateChange)="onStateChange($event)" [sortable]="{
     allowUnsort: true,
     mode: 'multiple'}" [sort]="state.sort" (dataStateChange)="onStateChange($event)">
-                <kendo-grid-column field="Vendor_Code" title="VENDOR CODE" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="Vendor_Name" title="VENDOR NAME" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="PO_No" title="PO NUMBER" [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column field="Vendor_Code" title="VENDOR CODE" [width]="columnWidth" [headerClass]="headerStyle"></kendo-grid-column>
+                <kendo-grid-column field="Vendor_Name" title="VENDOR NAME" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+                <kendo-grid-column field="PO_No" title="PO NUMBER" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
                 <kendo-grid-column field="PO_Confirmation_Date" title="PO CONFIRMATION DATE"
-                    [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="PO_Qty" title="PO QUANTITY" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="UOM" title="UOM" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="Unit_Price" title="UNIT PRICE" [width]="columnWidth">
+                    [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+                <kendo-grid-column field="PO_Qty" title="PO QUANTITY" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+                <kendo-grid-column field="UOM" title="UOM" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+                <kendo-grid-column field="Unit_Price" title="UNIT PRICE" [width]="columnWidth"[headerClass]="headerStyle">
                 </kendo-grid-column>
-                <kendo-grid-column field="Discount" title="DISCOUNT" [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column field="Discount" title="DISCOUNT" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
 
 
             </kendo-grid>

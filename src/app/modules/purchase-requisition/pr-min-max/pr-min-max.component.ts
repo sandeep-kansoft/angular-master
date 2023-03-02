@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ExcelExportData } from '@progress/kendo-angular-excel-export';
 import { GridDataResult } from '@progress/kendo-angular-grid';
 import { State, process, SortDescriptor } from '@progress/kendo-data-query';
 import { CommonService } from 'src/app/shared/common.service';
@@ -19,6 +20,7 @@ export class PrMinMaxComponent {
   dropdownListdata = ['Preview', 'RFQ', 'Auction', 'Lines', 'History'];
   columnWidth = 150;
   pageSize = 100;
+  headerStyle = 'fw-bold';
   serachText: string = '';
   public state: State = {
     sort: [
@@ -36,12 +38,13 @@ export class PrMinMaxComponent {
   };
   prData: any[] = Po_or_RFQOrder;
 
+
   constructor(
     private commonService: CommonService,
     private prDetailModel: NgbModal,
     private prLineViewModel: NgbModal,
     private prHistoryModel: NgbModal
-  ) {}
+  ) {this.allData = this.allData.bind(this);}
 
   public ngOnInit() {
     this.loadProducts();
@@ -127,5 +130,12 @@ export class PrMinMaxComponent {
   }
   showdata(data: any) {
     console.log('data', data);
+  }
+  public allData(): ExcelExportData {
+    const result: ExcelExportData = {
+      data: process(this.prData, { sort: this.state.sort }).data,
+    };
+
+    return result;
   }
 }
