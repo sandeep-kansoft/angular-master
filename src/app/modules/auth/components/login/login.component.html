@@ -165,7 +165,7 @@
           ></span>
         </span>
       </ng-container>
-      <ng-container *ngIf="!(isLoading$ | async)">
+      <ng-container *ngIf="(isLoading$ | async) === false">
         <span class="indicator-label">Continue</span>
       </ng-container>
     </button>

@@ -2,19 +2,20 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { baseUrl } from 'src/app/shared/constants/urlconfig';
 
 import { UserModel } from '../../../models/user.model';
 import { AuthModel } from '../../../models/auth.model';
 import { UsersTable } from '../../../../../_fake/users.table';
 import { environment } from '../../../../../../environments/environment';
-
-const API_USERS_URL = `${environment.apiUrl}/users`;
-
 @Injectable({
   providedIn: 'root',
 })
 export class AuthHTTPService {
-  constructor(private http: HttpClient) {}
+  baseUrl: string = '';
+  constructor(private http: HttpClient) {
+    this.baseUrl = baseUrl;
+  }
 
   // public methods
   login(email: string, password: string): Observable<any> {
@@ -40,9 +41,9 @@ export class AuthHTTPService {
         }
 
         const auth = new AuthModel();
-        auth.authToken = user.authToken;
+        auth.accessToken = user?.accessToken;
         auth.refreshToken = user.refreshToken;
-        auth.expiresIn = new Date(Date.now() + 100 * 24 * 60 * 60 * 1000);
+        auth.expireInSeconds = 120000;
         return auth;
       })
     );
@@ -50,12 +51,12 @@ export class AuthHTTPService {
 
   createUser(user: UserModel): Observable<any> {
     user.roles = [2]; // Manager
-    user.authToken = 'auth-token-' + Math.random();
+    user.accessToken = 'auth-token-' + Math.random();
     user.refreshToken = 'auth-token-' + Math.random();
-    user.expiresIn = new Date(Date.now() + 100 * 24 * 60 * 60 * 1000);
+    user.expireInSeconds = 1200000;
     user.pic = './assets/media/avatars/300-1.jpg';
 
-    return this.http.post<UserModel>(API_USERS_URL, user);
+    return this.http.post<UserModel>(`${this.baseUrl}/users`, user);
   }
 
   forgotPassword(email: string): Observable<boolean> {
@@ -71,7 +72,7 @@ export class AuthHTTPService {
 
   getUserByToken(token: string): Observable<UserModel | undefined> {
     const user = UsersTable.users.find((u: UserModel) => {
-      return u.authToken === token;
+      return u.accessToken === token;
     });
 
     if (!user) {
@@ -82,6 +83,6 @@ export class AuthHTTPService {
   }
 
   getAllUsers(): Observable<UserModel[]> {
-    return this.http.get<UserModel[]>(API_USERS_URL);
+    return this.http.get<UserModel[]>(`${this.baseUrl}/users`);
   }
 }

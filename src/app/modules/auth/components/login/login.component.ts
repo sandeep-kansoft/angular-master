@@ -42,7 +42,8 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.initForm();
     // get return url from route parameters or default to '/'
     this.returnUrl =
-      this.route.snapshot.queryParams['returnUrl'.toString()] || '/purchase-requisition/pr-overview';
+      this.route.snapshot.queryParams['returnUrl'.toString()] ||
+      '/purchase-requisition/pr-overview';
   }
 
   // convenience getter for easy access to form fields
@@ -56,9 +57,7 @@ export class LoginComponent implements OnInit, OnDestroy {
         this.defaultAuth.email,
         Validators.compose([
           Validators.required,
-          Validators.email,
-          Validators.minLength(3),
-          Validators.maxLength(320), // https://stackoverflow.com/questions/386294/what-is-the-maximum-length-of-a-valid-email-address
+          // https://stackoverflow.com/questions/386294/what-is-the-maximum-length-of-a-valid-email-address
         ]),
       ],
       password: [
