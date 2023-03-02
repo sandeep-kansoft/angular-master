@@ -47,3 +47,7 @@ a {
 //   border-left: 0.3em solid transparent;
 //   display: none;
 // }
+
+.dropdown-toggle::after {
+  display: none;
+}

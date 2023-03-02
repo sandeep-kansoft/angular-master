@@ -28,6 +28,7 @@ export class PrOverviewComponent {
   smallColumnWidth = 120;
   longColumnWidth = 200;
   pageSize = 100;
+  
   serachText: string = '';
   public state: State = {
     sort: [
