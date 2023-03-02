@@ -13,6 +13,7 @@ import { PohistoryData, PrLinesData } from './data';
   styleUrls: ['./pr-modal-view.component.scss'],
 })
 export class PrModalViewComponent {
+  headerStyle = 'fw-bold';
   public gridView: GridDataResult;
   public PoHistorydataGridView: GridDataResult;
   public state: State = {
@@ -35,7 +36,7 @@ export class PrModalViewComponent {
   pageSize = 10;
   isFormVisible: boolean = false;
   viewPoHistoryData = [];
-  headerStyle = 'fw-bold';
+
 
   public PoHistorydata: State = {
     sort: [
@@ -58,7 +59,7 @@ export class PrModalViewComponent {
     private commonService: CommonService,
     public modal: NgbModal,
     private prDetailModel: NgbModal
-  ) {}
+  ) { }
 
   public ngOnInit() {
     this.loadProducts();
@@ -81,9 +82,9 @@ export class PrModalViewComponent {
     return this.commonService.isMobileBrowser;
   }
 
-  editHandler(item: PrGridDataDto) {}
+  editHandler(item: PrGridDataDto) { }
 
-  removeHandler(item: PrGridDataDto) {}
+  removeHandler(item: PrGridDataDto) { }
 
   public onStateChange(state: any) {
     this.state = state;
@@ -124,6 +125,7 @@ export class PrModalViewComponent {
         //this.showHistoryModel();
         break;
       case 'VIEW HISTORICAL DATA':
+
         this.isHistoricalDataVisible = true;
         break;
 

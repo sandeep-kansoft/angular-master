@@ -19,6 +19,7 @@ import { PrAllViewData } from './data';
 })
 export class PrAllViewComponent {
   replytype:any=1;
+  headerStyle = 'fw-bold';
   public lineviewdata:GridDataResult;
   public gridView: GridDataResult;
   dropdownListdata = ['Preview', 'Lines','History'];

@@ -12,6 +12,7 @@ import { historyData } from './historydata';
   styleUrls: ['./pr-history-detail.component.scss'],
 })
 export class PrHistoryDetailComponent {
+  headerStyle = 'fw-bold';
   public gridView: GridDataResult;
   public state: State = {
     sort: [
@@ -74,5 +75,23 @@ export class PrHistoryDetailComponent {
 
   closeModel() {
     this.modal.dismissAll();
+  }
+  showBadgeStatusColorClass(type: string): string {
+    let color: string = '';
+    switch (type) {
+      case 'Approved':
+        color = 'badge-success';
+        break;
+      case 'Pending':
+        color = 'badge-warning';
+        break;
+      case 'Closed':
+        color = 'badge-danger';
+        break;
+
+      default:
+        break;
+    }
+    return color;
   }
 }
