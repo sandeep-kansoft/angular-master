@@ -15,17 +15,20 @@
         <div class="card-body" *ngIf="!isFormVisible && !isHistoricalDataVisible">
 
 
-            <kendo-grid [data]="gridView" [group]="state.group" [filter]="state.filter" [filterable]="false"
-                [reorderable]="true" [resizable]="true" [skip]="state.skip" [pageSize]="pageSize" [pageable]="true"
-                (dataStateChange)="onStateChange($event)" [sortable]="{
+            <kendo-grid [data]="gridView" [columnMenu]="{ filter: true ,sort : true  }" [group]="state.group"
+                [filter]="state.filter" [filterable]="false" [reorderable]="true" [resizable]="true" [skip]="state.skip"
+                [pageSize]="pageSize" [pageable]="true" (dataStateChange)="onStateChange($event)" [sortable]="{
     allowUnsort: true,
     mode: 'multiple'}" [sort]="state.sort" (dataStateChange)="onStateChange($event)">
                 <kendo-grid-command-column title="ACTION" [width]="150">
                     <ng-template kendoGridCellTemplate let-item>
                         <ng-container ngbDropdown #myDrop="ngbDropdown">
                             <div ngbDropdown autoClose="'outside'" container="body">
-                                <button ngbDropdownToggle class="btn btn-sm fw-bold  btn-primary dropdown-toggle"
-                                    type="button">ACTIONS </button>
+                                <button ngbDropdownToggle class="btn btn-sm fw-bold" type="button"
+                                    data-bs-auto-close="outside">&nbsp; &nbsp;&nbsp;&nbsp;
+                                    <span class="justify-content-center"
+                                        [inlineSVG]="'../../../../assets/media/wonder/ellipsis.svg'"></span>
+                                </button>
                                 <ul class="dropdown-menu" ngbDropdownMenu>
                                     <li *ngFor="let value of dropdownListdata" ngbDropdownItem>
                                         <a (click)="dropDownMenuClickHandler(value,item); myDrop.close();"
@@ -42,27 +45,49 @@
 
 
                 </kendo-grid-command-column>
+                <kendo-grid-command-column headerClass="grid-header-menu" title="STATUS" [width]="120">
+                    <ng-template kendoGridCellTemplate let-item>
+                        <ng-container>
+                            <span [ngClass]="showBadgeStatusColorClass(item.STATUS)"
+                                class="badge">{{item.STATUS}}</span>
+                        </ng-container>
+                    </ng-template>
+                </kendo-grid-command-column>
 
-                <kendo-grid-column field="LINE_NO" title="LINE NO" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="ITEM_CODE" title="ITEM CODE" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="DESCRIPTION" title="ITEM DESCRIPTION"
+
+                <kendo-grid-column headerClass="grid-header-menu" field="LINE_NO" title="LINE NO"
                     [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="ApprovedDate" title="UOM" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="QUANTITY" title="QUANTITY" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="IN_PROCESS_QUANTITY" title="IN PROCESS QUANTITY"
+                <kendo-grid-column headerClass="grid-header-menu" field="ITEM_CODE" title="ITEM CODE"
                     [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="USED_QUANITTY" title="USED QUANITTY"
+                <kendo-grid-column headerClass="grid-header-menu" field="DESCRIPTION" title="ITEM DESCRIPTION"
                     [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="REMANING_QUANITTY" title="REMANING QUANITTY" [width]="columnWidth">
+                <kendo-grid-column headerClass="grid-header-menu" field="ApprovedDate" title="UOM"
+                    [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column headerClass="grid-header-menu" field="QUANTITY" title="QUANTITY"
+                    [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column headerClass="grid-header-menu" field="IN_PROCESS_QUANTITY"
+                    title="IN PROCESS QUANTITY" [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column headerClass="grid-header-menu" field="USED_QUANITTY" title="USED QUANITTY"
+                    [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column headerClass="grid-header-menu" field="REMANING_QUANITTY" title="REMANING QUANITTY"
+                    [width]="columnWidth">
                 </kendo-grid-column>
-                <kendo-grid-column field="RATE" title="RATE" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="AMOUNT" title="AMOUNT" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="AssignBuyer" title="ASSING TO" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="STATUS" title="STATUS" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="REQ_STATUS" title="REQ STATUS" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="REQ_NO" title="REQ NO" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="PO_NO" title="PO NO" [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column field="STATE" title="STATE" [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column headerClass="grid-header-menu" field="RATE" title="RATE"
+                    [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column headerClass="grid-header-menu" field="AMOUNT" title="AMOUNT"
+                    [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column headerClass="grid-header-menu" field="AssignBuyer" title="ASSING TO"
+                    [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column headerClass="grid-header-menu" field="STATUS" title="STATUS"
+                    [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column headerClass="grid-header-menu" field="REQ_STATUS" title="REQ STATUS"
+                    [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column headerClass="grid-header-menu" field="REQ_NO" title="REQ NO"
+                    [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column headerClass="grid-header-menu" field="PO_NO" title="PO NO"
+                    [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column headerClass="grid-header-menu" field="STATE" title="STATE"
+                    [width]="columnWidth"></kendo-grid-column>
 
             </kendo-grid>
         </div>

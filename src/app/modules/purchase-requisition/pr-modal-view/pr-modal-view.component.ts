@@ -35,6 +35,7 @@ export class PrModalViewComponent {
   pageSize = 10;
   isFormVisible: boolean = false;
   viewPoHistoryData = [];
+  headerStyle = 'fw-bold';
 
   public PoHistorydata: State = {
     sort: [
@@ -137,5 +138,19 @@ export class PrModalViewComponent {
       fullscreen: true,
       scrollable: true,
     });
+  }
+
+  showBadgeStatusColorClass(param: string): string {
+    let type = param.toLowerCase();
+    let color: string = '';
+    switch (type) {
+      case 'pending':
+        color = 'badge-danger';
+        break;
+
+      default:
+        break;
+    }
+    return color;
   }
 }
