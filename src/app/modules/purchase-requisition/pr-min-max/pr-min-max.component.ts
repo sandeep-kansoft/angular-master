@@ -6,7 +6,6 @@ import { CommonService } from 'src/app/shared/common.service';
 import { PrGridDataDto } from '../pr-grid-view';
 import { PrHistoryDetailComponent } from '../pr-history-detail/pr-history-detail.component';
 import { PrModalViewComponent } from '../pr-modal-view/pr-modal-view.component';
-import { PrGridData } from '../pr-overview/data';
 import { Po_or_RFQOrder } from './data';
 
 @Component({

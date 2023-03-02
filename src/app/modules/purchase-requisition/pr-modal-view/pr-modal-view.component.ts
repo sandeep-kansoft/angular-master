@@ -112,7 +112,7 @@ export class PrModalViewComponent {
       this.modal.dismissAll();
     }
   }
-
+  
   dropDownMenuClickHandler(type: string, data: any) {
     switch (type) {
       case 'RFQT':

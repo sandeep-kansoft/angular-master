@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthService } from './modules/auth/services/auth.service';
 import { environment } from 'src/environments/environment';
+import { ExcelExportModule } from '@progress/kendo-angular-excel-export';
 // #fake-start#
 import { FakeAPIService } from './_fake/fake-api.service';
 import { SharedComponentsModule } from './shared/components/shared-components.module';
@@ -21,7 +22,8 @@ import { ErrorInterceptor } from './shared/interceptors/error.interceptors';
 import { HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ErrorHandler } from '@angular/core';
 import { ErrorHandlerService } from './shared/error-handler.service';
-
+import { PDFModule, ExcelModule } from '@progress/kendo-angular-grid';
+import { GridModule} from '@progress/kendo-angular-grid';
 // #fake-end#
 
 function appInitializer(authService: AuthService) {
@@ -41,6 +43,10 @@ function appInitializer(authService: AuthService) {
     TranslateModule.forRoot(),
     HttpClientModule,
     ClipboardModule,
+    PDFModule,
+    ExcelModule,
+    GridModule,
+    ExcelExportModule,
     // #fake-start#
     environment.isMockEnabled
       ? HttpClientInMemoryWebApiModule.forRoot(FakeAPIService, {

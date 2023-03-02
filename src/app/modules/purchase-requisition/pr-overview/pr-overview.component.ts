@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ExcelExportEvent, GridDataResult } from '@progress/kendo-angular-grid';
-import { PrGridData } from './data';
+
 import { process, State } from '@progress/kendo-data-query';
 import { CommonService } from 'src/app/shared/common.service';
 import { PrGridDataDto } from '../pr-grid-view';
@@ -15,6 +15,7 @@ import {
 } from '@progress/kendo-angular-excel-export';
 import { saveAs } from '@progress/kendo-file-saver';
 import { Observable, zip } from 'rxjs';
+import { PrGridData } from '../pr-all-view/data';
 @Component({
   selector: 'app-pr-overview',
   templateUrl: './pr-overview.component.html',
