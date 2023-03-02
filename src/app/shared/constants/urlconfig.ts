@@ -7,3 +7,7 @@ export const baseUrl: string = environment.isMockEnabled
 export const LoginApi: any = {
   login: 'api/Login/Authenticate',
 };
+
+export const PurchaseRequistionApi: any = {
+  prOverview: 'api/PR/GetMy_PRList'
+}

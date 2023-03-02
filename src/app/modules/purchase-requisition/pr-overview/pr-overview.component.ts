@@ -15,6 +15,7 @@ import {
 } from '@progress/kendo-angular-excel-export';
 import { saveAs } from '@progress/kendo-file-saver';
 import { Observable, zip } from 'rxjs';
+import { PurchaseRequistionServiceService } from '../purchase-requistion-service.service';
 @Component({
   selector: 'app-pr-overview',
   templateUrl: './pr-overview.component.html',
@@ -28,7 +29,7 @@ export class PrOverviewComponent {
   smallColumnWidth = 120;
   longColumnWidth = 200;
   pageSize = 100;
-  
+
   serachText: string = '';
   public state: State = {
     sort: [
@@ -50,13 +51,15 @@ export class PrOverviewComponent {
     private commonService: CommonService,
     private prDetailModel: NgbModal,
     private prLineViewModel: NgbModal,
-    private prHistoryModel: NgbModal
+    private prHistoryModel: NgbModal,
+    private prservice: PurchaseRequistionServiceService
   ) {
     this.allData = this.allData.bind(this);
   }
 
   public ngOnInit() {
     this.loadProducts();
+    this.getMyPrList();
   }
 
   private loadProducts(): void {
@@ -71,9 +74,9 @@ export class PrOverviewComponent {
     return this.commonService.isMobileBrowser;
   }
 
-  editHandler(item: PrGridDataDto) {}
+  editHandler(item: PrGridDataDto) { }
 
-  removeHandler(item: PrGridDataDto) {}
+  removeHandler(item: PrGridDataDto) { }
 
   public onStateChange(state: any) {
     this.state = state;
@@ -228,5 +231,17 @@ export class PrOverviewComponent {
     };
 
     return result;
+  }
+
+
+  getMyPrList() {
+    this.prservice
+      .getMyPrList(10, 1)
+      .subscribe({
+        next: (result: any) => {
+          console.log("Result is", result)
+
+        }
+      });
   }
 }
