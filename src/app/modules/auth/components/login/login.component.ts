@@ -78,7 +78,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   submit() {
-    this.hasError = false;
+    if (this.isLoading) this.hasError = false;
     this.isLoading = true;
     const payload: LoginRequestDto = {
       AzureToken: '',
@@ -86,14 +86,14 @@ export class LoginComponent implements OnInit, OnDestroy {
       UserNameOrEmailAddress: this.f.email.value,
       SingleSignIn: false,
     };
+
     this.authHttpService.login(payload).subscribe({
       next: (auth: AuthModel) => {
         if (auth) {
           const result = this.authService.setAuthFromLocalStorage(auth);
           if (result) {
-            this.router.navigate(['/crafted/pages/profile/overview']);
+            this.router.navigate(['/']);
           }
-          // this.router.navigate(['/crafted/pages/profile/overview']);
           this.isLoading = false;
         }
       },
@@ -118,8 +118,9 @@ export class LoginComponent implements OnInit, OnDestroy {
     // );
   }
 
+
   ngOnDestroy() {
-    this.cdr.detach();  
+    this.cdr.detach();
     this.unsubscribe.forEach((sb) => sb.unsubscribe());
   }
 }
