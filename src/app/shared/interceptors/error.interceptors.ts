@@ -1,10 +1,15 @@
 import { Injectable } from '@angular/core';
-import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest } from '@angular/common/http';
+import {
+  HttpEvent,
+  HttpInterceptor,
+  HttpHandler,
+  HttpRequest,
+} from '@angular/common/http';
 import { catchError, Observable, throwError } from 'rxjs';
 
 @Injectable()
 export class ErrorInterceptor implements HttpInterceptor {
-  constructor() { }
+  constructor() {}
 
   intercept(
     request: HttpRequest<any>,
@@ -15,6 +20,7 @@ export class ErrorInterceptor implements HttpInterceptor {
         if (err.status === 401) {
           // auto logout if 401
         }
+  
         const error =
           (err.error && err.error.message) ||
           (err.error && err.error.errorMessage) ||
