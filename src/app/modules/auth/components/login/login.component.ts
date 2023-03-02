@@ -1,10 +1,13 @@
 import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Subscription, Observable } from 'rxjs';
-import { first } from 'rxjs/operators';
+import { first, map } from 'rxjs/operators';
 import { UserModel } from '../../models/user.model';
 import { AuthService } from '../../services/auth.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { LoginRequestDto } from '../../models/LoginRequestDto.model';
+import { AuthModel } from '../../models/auth.model';
+import { AuthHTTPService } from '../../services/auth-http';
 
 @Component({
   selector: 'app-login',
@@ -20,8 +23,9 @@ export class LoginComponent implements OnInit, OnDestroy {
   loginForm: FormGroup;
   hasError: boolean;
   returnUrl: string;
-  isLoading$: Observable<boolean>;
-
+  // isLoading$: Observable<boolean>;
+  errorMessage: string = '';
+  isLoading: boolean = false;
   // private fields
   private unsubscribe: Subscription[] = []; // Read more: => https://brianflove.com/2016/12/11/anguar-2-unsubscribe-observables/
 
@@ -29,9 +33,11 @@ export class LoginComponent implements OnInit, OnDestroy {
     private fb: FormBuilder,
     private authService: AuthService,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private authHttpService: AuthHTTPService,
+    private cdr: ChangeDetectorRef
   ) {
-    this.isLoading$ = this.authService.isLoading$;
+    // this.isLoading$ = this.authService.isLoading$;
     // redirect to home if already logged in
     if (this.authService.currentUserValue) {
       this.router.navigate(['/purchase-requisition/pr-overview']);
@@ -73,20 +79,47 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   submit() {
     this.hasError = false;
-    const loginSubscr = this.authService
-      .login(this.f.email.value, this.f.password.value)
-      .pipe(first())
-      .subscribe((user: UserModel | undefined) => {
-        if (user) {
-          this.router.navigate(['/crafted/pages/profile/overview']);
-        } else {
-          this.hasError = true;
+    this.isLoading = true;
+    const payload: LoginRequestDto = {
+      AzureToken: '',
+      Password: this.f.password.value,
+      UserNameOrEmailAddress: this.f.email.value,
+      SingleSignIn: false,
+    };
+    this.authHttpService.login(payload).subscribe({
+      next: (auth: AuthModel) => {
+        if (auth) {
+          const result = this.authService.setAuthFromLocalStorage(auth);
+          if (result) {
+            this.router.navigate(['/crafted/pages/profile/overview']);
+          }
+          // this.router.navigate(['/crafted/pages/profile/overview']);
+          this.isLoading = false;
         }
-      });
-    this.unsubscribe.push(loginSubscr);
+      },
+      error: (err) => {
+        this.isLoading = false;
+        this.hasError = true;
+        this.errorMessage = err?.ErrorDetail;
+      },
+    });
+
+    this.cdr.detectChanges();
+    // subscribe(
+    //   (auth: AuthModel) => {
+    //     const result = this.authService.setAuthFromLocalStorage(auth);
+    //     if (result) {
+    //       this.router.navigate(['/crafted/pages/profile/overview']);
+    //     }
+    //   },
+    //   (err) => {
+    //     console.log('Error occured while loggin in', err);
+    //   }
+    // );
   }
 
   ngOnDestroy() {
+    this.cdr.detach();  
     this.unsubscribe.forEach((sb) => sb.unsubscribe());
   }
 }

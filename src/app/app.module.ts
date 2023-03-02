@@ -63,7 +63,6 @@ function appInitializer(authService: AuthService) {
       multi: true,
       deps: [AuthService],
     },
-    { provide: ErrorHandler, useClass: ErrorHandlerService },
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptor,

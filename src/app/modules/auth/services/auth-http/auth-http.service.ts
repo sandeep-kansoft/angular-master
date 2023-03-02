@@ -5,6 +5,7 @@ import { UserModel } from '../../models/user.model';
 import { environment } from '../../../../../environments/environment';
 import { AuthModel } from '../../models/auth.model';
 import { LoginApi, baseUrl } from 'src/app/shared/constants/urlconfig';
+import { LoginRequestDto } from '../../models/LoginRequestDto.model';
 
 @Injectable({
   providedIn: 'root',
@@ -15,12 +16,11 @@ export class AuthHTTPService {
     this.baseUrl = baseUrl;
   }
   // public methods
-  login(email: string, password: string): Observable<any> {
-    return this.http.post<AuthModel>(`${this.baseUrl}/${LoginApi.login}`, {
-      UserNameOrEmailAddress: email,
-      Password: password,
-      AzureToken: '',
-    });
+  login(payload: LoginRequestDto): Observable<any> {
+    return this.http.post<AuthModel>(
+      `${this.baseUrl}/${LoginApi.login}`,
+      payload
+    );
   }
 
   // CREATE =>  POST: add a new user to the server
@@ -35,7 +35,7 @@ export class AuthHTTPService {
     });
   }
 
-  getUserByToken(token: string): Observable<UserModel> {
+  getUserByToken(token: number): Observable<UserModel> {
     const httpHeaders = new HttpHeaders({
       Authorization: `Bearer ${token}`,
     });
