@@ -1,11 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { CommonService } from 'src/app/shared/common.service';
-import {
-  baseUrl,
-  PurchaseRequistionApi,
-} from 'src/app/shared/constants/urlconfig';
+
+import { CommonService } from 'src/app/shared/services/common.service';
+import { baseUrl, PurchaseRequistionApi } from 'src/app/shared/constants/urlconfig';
 import { AuthModel } from '../auth/models/auth.model';
 import {
   PrHistoryResponseDto,

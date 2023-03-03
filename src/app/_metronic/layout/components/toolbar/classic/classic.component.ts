@@ -6,7 +6,7 @@ import {
   OnInit,
 } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { CommonService } from 'src/app/shared/common.service';
+import { CommonService } from 'src/app/shared/services/common.service';
 import { LayoutService } from '../../../core/layout.service';
 
 @Component({

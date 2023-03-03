@@ -2,7 +2,7 @@ import { ChangeDetectorRef, Component } from '@angular/core';
 import { ExcelExportEvent, GridDataResult } from '@progress/kendo-angular-grid';
 import { PrGridData } from './data';
 import { process, State } from '@progress/kendo-data-query';
-import { CommonService } from 'src/app/shared/common.service';
+import { CommonService } from 'src/app/shared/services/common.service';
 import { PrGridDataDto } from '../pr-grid-view';
 import { SortDescriptor } from '@progress/kendo-data-query';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';

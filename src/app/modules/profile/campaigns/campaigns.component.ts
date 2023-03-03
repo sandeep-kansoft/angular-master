@@ -20,7 +20,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { BehaviorSubject } from 'rxjs';
-import { CommonService } from 'src/app/shared/common.service';
+import { CommonService } from 'src/app/shared/services/common.service';
 import { Select2UpdateEvent } from 'ng-select2-component';
 import {
   NgbCalendar,

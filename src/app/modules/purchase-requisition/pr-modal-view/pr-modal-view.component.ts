@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { GridDataResult } from '@progress/kendo-angular-grid';
 import { SortDescriptor, process, State } from '@progress/kendo-data-query';
-import { CommonService } from 'src/app/shared/common.service';
+import { CommonService } from 'src/app/shared/services/common.service';
 import { PrDetailViewComponent } from '../pr-detail-view/pr-detail-view.component';
 import { PrGridDataDto } from '../pr-grid-view';
 import {

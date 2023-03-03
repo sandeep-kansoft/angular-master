@@ -8,6 +8,10 @@ export const LoginApi: any = {
   login: 'api/Login/Authenticate',
 };
 
+
+export const commonApiModule:any ={
+  usersApi:'api/Users'
+}
 export const PurchaseRequistionApi: any = {
   prOverview: 'api/PR/GetMy_PRList',
   getAllPr: 'api/PR/GetAllPR',

@@ -8,7 +8,7 @@ import { locale as jpLang } from './modules/i18n/vocabs/jp';
 import { locale as deLang } from './modules/i18n/vocabs/de';
 import { locale as frLang } from './modules/i18n/vocabs/fr';
 import { ThemeModeService } from './_metronic/partials/layout/theme-mode-switcher/theme-mode.service';
-import { CommonService } from './shared/common.service';
+import { CommonService } from './shared/services/common.service';
 @Component({
   // tslint:disable-next-line:component-selector
   // eslint-disable-next-line @angular-eslint/component-selector

@@ -4,7 +4,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ExcelExportData } from '@progress/kendo-angular-excel-export';
 import { GridDataResult } from '@progress/kendo-angular-grid';
 import { State, process, SortDescriptor } from '@progress/kendo-data-query';
-import { CommonService } from 'src/app/shared/common.service';
+import { CommonService } from 'src/app/shared/services/common.service';
 import { PrGridDataDto } from '../pr-grid-view';
 import { PrHistoryDetailComponent } from '../pr-history-detail/pr-history-detail.component';
 import { PrModalViewComponent } from '../pr-modal-view/pr-modal-view.component';

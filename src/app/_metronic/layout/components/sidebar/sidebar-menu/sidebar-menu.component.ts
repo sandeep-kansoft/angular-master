@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IMenuDataDto } from 'src/app/shared/services/common.interface';
+import { CommonService } from 'src/app/shared/services/common.service';
 
 @Component({
   selector: 'app-sidebar-menu',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar-menu.component.scss']
 })
 export class SidebarMenuComponent implements OnInit {
-
-  constructor() { }
+  menuList!:IMenuDataDto[];
+  constructor(private commonService:CommonService) { }
 
   ngOnInit(): void {
+    this.commonService.menuListData$.subscribe((menuData) => {
+      this.menuList = menuData;
+      console.log("this.menuList : ",this.menuList )
+    });
   }
 
 }

@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { CommonService } from '../../common.service';
+import { CommonService } from '../../services/common.service';
 
 @Component({
   selector: 'app-toaster',

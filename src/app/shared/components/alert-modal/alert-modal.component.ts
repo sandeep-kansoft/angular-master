@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { CommonService } from '../../common.service';
+import { CommonService } from '../../services/common.service';
 
 @Component({
   selector: 'app-alert-modal',

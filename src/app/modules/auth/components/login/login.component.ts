@@ -95,6 +95,7 @@ export class LoginComponent implements OnInit, OnDestroy {
           const result = this.authService.setAuthFromLocalStorage(auth);
           if (result) {
             this.router.navigate(['/']);
+            
           }
           this.isLoading = false;
         }
