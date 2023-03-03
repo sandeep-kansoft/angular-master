@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { GridDataResult } from '@progress/kendo-angular-grid';
 import { SortDescriptor, process, State } from '@progress/kendo-data-query';
 import { CommonService } from 'src/app/shared/common.service';
+import { PrHistoryResponseDto } from '../purchase-requisition';
+import { PurchaseRequistionServiceService } from '../purchase-requistion-service.service';
 import { historyData } from './historydata';
 
 @Component({
@@ -13,6 +15,7 @@ import { historyData } from './historydata';
 })
 export class PrHistoryDetailComponent {
   headerStyle = 'fw-bold';
+  @Input() prId: number;
   public gridView: GridDataResult;
   public state: State = {
     sort: [
@@ -36,11 +39,13 @@ export class PrHistoryDetailComponent {
   constructor(
     private commonService: CommonService,
     public modal: NgbModal,
-    private prDetailModel: NgbModal
+    private prDetailModel: NgbModal,
+    private prService: PurchaseRequistionServiceService
   ) {}
 
   public ngOnInit() {
     this.loadProducts();
+    this.getPrHistory();
   }
 
   private loadProducts(): void {
@@ -93,5 +98,12 @@ export class PrHistoryDetailComponent {
         break;
     }
     return color;
+  }
+
+  getPrHistory() {
+    this.prService.getPrHistory(this.prId).subscribe({
+      next: (result: PrHistoryResponseDto[]) => {},
+      error: (err) => {},
+    });
   }
 }

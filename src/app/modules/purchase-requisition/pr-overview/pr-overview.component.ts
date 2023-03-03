@@ -16,7 +16,7 @@ import {
 import { saveAs } from '@progress/kendo-file-saver';
 import { Observable, zip } from 'rxjs';
 import { PurchaseRequistionServiceService } from '../purchase-requistion-service.service';
-import { MyPrResponseDto } from '../purchase-requisition';
+import { PrResponseDto } from '../purchase-requisition';
 @Component({
   selector: 'app-pr-overview',
   templateUrl: './pr-overview.component.html',
@@ -75,9 +75,9 @@ export class PrOverviewComponent {
     return this.commonService.isMobileBrowser;
   }
 
-  editHandler(item: PrGridDataDto) { }
+  editHandler(item: PrGridDataDto) {}
 
-  removeHandler(item: PrGridDataDto) { }
+  removeHandler(item: PrGridDataDto) {}
 
   public onStateChange(state: any) {
     this.state = state;
@@ -97,7 +97,7 @@ export class PrOverviewComponent {
     this.loadProducts();
   }
 
-  onModelClick(type: string, item: any) {
+  onModelClick(type: string, item: PrResponseDto) {
     console.log('item', item);
     switch (type) {
       case 'Preview':
@@ -110,7 +110,7 @@ export class PrOverviewComponent {
         this.openLinesModel();
         break;
       case 'History':
-        this.openHistoryModel();
+        this.openHistoryModel(item.prid);
         break;
 
       default:
@@ -134,12 +134,13 @@ export class PrOverviewComponent {
     });
   }
 
-  openHistoryModel() {
-    this.prHistoryModel.open(PrHistoryDetailComponent, {
+  openHistoryModel(prId: number) {
+    let modelRef = this.prHistoryModel.open(PrHistoryDetailComponent, {
       centered: true,
       fullscreen: true,
       scrollable: true,
     });
+    modelRef.componentInstance.prId = prId;
   }
   showdata(data: any) {
     console.log('data', data);
@@ -234,15 +235,11 @@ export class PrOverviewComponent {
     return result;
   }
 
-
   getMyPrList() {
-    this.prservice
-      .getMyPrList(10, 1)
-      .subscribe({
-        next: (result: MyPrResponseDto[]) => {
-          console.log("Result is", result)
-
-        }
-      });
+    this.prservice.getMyPrList(10, 1).subscribe({
+      next: (result: PrResponseDto[]) => {
+        console.log('Result is', result);
+      },
+    });
   }
 }

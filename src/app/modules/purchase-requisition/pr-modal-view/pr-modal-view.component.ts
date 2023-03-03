@@ -37,7 +37,6 @@ export class PrModalViewComponent {
   isFormVisible: boolean = false;
   viewPoHistoryData = [];
 
-
   public PoHistorydata: State = {
     sort: [
       {
@@ -59,11 +58,12 @@ export class PrModalViewComponent {
     private commonService: CommonService,
     public modal: NgbModal,
     private prDetailModel: NgbModal
-  ) { }
+  ) {}
 
   public ngOnInit() {
     this.loadProducts();
     this.loadPoHistorydataProducts();
+    
   }
 
   private loadProducts(): void {
@@ -82,9 +82,9 @@ export class PrModalViewComponent {
     return this.commonService.isMobileBrowser;
   }
 
-  editHandler(item: PrGridDataDto) { }
+  editHandler(item: PrGridDataDto) {}
 
-  removeHandler(item: PrGridDataDto) { }
+  removeHandler(item: PrGridDataDto) {}
 
   public onStateChange(state: any) {
     this.state = state;
@@ -125,7 +125,6 @@ export class PrModalViewComponent {
         //this.showHistoryModel();
         break;
       case 'VIEW HISTORICAL DATA':
-
         this.isHistoricalDataVisible = true;
         break;
 

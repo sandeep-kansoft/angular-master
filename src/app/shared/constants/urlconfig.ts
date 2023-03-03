@@ -9,5 +9,9 @@ export const LoginApi: any = {
 };
 
 export const PurchaseRequistionApi: any = {
-  prOverview: 'api/PR/GetMy_PRList'
-}
+  prOverview: 'api/PR/GetMy_PRList',
+  getAllPr: 'api/PR/GetAllPR',
+  getPrLines: 'api/PR/GetPR_Lines',
+  getPrHistory: 'api/PR/GetPR_History',
+  getPrLineHistory: 'api/PR/GetPRLine_History',
+};
