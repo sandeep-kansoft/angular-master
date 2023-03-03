@@ -194,4 +194,21 @@
 .cs-card-body-bg{
   background-color: #f2f6f9;
 }
-
+.cs-DropdownToggle-dot-position{
+  white-space: inherit;
+  line-height: 0;
+}
+.cs-btn-light-primary{
+  background-color: #c90c0f14;
+  color: #c90c0f;
+}
+.cs-btn-light-primary i{
+  color: #c90c0f;
+}
+.cs-btn-light-primary:hover, .cs-btn-light-primary:active, .cs-btn-light-primary:focus{
+  background: #c90c0f;
+  color: #fff !important;
+}
+.cs-btn-light-primary:hover i, .cs-btn-light-primary:active i, .cs-btn-light-primary:focus i{
+  color: #fff !important;
+}
