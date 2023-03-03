@@ -1,6 +1,6 @@
 <div class="card">
-    <div  *ngIf="overviewdata.length != 0" class="card-body ">
-        <kendo-grid  class="fixed-header" [columnMenu]="{ filter: true ,sort : true  }" [groupable]="true"
+    <div *ngIf="overviewdata.length != 0" class="card-body ">
+        <kendo-grid class="fixed-header" [columnMenu]="{ filter: true ,sort : true  }" [groupable]="true"
             [data]="gridView" [group]="state.group" [filter]="state.filter" [filterable]="false" [reorderable]="true"
             [resizable]="true" [skip]="state.skip" [pageSize]="pageSize" [pageable]="true"
             (dataStateChange)="onStateChange($event)" [sortable]="{
@@ -11,8 +11,12 @@
                         to Excel</button>
                 </div>
             </ng-template>
-            <kendo-grid-column [headerClass]="headerStyle" [filterable]="false" field="sno" title="SR NO" [width]="110">
-            </kendo-grid-column> <kendo-grid-command-column [headerClass]="headerStyle" title="ACTIONS" [width]="110">
+            <!-- <kendo-grid-column [headerClass]="headerStyle" [filterable]="false" field="sno" title="SR NO" [width]="110">
+            </kendo-grid-column> -->
+                <kendo-grid-column field="sno"      title="SR NO" [width]="100">     <ng-template
+                    kendoGridCellTemplate let-rowIndex="rowIndex">        {{rowIndex+1}}     </ng-template>   
+            </kendo-grid-column>
+            <kendo-grid-command-column [headerClass]="headerStyle" title="ACTIONS" [width]="110">
                 <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
                         <div ngbDropdown autoClose="'outside'" container="body">
@@ -52,10 +56,10 @@
                 </ng-template>
             </kendo-grid-command-column>
             <!-- <kendo-grid-column [headerClass]="headerStyle" field="prid" title="PR NO" [width]="columnWidth"></kendo-grid-column> -->
-            <kendo-grid-column [headerClass]="headerStyle"  title="PR DESCRIPTION"
-                [width]="longColumnWidth"> <ng-template kendoGridCellTemplate let-item>
+            <kendo-grid-column [headerClass]="headerStyle" title="PR DESCRIPTION" [width]="longColumnWidth">
+                <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
-                       {{item.description}}
+                        {{item.description}}
                     </ng-container>
                 </ng-template></kendo-grid-column>
             <!-- <kendo-grid-column [headerClass]="headerStyle" field="CREATION_DATE" title="CREATED DATE" [width]="130"></kendo-grid-column> -->
