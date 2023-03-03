@@ -100,7 +100,7 @@ export class PurchaseRequistionServiceService {
    * @param pageNumber
    * @return PrResponseDto
    */
-  getPrLineHistory(prId: string): Observable<PrLineHistoryResponseDto[]> {
+  getPrLineHistory(prId: number): Observable<PrLineHistoryResponseDto[]> {
     let url_ =
       this.baseUrl +
       '/' +
