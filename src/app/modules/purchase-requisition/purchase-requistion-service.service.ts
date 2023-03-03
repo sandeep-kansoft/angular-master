@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { CommonService } from 'src/app/shared/common.service';
 import { baseUrl, PurchaseRequistionApi } from 'src/app/shared/constants/urlconfig';
 import { AuthModel } from '../auth/models/auth.model';
+import { MyPrResponseDto } from './purchase-requisition';
 
 @Injectable({
   providedIn: 'root'
@@ -22,9 +23,9 @@ export class PurchaseRequistionServiceService {
    * @param entityStatus
    * @return Success
    */
-  getMyPrList(pageSize: number, pageNumber: number): Observable<any> {
+  getMyPrList(pageSize: number, pageNumber: number): Observable<MyPrResponseDto[]> {
     let url_ = this.baseUrl + '/' + PurchaseRequistionApi.prOverview + `/?UserId=${this.authData?.userId}&PageSize=${pageSize}&PageNo=${pageNumber}`;
-    return this.http.get<any>(url_);
+    return this.http.get<MyPrResponseDto[]>(url_);
   }
 
 
