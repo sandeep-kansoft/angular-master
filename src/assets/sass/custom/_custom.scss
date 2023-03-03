@@ -198,17 +198,18 @@
   white-space: inherit;
   line-height: 0;
 }
-.cs-btn-light-primary{
-  background-color: #c90c0f14;
+.cs-btn-outline-primary{
+  background-color: #fff;
+  color: #c90c0f;
+  border: 1px solid #c90c0f !important;
+}
+.cs-btn-outline-primary i{
   color: #c90c0f;
 }
-.cs-btn-light-primary i{
-  color: #c90c0f;
-}
-.cs-btn-light-primary:hover, .cs-btn-light-primary:active, .cs-btn-light-primary:focus{
+.cs-btn-outline-primary:hover, .cs-btn-outline-primary:active, .cs-btn-outline-primary:focus{
   background: #c90c0f;
   color: #fff !important;
 }
-.cs-btn-light-primary:hover i, .cs-btn-light-primary:active i, .cs-btn-light-primary:focus i{
+.cs-btn-outline-primary:hover i, .cs-btn-outline-primary:active i, .cs-btn-outline-primary:focus i{
   color: #fff !important;
 }
