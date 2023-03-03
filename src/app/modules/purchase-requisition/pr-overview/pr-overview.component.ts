@@ -30,6 +30,7 @@ export class PrOverviewComponent {
   smallColumnWidth = 120;
   longColumnWidth = 200;
   pageSize = 100;
+  loading: boolean = false;
 
   serachText: string = '';
   public state: State = {
@@ -99,7 +100,6 @@ export class PrOverviewComponent {
   }
 
   onModelClick(type: string, item: PrResponseDto) {
-
     switch (type) {
       case 'Preview':
         break;
@@ -240,12 +240,18 @@ export class PrOverviewComponent {
   overviewdata: PrResponseDto[] = [];
 
   getMyPrList() {
+    this.loading = true;
     this.prservice.getMyPrList(10, 1).subscribe({
       next: (result: any) => {
         this.overviewdata = result;
         console.log('overview', this.overviewdata);
         // this.loadProducts()
+        this.loading = false;
         this.gridView = process(result?.data, this.state);
+        this.cdr.detectChanges();
+      },
+      error: () => {
+        this.loading = false;
       },
     });
   }

@@ -15,37 +15,34 @@
         <div class="card-body" *ngIf="!isFormVisible && !isHistoricalDataVisible">
 
 
-            <kendo-grid [data]="gridView" [columnMenu]="{ filter: true ,sort : true  }" [group]="state.group"
+            <kendo-grid   [data]="gridView" [columnMenu]="{ filter: true ,sort : true  }" [group]="state.group"
                 [filter]="state.filter" [filterable]="false" [reorderable]="true" [resizable]="true" [skip]="state.skip"
                 [pageSize]="pageSize" [pageable]="true" (dataStateChange)="onStateChange($event)" [sortable]="{
     allowUnsort: true,
     mode: 'multiple'}" [sort]="state.sort" (dataStateChange)="onStateChange($event)">
-                <kendo-grid-column headerClass="grid-header-menu" field="pR_NUM" title="LINE NO"
-                    [width]="columnWidth"></kendo-grid-column>
                 <kendo-grid-command-column title="ACTION" [width]="150">
                     <ng-template kendoGridCellTemplate let-item>
                         <ng-container>
-                            <div ngbDropdown autoClose="'outside'" container="body" #myDrop="ngbDropdown">
-                                <button ngbDropdownToggle class="btn btn-sm btn cs-btn-light-primary py-1 px-1"
-                                    type="button" data-bs-auto-close="outside">
+                            <div ngbDropdown autoClose="'outside'" container="body"   #myDrop="ngbDropdown">
+                                <button ngbDropdownToggle class="btn btn-sm btn cs-btn-light-primary py-1 px-1" type="button"
+                                    data-bs-auto-close="outside">
                                     <i class="fa fa-cog"></i> Actions
                                 </button>
-
+    
                                 <ul class="dropdown-menu" ngbDropdownMenu>
                                     <li *ngFor="let value of dropdownListdata" ngbDropdownItem>
-                                        <a (click)="dropDownMenuClickHandler(value,item); myDrop.close();"
-                                            class="dropdown-item pt-0 pb-0 mt-0 mb-0">
+                                        <a (click)="dropDownMenuClickHandler(value,item); myDrop.close();" class="dropdown-item pt-0 pb-0 mt-0 mb-0">
                                             {{value}}
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <!-- <button class="btn btn-sm fw-bold  btn-primary">Action</button> -->
-
+    
                         </ng-container>
                     </ng-template>
-
-
+                    
+                  
                 </kendo-grid-command-column>
                 <kendo-grid-command-column headerClass="grid-header-menu" title="STATUS" [width]="120">
                     <ng-template kendoGridCellTemplate let-item>
@@ -57,7 +54,7 @@
                 </kendo-grid-command-column>
 
 
-
+        
                 <kendo-grid-column headerClass="grid-header-menu" field="itemcode" title="ITEM CODE"
                     [width]="columnWidth"></kendo-grid-column>
                 <kendo-grid-column headerClass="grid-header-menu" field="iteM_DESCRIPTION" title="ITEM DESCRIPTION"
@@ -66,8 +63,8 @@
                     [width]="columnWidth"></kendo-grid-column>
                 <kendo-grid-column headerClass="grid-header-menu" field="quantity" title="QUANTITY"
                     [width]="columnWidth"></kendo-grid-column>
-                <kendo-grid-column headerClass="grid-header-menu" field="inProcessQUANTITY" title="IN PROCESS QUANTITY"
-                    [width]="columnWidth"></kendo-grid-column>
+                <kendo-grid-column headerClass="grid-header-menu" field="inProcessQUANTITY"
+                    title="IN PROCESS QUANTITY" [width]="columnWidth"></kendo-grid-column>
                 <kendo-grid-column headerClass="grid-header-menu" field="usedQty" title="USED QUANITTY"
                     [width]="columnWidth"></kendo-grid-column>
                 <kendo-grid-column headerClass="grid-header-menu" field="remQty" title="REMANING QUANITTY"
@@ -110,29 +107,21 @@
                         value="KIT, COMPRESSOR REPAIR; TYPE: MAINTENANCE OF AUX.VALVE; MANUFACTURER PART NO: 400940.2, MANUFACTURER: KAESER" />
                 </div>
             </div>
-            <kendo-grid [data]="PoHistorydataGridView" [columnMenu]="{ filter: true ,sort : true  }"
-                [group]="state.group" [filter]="state.filter" [filterable]="false" [reorderable]="true"
-                [resizable]="true" [skip]="state.skip" [pageSize]="pageSize" [pageable]="true"
-                (dataStateChange)="onStateChange($event)" [sortable]="{
+            <kendo-grid [data]="PoHistorydataGridView" [columnMenu]="{ filter: true ,sort : true  }"  [group]="state.group" [filter]="state.filter"
+                [filterable]="false" [reorderable]="true" [resizable]="true" [skip]="state.skip" [pageSize]="pageSize"
+                [pageable]="true" (dataStateChange)="onStateChange($event)" [sortable]="{
     allowUnsort: true,
     mode: 'multiple'}" [sort]="state.sort" (dataStateChange)="onStateChange($event)">
-                <kendo-grid-column field="Vendor_Code" title="VENDOR CODE" [width]="columnWidth"
-                    [headerClass]="headerStyle"></kendo-grid-column>
-                <kendo-grid-column field="Vendor_Name" title="VENDOR NAME" [width]="columnWidth"
-                    [headerClass]="headerStyle"></kendo-grid-column>
-                <kendo-grid-column field="PO_No" title="PO NUMBER" [width]="columnWidth"
-                    [headerClass]="headerStyle"></kendo-grid-column>
-                <kendo-grid-column field="PO_Confirmation_Date" title="PO CONFIRMATION DATE" [width]="columnWidth"
-                    [headerClass]="headerStyle"></kendo-grid-column>
-                <kendo-grid-column field="PO_Qty" title="PO QUANTITY" [width]="columnWidth"
-                    [headerClass]="headerStyle"></kendo-grid-column>
-                <kendo-grid-column field="UOM" title="UOM" [width]="columnWidth"
-                    [headerClass]="headerStyle"></kendo-grid-column>
-                <kendo-grid-column field="Unit_Price" title="UNIT PRICE" [width]="columnWidth"
-                    [headerClass]="headerStyle">
+                <kendo-grid-column field="Vendor_Code" title="VENDOR CODE" [width]="columnWidth" [headerClass]="headerStyle"></kendo-grid-column>
+                <kendo-grid-column field="Vendor_Name" title="VENDOR NAME" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+                <kendo-grid-column field="PO_No" title="PO NUMBER" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+                <kendo-grid-column field="PO_Confirmation_Date" title="PO CONFIRMATION DATE"
+                    [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+                <kendo-grid-column field="PO_Qty" title="PO QUANTITY" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+                <kendo-grid-column field="UOM" title="UOM" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+                <kendo-grid-column field="Unit_Price" title="UNIT PRICE" [width]="columnWidth"[headerClass]="headerStyle">
                 </kendo-grid-column>
-                <kendo-grid-column field="Discount" title="DISCOUNT" [width]="columnWidth"
-                    [headerClass]="headerStyle"></kendo-grid-column>
+                <kendo-grid-column field="Discount" title="DISCOUNT" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
 
 
             </kendo-grid>
