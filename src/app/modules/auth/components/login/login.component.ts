@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   hasError: boolean;
   returnUrl: string;
   // isLoading$: Observable<boolean>;
-  errorMessage: string = '';
+  errorMessage: string = 'The login details are incorrect';
   isLoading: boolean = false;
   // private fields
   private unsubscribe: Subscription[] = []; // Read more: => https://brianflove.com/2016/12/11/anguar-2-unsubscribe-observables/
@@ -101,6 +101,7 @@ export class LoginComponent implements OnInit, OnDestroy {
         this.isLoading = false;
         this.hasError = true;
         this.errorMessage = err?.ErrorDetail;
+        this.cdr.detectChanges();
       },
     });
 
@@ -118,9 +119,10 @@ export class LoginComponent implements OnInit, OnDestroy {
     // );
   }
 
-
   ngOnDestroy() {
     this.cdr.detach();
     this.unsubscribe.forEach((sb) => sb.unsubscribe());
   }
+
+ 
 }

@@ -16,10 +16,9 @@
                 <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
                         <div ngbDropdown autoClose="'outside'" container="body">
-                            <button ngbDropdownToggle class="btn btn-sm fw-bold" type="button"
-                                data-bs-auto-close="outside">&nbsp; &nbsp;&nbsp;&nbsp;
-                                <span class="justify-content-center"
-                                    [inlineSVG]="'../../../../assets/media/wonder/ellipsis.svg'"></span>
+                            <button ngbDropdownToggle class="btn btn-sm btn cs-btn-light-primary py-1 px-1" type="button"
+                                data-bs-auto-close="outside">
+                                <i class="fa fa-cog"></i> Actions
                             </button>
 
                             <ul class="dropdown-menu" ngbDropdownMenu>
