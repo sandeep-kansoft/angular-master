@@ -73,11 +73,11 @@ export class PurchaseRequistionServiceService {
    * @param prid
    * @return PrResponseDto
    */
-  getLineItem(prid: string): Observable<PrLineResponseDto[]> {
+  getLineItem(prid: number): Observable<PrLineResponseDto[]> {
     let url_ =
       this.baseUrl +
       '/' +
-      PurchaseRequistionApi.prOverview +
+      PurchaseRequistionApi.getPrLines +
       `/?UserId=${this.authData?.userId}&&PR_id=${prid}`;
     return this.http.get<PrLineResponseDto[]>(url_);
   }
@@ -90,8 +90,8 @@ export class PurchaseRequistionServiceService {
     let url_ =
       this.baseUrl +
       '/' +
-      PurchaseRequistionApi.prOverview +
-      `/?UserId=${this.authData?.userId}&PrId=${prId}`;
+      PurchaseRequistionApi.getPrHistory +
+      `?UserId=${this.authData?.userId}&PrId=${prId}`;
     return this.http.get<PrHistoryResponseDto[]>(url_);
   }
 
@@ -104,7 +104,7 @@ export class PurchaseRequistionServiceService {
     let url_ =
       this.baseUrl +
       '/' +
-      PurchaseRequistionApi.prOverview +
+      PurchaseRequistionApi.getPrLineHistory +
       `/?UserId=${this.authData?.userId}&PrId=${prId}`;
     return this.http.get<PrLineHistoryResponseDto[]>(url_);
   }

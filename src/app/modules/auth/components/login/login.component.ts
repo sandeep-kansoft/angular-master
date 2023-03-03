@@ -17,8 +17,8 @@ import { AuthHTTPService } from '../../services/auth-http';
 export class LoginComponent implements OnInit, OnDestroy {
   // KeenThemes mock, change it to:
   defaultAuth: any = {
-    email: 'admin@demo.com',
-    password: 'demo',
+    email: '',
+    password: '',
   };
   loginForm: FormGroup;
   hasError: boolean;
@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   // isLoading$: Observable<boolean>;
   errorMessage: string = 'The login details are incorrect';
   isLoading: boolean = false;
+  isSubmitButtonClicked: boolean = false;
   // private fields
   private unsubscribe: Subscription[] = []; // Read more: => https://brianflove.com/2016/12/11/anguar-2-unsubscribe-observables/
 
@@ -60,14 +61,14 @@ export class LoginComponent implements OnInit, OnDestroy {
   initForm() {
     this.loginForm = this.fb.group({
       email: [
-        this.defaultAuth.email,
+        '',
         Validators.compose([
           Validators.required,
           // https://stackoverflow.com/questions/386294/what-is-the-maximum-length-of-a-valid-email-address
         ]),
       ],
       password: [
-        this.defaultAuth.password,
+        '',
         Validators.compose([
           Validators.required,
           Validators.minLength(3),
@@ -78,6 +79,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   submit() {
+    this.isSubmitButtonClicked = true;
     if (this.isLoading) this.hasError = false;
     this.isLoading = true;
     const payload: LoginRequestDto = {
@@ -123,6 +125,4 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.cdr.detach();
     this.unsubscribe.forEach((sb) => sb.unsubscribe());
   }
-
- 
 }

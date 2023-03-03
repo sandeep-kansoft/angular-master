@@ -31,7 +31,7 @@ export class PrHistoryDetailComponent {
     skip: 0,
     take: 10,
   };
-  historyDataLocal: any = historyData;
+  historyDataLocal!: PrHistoryResponseDto[];
   dropdownListdata = ['RFQT', 'AUCTION', 'VIEW', 'VIEW HISTORICAL DATA'];
   columnWidth = 150;
   pageSize = 10;
@@ -44,7 +44,6 @@ export class PrHistoryDetailComponent {
   ) {}
 
   public ngOnInit() {
-    this.loadProducts();
     this.getPrHistory();
   }
 
@@ -102,7 +101,11 @@ export class PrHistoryDetailComponent {
 
   getPrHistory() {
     this.prService.getPrHistory(this.prId).subscribe({
-      next: (result: PrHistoryResponseDto[]) => {},
+      next: (result: any) => {
+        this.historyDataLocal = result.data;
+        console.log("Data is ", result.data)
+        this.loadProducts();
+      },
       error: (err) => {},
     });
   }

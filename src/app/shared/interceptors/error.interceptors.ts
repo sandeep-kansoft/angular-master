@@ -7,9 +7,11 @@ import {
 } from '@angular/common/http';
 import { catchError, Observable, throwError } from 'rxjs';
 
+import { CommonService } from '../common.service';
+
 @Injectable()
 export class ErrorInterceptor implements HttpInterceptor {
-  constructor() {}
+  constructor(private commonServices: CommonService) {}
 
   intercept(
     request: HttpRequest<any>,
@@ -18,9 +20,9 @@ export class ErrorInterceptor implements HttpInterceptor {
     return next.handle(request).pipe(
       catchError((err) => {
         if (err.status === 401) {
-          // auto logout if 401
+          this.commonServices.logout();
         }
-  
+
         const error =
           (err.error && err.error.message) ||
           (err.error && err.error.errorMessage) ||

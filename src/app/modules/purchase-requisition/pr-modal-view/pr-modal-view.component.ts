@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { GridDataResult } from '@progress/kendo-angular-grid';
 import { SortDescriptor, process, State } from '@progress/kendo-data-query';
 import { CommonService } from 'src/app/shared/common.service';
 import { PrDetailViewComponent } from '../pr-detail-view/pr-detail-view.component';
 import { PrGridDataDto } from '../pr-grid-view';
+import { PrLineResponseDto } from '../purchase-requisition';
+import { PurchaseRequistionServiceService } from '../purchase-requistion-service.service';
 import { PohistoryData, PrLinesData } from './data';
 
 @Component({
@@ -16,21 +18,22 @@ export class PrModalViewComponent {
   headerStyle = 'fw-bold';
   public gridView: GridDataResult;
   public PoHistorydataGridView: GridDataResult;
+  @Input() prId: number;
   public state: State = {
-    sort: [
-      {
-        field: 'prid',
-        dir: 'asc',
-      },
-    ],
-    filter: {
-      logic: 'and',
-      filters: [],
-    },
+    // sort: [
+    //   {
+    //     field: 'prid',
+    //     dir: 'asc',
+    //   },
+    // ],
+    // filter: {
+    //   logic: 'and',
+    //   filters: [],
+    // },
     skip: 0,
     take: 10,
   };
-  prData: PrGridDataDto[] = PrLinesData;
+  prLineData: PrLineResponseDto[];
   dropdownListdata = ['RFQT', 'AUCTION', 'VIEW', 'VIEW HISTORICAL DATA'];
   columnWidth = 150;
   pageSize = 10;
@@ -57,17 +60,17 @@ export class PrModalViewComponent {
   constructor(
     private commonService: CommonService,
     public modal: NgbModal,
-    private prDetailModel: NgbModal
+    private prDetailModel: NgbModal,
+    private prService: PurchaseRequistionServiceService
   ) {}
 
   public ngOnInit() {
-    this.loadProducts();
-    this.loadPoHistorydataProducts();
-    
+    this.getPrLines();
+    // this.loadPoHistorydataProducts();
   }
 
   private loadProducts(): void {
-    this.gridView = process(this.prData, this.state);
+    this.gridView = process(this.prLineData, this.state);
   }
 
   private loadPoHistorydataProducts(): void {
@@ -153,5 +156,27 @@ export class PrModalViewComponent {
         break;
     }
     return color;
+  }
+
+  getPrLines() {
+    this.prService.getLineItem(this.prId).subscribe({
+      next: (result: any) => {
+        this.prLineData = result.data;
+        console.log('pr line data', result.data);
+        this.loadProducts();
+      },
+      error: (err) => {},
+    });
+  }
+
+  getPrLinesHistory() {
+    this.prService.getPrHistory(this.prId).subscribe({
+      next: (result: any) => {
+        this.prLineData = result.data;
+        console.log('pr line data', result.data);
+        this.loadProducts();
+      },
+      error: (err) => {},
+    });
   }
 }

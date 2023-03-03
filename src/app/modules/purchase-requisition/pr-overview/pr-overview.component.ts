@@ -99,7 +99,7 @@ export class PrOverviewComponent {
   }
 
   onModelClick(type: string, item: PrResponseDto) {
-    console.log('item', item);
+
     switch (type) {
       case 'Preview':
         break;
@@ -133,7 +133,8 @@ export class PrOverviewComponent {
       fullscreen: true,
       scrollable: true,
     });
-    modelRef.componentInstance.PrId = id;
+
+    modelRef.componentInstance.prId = id;
   }
 
   openHistoryModel(id: number) {

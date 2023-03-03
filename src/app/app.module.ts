@@ -57,6 +57,7 @@ function appInitializer(authService: AuthService) {
     NgxSkeletonLoaderModule.forRoot(),
   ],
   providers: [
+    { provide: ErrorHandler, useClass: ErrorHandlerService },
     {
       provide: APP_INITIALIZER,
       useFactory: appInitializer,
