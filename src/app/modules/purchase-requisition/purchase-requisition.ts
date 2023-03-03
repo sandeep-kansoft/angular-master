@@ -84,3 +84,32 @@ export interface PrLineHistoryResponseDto {
   uniT_PRICE: string;
   amount: string;
 }
+
+export interface PrLineHeaderDetail {
+  pR_Lines: any[];
+  prepareR_ID: number;
+  prid: number;
+  pR_NUM: string;
+  siteId: number;
+  siteName: string;
+  prtype: string;
+  prSubType: string;
+  creatioN_DATE: string;
+  projecT_NAME?: any;
+  description: string;
+  tefrId?: any;
+  bjReason?: any;
+  bjDetails: string;
+  woNumber?: any;
+  totalValue: number;
+  preparer: string;
+  departmentCode?: any;
+  departmentName: string;
+  warehouse?: any;
+  enterby: string;
+  assignBuyer: string;
+  pR_STATUS: string;
+  enterDate: string;
+  attachment?: any;
+  mConsumptionDate: string;
+}

@@ -5,7 +5,10 @@ import { SortDescriptor, process, State } from '@progress/kendo-data-query';
 import { CommonService } from 'src/app/shared/common.service';
 import { PrDetailViewComponent } from '../pr-detail-view/pr-detail-view.component';
 import { PrGridDataDto } from '../pr-grid-view';
-import { PrLineResponseDto } from '../purchase-requisition';
+import {
+  PrLineHistoryResponseDto,
+  PrLineResponseDto,
+} from '../purchase-requisition';
 import { PurchaseRequistionServiceService } from '../purchase-requistion-service.service';
 import { PohistoryData, PrLinesData } from './data';
 
@@ -34,6 +37,7 @@ export class PrModalViewComponent {
     take: 10,
   };
   prLineData: PrLineResponseDto[];
+  prLineHistoryData: PrLineHistoryResponseDto[];
   dropdownListdata = ['RFQT', 'AUCTION', 'VIEW', 'VIEW HISTORICAL DATA'];
   columnWidth = 150;
   pageSize = 10;
@@ -66,15 +70,18 @@ export class PrModalViewComponent {
 
   public ngOnInit() {
     this.getPrLines();
-    // this.loadPoHistorydataProducts();
+    // this.loadHistorydataTable();
   }
 
-  private loadProducts(): void {
+  private loadPrLineTable(): void {
     this.gridView = process(this.prLineData, this.state);
   }
 
-  private loadPoHistorydataProducts(): void {
-    this.PoHistorydataGridView = process(PohistoryData, this.PoHistorydata);
+  private loadHistorydataTable(): void {
+    this.PoHistorydataGridView = process(
+      this.prLineHistoryData,
+      this.PoHistorydata
+    );
   }
 
   checkMobileBrowser() {
@@ -104,7 +111,7 @@ export class PrModalViewComponent {
       (s: any) => s.field !== 'ProdupridctName'
     );
     newState.sort.push(newSortDescriptor);
-    this.loadProducts();
+    this.loadPrLineTable();
   }
 
   closeModel() {
@@ -117,7 +124,7 @@ export class PrModalViewComponent {
     }
   }
 
-  dropDownMenuClickHandler(type: string, data: any) {
+  dropDownMenuClickHandler(type: string, data: PrLineResponseDto) {
     switch (type) {
       case 'RFQT':
         break;
@@ -128,6 +135,7 @@ export class PrModalViewComponent {
         //this.showHistoryModel();
         break;
       case 'VIEW HISTORICAL DATA':
+        this.getPrLinesHistory(data.prtransid);
         this.isHistoricalDataVisible = true;
         break;
 
@@ -163,18 +171,17 @@ export class PrModalViewComponent {
       next: (result: any) => {
         this.prLineData = result.data;
         console.log('pr line data', result.data);
-        this.loadProducts();
+        this.loadPrLineTable();
       },
       error: (err) => {},
     });
   }
 
-  getPrLinesHistory() {
-    this.prService.getPrHistory(this.prId).subscribe({
+  getPrLinesHistory(prLineId: number) {
+    this.prService.getPrLineHistory(prLineId).subscribe({
       next: (result: any) => {
-        this.prLineData = result.data;
-        console.log('pr line data', result.data);
-        this.loadProducts();
+        this.prLineHistoryData = result.data;
+        this.loadHistorydataTable();
       },
       error: (err) => {},
     });
