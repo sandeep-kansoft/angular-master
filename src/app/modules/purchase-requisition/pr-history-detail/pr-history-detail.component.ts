@@ -3,9 +3,9 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { GridDataResult } from '@progress/kendo-angular-grid';
 import { SortDescriptor, process, State } from '@progress/kendo-data-query';
-import { CommonService } from 'src/app/shared/common.service';
 import { PrHistoryResponseDto } from '../purchase-requisition';
 import { PurchaseRequistionServiceService } from '../purchase-requistion-service.service';
+import { CommonService } from 'src/app/shared/services/common.service';
 import { historyData } from './historydata';
 
 @Component({
