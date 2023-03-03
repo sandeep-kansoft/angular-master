@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { ExcelExportEvent, GridDataResult } from '@progress/kendo-angular-grid';
 import { PrGridData } from './data';
 import { process, State } from '@progress/kendo-data-query';
@@ -33,38 +33,39 @@ export class PrOverviewComponent {
 
   serachText: string = '';
   public state: State = {
-    sort: [
-      {
-        field: 'sno',
-        dir: 'asc',
-      },
-    ],
-    filter: {
-      logic: 'and',
-      filters: [],
-    },
-    skip: 0,
-    take: this.pageSize,
+    // // sort: [
+    // //   {
+    // //     field: 'sno',
+    // //     dir: 'asc',
+    // //   },
+    // // ],
+    // filter: {
+    //   logic: 'and',
+    //   filters: [],
+    // },
+    // skip: 0,
+    // take: this.pageSize,
   };
-  prData: PrGridDataDto[] = PrGridData;
+  // prData: PrGridDataDto[] = PrGridData;
 
   constructor(
     private commonService: CommonService,
     private prDetailModel: NgbModal,
     private prLineViewModel: NgbModal,
     private prHistoryModel: NgbModal,
-    private prservice: PurchaseRequistionServiceService
+    private prservice: PurchaseRequistionServiceService,
+    private cdr: ChangeDetectorRef
   ) {
     this.allData = this.allData.bind(this);
   }
 
   public ngOnInit() {
-    this.loadProducts();
+    // this.loadProducts();
     this.getMyPrList();
   }
 
   private loadProducts(): void {
-    this.gridView = process(this.prData, this.state);
+    this.gridView = process(this.overviewdata, this.state);
   }
 
   checkMobileBrowser() {
@@ -75,9 +76,9 @@ export class PrOverviewComponent {
     return this.commonService.isMobileBrowser;
   }
 
-  editHandler(item: PrGridDataDto) {}
+  editHandler(item: PrGridDataDto) { }
 
-  removeHandler(item: PrGridDataDto) {}
+  removeHandler(item: PrGridDataDto) { }
 
   public onStateChange(state: any) {
     this.state = state;
@@ -97,7 +98,7 @@ export class PrOverviewComponent {
     this.loadProducts();
   }
 
-  onModelClick(type: string, item: PrResponseDto) {
+  onModelClick(type: string, item: any) {
     console.log('item', item);
     switch (type) {
       case 'Preview':
@@ -110,7 +111,7 @@ export class PrOverviewComponent {
         this.openLinesModel();
         break;
       case 'History':
-        this.openHistoryModel(item.prid);
+        this.openHistoryModel();
         break;
 
       default:
@@ -134,13 +135,12 @@ export class PrOverviewComponent {
     });
   }
 
-  openHistoryModel(prId: number) {
-    let modelRef = this.prHistoryModel.open(PrHistoryDetailComponent, {
+  openHistoryModel() {
+    this.prHistoryModel.open(PrHistoryDetailComponent, {
       centered: true,
       fullscreen: true,
       scrollable: true,
     });
-    modelRef.componentInstance.prId = prId;
   }
   showdata(data: any) {
     console.log('data', data);
@@ -149,7 +149,7 @@ export class PrOverviewComponent {
   showBadgeStatusColorClass(type: string): string {
     let color: string = '';
     switch (type) {
-      case 'In Process':
+      case 'Approved':
         color = 'badge-success';
         break;
       case 'Pending':
@@ -229,17 +229,25 @@ export class PrOverviewComponent {
 
   public allData(): ExcelExportData {
     const result: ExcelExportData = {
-      data: process(this.prData, { sort: this.state.sort }).data,
+      data: process(this.overviewdata, { sort: this.state.sort }).data,
     };
 
     return result;
   }
+  overviewdata: PrResponseDto[] = []
 
   getMyPrList() {
-    this.prservice.getMyPrList(10, 1).subscribe({
-      next: (result: PrResponseDto[]) => {
-        console.log('Result is', result);
-      },
-    });
+    this.prservice
+      .getMyPrList(10, 1)
+      .subscribe({
+        next: (result: any) => {
+          this.overviewdata = result;
+          console.log("overview", this.overviewdata);
+          // this.loadProducts()
+          this.gridView = process(result?.data, this.state);
+
+
+        }
+      });
   }
 }

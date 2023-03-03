@@ -1,6 +1,6 @@
 <div class="card">
-    <div class="card-body ">
-        <kendo-grid class="fixed-header" [columnMenu]="{ filter: true ,sort : true  }" [groupable]="true"
+    <div  *ngIf="overviewdata.length != 0" class="card-body ">
+        <kendo-grid  class="fixed-header" [columnMenu]="{ filter: true ,sort : true  }" [groupable]="true"
             [data]="gridView" [group]="state.group" [filter]="state.filter" [filterable]="false" [reorderable]="true"
             [resizable]="true" [skip]="state.skip" [pageSize]="pageSize" [pageable]="true"
             (dataStateChange)="onStateChange($event)" [sortable]="{
@@ -37,8 +37,8 @@
             <kendo-grid-command-column [headerClass]="headerStyle" title="STATUS" [width]="smallColumnWidth">
                 <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
-                        <span [ngClass]="showBadgeStatusColorClass(item.BUYERSTATUS)"
-                            class="badge">{{item.BUYERSTATUS}}</span>
+                        <span [ngClass]="showBadgeStatusColorClass(item.pR_STATUS)"
+                            class="badge">{{item.pR_STATUS}}</span>
                     </ng-container>
                 </ng-template>
             </kendo-grid-command-column>
@@ -52,17 +52,21 @@
                 </ng-template>
             </kendo-grid-command-column>
             <!-- <kendo-grid-column [headerClass]="headerStyle" field="prid" title="PR NO" [width]="columnWidth"></kendo-grid-column> -->
-            <kendo-grid-column [headerClass]="headerStyle" field="DESCRIPTION" title="PR DESCRIPTION"
-                [width]="longColumnWidth"></kendo-grid-column>
+            <kendo-grid-column [headerClass]="headerStyle"  title="PR DESCRIPTION"
+                [width]="longColumnWidth"> <ng-template kendoGridCellTemplate let-item>
+                    <ng-container>
+                       {{item.description}}
+                    </ng-container>
+                </ng-template></kendo-grid-column>
             <!-- <kendo-grid-column [headerClass]="headerStyle" field="CREATION_DATE" title="CREATED DATE" [width]="130"></kendo-grid-column> -->
             <kendo-grid-column [headerClass]="headerStyle" field="CREATION_DATE" [width]="220" title="CREATED DATE">
                 <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.CREATION_DATE | date: 'MM/dd/yyyy'}}
+                    {{dataItem.enterdate | date: 'MM/dd/yyyy'}}
                 </ng-template>
             </kendo-grid-column>
             <kendo-grid-column [headerClass]="headerStyle" field="ApprovedDate" [width]="220" title="APPROVED DATE">
                 <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.ApprovedDate | date: 'MM/dd/yyyy'}}
+                    {{dataItem.approvedDate | date: 'MM/dd/yyyy'}}
                 </ng-template>
             </kendo-grid-column>
             <!-- <kendo-grid-column [headerClass]="headerStyle" field="ApprovedDate" title="APPROVED DATE" [width]="130"></kendo-grid-column> -->
