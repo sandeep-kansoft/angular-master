@@ -38,6 +38,7 @@ export class PrModalViewComponent {
   };
   prLineData: PrLineResponseDto[];
   prLineHistoryData: PrLineHistoryResponseDto[];
+  currentPage = 'Lines';
   dropdownListdata = ['RFQT', 'AUCTION', 'VIEW', 'VIEW HISTORICAL DATA'];
   columnWidth = 150;
   pageSize = 10;
@@ -69,7 +70,11 @@ export class PrModalViewComponent {
   ) {}
 
   public ngOnInit() {
-    this.getPrLines();
+    if (this.prId) {
+      this.currentPage = 'Both';
+    } else {
+      this.getPrLines();
+    }
     // this.loadHistorydataTable();
   }
 
@@ -115,13 +120,31 @@ export class PrModalViewComponent {
   }
 
   closeModel() {
-    if (this.isFormVisible) {
-      this.isFormVisible = false;
-    } else if (this.isHistoricalDataVisible) {
-      this.isHistoricalDataVisible = false;
-    } else {
-      this.modal.dismissAll();
+    switch (this.currentPage) {
+      case 'Form':
+        this.currentPage = 'Lines';
+        break;
+      case 'HistoryData':
+        this.currentPage = 'Lines';
+        break;
+      case 'Lines':
+        this.modal.dismissAll();
+        break;
+      case 'Both':
+        this.modal.dismissAll();
+        break;
+
+      default:
+        break;
     }
+
+    // if (this.isFormVisible) {
+    //   this.isFormVisible = false;
+    // } else if (this.isHistoricalDataVisible) {
+    //   this.isHistoricalDataVisible = false;
+    // } else {
+    //   this.modal.dismissAll();
+    // }
   }
 
   dropDownMenuClickHandler(type: string, data: PrLineResponseDto) {
@@ -131,12 +154,12 @@ export class PrModalViewComponent {
       case 'AUCTION':
         break;
       case 'VIEW':
-        this.isFormVisible = true;
         //this.showHistoryModel();
+        this.currentPage = 'Form';
         break;
       case 'VIEW HISTORICAL DATA':
         this.getPrLinesHistory(data.prtransid);
-        this.isHistoricalDataVisible = true;
+        this.currentPage = 'HistoryData';
         break;
 
       default:

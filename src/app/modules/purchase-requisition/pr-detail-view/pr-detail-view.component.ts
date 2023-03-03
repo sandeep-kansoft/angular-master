@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PrLineHeaderDetail } from '../purchase-requisition';
 
 @Component({
   selector: 'app-pr-detail-view',
@@ -8,6 +9,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class PrDetailViewComponent {
   PrdetailItem!: PrDetails;
+  PrheaderDetail : PrLineHeaderDetail
 
   constructor(public modal: NgbModal) {}
   closeModel() {

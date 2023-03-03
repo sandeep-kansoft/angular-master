@@ -8,21 +8,21 @@ import { CommonService } from 'src/app/shared/services/common.service';
 import { PrGridDataDto } from '../pr-grid-view';
 import { PrHistoryDetailComponent } from '../pr-history-detail/pr-history-detail.component';
 import { PrModalViewComponent } from '../pr-modal-view/pr-modal-view.component';
+import { PurchaseRequistionServiceService } from '../purchase-requistion-service.service';
 import { LineData, PrGridData } from './data';
 import { PrAllViewData } from './data';
-
 
 @Component({
   selector: 'app-pr-all-view',
   templateUrl: './pr-all-view.component.html',
-  styleUrls: ['./pr-all-view.component.scss']
+  styleUrls: ['./pr-all-view.component.scss'],
 })
 export class PrAllViewComponent {
-  replytype:any=1;
+  replytype: any = 1;
   headerStyle = 'fw-bold';
-  public lineviewdata:GridDataResult;
+  public lineviewdata: GridDataResult;
   public gridView: GridDataResult;
-  dropdownListdata = ['Preview', 'Lines','History'];
+  dropdownListdata = ['Preview', 'Lines', 'History'];
   columnWidth = 150;
   pageSize = 100;
   serachText: string = '';
@@ -41,34 +41,34 @@ export class PrAllViewComponent {
     take: this.pageSize,
   };
   prData: PrGridDataDto[] = PrAllViewData;
- linedata:PrGridDataDto[]=LineData;
+  linedata: PrGridDataDto[] = LineData;
   constructor(
     private commonService: CommonService,
     private prDetailModel: NgbModal,
     private prLineViewModel: NgbModal,
     private prHistoryModel: NgbModal,
-    private router: Router
-  ) {  this.allData = this.allData.bind(this);}
+    private router: Router,
+    private prservice: PurchaseRequistionServiceService
+  ) {
+    this.allData = this.allData.bind(this);
+  }
 
   public ngOnInit() {
+    this.getMyPrList();
     this.loadProducts();
     this.lineviewdataload();
   }
 
   private loadProducts(): void {
     this.gridView = process(this.prData, this.state);
-
   }
-  private lineviewdataload (): void {
+  private lineviewdataload(): void {
     this.lineviewdata = process(this.linedata, this.state);
-    
   }
 
- 
-
-backbutton(){
-  this.replytype=1;
-}
+  backbutton() {
+    this.replytype = 1;
+  }
   checkMobileBrowser() {
     console.log(
       'this.commonService.isMobileBrowser',
@@ -77,9 +77,9 @@ backbutton(){
     return this.commonService.isMobileBrowser;
   }
 
-  editHandler(item: PrGridDataDto) { }
+  editHandler(item: PrGridDataDto) {}
 
-  removeHandler(item: PrGridDataDto) { }
+  removeHandler(item: PrGridDataDto) {}
 
   public onStateChange(state: any) {
     this.state = state;
@@ -100,7 +100,6 @@ backbutton(){
   }
 
   dropDownMenuClickHandler(type: string, item: any) {
-   
     switch (type) {
       case 'Preview':
         break;
@@ -109,7 +108,7 @@ backbutton(){
       case 'Auction':
         break;
       case 'Lines':
-       this.differentdiv();
+        this.differentdiv();
         break;
       case 'History':
         // this.openHistoryModel();
@@ -119,7 +118,7 @@ backbutton(){
         break;
     }
   }
-  prnoclicked(){
+  prnoclicked() {
     this.router.navigate(['./pr-detail-view.module']);
   }
   onModelClick(type: string, item: any) {
@@ -156,7 +155,7 @@ backbutton(){
       scrollable: true,
     });
   }
-  
+
   showBadgeStatusColorClass(type: string): string {
     let color: string = '';
     switch (type) {
@@ -183,13 +182,11 @@ backbutton(){
   //   });
   // }
 
-
   showdata(data: any) {
     console.log('data', data);
   }
-  differentdiv(){
-    
-    this.replytype=2;
+  differentdiv() {
+    this.replytype = 2;
   }
   public allData(): ExcelExportData {
     const result: ExcelExportData = {
@@ -199,4 +196,28 @@ backbutton(){
     return result;
   }
 
+  getMyPrList() {
+    let payload = {
+      userId: 27053,
+      isAllPR: 1,
+      startdate: '',
+      enddate: '',
+      prNo: 'PR23014799',
+      pageSize: 0,
+      pageIndex: 0,
+    };
+    this.prservice.getALLPrList(payload).subscribe({
+      next: (result: any) => {
+        // this.overviewdata = result;
+        console.log('all', result);
+        // this.loadProducts()
+        // this.loading = false;
+        // this.gridView = process(result?.data, this.state);
+        // this.cdr.detectChanges();
+      },
+      error: () => {
+        // this.loading = false;
+      },
+    });
+  }
 }

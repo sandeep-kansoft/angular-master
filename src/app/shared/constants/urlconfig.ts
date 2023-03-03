@@ -17,5 +17,5 @@ export const PurchaseRequistionApi: any = {
   getAllPr: 'api/PR/GetAllPR',
   getPrLines: 'api/PR/GetPR_Lines',
   getPrHistory: 'api/PR/GetPR_History',
-  getPrLineHistory: 'api/PR/GetPRLine_History',
+  getPrLineHistory: 'api/PR/GetPRDetails_ById',
 };

@@ -108,7 +108,7 @@ export class PrOverviewComponent {
       case 'Auction':
         break;
       case 'Lines':
-        this.openLinesModel(item.prid);
+        this.openLinesModel();
         break;
       case 'History':
         this.openHistoryModel(item.prid);
@@ -119,6 +119,10 @@ export class PrOverviewComponent {
     }
   }
 
+  onPrNumberClick(item: PrResponseDto) {
+    this.openLinesModel(item.prid);
+  }
+
   // openPrDetailModel() {
   //   this.prDetailModel.open(PrDetailViewComponent, {
   //     centered: true,
@@ -127,7 +131,7 @@ export class PrOverviewComponent {
   //   });
   // }
 
-  openLinesModel(id: number) {
+  openLinesModel(id?: number) {
     const modelRef = this.prLineViewModel.open(PrModalViewComponent, {
       centered: true,
       fullscreen: true,

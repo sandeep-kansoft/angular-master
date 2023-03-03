@@ -3,7 +3,10 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { CommonService } from 'src/app/shared/services/common.service';
-import { baseUrl, PurchaseRequistionApi } from 'src/app/shared/constants/urlconfig';
+import {
+  baseUrl,
+  PurchaseRequistionApi,
+} from 'src/app/shared/constants/urlconfig';
 import { AuthModel } from '../auth/models/auth.model';
 import {
   PrHistoryResponseDto,
@@ -50,20 +53,8 @@ export class PurchaseRequistionServiceService {
    * @param pageNumber
    * @return AllPr list
    */
-  getALLPrList(
-    startDate: string,
-    enddate: string,
-    prNumber: string,
-    pageSize: number,
-    pageNumber: number
-  ): Observable<PrResponseDto[]> {
-    `UserId=27053&startdate=&enddate=&PRNo=PR23014804&PageSize=10&PageNo=1`;
-
-    let url_ =
-      this.baseUrl +
-      '/' +
-      PurchaseRequistionApi.getAllPr +
-      `/?UserId=${this.authData?.userId}&startdate=${startDate}&enddate=${enddate}&PRNo=${prNumber}&PageSize=${pageSize}&PageNo=${pageNumber}`;
+  getALLPrList(payload: any): Observable<PrResponseDto[]> {
+    let url_ = this.baseUrl + '/' + PurchaseRequistionApi.getAllPr;
     return this.http.get<PrResponseDto[]>(url_);
   }
 
