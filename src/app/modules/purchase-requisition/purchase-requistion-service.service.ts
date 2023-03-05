@@ -97,4 +97,18 @@ export class PurchaseRequistionServiceService {
       `/?UserId=${this.authData?.userId}&PrId=${prId}`;
     return this.http.get<PrLineHistoryResponseDto[]>(url_);
   }
+
+  /**
+   * @param pageSize
+   * @param pageNumber
+   * @return PrResponseDto
+   */
+  getPrLineHistoryHeader(prId: number): Observable<PrLineHistoryResponseDto[]> {
+    let url_ =
+      this.baseUrl +
+      '/' +
+      PurchaseRequistionApi.getPrLineHistoryHeader +
+      `/?UserId=${this.authData?.userId}&PrId=${prId}`;
+    return this.http.get<PrLineHistoryResponseDto[]>(url_);
+  }
 }

@@ -14,8 +14,9 @@ export const commonApiModule:any ={
 }
 export const PurchaseRequistionApi: any = {
   prOverview: 'api/PR/GetMy_PRList',
+  getPrHistory: 'api/PR/GetPR_History',
   getAllPr: 'api/PR/GetAllPR',
   getPrLines: 'api/PR/GetPR_Lines',
-  getPrHistory: 'api/PR/GetPR_History',
-  getPrLineHistory: 'api/PR/GetPRDetails_ById',
+  getPrLineHistory: 'api/PR/GetPRLine_History',
+  getPrLineHistoryHeader: 'api/PR/GetPRDetails_ById',
 };

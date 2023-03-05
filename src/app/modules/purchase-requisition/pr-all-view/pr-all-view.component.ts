@@ -142,11 +142,12 @@ export class PrAllViewComponent {
     }
   }
   openLinesModel() {
-    this.prLineViewModel.open(PrModalViewComponent, {
+    const modelRef=  this.prLineViewModel.open(PrModalViewComponent, {
       centered: true,
       fullscreen: true,
       scrollable: true,
     });
+    modelRef.componentInstance.prLineShow = false
   }
   openHistoryModel() {
     this.prHistoryModel.open(PrHistoryDetailComponent, {
