@@ -55,7 +55,7 @@ export class PurchaseRequistionServiceService {
    */
   getALLPrList(payload: any): Observable<PrResponseDto[]> {
     let url_ = this.baseUrl + '/' + PurchaseRequistionApi.getAllPr;
-    return this.http.get<PrResponseDto[]>(url_);
+    return this.http.post<PrResponseDto[]>(url_,payload);
   }
 
   /**
@@ -94,7 +94,8 @@ export class PurchaseRequistionServiceService {
       this.baseUrl +
       '/' +
       PurchaseRequistionApi.getPrLineHistory +
-      `/?UserId=${this.authData?.userId}&PrId=${prId}`;
+      '?Itemcode=70003600'
+      // `?UserId=${this.authData?.userId}&PrId=${prId}`;
     return this.http.get<PrLineHistoryResponseDto[]>(url_);
   }
 

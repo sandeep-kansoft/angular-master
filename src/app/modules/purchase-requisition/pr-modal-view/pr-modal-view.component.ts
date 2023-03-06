@@ -215,6 +215,7 @@ export class PrModalViewComponent {
     this.historyDataLoading = true;
     this.prService.getPrLineHistory(prLineId).subscribe({
       next: (result: any) => {
+        console.log("here pr history data is" , result);
         this.prLineHistoryData = result.data;
         this.loadHistorydataTable();
         this.historyDataLoading = false;
