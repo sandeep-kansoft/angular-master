@@ -59,7 +59,7 @@
     border-radius: 1rem;
   }
   .bg-primary {
-    background-color: #f0ad4e !important;
+    // background-color: #f0ad4e !important;
     border-radius: 1rem !important;
   }
   .dp-hidden {
@@ -153,6 +153,11 @@
   display: none !important;
 }
 
+/* app toolbar */
+.app-toolbar {
+  padding: 0px !important;
+}
+
 /* full screen popup */
 // .modal-content {
 //   background-color: #f5f8fa !important;
@@ -212,4 +217,14 @@
 }
 .cs-btn-outline-primary:hover i, .cs-btn-outline-primary:active i, .cs-btn-outline-primary:focus i{
   color: #fff !important;
+}
+
+.option-one {
+  display: none;
+}
+.option-two {
+  display: block;
+}
+[data-kt-app-sidebar-minimize=on][data-kt-app-sidebar-hoverable=true] .app-sidebar:not(:hover) .app-sidebar-wrapper {
+  width: 75px;
 }
