@@ -8,6 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { LoginRequestDto } from '../../models/LoginRequestDto.model';
 import { AuthModel } from '../../models/auth.model';
 import { AuthHTTPService } from '../../services/auth-http';
+import { CommonService } from 'src/app/shared/services/common.service';
 
 @Component({
   selector: 'app-login',
@@ -36,7 +37,8 @@ export class LoginComponent implements OnInit, OnDestroy {
     private route: ActivatedRoute,
     private router: Router,
     private authHttpService: AuthHTTPService,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    private commonService:CommonService
   ) {
     // this.isLoading$ = this.authService.isLoading$;
     // redirect to home if already logged in
@@ -95,7 +97,7 @@ export class LoginComponent implements OnInit, OnDestroy {
           const result = this.authService.setAuthFromLocalStorage(auth);
           if (result) {
             this.router.navigate(['/']);
-            
+            this.commonService.callInitDataService();
           }
           this.isLoading = false;
         }

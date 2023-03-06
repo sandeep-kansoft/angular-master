@@ -20,6 +20,7 @@ export interface Childmenu {
     menuName: string;
     menuCode: string;
     parentId: number;
+    filePath?:string;
     permissionlist: IPermissionlist2DataDto[];
 }
 
@@ -39,9 +40,6 @@ export interface IMenuResponseDataDto {
     error?: any;
     errorDetail?: any;
 }
-
-
-
 
 export interface IPermissionDataDto {
     data: IPermissionlistDataDto[];

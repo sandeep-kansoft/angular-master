@@ -55,5 +55,12 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.modeService.init();
+    if(this.commonService.getAuthData())
+    {
+      this.commonService.callInitDataService();
+    }
+    else{
+
+    }
   }
 }
