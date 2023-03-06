@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthService } from './modules/auth/services/auth.service';
 import { environment } from 'src/environments/environment';
+import { GridModule } from '@progress/kendo-angular-grid';
 // #fake-start#
 import { FakeAPIService } from './_fake/fake-api.service';
 import { SharedComponentsModule } from './shared/components/shared-components.module';
@@ -20,6 +21,7 @@ import { TokenInterceptor } from './shared/interceptors/token.interceptors';
 import { ErrorInterceptor } from './shared/interceptors/error.interceptors';
 import { HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ErrorHandler } from '@angular/core';
+import { PDFModule, ExcelModule } from '@progress/kendo-angular-grid';
 import { ErrorHandlerService } from './shared/error-handler.service';
 import { MinMaxPrPurchaseOrderComponent } from './modules/purchase-requisition/min-max-pr-purchase-order/min-max-pr-purchase-order.component';
 
@@ -41,6 +43,9 @@ function appInitializer(authService: AuthService) {
     BrowserAnimationsModule,
     TranslateModule.forRoot(),
     HttpClientModule,
+    GridModule,
+    PDFModule,
+    ExcelModule,
     ClipboardModule,
     // #fake-start#
     environment.isMockEnabled
