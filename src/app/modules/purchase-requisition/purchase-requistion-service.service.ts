@@ -89,12 +89,12 @@ export class PurchaseRequistionServiceService {
    * @param pageNumber
    * @return PrResponseDto
    */
-  getPrLineHistory(prId: number): Observable<PrLineHistoryResponseDto[]> {
+  getPrLineHistory(itemCode: string): Observable<PrLineHistoryResponseDto[]> {
     let url_ =
       this.baseUrl +
       '/' +
       PurchaseRequistionApi.getPrLineHistory +
-      '?Itemcode=70003600'
+      `?Itemcode=${itemCode}`
       // `?UserId=${this.authData?.userId}&PrId=${prId}`;
     return this.http.get<PrLineHistoryResponseDto[]>(url_);
   }

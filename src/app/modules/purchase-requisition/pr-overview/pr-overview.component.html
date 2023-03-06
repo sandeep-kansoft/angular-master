@@ -78,22 +78,22 @@
                 </ng-template>
             </kendo-grid-column>
             <!-- <kendo-grid-column [headerClass]="headerStyle" field="ApprovedDate" title="APPROVED DATE" [width]="130"></kendo-grid-column> -->
-            <kendo-grid-column [headerClass]="headerStyle" field="SiteName" title="SITE"
+            <kendo-grid-column [headerClass]="headerStyle" field="siteName" title="SITE"
                 [width]="columnWidth"></kendo-grid-column>
             <!-- <kendo-grid-column [headerClass]="headerStyle" field="PROJECT_NAME" title="PROJECT ID" [width]="columnWidth"></kendo-grid-column> -->
-            <kendo-grid-column [headerClass]="headerStyle" field="DEPARTMENTNAME" title="DEPARTMENT"
+            <kendo-grid-column [headerClass]="headerStyle" field="departmentName" title="DEPARTMENT"
                 [width]="longColumnWidth"></kendo-grid-column>
-            <kendo-grid-column [headerClass]="headerStyle" field="PRTYPE" title="PR TYPE" [width]="columnWidth">
+            <kendo-grid-column [headerClass]="headerStyle" field="prtype" title="PR TYPE" [width]="columnWidth">
             </kendo-grid-column>
-            <kendo-grid-column [headerClass]="headerStyle" field="REQUESTED_BY" title="REQUEST BY"
+            <kendo-grid-column [headerClass]="headerStyle" field="preparer" title="REQUEST BY"
                 [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column [headerClass]="headerStyle" field="TotalValue" title="TOTAL VALUE"
+            <kendo-grid-column [headerClass]="headerStyle" field="totalValue" title="TOTAL VALUE"
                 [width]="columnWidth"></kendo-grid-column>
-            <kendo-grid-column [headerClass]="headerStyle" field="AssignBuyer" title="ASSIGN TO"
+            <kendo-grid-column [headerClass]="headerStyle" field="assignBuyer" title="ASSIGN TO"
                 [width]="columnWidth"></kendo-grid-column>
 
-            <kendo-grid-column [headerClass]="headerStyle" field="BUYERSTATUS" title="HISTORY"
-                [width]="columnWidth"></kendo-grid-column>
+            <!-- <kendo-grid-column [headerClass]="headerStyle" field="BUYERSTATUS" title="HISTORY"
+                [width]="columnWidth"></kendo-grid-column> -->
             <kendo-grid-excel pages fileName="PR.xlsx" [fetchData]="allData"></kendo-grid-excel>
         </kendo-grid>
     </div>

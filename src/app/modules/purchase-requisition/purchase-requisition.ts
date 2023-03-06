@@ -22,6 +22,8 @@ export interface PrResponseDto {
   buyerstatus: string;
 }
 
+
+
 export interface PrLineResponseDto {
   prtransid: number;
   prid: number;

@@ -163,7 +163,7 @@ export class PrModalViewComponent {
         this.currentPage = 'Form';
         break;
       case 'VIEW HISTORICAL DATA':
-        this.getPrLinesHistory(data.prtransid);
+        this.getPrLinesHistory(data.itemcode);
         this.currentSelectedHistoryData.itemCode = data.itemcode;
         this.currentSelectedHistoryData.itemDescription = data.iteM_DESCRIPTION;
         this.currentPage = 'HistoryData';
@@ -211,9 +211,9 @@ export class PrModalViewComponent {
     });
   }
 
-  getPrLinesHistory(prLineId: number) {
+  getPrLinesHistory(itemCode: string) {
     this.historyDataLoading = true;
-    this.prService.getPrLineHistory(prLineId).subscribe({
+    this.prService.getPrLineHistory(itemCode).subscribe({
       next: (result: any) => {
         console.log("here pr history data is" , result);
         this.prLineHistoryData = result.data;
@@ -226,9 +226,9 @@ export class PrModalViewComponent {
     });
   }
 
-  getPrHeader(prLineId: number) {
+  getPrHeader(itemCode: string) {
     this.historyDataLoading = true;
-    this.prService.getPrLineHistory(prLineId).subscribe({
+    this.prService.getPrLineHistory(itemCode).subscribe({
       next: (result: any) => {
         this.prLineHistoryData = result.data;
         this.loadHistorydataTable();
