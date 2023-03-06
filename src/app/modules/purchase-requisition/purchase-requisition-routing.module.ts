@@ -14,7 +14,7 @@ const routes: Routes = [
     path: '',
     children: [
       {
-        path: 'overview',
+        path: 'MyPR',
         component: PrOverviewComponent,
       },
       {
@@ -22,15 +22,11 @@ const routes: Routes = [
         component: PrDetailViewComponent,
       },
       {
-        path: 'min-max',
+        path: 'MinMaxPR',
         component: PrMinMaxComponent,
       },
       {
-        path: 'min-max-po',
-        component: MinMaxPrPurchaseOrderComponent,
-      },
-      {
-        path: 'pr-all',
+        path: 'AllPR',
         component: PrAllViewComponent,
       },
       {

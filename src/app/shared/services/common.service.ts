@@ -87,14 +87,14 @@ export class CommonService {
 
 
   //call initData service
-  callInitDataService(userId: any) {
+  callInitDataService() {
     forkJoin([
       this.getMenuData().pipe(map((res) => res), catchError(e => of(e))),
       this.getPermissionDataByUserId().pipe(map((res) => res), catchError(e => of(e)))
     ]).subscribe({
       next: (response: any) => 
       {
-          this.setMenuData(response[1].data);
+          this.setMenuData(response[0 ].data);
       },
       error: (error: any) => {
         this.showToaster(error?.error, false)
@@ -103,7 +103,7 @@ export class CommonService {
     });
   }
 
-  setMenuData(menuData: [IMenuDataDto]) {
+  setMenuData(menuData: IMenuDataDto[]) {
     let pageName = this.router.url.split('/').length >= 2 ? this.router.url.split('/')[1] : this.router.url;
     let parentMenuData: any = menuData;
     this.menuApiResponse = menuData;
@@ -112,11 +112,11 @@ export class CommonService {
         element.childmenu = element.childmenu.filter((o:any) => {
        
           this.getCorrectPath(
-            'assets/images/menu-icons/' + o.menuCode + '.svg'
+            './assets/images/menu-icons/' + o.menuCode + '.svg'
           ).then((result: any) => {
             o.filePath = result
               ? result
-              : 'assets/images/menu-icons/Home.svg';
+              : './assets/images/menu-icons/Home.svg';
           });
           return o;
         });
@@ -127,11 +127,11 @@ export class CommonService {
         }
       }
       this.getCorrectPath(
-        'assets/images/menu-icons/' + element.menuCode + '.svg'
+        './assets/images/menu-icons/' + element.menuCode + '.svg'
       ).then((result: any) => {
         element.filePath = result
           ? result
-          : 'assets/images/menu-icons/Home.svg';
+          : './assets/images/menu-icons/Home.svg';
       });
       return element;
     });

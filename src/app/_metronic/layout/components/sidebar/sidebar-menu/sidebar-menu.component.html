@@ -1,66 +1,34 @@
 <!--begin::Menu wrapper-->
-<div id="kt_app_sidebar_menu_wrapper" class="app-sidebar-wrapper hover-scroll-overlay-y my-5" data-kt-scroll="true"
+<div *ngIf="menuList" id="kt_app_sidebar_menu_wrapper" class="app-sidebar-wrapper hover-scroll-overlay-y my-5" data-kt-scroll="true"
   data-kt-scroll-activate="true" data-kt-scroll-height="auto"
   data-kt-scroll-dependencies="#kt_app_sidebar_logo, #kt_app_sidebar_footer"
   data-kt-scroll-wrappers="#kt_app_sidebar_menu" data-kt-scroll-offset="5px" data-kt-scroll-save-state="true">
   <!--begin::Menu-->
-  <div class="menu menu-column menu-rounded menu-sub-indention px-3" id="#kt_app_sidebar_menu" data-kt-menu="true"
-    data-kt-menu-expand="false">
+  <div  class="menu menu-column menu-rounded menu-sub-indention px-3"
+    id="#kt_app_sidebar_menu" data-kt-menu="true" data-kt-menu-expand="false">
     <!-- Pages -->
-    <div class="menu-item menu-accordion" data-kt-menu-trigger="click">
+    <div *ngFor="let menu of menuList" class="menu-item menu-accordion" data-kt-menu-trigger="click">
       <span class="menu-link">
-        <span class="menu-icon">
-          <span class="svg-icon svg-icon-2" [inlineSVG]="'./assets/media/svg/sidemenu/purchase-requisition.svg'"></span>
+        <span *ngIf="menu.filePath" class="menu-icon">
+          <span class="svg-icon svg-icon-2" inlineSVG={{menu.filePath}}></span>
         </span>
-        <span class="menu-title" data-link="/crafted/account">Purchase Requisition</span>
-        <span class="menu-arrow"></span>
+        <span class="menu-title" data-link="/crafted/account">{{menu.menuName}}</span>
+        <span *ngIf="menu?.childmenu" class="menu-arrow"></span>
       </span>
-      <div class="menu-sub menu-sub-accordion" routerLinkActive="menu-active-bg">
-        <div class="menu-item">
-          <a class="menu-link without-sub" routerLinkActive="active" routerLink="/purchase-requisition/overview">
-            <span class="menu-icon">
-              <span class="svg-icon svg-icon-2"
-                [inlineSVG]="'./assets/media/svg/sidemenu/my-purchase-requisition.svg'"></span>
+      <div *ngFor="let childMenu of menu?.childmenu" class="menu-sub menu-sub-accordion"
+        routerLinkActive="menu-active-bg">
+        <div *ngIf="childMenu" class="menu-item">
+          <a class="menu-link without-sub" routerLinkActive="active" (click)="clickOnItem(childMenu)" >
+            <span *ngIf="childMenu?.filePath" class="menu-icon">
+              <span class="svg-icon svg-icon-2" inlineSVG={{childMenu?.filePath}}></span>
             </span>
-            <span class="menu-title">My Purchase Requisition</span>
+            <span class="menu-title">{{childMenu?.menuName}}</span>
           </a>
         </div>
-        <div class="menu-item">
-          <a class="menu-link without-sub" routerLinkActive="active" routerLink="/purchase-requisition/min-max">
-            <span class="menu-icon">
-              <span class="svg-icon svg-icon-2"
-                [inlineSVG]="'./assets/media/svg/sidemenu/purchase-requisition-min-max-po.svg'"></span>
-            </span>
-            <span class="menu-title">Purchase Requisition Min / Max PO</span>
-          </a>
-
-        </div>
-        <div class="menu-item">
-          <a class="menu-link without-sub" routerLinkActive="active" routerLink="/purchase-requisition/pr-all">
-            <span class="menu-icon">
-              <span class="svg-icon svg-icon-2"
-                [inlineSVG]="'./assets/media/svg/sidemenu/purchase-requisition-min-max-po.svg'"></span>
-            </span>
-            <span class="menu-title">All Purchase Requisition</span>
-          </a>
-
-        </div>
-        <!-- <div class="menu-item">
-          <a class="menu-link without-sub" routerLinkActive="active" routerLink="/purchase-requisition/pr-all"><span
-              class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">All
-              Purchase Requisition</span></a> -->
-          <!--    </div>
-        <div class="menu-item">
-          <a class="menu-link without-sub" routerLinkActive="active" routerLink="/crafted/pages/profile/documents"><span
-              class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">Ag
-              Grid</span></a>
-        </div> -->
-        <!-- </div> -->
       </div>
-
-
-      <!-- Accounts -->
-      <!-- <div class="menu-item menu-accordion" data-kt-menu-trigger="click" routerLinkActive="here show">
+    </div>
+    <!-- Accounts -->
+    <!-- <div class="menu-item menu-accordion" data-kt-menu-trigger="click" routerLinkActive="here show">
       <span class="menu-link"><span class="menu-icon"><span class="svg-icon svg-icon-2"
             [inlineSVG]="'./assets/media/icons/duotune/communication/com006.svg'"></span></span><span class="menu-title"
           data-link="/crafted/account">Event</span><span class="menu-arrow"></span></span>
@@ -72,14 +40,15 @@
         </div>
         <div class="menu-item">
           <a class="menu-link without-sub" routerLinkActive="active" routerLink="/crafted/account/settings"><span
-              class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">My / All Award
+              class="menu-bullet"><span class="bullet bullet-dot"></span></span><span class="menu-title">My / All
+              Award
               CS</span></a>
         </div>
       </div>
     </div> -->
 
-      <!-- Errors -->
-      <!-- <div class="menu-item menu-accordion" data-kt-menu-trigger="click" routerLinkActive="here show">
+    <!-- Errors -->
+    <!-- <div class="menu-item menu-accordion" data-kt-menu-trigger="click" routerLinkActive="here show">
       <span class="menu-link"><span class="menu-icon"><span class="svg-icon svg-icon-2"
             [inlineSVG]="'./assets/media/icons/duotune/general/gen040.svg'"></span></span><span class="menu-title"
           data-link="/error">Auction</span><span class="menu-arrow"></span></span>
@@ -92,8 +61,8 @@
 
       </div>
     </div> -->
-      <!-- Widgets -->
-      <!-- <div class="menu-item menu-accordion" data-kt-menu-trigger="click" routerLinkActive="here show">
+    <!-- Widgets -->
+    <!-- <div class="menu-item menu-accordion" data-kt-menu-trigger="click" routerLinkActive="here show">
       <span class="menu-link"><span class="menu-icon"><span class="svg-icon svg-icon-2"
             [inlineSVG]="'./assets/media/icons/duotune/layouts/lay008.svg'"></span></span><span class="menu-title"
           data-link="/crafted/widgets">CS Approval</span><span class="menu-arrow"></span></span>
@@ -119,7 +88,7 @@
 
 
 
-    </div>
+
     <!--end::Menu-->
   </div>
   <!--end::Menu wrapper-->

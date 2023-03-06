@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IMenuDataDto } from 'src/app/shared/services/common.interface';
 import { CommonService } from 'src/app/shared/services/common.service';
 
@@ -8,14 +9,27 @@ import { CommonService } from 'src/app/shared/services/common.service';
   styleUrls: ['./sidebar-menu.component.scss']
 })
 export class SidebarMenuComponent implements OnInit {
-  menuList!:IMenuDataDto[];
-  constructor(private commonService:CommonService) { }
+  menuList: IMenuDataDto[] 
+  
+  constructor(private commonService: CommonService,
+    private cdr: ChangeDetectorRef,
+    private router:Router
+  ) { }
 
   ngOnInit(): void {
     this.commonService.menuListData$.subscribe((menuData) => {
-      this.menuList = menuData;
-      console.log("this.menuList : ",this.menuList )
+      if (menuData) {
+        this.menuList = menuData;
+        //console.log("this.menuList Json data : ", JSON.stringify(this.menuList))
+        console.log("this.menuList : ",this.menuList)
+      }
+      this.cdr.detectChanges();
     });
+  }
+
+  clickOnItem(childMenu:any){
+    //console.log("Child menu : ",childMenu);
+    this.router.navigate(['/purchase-requisition/'+childMenu.menuCode]);
   }
 
 }
