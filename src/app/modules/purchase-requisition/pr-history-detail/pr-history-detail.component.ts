@@ -104,9 +104,9 @@ export class PrHistoryDetailComponent {
     this.prService.getPrHistory(this.prId).subscribe({
       next: (result: any) => {
         this.historyDataLocal = result.data;
+        this.isLoading = false
         console.log("Data is ", result.data)
         this.loadProducts();
-        this.isLoading = false
       },
       error: (err) => {
         this.isLoading = false
