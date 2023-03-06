@@ -99,7 +99,7 @@ export class PrOverviewComponent {
     this.loadProducts();
   }
 
-  onModelClick(type: string, item: PrResponseDto) {
+  onModelClick(type: string, item: PrResponseDto, isPrNumberClick = false) {
     switch (type) {
       case 'Preview':
         break;
@@ -108,7 +108,7 @@ export class PrOverviewComponent {
       case 'Auction':
         break;
       case 'Lines':
-        this.openLinesModel();
+        this.openLinesModel(item.prid,isPrNumberClick);
         break;
       case 'History':
         this.openHistoryModel(item.prid);
@@ -119,19 +119,9 @@ export class PrOverviewComponent {
     }
   }
 
-  onPrNumberClick(item: PrResponseDto) {
-    this.openLinesModel(item.prid);
-  }
 
-  // openPrDetailModel() {
-  //   this.prDetailModel.open(PrDetailViewComponent, {
-  //     centered: true,
-  //     fullscreen: true,
-  //     scrollable: true,
-  //   });
-  // }
 
-  openLinesModel(id?: number) {
+  openLinesModel(id?: number , isPrNumberClick:boolean = false) {
     const modelRef = this.prLineViewModel.open(PrModalViewComponent, {
       centered: true,
       fullscreen: true,
@@ -139,6 +129,7 @@ export class PrOverviewComponent {
     });
 
     modelRef.componentInstance.prId = id;
+    modelRef.componentInstance.isPrNumberClick = isPrNumberClick;
   }
 
   openHistoryModel(id: number) {
@@ -244,6 +235,8 @@ export class PrOverviewComponent {
   overviewdata: PrResponseDto[] = [];
 
   getMyPrList() {
+
+    
     this.loading = true;
     this.prservice.getMyPrList(10, 1).subscribe({
       next: (result: any) => {
@@ -254,7 +247,8 @@ export class PrOverviewComponent {
         this.gridView = process(result?.data, this.state);
         this.cdr.detectChanges();
       },
-      error: () => {
+      error: (err) => {
+        console.log(err)
         this.loading = false;
       },
     });

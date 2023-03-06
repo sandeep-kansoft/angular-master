@@ -111,4 +111,34 @@ export class PurchaseRequistionServiceService {
       `/?UserId=${this.authData?.userId}&PrId=${prId}`;
     return this.http.get<PrLineHistoryResponseDto[]>(url_);
   }
+
+  /**
+ * @param pageSize
+ * @param pageNumber
+ * @return PrResponseDto
+ */
+  getPrHeader(prId: number): Observable<PrLineHistoryResponseDto[]> {
+    let url_ =
+      this.baseUrl +
+      '/' +
+      PurchaseRequistionApi.getPrLineHistory +
+      `/?UserId=${this.authData?.userId}&PrId=${prId}`;
+    return this.http.get<PrLineHistoryResponseDto[]>(url_);
+  }
+
+
+  /**
+* @param pageSize
+* @param pageNumber
+* @return PrResponseDto
+*/
+  getMinMax(prId: number): Observable<PrLineHistoryResponseDto[]> {
+    let url_ =
+      this.baseUrl +
+      '/' +
+      PurchaseRequistionApi.getPendingPPO +
+      `?PageSize=10&PageIndex=1`;
+    return this.http.get<PrLineHistoryResponseDto[]>(url_);
+  }
+
 }

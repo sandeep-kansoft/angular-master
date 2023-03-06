@@ -22,6 +22,7 @@ export class PrModalViewComponent {
   public gridView: GridDataResult;
   public PoHistorydataGridView: GridDataResult;
   @Input() prId: number;
+  @Input() isPrNumberClick: boolean;
   public state: State = {
     // sort: [
     //   {
@@ -38,12 +39,18 @@ export class PrModalViewComponent {
   };
   prLineData: PrLineResponseDto[];
   prLineHistoryData: PrLineHistoryResponseDto[];
+  currentSelectedHistoryData = {
+    itemCode: "",
+    itemDescription: ""
+  };
   currentPage = 'Lines';
   dropdownListdata = ['RFQT', 'AUCTION', 'VIEW', 'VIEW HISTORICAL DATA'];
   columnWidth = 150;
   pageSize = 10;
   isFormVisible: boolean = false;
   viewPoHistoryData = [];
+  historyDataLoading = false;
+  linesDataLoading = false;
 
   public PoHistorydata: State = {
     sort: [
@@ -67,14 +74,12 @@ export class PrModalViewComponent {
     public modal: NgbModal,
     private prDetailModel: NgbModal,
     private prService: PurchaseRequistionServiceService
-  ) {}
+  ) { }
 
   public ngOnInit() {
-    if (this.prId) {
-      this.currentPage = 'Both';
-    } else {
-      this.getPrLines();
-    }
+    this.currentPage = this.isPrNumberClick ? 'Both' : 'Lines'
+    this.getPrLines();
+
     // this.loadHistorydataTable();
   }
 
@@ -97,9 +102,9 @@ export class PrModalViewComponent {
     return this.commonService.isMobileBrowser;
   }
 
-  editHandler(item: PrGridDataDto) {}
+  editHandler(item: PrGridDataDto) { }
 
-  removeHandler(item: PrGridDataDto) {}
+  removeHandler(item: PrGridDataDto) { }
 
   public onStateChange(state: any) {
     this.state = state;
@@ -159,6 +164,8 @@ export class PrModalViewComponent {
         break;
       case 'VIEW HISTORICAL DATA':
         this.getPrLinesHistory(data.prtransid);
+        this.currentSelectedHistoryData.itemCode = data.itemcode;
+        this.currentSelectedHistoryData.itemDescription = data.iteM_DESCRIPTION;
         this.currentPage = 'HistoryData';
         break;
 
@@ -190,23 +197,45 @@ export class PrModalViewComponent {
   }
 
   getPrLines() {
+    this.linesDataLoading = true;
     this.prService.getLineItem(this.prId).subscribe({
       next: (result: any) => {
         this.prLineData = result.data;
         console.log('pr line data', result.data);
         this.loadPrLineTable();
+        this.linesDataLoading = false
       },
-      error: (err) => {},
+      error: (err) => {
+        this.linesDataLoading = false
+      },
     });
   }
 
   getPrLinesHistory(prLineId: number) {
+    this.historyDataLoading = true;
     this.prService.getPrLineHistory(prLineId).subscribe({
       next: (result: any) => {
         this.prLineHistoryData = result.data;
         this.loadHistorydataTable();
+        this.historyDataLoading = false;
       },
-      error: (err) => {},
+      error: (err) => {
+        this.historyDataLoading = false
+      },
+    });
+  }
+
+  getPrHeader(prLineId: number) {
+    this.historyDataLoading = true;
+    this.prService.getPrLineHistory(prLineId).subscribe({
+      next: (result: any) => {
+        this.prLineHistoryData = result.data;
+        this.loadHistorydataTable();
+        this.historyDataLoading = false;
+      },
+      error: (err) => {
+        this.historyDataLoading = false
+      },
     });
   }
 }

@@ -1,10 +1,10 @@
 <div class="card">
     <div class="card-body ">
-        <div *ngIf="loading" class="item">
+        <!-- <div *ngIf="loading" class="item">
             <ngx-skeleton-loader count="10" [theme]="{ 'border-radius': '0', height: '30px' }"></ngx-skeleton-loader>
-        </div>
+        </div> -->
 
-        <kendo-grid class="fixed-header" *ngIf="!loading" [columnMenu]="{ filter: true ,sort : true  }"
+        <kendo-grid    class="fixed-header" [loading]="loading" [columnMenu]="{ filter: true ,sort : true  }"
             [groupable]="true" [data]="gridView" [group]="state.group" [filter]="state.filter" [filterable]="false"
             [reorderable]="true" [resizable]="true" [skip]="state.skip" [pageSize]="pageSize" [pageable]="true"
             (dataStateChange)="onStateChange($event)" [sortable]="{
@@ -54,7 +54,7 @@
             <kendo-grid-command-column [headerClass]="headerStyle" title="PR NO" [width]="columnWidth">
                 <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
-                        <a (click)="onPrNumberClick(item);"
+                        <a (click)="onModelClick('Lines', item,true);"
                             class="link-primary text-decoration-underline text-center">{{item.prid}}</a>
                     </ng-container>
                 </ng-template>

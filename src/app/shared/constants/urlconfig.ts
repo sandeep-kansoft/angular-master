@@ -19,4 +19,5 @@ export const PurchaseRequistionApi: any = {
   getPrLines: 'api/PR/GetPR_Lines',
   getPrLineHistory: 'api/PR/GetPRLine_History',
   getPrLineHistoryHeader: 'api/PR/GetPRDetails_ById',
+  getPendingPPO :"api/PPO/GetPendingPPO"
 };

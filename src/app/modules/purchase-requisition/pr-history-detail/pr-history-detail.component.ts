@@ -35,7 +35,7 @@ export class PrHistoryDetailComponent {
   dropdownListdata = ['RFQT', 'AUCTION', 'VIEW', 'VIEW HISTORICAL DATA'];
   columnWidth = 150;
   pageSize = 10;
-
+  isLoading = false
   constructor(
     private commonService: CommonService,
     public modal: NgbModal,
@@ -100,13 +100,17 @@ export class PrHistoryDetailComponent {
   }
 
   getPrHistory() {
+    this.isLoading = true
     this.prService.getPrHistory(this.prId).subscribe({
       next: (result: any) => {
         this.historyDataLocal = result.data;
         console.log("Data is ", result.data)
         this.loadProducts();
+        this.isLoading = false
       },
-      error: (err) => {},
+      error: (err) => {
+        this.isLoading = false
+      },
     });
   }
 }
