@@ -132,12 +132,12 @@ export class PurchaseRequistionServiceService {
 * @param pageNumber
 * @return PrResponseDto
 */
-  getMinMax(prId: number): Observable<PrLineHistoryResponseDto[]> {
+  getMinMax(pageSize:number, pageindex:number): Observable<PrLineHistoryResponseDto[]> {
     let url_ =
       this.baseUrl +
       '/' +
       PurchaseRequistionApi.getPendingPPO +
-      `?PageSize=10&PageIndex=1`;
+      `?PageSize=${pageSize}&PageIndex=${pageindex}`;
     return this.http.get<PrLineHistoryResponseDto[]>(url_);
   }
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ExcelExportData } from '@progress/kendo-angular-excel-export';
 import { GridDataResult } from '@progress/kendo-angular-grid';
@@ -8,6 +8,7 @@ import { PrGridDataDto } from '../pr-grid-view';
 import { PrHistoryDetailComponent } from '../pr-history-detail/pr-history-detail.component';
 import { PrModalViewComponent } from '../pr-modal-view/pr-modal-view.component';
 import { PrGridData } from '../pr-overview/data';
+import { PurchaseRequistionServiceService } from '../purchase-requistion-service.service';
 import { Po_or_RFQOrder } from './data';
 
 @Component({
@@ -21,6 +22,7 @@ export class PrMinMaxComponent {
   columnWidth = 150;
   pageSize = 100;
   headerStyle = 'fw-bold';
+  loading: boolean = false;
   serachText: string = '';
   public state: State = {
     sort: [
@@ -43,15 +45,18 @@ export class PrMinMaxComponent {
     private commonService: CommonService,
     private prDetailModel: NgbModal,
     private prLineViewModel: NgbModal,
-    private prHistoryModel: NgbModal
+    private prHistoryModel: NgbModal,
+    private prservice: PurchaseRequistionServiceService,
+    private cdr: ChangeDetectorRef,
   ) {this.allData = this.allData.bind(this);}
 
   public ngOnInit() {
     this.loadProducts();
+    this.getMinMax();
   }
 
   private loadProducts(): void {
-    this.gridView = process(this.prData, this.state);
+    this.gridView = process(this.minmaxdata, this.state);
   }
 
   checkMobileBrowser() {
@@ -138,4 +143,23 @@ export class PrMinMaxComponent {
 
     return result;
   }
-}
+  minmaxdata:any=[];
+  getMinMax(){
+    this.loading = true;
+    this.prservice.getMinMax(10, 1).subscribe({
+      next: (result: any) => {
+        this.minmaxdata = result;
+        console.log('minmaxdata', this.minmaxdata);
+        // this.loadProducts()
+        this.loading = false;
+        this.gridView = process(result?.data, this.state);
+        this.cdr.detectChanges();
+      },
+      error: (err) => {
+        console.log(err)
+        this.loading = false;
+      },
+    });
+  }
+  }
+
