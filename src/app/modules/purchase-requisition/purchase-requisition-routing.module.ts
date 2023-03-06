@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MinMaxPrPurchaseOrderComponent } from '../min-max-pr-purchase-order/min-max-pr-purchase-order.component';
 import { DemoPageComponent } from './demo-page/demo-page.component';
 import { PrAllViewComponent } from './pr-all-view/pr-all-view.component';
 
@@ -25,6 +26,10 @@ const routes: Routes = [
         component: PrMinMaxComponent,
       },
       {
+        path: 'min-max-po',
+        component: MinMaxPrPurchaseOrderComponent,
+      },
+      {
         path: 'pr-all',
         component: PrAllViewComponent,
       },
@@ -41,4 +46,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class PurchaseRequestRoutingModule {}
+export class PurchaseRequestRoutingModule { }
