@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MinMaxPrPurchaseOrderComponent } from '../min-max-pr-purchase-order/min-max-pr-purchase-order.component';
+import { MinMaxPrPurchaseOrderComponent } from './min-max-pr-purchase-order/min-max-pr-purchase-order.component';
 import { DemoPageComponent } from './demo-page/demo-page.component';
 import { PrAllViewComponent } from './pr-all-view/pr-all-view.component';
 

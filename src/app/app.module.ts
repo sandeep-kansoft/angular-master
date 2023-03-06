@@ -21,7 +21,7 @@ import { ErrorInterceptor } from './shared/interceptors/error.interceptors';
 import { HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ErrorHandler } from '@angular/core';
 import { ErrorHandlerService } from './shared/error-handler.service';
-import { MinMaxPrPurchaseOrderComponent } from './modules/min-max-pr-purchase-order/min-max-pr-purchase-order.component';
+import { MinMaxPrPurchaseOrderComponent } from './modules/purchase-requisition/min-max-pr-purchase-order/min-max-pr-purchase-order.component';
 
 // #fake-end#
 
