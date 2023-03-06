@@ -18,7 +18,7 @@
       <div *ngFor="let childMenu of menu?.childmenu" class="menu-sub menu-sub-accordion"
         routerLinkActive="menu-active-bg">
         <div *ngIf="childMenu" class="menu-item">
-          <a class="menu-link without-sub" routerLinkActive="active" (click)="clickOnItem(childMenu)" >
+          <a class="menu-link without-sub" [ngClass]="childMenu.menuCode==activeLink? 'active' : ''" routerLinkActive="active" (click)="clickOnItem(childMenu)" >
             <span *ngIf="childMenu?.filePath" class="menu-icon">
               <span class="svg-icon svg-icon-2" inlineSVG={{childMenu?.filePath}}></span>
             </span>

@@ -9,7 +9,8 @@ import { CommonService } from 'src/app/shared/services/common.service';
   styleUrls: ['./sidebar-menu.component.scss']
 })
 export class SidebarMenuComponent implements OnInit {
-  menuList: IMenuDataDto[] 
+  menuList: IMenuDataDto[];
+  activeLink:string;
   
   constructor(private commonService: CommonService,
     private cdr: ChangeDetectorRef,
@@ -28,7 +29,7 @@ export class SidebarMenuComponent implements OnInit {
   }
 
   clickOnItem(childMenu:any){
-    //console.log("Child menu : ",childMenu);
+    this.activeLink = childMenu.menuCode;
     this.router.navigate(['/purchase-requisition/'+childMenu.menuCode]);
   }
 
