@@ -98,7 +98,7 @@
                                 <div class="col-md-8 mb-4">
                                     <label class="col-form-label fw-bold fs-6"><span>Business Justification -
                                             Details</span></label>
-                                    <textarea type="" [value]="PrheaderDetail.bjDetails"
+                                    <textarea  disabled type="" [value]="PrheaderDetail.bjDetails"
                                         class="form-control form-control-lg " name="contactPhone"></textarea>
                                 </div>
 
@@ -124,7 +124,7 @@
 
                                 <div class="col-md-2 mb-1">
                                     <label class="col-form-label  fw-bold fs-6">Requester</label>
-                                    <input disabled type="text" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="text" class="form-control form-control-lg " [value]="PrheaderDetail.preparer"
                                         name="company" />
                                 </div>
                                 <div class="col-md-4 mb-4">

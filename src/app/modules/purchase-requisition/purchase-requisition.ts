@@ -1,4 +1,4 @@
-export interface PurchaseRequest { }
+export interface PurchaseRequest {}
 
 export interface PrResponseDto {
   prid: number;
@@ -21,8 +21,6 @@ export interface PrResponseDto {
   pR_STATUS: string;
   buyerstatus: string;
 }
-
-
 
 export interface PrLineResponseDto {
   prtransid: number;
@@ -68,21 +66,24 @@ export interface PrHistoryResponseDto {
 }
 
 export interface PrLineHistoryResponseDto {
-
-  vendorcode: number,
-  vendorname: string,
-  pono: string,
-  podate: string,
-  itemcode: number,
-  itemdescription: string,
-  poqty: number,
-  uom: string,
-  netAmt: number,
-  discAmt: number
-
+  round: string;
+  pR_No?: any;
+  pR_Description?: any;
+  wF_No?: any;
+  level: string;
+  approval?: any;
+  required_By?: any;
+  assigned_Date: string;
+  action_Taken_By: string;
+  action_Taken_Date: string;
+  status: string;
+  remarks: string;
+  iteM_CODE: string;
+  product_Name: string;
+  quantity: string;
+  uniT_PRICE: string;
+  amount: string;
 }
-
-
 
 export interface PrLineHeaderDetail {
   pR_Lines: any[];
@@ -112,5 +113,3 @@ export interface PrLineHeaderDetail {
   attachment?: any;
   mConsumptionDate: string;
 }
-
-

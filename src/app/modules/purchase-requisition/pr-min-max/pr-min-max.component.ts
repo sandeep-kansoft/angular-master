@@ -146,7 +146,7 @@ export class PrMinMaxComponent {
   minmaxdata:any=[];
   getMinMax(){
     this.loading = true;
-    this.prservice.getMinMax(10, 1).subscribe({
+    this.prservice.getAllPpo().subscribe({
       next: (result: any) => {
         this.minmaxdata = result;
         console.log('minmaxdata', this.minmaxdata);

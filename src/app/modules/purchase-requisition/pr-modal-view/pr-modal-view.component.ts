@@ -6,6 +6,7 @@ import { CommonService } from 'src/app/shared/services/common.service';
 import { PrDetailViewComponent } from '../pr-detail-view/pr-detail-view.component';
 import { PrGridDataDto } from '../pr-grid-view';
 import {
+  PrLineHeaderDetail,
   PrLineHistoryResponseDto,
   PrLineResponseDto,
 } from '../purchase-requisition';
@@ -51,6 +52,7 @@ export class PrModalViewComponent {
   viewPoHistoryData = [];
   historyDataLoading = false;
   linesDataLoading = false;
+  PrheaderDetail : PrLineHeaderDetail
 
   public PoHistorydata: State = {
     sort: [
@@ -79,6 +81,7 @@ export class PrModalViewComponent {
   public ngOnInit() {
     this.currentPage = this.isPrNumberClick ? 'Both' : 'Lines'
     this.getPrLines();
+    this.getPrHeaderDetailByid();
 
     // this.loadHistorydataTable();
   }
@@ -215,7 +218,7 @@ export class PrModalViewComponent {
     this.historyDataLoading = true;
     this.prService.getPrLineHistory(itemCode).subscribe({
       next: (result: any) => {
-        console.log("here pr history data is" , result);
+        console.log("here pr history data is", result);
         this.prLineHistoryData = result.data;
         this.loadHistorydataTable();
         this.historyDataLoading = false;
@@ -239,4 +242,21 @@ export class PrModalViewComponent {
       },
     });
   }
+
+  
+
+  getPrHeaderDetailByid() {
+
+    this.prService.getPrHeaderDetailBYid(this.prId).subscribe({
+      next: (result: any) => {
+        console.log("result header", result)
+        this.PrheaderDetail = result.data
+      },
+      error: (err) => {
+        this.historyDataLoading = false
+      },
+    });
+  }
+
+
 }

@@ -55,7 +55,7 @@ export class PurchaseRequistionServiceService {
    */
   getALLPrList(payload: any): Observable<PrResponseDto[]> {
     let url_ = this.baseUrl + '/' + PurchaseRequistionApi.getAllPr;
-    return this.http.post<PrResponseDto[]>(url_,payload);
+    return this.http.post<PrResponseDto[]>(url_, payload);
   }
 
   /**
@@ -95,7 +95,7 @@ export class PurchaseRequistionServiceService {
       '/' +
       PurchaseRequistionApi.getPrLineHistory +
       `?Itemcode=${itemCode}`
-      // `?UserId=${this.authData?.userId}&PrId=${prId}`;
+    // `?UserId=${this.authData?.userId}&PrId=${prId}`;
     return this.http.get<PrLineHistoryResponseDto[]>(url_);
   }
 
@@ -133,7 +133,7 @@ export class PurchaseRequistionServiceService {
 * @param pageNumber
 * @return PrResponseDto
 */
-  getMinMax(pageSize:number, pageindex:number): Observable<PrLineHistoryResponseDto[]> {
+  getMinMax(pageSize: number, pageindex: number): Observable<PrLineHistoryResponseDto[]> {
     let url_ =
       this.baseUrl +
       '/' +
@@ -141,5 +141,45 @@ export class PurchaseRequistionServiceService {
       `?PageSize=${pageSize}&PageIndex=${pageindex}`;
     return this.http.get<PrLineHistoryResponseDto[]>(url_);
   }
+
+
+  /**
+* @param pageSize
+* @param pageNumber
+* @return PrResponseDto
+*/
+  getPrHeaderDetailBYid(prid: number): Observable<PrLineHistoryResponseDto[]> {
+    let url_ =
+      this.baseUrl +
+      '/' +
+      PurchaseRequistionApi.getPrDetailById +
+      `?PR_id=${prid}`;
+    return this.http.get<PrLineHistoryResponseDto[]>(url_);
+  }
+
+
+  getPrLineDetailBYid(prid: number): Observable<PrLineHistoryResponseDto[]> {
+    let url_ =
+      this.baseUrl +
+      '/' +
+      PurchaseRequistionApi.getPrLineDetailById +
+      `?PR_id=${prid}`;
+    return this.http.get<PrLineHistoryResponseDto[]>(url_);
+  }
+
+
+  /**
+* @param pageSize
+* @param pageNumber
+* @return PrResponseDto
+*/
+  getAllPpo(): Observable<any[]> {
+    let url_ =
+      this.baseUrl +
+      '/' +
+      PurchaseRequistionApi.getAllPPO
+    return this.http.get<any[]>(url_);
+  }
+
 
 }
