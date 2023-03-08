@@ -205,7 +205,7 @@
 
                                 <div class="col-md-2 mb-1">
                                     <label class="col-form-label fw-bold fs-6"><span>Item ID</span></label>
-                                    <input disabled type="tel" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="tel" class="form-control form-control-lg " [value]="PrLinesDetail.itemcode"
                                         name="contactPhone" />
                                 </div>
                                 <div class="col-md-2 mb-1">
@@ -215,7 +215,7 @@
                                 </div>
                                 <div class="col-md-4 mb-1">
                                     <label class="col-form-label fw-bold fs-6"><span>Pending PR :</span></label>
-                                    <input disabled type="tel" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="tel" class="form-control form-control-lg " [value]="PrLinesDetail"
                                         name="contactPhone" />
                                 </div>
 
@@ -244,37 +244,37 @@
                                 <div class="col-md-8 mb-4">
                                     <label class="col-form-label fw-bold fs-6"><span>Product
                                             Description</span></label>
-                                    <input disabled type="tel" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="tel" class="form-control form-control-lg " [value]="PrLinesDetail.iteM_DESCRIPTION"
                                         name="contactPhone" />
                                 </div>
 
                                 <div class="col-md-12 mb-4">
                                     <label class="col-form-label fw-bold fs-6"><span>Product Long
                                             Description</span></label>
-                                    <textarea type="" class="form-control form-control-lg " [value]="''"
+                                    <textarea type="" class="form-control form-control-lg " [value]="PrLinesDetail"
                                         name="contactPhone"></textarea>
                                 </div>
 
                                 <div class="col-md-2 mb-1">
                                     <label class="col-form-label fw-bold fs-6"><span>Status</span></label>
-                                    <input disabled type="tel" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="tel" class="form-control form-control-lg " [value]="PrLinesDetail.status"
                                         name="contactPhone" />
                                 </div>
                                 <div class="col-md-2 mb-1">
                                     <label class="col-form-label  fw-bold fs-6">No of ManPower </label>
-                                    <input disabled type="text" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="text" class="form-control form-control-lg " [value]="PrLinesDetail"
                                         name="company" />
                                 </div>
                                 <div class="col-md-2 mb-1">
                                     <label class="col-form-label fw-bold fs-6"><span>Quantity</span></label>
-                                    <input disabled type="tel" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="tel" class="form-control form-control-lg " [value]="PrLinesDetail.quantity"
                                         name="contactPhone" />
                                 </div>
 
 
                                 <div class="col-md-2 mb-1">
                                     <label class="col-form-label  fw-bold fs-6">UOM</label>
-                                    <input disabled type="text" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="text" class="form-control form-control-lg " [value]="PrLinesDetail.uom"
                                         name="company" />
                                 </div>
                                 <div class="col-md-2 mb-1">
@@ -284,7 +284,7 @@
                                 </div>
                                 <div class="col-md-2 mb-1">
                                     <label class="col-form-label  fw-bold fs-6">Net Amount</label>
-                                    <input disabled type="text" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="text" class="form-control form-control-lg " [value]="PrLinesDetail.netAmount"
                                         name="company" />
                                 </div>
 
@@ -298,7 +298,7 @@
                                 <div class="col-md-2 mb-1">
                                     <label class="col-form-label fw-bold fs-6"><span>
                                             Currency</span></label>
-                                    <input disabled type="tel" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="tel" class="form-control form-control-lg " [value]="PrLinesDetail.currency"
                                         name="contactPhone" />
                                 </div>
 
@@ -311,12 +311,12 @@
 
                                 <div class="col-md-2 mb-1">
                                     <label class="col-form-label  fw-bold fs-6">Consumption Date</label>
-                                    <input disabled type="text" class="form-control form-control-lg " name="company" />
+                                    <input disabled type="text" class="form-control form-control-lg " name="company"  [value]="PrLinesDetail.consumptionDate" />
                                 </div>
                                 <div class="col-md-2 mb-1">
                                     <label class="col-form-label fw-bold fs-6"><span>Delivery
                                             Name</span></label>
-                                    <input disabled type="tel" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="tel" class="form-control form-control-lg " [value]="PrLinesDetail.deliveryName"
                                         name="contactPhone" />
                                 </div>
                                 <div class="col-md-2 mb-1">
@@ -329,18 +329,18 @@
                                 <div class="col-md-4 mb-4">
                                     <label class="col-form-label fw-bold fs-6"><span>Delivery
                                             Address</span></label>
-                                    <input disabled type="tel" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="tel" class="form-control form-control-lg " [value]="PrLinesDetail.deliveryAddress"
                                         name="contactPhone" />
                                 </div>
                                 <div class="col-md-2 mb-1">
                                     <label class="col-form-label  fw-bold fs-6">State</label>
-                                    <input disabled type="text" class="form-control form-control-lg " name="company" />
+                                    <input disabled type="text" class="form-control form-control-lg " name="company" [value]="PrLinesDetail.stateName" />
                                 </div>
 
                                 <div class="col-md-12 mb-4">
                                     <label class="col-form-label fw-bold fs-6"><span>Business Justification -
                                             Details</span></label>
-                                    <textarea type="" class="form-control form-control-lg " [value]="''"
+                                    <textarea type="" class="form-control form-control-lg " [value]="PrLinesDetail.bjDetails"
                                         name="contactPhone"></textarea>
                                 </div>
 
@@ -349,12 +349,12 @@
                                 <div class="col-md-4 mb-1">
                                     <label class="col-form-label fw-bold fs-6"><span>Attention
                                             information</span></label>
-                                    <input disabled type="tel" class="form-control form-control-lg "
+                                    <input disabled type="tel" class="form-control form-control-lg " [value]="PrLinesDetail.attentionInformation"
                                         name="contactPhone" />
                                 </div>
                                 <div class="col-md-2 mb-1">
                                     <label class="col-form-label  fw-bold fs-6">Project ID</label>
-                                    <input disabled type="text" class="form-control form-control-lg " name="company" />
+                                    <input disabled type="text" class="form-control form-control-lg " name="company"  [value]="PrLinesDetail.projecT_ID"/>
                                 </div>
 
                                 <div class="col-md-2 mb-1">
@@ -377,14 +377,14 @@
                                 <div class="col-md-3 mb-1">
                                     <label class="col-form-label fw-bold fs-6"><span>Business
                                             unit</span></label>
-                                    <input disabled type="tel" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="tel" class="form-control form-control-lg " [value]="PrLinesDetail.busiUnit"
                                         name="contactPhone" />
                                 </div>
                                 <div class="col-md-3 mb-1">
                                     <label class="col-form-label  fw-bold fs-6">
                                         Cost Center
                                     </label>
-                                    <input disabled type="text" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="text" class="form-control form-control-lg " [value]="PrLinesDetail.costCenterValue"
                                         name="company" />
                                 </div>
                                 <div class="col-md-3 mb-1">
@@ -399,19 +399,19 @@
 
                                 <div class="col-md-3 mb-1">
                                     <label class="col-form-label  fw-bold fs-6">Department</label>
-                                    <input disabled type="text" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="text" class="form-control form-control-lg " [value]="PrLinesDetail.department"
                                         name="company" />
                                 </div>
                                 <div class="col-md-3 mb-1">
                                     <label class="col-form-label fw-bold fs-6"><span>Inventory
                                             Site</span></label>
-                                    <input disabled type="tel" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="tel" class="form-control form-control-lg " [value]="PrLinesDetail.inventorySite"
                                         name="contactPhone" />
                                 </div>
                                 <div class="col-md-3 mb-1">
                                     <label class="col-form-label  fw-bold fs-6">invetory
                                         warehouse</label>
-                                    <input disabled type="text" class="form-control form-control-lg " [value]="''"
+                                    <input disabled type="text" class="form-control form-control-lg " [value]="PrLinesDetail.invWarehouse"
                                         name="company" />
                                 </div>
 

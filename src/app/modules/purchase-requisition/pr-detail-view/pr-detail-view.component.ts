@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { PrLineHeaderDetail } from '../purchase-requisition';
+import { PrLineHeaderDetail, PrLinesDetailResponseDto } from '../purchase-requisition';
 
 @Component({
   selector: 'app-pr-detail-view',
@@ -8,28 +8,17 @@ import { PrLineHeaderDetail } from '../purchase-requisition';
   styleUrls: ['./pr-detail-view.component.scss'],
 })
 export class PrDetailViewComponent {
-  PrdetailItem!: PrDetails;
+
    @Input() PrheaderDetail : PrLineHeaderDetail
+   @Input() PrLinesDetail : PrLinesDetailResponseDto
 
   constructor(public modal: NgbModal) {}
   closeModel() {
     this.modal.dismissAll()
   }
+
+  ngOnInit(){
+    console.log("PrLinesDetail" ,this.PrLinesDetail)
+  }
 }
 
-type PrDetails = {
-  prid: number;
-  PR_NUM: string;
-  DESCRIPTION: string;
-  CREATION_DATE: string;
-  ApprovedDate: string;
-  SiteName: number;
-  PROJECT_NAME: string;
-  DEPARTMENTNAME: string;
-  PRTYPE: string;
-  PRSubType: string;
-  REQUESTED_BY: string;
-  TotalValue: number;
-  AssignBuyer: string;
-  BUYERSTATUS: string;
-};

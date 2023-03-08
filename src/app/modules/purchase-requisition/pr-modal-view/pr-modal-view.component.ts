@@ -9,6 +9,8 @@ import {
   PrLineHeaderDetail,
   PrLineHistoryResponseDto,
   PrLineResponseDto,
+
+  PrLinesDetailResponseDto,
 } from '../purchase-requisition';
 import { PurchaseRequistionServiceService } from '../purchase-requistion-service.service';
 import { PohistoryData, PrLinesData } from './data';
@@ -51,8 +53,10 @@ export class PrModalViewComponent {
   isFormVisible: boolean = false;
   viewPoHistoryData = [];
   historyDataLoading = false;
+  prLinesDetailLoading = false;
   linesDataLoading = false;
-  PrheaderDetail : PrLineHeaderDetail
+  PrheaderDetail: PrLineHeaderDetail
+  PrLinesDetail: PrLinesDetailResponseDto
 
   public PoHistorydata: State = {
     sort: [
@@ -164,6 +168,7 @@ export class PrModalViewComponent {
       case 'VIEW':
         //this.showHistoryModel();
         this.currentPage = 'Form';
+        this.getPrLineDetailByid(data.prtransid);
         break;
       case 'VIEW HISTORICAL DATA':
         this.getPrLinesHistory(data.itemcode);
@@ -243,7 +248,7 @@ export class PrModalViewComponent {
     });
   }
 
-  
+
 
   getPrHeaderDetailByid() {
 
@@ -254,6 +259,20 @@ export class PrModalViewComponent {
       },
       error: (err) => {
         this.historyDataLoading = false
+      },
+    });
+  }
+
+  getPrLineDetailByid(prtransid: number) {
+
+    this.prLinesDetailLoading = true;
+    this.prService.getPrLineDetailBYid(prtransid).subscribe({
+      next: (result: any) => {
+        console.log("result line deatil", result)
+        this.PrLinesDetail = result.data
+      },
+      error: (err) => {
+        this.prLinesDetailLoading = false
       },
     });
   }

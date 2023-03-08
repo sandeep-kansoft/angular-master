@@ -113,3 +113,51 @@ export interface PrLineHeaderDetail {
   attachment?: any;
   mConsumptionDate: string;
 }
+
+
+export interface PrLinesDetailResponseDto {
+  prtransid: number;
+  prid: number;
+  pR_NUM: string;
+  itemcode: string;
+  iteM_DESCRIPTION: string;
+  itemname: string;
+  status: string;
+  address: string;
+  requestDate?: any;
+  tefrId?: any;
+  quantity: number;
+  inProcessQUANTITY: number;
+  usedQty: number;
+  remQty: number;
+  uom: string;
+  rate: number;
+  netAmount: number;
+  currency: string;
+  consumptionDate: string;
+  deliveryName: string;
+  deliveryAddress: string;
+  attentionInformation: string;
+  projecT_ID: number;
+  projecT_NAME?: any;
+  busiUnit: string;
+  costCenterValue: string;
+  invWarehouse: string;
+  createdDate: string;
+  costElementValue: string;
+  department: string;
+  inventorySite: string;
+  bjReason?: any;
+  bjDetails: string;
+  configCode: string;
+  warehouseCode?: any;
+  poNo: string;
+  poid: number;
+  rfqno?: any;
+  buyerid: number;
+  rfqStatus?: any;
+  siteID: number;
+  buyerstatus?: any;
+  stateName: string;
+  assignBuyer?: any;
+}
