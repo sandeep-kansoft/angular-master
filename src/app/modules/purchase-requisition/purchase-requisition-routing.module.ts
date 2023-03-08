@@ -26,6 +26,10 @@ const routes: Routes = [
         component: PrMinMaxComponent,
       },
       {
+        path: 'MinMaxPO',
+        component: MinMaxPrPurchaseOrderComponent,
+      },
+      {
         path: 'AllPR',
         component: PrAllViewComponent,
       },

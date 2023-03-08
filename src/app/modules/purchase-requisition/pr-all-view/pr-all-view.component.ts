@@ -24,8 +24,9 @@ export class PrAllViewComponent {
   public gridView: GridDataResult;
   dropdownListdata = ['Preview', 'Lines', 'History'];
   columnWidth = 150;
-  pageSize = 100;
-  loading: boolean = false;
+  pageSize = 10;
+  pageNumber = 1;
+  isLoading: boolean = false;
   serachText: string = '';
   public state: State = {
     sort: [
@@ -43,6 +44,10 @@ export class PrAllViewComponent {
   };
   prData: PrGridDataDto[] = PrAllViewData;
   linedata: PrGridDataDto[] = LineData;
+  startDate: string = ''
+  endDate: string = ''
+  searchText: string = ''
+
   constructor(
     private commonService: CommonService,
     private prDetailModel: NgbModal,
@@ -79,9 +84,9 @@ export class PrAllViewComponent {
     return this.commonService.isMobileBrowser;
   }
 
-  editHandler(item: PrGridDataDto) {}
+  editHandler(item: PrGridDataDto) { }
 
-  removeHandler(item: PrGridDataDto) {}
+  removeHandler(item: PrGridDataDto) { }
 
   public onStateChange(state: any) {
     this.state = state;
@@ -123,7 +128,7 @@ export class PrAllViewComponent {
   prnoclicked() {
     this.router.navigate(['./pr-detail-view.module']);
   }
-  onModelClick(type: string, item: any) {
+  onModelClick(type: string, item: any, isPrNumberClick = false) {
     console.log('item', item);
     switch (type) {
       case 'Preview':
@@ -133,33 +138,19 @@ export class PrAllViewComponent {
       case 'Auction':
         break;
       case 'Lines':
-        this.openLinesModel();
+        this.openLinesModel(item.prid, isPrNumberClick);
         break;
       case 'History':
-        this.openHistoryModel();
+        this.openHistoryModel(item.prid);
         break;
 
       default:
         break;
     }
   }
-  openLinesModel() {
-    const modelRef=  this.prLineViewModel.open(PrModalViewComponent, {
-      centered: true,
-      fullscreen: true,
-      scrollable: true,
-    });
-    modelRef.componentInstance.prLineShow = false
-  }
-  openHistoryModel() {
-    this.prHistoryModel.open(PrHistoryDetailComponent, {
-      centered: true,
-      fullscreen: true,
-      scrollable: true,
-    });
-  }
 
-    showBadgeStatusColorClass(type: string): string {
+
+  showBadgeStatusColorClass(type: string): string {
     let color: string = '';
     switch (type) {
       case 'In Process':
@@ -198,29 +189,57 @@ export class PrAllViewComponent {
 
     return result;
   }
-allprdata:any[]
+  allprdata: any[]
   getALLMyPrList() {
+    this.isLoading = true;
     let payload = {
-      userId: 27053,
       isAllPR: 1,
-      startdate: '',
-      enddate: '',
-      prNo: 'PR23014799',
-      pageSize: 0,
-      pageIndex: 0,
+      startDate: this.startDate,
+      endDate: this.endDate,
+      prNo: this.searchText,
+      pageSize: this.pageSize,
+      pageIndex: this.pageNumber,
     };
+    console.log("Playload is ", payload)
     this.prservice.getALLPrList(payload).subscribe({
       next: (result: any) => {
         this.allprdata = result;
         console.log('allprdata', result);
         this.loadProducts()
-        this.loading = false;
+        this.isLoading = false;
         this.gridView = process(result?.data, this.state);
         this.cdr.detectChanges();
       },
       error: () => {
+        this.isLoading = false
         // this.loading = false;
       },
     });
+  }
+
+  openLinesModel(id?: number, isPrNumberClick: boolean = false) {
+    const modelRef = this.prLineViewModel.open(PrModalViewComponent, {
+      centered: true,
+      fullscreen: true,
+      scrollable: true,
+    });
+
+    modelRef.componentInstance.prId = id;
+    modelRef.componentInstance.isPrNumberClick = isPrNumberClick;
+  }
+
+  openHistoryModel(id: number) {
+    const modelRef = this.prHistoryModel.open(PrHistoryDetailComponent, {
+      centered: true,
+      fullscreen: true,
+      scrollable: true,
+    });
+    modelRef.componentInstance.prId = id;
+  }
+
+  searchButtonClick() {
+    if (!this.isLoading) {
+      this.getALLMyPrList();
+    }
   }
 }

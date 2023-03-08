@@ -29,7 +29,8 @@ export class PrOverviewComponent {
   headerStyle = 'fw-bold';
   smallColumnWidth = 120;
   longColumnWidth = 200;
-  pageSize = 100;
+  pageSize = 10;
+  pageNumber = 0
   loading: boolean = false;
 
   serachText: string = '';
@@ -77,9 +78,9 @@ export class PrOverviewComponent {
     return this.commonService.isMobileBrowser;
   }
 
-  editHandler(item: PrGridDataDto) {}
+  editHandler(item: PrGridDataDto) { }
 
-  removeHandler(item: PrGridDataDto) {}
+  removeHandler(item: PrGridDataDto) { }
 
   public onStateChange(state: any) {
     this.state = state;
@@ -108,7 +109,7 @@ export class PrOverviewComponent {
       case 'Auction':
         break;
       case 'Lines':
-        this.openLinesModel(item.prid,isPrNumberClick);
+        this.openLinesModel(item.prid, isPrNumberClick);
         break;
       case 'History':
         this.openHistoryModel(item.prid);
@@ -121,7 +122,7 @@ export class PrOverviewComponent {
 
 
 
-  openLinesModel(id?: number , isPrNumberClick:boolean = false) {
+  openLinesModel(id?: number, isPrNumberClick: boolean = false) {
     const modelRef = this.prLineViewModel.open(PrModalViewComponent, {
       centered: true,
       fullscreen: true,
@@ -162,68 +163,6 @@ export class PrOverviewComponent {
     }
     return color;
   }
-  // public onExcelExport(args: ExcelExportEvent): void {
-  //   // Prevent automatically saving the file. We will save it manually after we fetch and add the details
-  //   args.preventDefault();
-
-  //   // this.loading = true;
-
-  //   const observables = [];
-  //   const workbook = args.workbook;
-  //   const rows = workbook.sheets[0].rows;
-
-  //   // Get the default header styles.
-  //   // Aternatively set custom styles for the details
-  //   // https://www.telerik.com/kendo-angular-ui/components/excelexport/api/WorkbookSheetRowCell/
-  //   const headerOptions = rows[0].cells[0];
-
-  //   const data = this.gridView.data;
-
-  //   // Fetch the data for all details
-  //   for (let idx = 0; idx < data.length; idx++) {
-  //     observables.push(this.productService.fetchForCategory(data[idx]));
-  //   }
-
-  //   zip.apply(Observable, observables).subscribe((result: GridDataResult[]) => {
-  //     // add the detail data to the generated master sheet rows
-  //     // loop backwards in order to avoid changing the rows index
-  //     for (let idx = result.length - 1; idx >= 0; idx--) {
-  //       const products = (<GridDataResult>result[idx]).data;
-
-  //       // add the detail data
-  //       for (
-  //         let productIdx = products.length - 1;
-  //         productIdx >= 0;
-  //         productIdx--
-  //       ) {
-  //         const product = products[productIdx];
-  //         rows.splice(idx + 2, 0, {
-  //           cells: [
-  //             {},
-  //             { value: product.ProductID },
-  //             { value: product.ProductName },
-  //           ],
-  //         });
-  //       }
-
-  //       // add the detail header
-  //       rows.splice(idx + 2, 0, {
-  //         cells: [
-  //           {},
-  //           Object.assign({}, headerOptions, { value: 'Product ID' }),
-  //           Object.assign({}, headerOptions, { value: 'Product Name' }),
-  //         ],
-  //       });
-  //     }
-
-  //     // create a Workbook and save the generated data URL
-  //     // https://www.telerik.com/kendo-angular-ui/components/excelexport/api/Workbook/
-  //     new Workbook(workbook).toDataURL().then((dataUrl: string) => {
-  //       // https://www.telerik.com/kendo-angular-ui/components/filesaver/
-  //       saveAs(dataUrl, 'Categories.xlsx');
-  //     });
-  //   });
-  // }
 
   public allData(): ExcelExportData {
     const result: ExcelExportData = {
@@ -236,9 +175,9 @@ export class PrOverviewComponent {
 
   getMyPrList() {
 
-    
+
     this.loading = true;
-    this.prservice.getMyPrList(10, 1).subscribe({
+    this.prservice.getMyPrList(this.pageSize, this.pageNumber).subscribe({
       next: (result: any) => {
         this.overviewdata = result;
         console.log('overview', this.overviewdata);

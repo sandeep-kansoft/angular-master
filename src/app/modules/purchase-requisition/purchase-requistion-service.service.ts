@@ -54,6 +54,7 @@ export class PurchaseRequistionServiceService {
    * @return AllPr list
    */
   getALLPrList(payload: any): Observable<PrResponseDto[]> {
+    payload.userId = this.authData?.userId
     let url_ = this.baseUrl + '/' + PurchaseRequistionApi.getAllPr;
     return this.http.post<PrResponseDto[]>(url_, payload);
   }
