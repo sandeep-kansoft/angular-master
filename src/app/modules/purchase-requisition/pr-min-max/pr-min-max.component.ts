@@ -51,8 +51,9 @@ export class PrMinMaxComponent {
   ) {this.allData = this.allData.bind(this);}
 
   public ngOnInit() {
+    
+    this.getAllPpo();
     this.loadProducts();
-    this.getMinMax();
   }
 
   private loadProducts(): void {
@@ -138,13 +139,13 @@ export class PrMinMaxComponent {
   }
   public allData(): ExcelExportData {
     const result: ExcelExportData = {
-      data: process(this.prData, { sort: this.state.sort }).data,
+      data: process(this.minmaxdata, { sort: this.state.sort }).data,
     };
 
     return result;
   }
   minmaxdata:any=[];
-  getMinMax(){
+  getAllPpo(){
     this.loading = true;
     this.prservice.getAllPpo().subscribe({
       next: (result: any) => {

@@ -62,7 +62,7 @@
                 <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
                         <a class="link-primary text-decoration-underline text-center"
-                            (click)="onModelClick('Lines',item);">{{item['PR No']}}
+                            (click)="onModelClick('Lines',item);">{{item['pR_NUM']}}
                         </a>
 
                     </ng-container>
@@ -74,31 +74,67 @@
             <kendo-grid-column title="STATUS" [width]="columnWidth" [headerClass]="headerStyle">
                 <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
-                        <span [ngClass]="showBadgeStatusColorClass(item.Status)" class="badge">{{item.Status}}</span>
+                        <span [ngClass]="showBadgeStatusColorClass(item.buyerstatus)" class="badge">{{item.buyerstatus}}</span>
                     </ng-container>
                 </ng-template>
             </kendo-grid-column>
-            <kendo-grid-column field="PR Description" title="PR DESCRIPTION" [width]="columnWidth"
-                [headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column title="PR DESCRIPTION" [width]="columnWidth"
+                [headerClass]="headerStyle">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    {{dataItem.description}}
+                </ng-template></kendo-grid-column>
             <kendo-grid-column field="Created Date" title="CREATED DATE" [width]="columnWidth"
-                [headerClass]="headerStyle"></kendo-grid-column>
+                [headerClass]="headerStyle">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    {{dataItem.enterdate}}
+                </ng-template>
+            </kendo-grid-column>
             <kendo-grid-column field="Site" title="SITE" [width]="columnWidth"
-                [headerClass]="headerStyle"></kendo-grid-column>
+                [headerClass]="headerStyle">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    {{dataItem.siteName}}
+                </ng-template>
+            </kendo-grid-column>
             <kendo-grid-column field="Project ID" title="PROJECT ID" [width]="columnWidth"
-                [headerClass]="headerStyle"></kendo-grid-column>
+                [headerClass]="headerStyle">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    {{dataItem.description}}
+                </ng-template></kendo-grid-column>
             <!-- <kendo-grid-column field="PROJECT_NAME" title="PROJECT ID" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column> -->
             <kendo-grid-column field="Department" title="DEPARTMENT" [width]="columnWidth"
-                [headerClass]="headerStyle"></kendo-grid-column>
+                [headerClass]="headerStyle">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    {{dataItem.departmentName}}
+                </ng-template>
+            </kendo-grid-column>
             <kendo-grid-column field="PR Type" title="PR TYPE" [width]="columnWidth" [headerClass]="headerStyle">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    {{dataItem.prtype}}
+                </ng-template>
             </kendo-grid-column>
             <kendo-grid-column field="PR Sub Type" title="PRSUBTYPE" [width]="columnWidth" [headerClass]="headerStyle">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    {{dataItem.prSubType}}
+                </ng-template>
             </kendo-grid-column>
             <kendo-grid-column field="Requested By" title="REQUESTED BY" [width]="columnWidth"
-                [headerClass]="headerStyle"></kendo-grid-column>
+                [headerClass]="headerStyle">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    {{dataItem.enterby}}
+                </ng-template>
+            </kendo-grid-column>
             <kendo-grid-column field="Total Value" title="TOTAL VALUE" [width]="columnWidth"
-                [headerClass]="headerStyle"></kendo-grid-column>
+                [headerClass]="headerStyle">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    {{dataItem.totalValue}}
+                </ng-template>
+            </kendo-grid-column>
             <kendo-grid-column field="Assign To" title="ASSIGN TO" [width]="columnWidth"
-                [headerClass]="headerStyle"></kendo-grid-column>
+                [headerClass]="headerStyle">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    {{dataItem.assignBuyer}}
+                </ng-template>
+            </kendo-grid-column>
 
             <kendo-grid-column field="History" title="HISTORY" [width]="columnWidth"
                 [headerClass]="headerStyle"></kendo-grid-column>

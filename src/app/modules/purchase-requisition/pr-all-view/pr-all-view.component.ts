@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ExcelExportData } from '@progress/kendo-angular-excel-export';
@@ -25,6 +25,7 @@ export class PrAllViewComponent {
   dropdownListdata = ['Preview', 'Lines', 'History'];
   columnWidth = 150;
   pageSize = 100;
+  loading: boolean = false;
   serachText: string = '';
   public state: State = {
     sort: [
@@ -48,13 +49,14 @@ export class PrAllViewComponent {
     private prLineViewModel: NgbModal,
     private prHistoryModel: NgbModal,
     private router: Router,
+    private cdr: ChangeDetectorRef,
     private prservice: PurchaseRequistionServiceService
   ) {
     this.allData = this.allData.bind(this);
   }
 
   public ngOnInit() {
-    this.getMyPrList();
+    this.getALLMyPrList();
     this.loadProducts();
     this.lineviewdataload();
   }
@@ -157,7 +159,7 @@ export class PrAllViewComponent {
     });
   }
 
-  showBadgeStatusColorClass(type: string): string {
+    showBadgeStatusColorClass(type: string): string {
     let color: string = '';
     switch (type) {
       case 'In Process':
@@ -196,8 +198,8 @@ export class PrAllViewComponent {
 
     return result;
   }
-
-  getMyPrList() {
+allprdata:any[]
+  getALLMyPrList() {
     let payload = {
       userId: 27053,
       isAllPR: 1,
@@ -209,12 +211,12 @@ export class PrAllViewComponent {
     };
     this.prservice.getALLPrList(payload).subscribe({
       next: (result: any) => {
-        // this.overviewdata = result;
-        console.log('all', result);
-        // this.loadProducts()
-        // this.loading = false;
-        // this.gridView = process(result?.data, this.state);
-        // this.cdr.detectChanges();
+        this.allprdata = result;
+        console.log('allprdata', result);
+        this.loadProducts()
+        this.loading = false;
+        this.gridView = process(result?.data, this.state);
+        this.cdr.detectChanges();
       },
       error: () => {
         // this.loading = false;
