@@ -52,12 +52,8 @@
                 </ng-template>
             </kendo-grid-command-column>
             <!-- <kendo-grid-column [headerClass]="headerStyle" field="prid" title="PR NO" [width]="columnWidth"></kendo-grid-column> -->
-            <kendo-grid-column [headerClass]="headerStyle" title="SITE" [width]="longColumnWidth">
-                <ng-template kendoGridCellTemplate let-item>
-                    <ng-container>
-                        {{item.description}}
-                    </ng-container>
-                </ng-template></kendo-grid-column>
+            <kendo-grid-column [headerClass]="headerStyle" field="siteId" title="SITE" [width]="longColumnWidth">
+             </kendo-grid-column>
             <!-- <kendo-grid-column [headerClass]="headerStyle" field="CREATION_DATE" title="CREATED DATE" [width]="130"></kendo-grid-column> -->
             <kendo-grid-column [headerClass]="headerStyle" field="CREATION_DATE" [width]="220" title="WAREHOUSE">
                 <ng-template kendoGridCellTemplate let-dataItem>

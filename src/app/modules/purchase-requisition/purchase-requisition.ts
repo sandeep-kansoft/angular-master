@@ -1,4 +1,4 @@
-export interface PurchaseRequest {}
+export interface PurchaseRequest { }
 
 export interface PrResponseDto {
   prid: number;
@@ -9,7 +9,7 @@ export interface PrResponseDto {
   enterdate: string;
   approvedDate: string;
   siteId: number;
-  siteName: string;
+  siteName: string | undefined;
   projecT_NAME: any;
   departmentCode: any;
   departmentName: string;
@@ -25,7 +25,7 @@ export interface PrResponseDto {
 export interface PrLineResponseDto {
   prtransid: number;
   prid: number;
-  pR_NUM: string;
+  pR_NUM: string | undefined;
   itemcode: string;
   iteM_DESCRIPTION: string;
   uom: string;
@@ -91,7 +91,7 @@ export interface PrLineHeaderDetail {
   prid: number;
   pR_NUM: string;
   siteId: number;
-  siteName: string;
+  siteName: string | undefined | null;
   prtype: string;
   prSubType: string;
   creatioN_DATE: string;
@@ -119,7 +119,7 @@ export interface PrLinesDetailResponseDto {
   prtransid: number;
   prid: number;
   pR_NUM: string;
-  itemcode: string;
+  itemcode: string | undefined;
   iteM_DESCRIPTION: string;
   itemname: string;
   status: string;
@@ -160,4 +160,67 @@ export interface PrLinesDetailResponseDto {
   buyerstatus?: any;
   stateName: string;
   assignBuyer?: any;
+}
+
+
+export interface AllResponseDto {
+  prid: number;
+  pR_NUM: string;
+  prepareR_ID: number;
+  description: string;
+  enterby: string;
+  enterdate: string;
+  approvedDate?: any;
+  siteId: number;
+  siteName: string | undefined;
+  projecT_NAME?: any;
+  departmentCode?: any;
+  departmentName: string;
+  prtype: string;
+  prSubType: string;
+  preparer: string;
+  totalValue: number;
+  assignBuyer?: any;
+  pR_STATUS: string;
+  buyerstatus: string;
+  totalcount: number;
+}
+
+export interface PPOPendingOrderDto {
+  ppoId: number;
+  ppoNo: string;
+  itemId: number;
+  itemNumber: string;
+  productName: string;
+  searchName: string;
+  config: string;
+  reqQuantity: number;
+  ppoDate: string;
+  uom: string;
+  siteId: number;
+  site: string;
+  warehouseId: number;
+  warehouse: string;
+  location: string;
+  buyerGroup: string;
+  itemGroup?: any;
+  totalcount: number;
+  prQty: number;
+  poQty: number;
+  inProcessQty: number;
+  netOrderQty: number;
+  orderQty: number;
+  remaingQty: number;
+  orderDoneBy: string;
+  orderStatus?: any;
+  remarks?: any;
+  lastPurchasePrice: number;
+  ppoAmount: number;
+  minOrderQty: number;
+  maxOrderQty: number;
+  onHandQtyinMain: number;
+  onHandQtyinOther: number;
+  poInProcess: number;
+  prInReview: number;
+  totalConsumption365Days: number;
 }

@@ -2,18 +2,20 @@
     <div class="row mb-4">
         <div class="col-md-3" style="display: flex; height: 40px;white-space:nowrap;margin-bottom: 8px;">
             <label class="col-form-label fw-bold fs-6" style="margin-right: 10px;"><span>From Date:</span></label>
-            <input type="date" class="form-control form-control-lg " placeholder="Start Date" [value]="startDate" />
+            <input type="date" class="form-control form-control-lg " placeholder="Start Date"
+                [ngModel]="startDate | date:'dd-mmm-yyy'" (ngModelChange)="dateChangeEvent($event,'startDate')" />
         </div>
 
         <div class="col-md-3 " style="display: flex; height: 40px; white-space:nowrap;margin-bottom: 8px; ">
             <label class="col-form-label  fw-bold fs-6" style="margin-right: 20px;">To Date: </label>
-            <input type="date" class="form-control form-control-lg " [value]="endDate"  placeholder="End Date" />
+            <input type="date" class="form-control form-control-lg " placeholder="End Date"
+                [ngModel]="endDate | date:'dd-mmm-yyy'" (ngModelChange)="dateChangeEvent($event,'endDate')" />
         </div>
 
         <div class="col-md-6" style="display: flex; height: 60px;white-space:nowrap;margin-bottom: 8px;">
             <input type="text" class="form-control form-control-lg " style="height: 40px;"
                 placeholder="Search with pr no/DEPARTMENT" />
-            <button class="btn btn-lg fw-bold  btn-primary" (click)="searchButtonClick()" style="margin-left:8px;height: 45px; ">Search</button>
+            <button class="btn btn-lg fw-bold  btn-primary" style="margin-left:8px;height: 45px; ">Search</button>
         </div>
 
     </div>
@@ -21,10 +23,10 @@
 
 <div class="card">
     <div class="card-body">
-        <kendo-grid class="fixed-header" [loading]="isLoading" [columnMenu]="{ filter: true }" [groupable]="true" [data]="gridView"
-            [group]="state.group" [filter]="state.filter" [filterable]="false" [reorderable]="true" [resizable]="true"
-            [skip]="state.skip" [pageSize]="pageSize" [pageable]="true" (dataStateChange)="onStateChange($event)"
-            [sortable]="{
+        <kendo-grid class="fixed-header" [loading]="isLoading" [columnMenu]="{ filter: true }" [groupable]="true"
+            [data]="gridView" [group]="state.group" [filter]="state.filter" [filterable]="false" [reorderable]="true"
+            [resizable]="true" [skip]="state.skip" [pageSize]="pageSize" [pageable]="true"
+            (dataStateChange)="onStateChange($event)" [sortable]="{
     allowUnsort: true,           mode: 'multiple' }" [sort]="state.sort" (dataStateChange)="onStateChange($event)">
             <ng-template kendoGridToolbarTemplate>
                 <div class="excel-export">
@@ -96,71 +98,48 @@
             <kendo-grid-column title="STATUS" [width]="columnWidth" [headerClass]="headerStyle">
                 <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
-                        <span [ngClass]="showBadgeStatusColorClass(item.buyerstatus)" class="badge">{{item.buyerstatus}}</span>
+                        <span [ngClass]="showBadgeStatusColorClass(item.buyerstatus)"
+                            class="badge">{{item.buyerstatus}}</span>
                     </ng-container>
                 </ng-template>
             </kendo-grid-column>
-            <kendo-grid-column title="PR DESCRIPTION" [width]="columnWidth"
-                [headerClass]="headerStyle">
+            <kendo-grid-column title="description" [width]="columnWidth" [headerClass]="headerStyle">
                 <ng-template kendoGridCellTemplate let-dataItem>
                     {{dataItem.description}}
                 </ng-template></kendo-grid-column>
-            <kendo-grid-column field="Created Date" title="CREATED DATE" [width]="columnWidth"
-                [headerClass]="headerStyle">
-                <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.enterdate}}
-                </ng-template>
+            <kendo-grid-column field="enterdate" title="CREATED DATE" [width]="columnWidth" [headerClass]="headerStyle">
+
             </kendo-grid-column>
-            <kendo-grid-column field="Site" title="SITE" [width]="columnWidth"
-                [headerClass]="headerStyle">
-                <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.siteName}}
-                </ng-template>
+            <kendo-grid-column field="siteName" title="SITE" [width]="columnWidth" [headerClass]="headerStyle">
+
             </kendo-grid-column>
-            <kendo-grid-column field="Project ID" title="PROJECT ID" [width]="columnWidth"
-                [headerClass]="headerStyle">
+            <kendo-grid-column field="projecT_NAME" title="PROJECT ID" [width]="columnWidth" [headerClass]="headerStyle">
                 <ng-template kendoGridCellTemplate let-dataItem>
                     {{dataItem.description}}
                 </ng-template></kendo-grid-column>
             <!-- <kendo-grid-column field="PROJECT_NAME" title="PROJECT ID" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column> -->
-            <kendo-grid-column field="Department" title="DEPARTMENT" [width]="columnWidth"
+            <kendo-grid-column field="departmentName" title="DEPARTMENT" [width]="columnWidth"
                 [headerClass]="headerStyle">
-                <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.departmentName}}
-                </ng-template>
+
             </kendo-grid-column>
-            <kendo-grid-column field="PR Type" title="PR TYPE" [width]="columnWidth" [headerClass]="headerStyle">
-                <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.prtype}}
-                </ng-template>
+            <kendo-grid-column field="prtype" title="PR TYPE" [width]="columnWidth" [headerClass]="headerStyle">
+
             </kendo-grid-column>
-            <kendo-grid-column field="PR Sub Type" title="PRSUBTYPE" [width]="columnWidth" [headerClass]="headerStyle">
-                <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.prSubType}}
-                </ng-template>
+            <kendo-grid-column field="prSubType" title="PRSUBTYPE" [width]="columnWidth" [headerClass]="headerStyle">
             </kendo-grid-column>
-            <kendo-grid-column field="Requested By" title="REQUESTED BY" [width]="columnWidth"
-                [headerClass]="headerStyle">
-                <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.enterby}}
-                </ng-template>
+            <kendo-grid-column field="enterby" title="REQUESTED BY" [width]="columnWidth" [headerClass]="headerStyle">
+
             </kendo-grid-column>
-            <kendo-grid-column field="Total Value" title="TOTAL VALUE" [width]="columnWidth"
-                [headerClass]="headerStyle">
-                <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.totalValue}}
-                </ng-template>
+            <kendo-grid-column field="totalValue" title="TOTAL VALUE" [width]="columnWidth" [headerClass]="headerStyle">
+
             </kendo-grid-column>
-            <kendo-grid-column field="Assign To" title="ASSIGN TO" [width]="columnWidth"
-                [headerClass]="headerStyle">
-                <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.assignBuyer}}
-                </ng-template>
+            <kendo-grid-column field="assignBuyer" title="ASSIGN TO" [width]="columnWidth" [headerClass]="headerStyle">
+
             </kendo-grid-column>
 
-            <kendo-grid-column field="History" title="HISTORY" [width]="columnWidth"
+            <!-- <kendo-grid-column field="History" title="HISTORY" [width]="columnWidth"
                 [headerClass]="headerStyle"></kendo-grid-column>
-            <kendo-grid-excel pages fileName="PR.xlsx" [fetchData]="allData"></kendo-grid-excel>
+            <kendo-grid-excel pages fileName="PR.xlsx" [fetchData]="allData"></kendo-grid-excel> -->
         </kendo-grid>
     </div>
 </div>

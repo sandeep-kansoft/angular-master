@@ -15,7 +15,7 @@ import { PrMinMaxComponent } from './pr-min-max/pr-min-max.component';
 import { DemoPageComponent } from './demo-page/demo-page.component';
 import { PrAllViewComponent } from './pr-all-view/pr-all-view.component';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     PrOverviewComponent,
@@ -35,7 +35,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     InlineSVGModule,
     ExcelModule,
     NgxSkeletonLoaderModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
 })
 export class PurchaseRequestModule {}

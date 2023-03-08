@@ -16,7 +16,7 @@ import {
 import { saveAs } from '@progress/kendo-file-saver';
 import { Observable, zip } from 'rxjs';
 import { PurchaseRequistionServiceService } from '../purchase-requistion-service.service';
-import { PrHistoryResponseDto, PrResponseDto } from '../purchase-requisition';
+import { PPOPendingOrderDto, PrHistoryResponseDto, PrResponseDto } from '../purchase-requisition';
 
 @Component({
   selector: 'app-min-max-pr-purchase-order',
@@ -63,11 +63,11 @@ export class MinMaxPrPurchaseOrderComponent {
 
   public ngOnInit() {
     // this.loadProducts();
-    this.getMyPrList();
+    this.getPendingPPO();
   }
 
   private loadProducts(): void {
-    this.gridView = process(this.overviewdata, this.state);
+    this.gridView = process(this.ppoPendingData, this.state);
   }
 
   checkMobileBrowser() {
@@ -78,9 +78,9 @@ export class MinMaxPrPurchaseOrderComponent {
     return this.commonService.isMobileBrowser;
   }
 
-  editHandler(item: PrGridDataDto) {}
+  editHandler(item: PrGridDataDto) { }
 
-  removeHandler(item: PrGridDataDto) {}
+  removeHandler(item: PrGridDataDto) { }
 
   public onStateChange(state: any) {
     this.state = state;
@@ -109,7 +109,7 @@ export class MinMaxPrPurchaseOrderComponent {
       case 'Auction':
         break;
       case 'Lines':
-        this.openLinesModel(item.prid,isPrNumberClick);
+        this.openLinesModel(item.prid, isPrNumberClick);
         break;
       case 'History':
         this.openHistoryModel(item.prid);
@@ -122,7 +122,7 @@ export class MinMaxPrPurchaseOrderComponent {
 
 
 
-  openLinesModel(id?: number , isPrNumberClick:boolean = false) {
+  openLinesModel(id?: number, isPrNumberClick: boolean = false) {
     const modelRef = this.prLineViewModel.open(PrModalViewComponent, {
       centered: true,
       fullscreen: true,
@@ -228,21 +228,21 @@ export class MinMaxPrPurchaseOrderComponent {
 
   public allData(): ExcelExportData {
     const result: ExcelExportData = {
-      data: process(this.overviewdata, { sort: this.state.sort }).data,
+      data: process(this.ppoPendingData, { sort: this.state.sort }).data,
     };
 
     return result;
   }
-  overviewdata: PrResponseDto[] = [];
+  ppoPendingData: PPOPendingOrderDto[] = [];
 
-  getMyPrList() {
+  getPendingPPO() {
 
-    
+
     this.loading = true;
-    this.prservice.getMyPrList(10, 1).subscribe({
+    this.prservice.getMinMax(10, 1).subscribe({
       next: (result: any) => {
-        this.overviewdata = result;
-        console.log('overview', this.overviewdata);
+        this.ppoPendingData = result;
+        console.log('min max', this.ppoPendingData);
         // this.loadProducts()
         this.loading = false;
         this.gridView = process(result?.data, this.state);

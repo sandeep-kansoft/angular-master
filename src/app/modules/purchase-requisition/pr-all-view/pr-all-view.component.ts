@@ -242,4 +242,19 @@ export class PrAllViewComponent {
       this.getALLMyPrList();
     }
   }
+  dateChangeEvent(event: any, type: string) {
+    switch (type) {
+      case 'startDate':
+        this.startDate = event;
+        break;
+      case 'endDate':
+        this.endDate = event;
+
+        break;
+
+      default:
+        break;
+    }
+    console.log("event date is ", { start: this.startDate, end: this.endDate })
+  }
 }
