@@ -15,7 +15,7 @@
         </div>
 
         <!-- Lines Grid Start -->
-        <div class="card-body p-0" *ngIf="currentPage == 'Lines' ||currentPage == 'Both'">
+        <div class="card-body" *ngIf="currentPage == 'Lines' ||currentPage == 'Both'">
 
 
             <kendo-grid [loading]="linesDataLoading" [data]="gridView" [columnMenu]="{ filter: true ,sort : true  }"
