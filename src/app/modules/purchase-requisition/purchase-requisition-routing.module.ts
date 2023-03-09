@@ -22,11 +22,11 @@ const routes: Routes = [
         component: PrDetailViewComponent,
       },
       {
-        path: 'MinMaxPendingPr',
+        path: 'MinMaxPoRfqPr',
         component: PrMinMaxComponent,
       },
       {
-        path: 'MinMaxPoRfqPr',
+        path: 'MinMaxPendingPr',
         component: MinMaxPrPurchaseOrderComponent,
       },
       {
