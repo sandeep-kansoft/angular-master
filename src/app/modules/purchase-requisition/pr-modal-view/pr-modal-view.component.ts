@@ -47,7 +47,7 @@ export class PrModalViewComponent {
     itemDescription: ""
   };
   currentPage = 'Lines';
-  dropdownListdata = ['RFQT', 'AUCTION', 'VIEW', 'VIEW HISTORICAL DATA'];
+  dropdownListdata!: any
   columnWidth = 150;
   pageSize = 10;
   isFormVisible: boolean = false;
@@ -83,6 +83,7 @@ export class PrModalViewComponent {
   ) { }
 
   public ngOnInit() {
+    this.dropdownListdata = this.isPrNumberClick ? ['VIEW'] : ['RFQT', 'AUCTION', 'VIEW', 'VIEW HISTORICAL DATA'];
     this.currentPage = this.isPrNumberClick ? 'Both' : 'Lines'
     this.getPrLines();
     this.getPrHeaderDetailByid();
@@ -167,7 +168,10 @@ export class PrModalViewComponent {
         break;
       case 'VIEW':
         //this.showHistoryModel();
-        this.currentPage = 'Form';
+        if (!this.isPrNumberClick) {
+          this.currentPage = 'Form';
+        }
+
         this.getPrLineDetailByid(data.prtransid);
         break;
       case 'VIEW HISTORICAL DATA':

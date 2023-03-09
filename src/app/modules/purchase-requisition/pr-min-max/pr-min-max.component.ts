@@ -48,10 +48,10 @@ export class PrMinMaxComponent {
     private prHistoryModel: NgbModal,
     private prservice: PurchaseRequistionServiceService,
     private cdr: ChangeDetectorRef,
-  ) {this.allData = this.allData.bind(this);}
+  ) { this.allData = this.allData.bind(this); }
 
   public ngOnInit() {
-    
+
     this.getAllPpo();
     this.loadProducts();
   }
@@ -68,9 +68,9 @@ export class PrMinMaxComponent {
     return this.commonService.isMobileBrowser;
   }
 
-  editHandler(item: PrGridDataDto) {}
+  editHandler(item: PrGridDataDto) { }
 
-  removeHandler(item: PrGridDataDto) {}
+  removeHandler(item: PrGridDataDto) { }
 
   public onStateChange(state: any) {
     this.state = state;
@@ -144,13 +144,22 @@ export class PrMinMaxComponent {
 
     return result;
   }
-  minmaxdata:any=[];
-  getAllPpo(){
+  minmaxdata: any = [];
+  getAllPpo() {
     this.loading = true;
-    this.prservice.getAllPpo().subscribe({
+    let payload = {
+      "searchbyPPONo": "",
+      "searchbyItemNumber": "",
+      "searchbyProductName": "",
+      "fromDate": null,
+      "todate": null,
+      "pageSize": 10,
+      "pageIndex": 1
+    }
+    this.prservice.getAllPpo(payload).subscribe({
       next: (result: any) => {
         this.minmaxdata = result;
-        console.log('minmaxdata', this.minmaxdata);
+        console.log('all ppo', this.minmaxdata);
         // this.loadProducts()
         this.loading = false;
         this.gridView = process(result?.data, this.state);
@@ -162,5 +171,5 @@ export class PrMinMaxComponent {
       },
     });
   }
-  }
+}
 

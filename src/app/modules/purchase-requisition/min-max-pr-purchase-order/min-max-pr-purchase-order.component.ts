@@ -31,9 +31,11 @@ export class MinMaxPrPurchaseOrderComponent {
   smallColumnWidth = 120;
   longColumnWidth = 200;
   pageSize = 100;
+  pageNumber = 0;
   loading: boolean = false;
+  searchText:string = ''
 
-  serachText: string = '';
+  
   public state: State = {
     // // sort: [
     // //   {
@@ -239,10 +241,10 @@ export class MinMaxPrPurchaseOrderComponent {
 
 
     this.loading = true;
-    this.prservice.getMinMax(10, 1).subscribe({
+    this.prservice.getPendingPPO(this.pageSize, this.pageNumber, this.searchText).subscribe({
       next: (result: any) => {
         this.ppoPendingData = result;
-        console.log('min max', this.ppoPendingData);
+        console.log('pending ppo result', this.ppoPendingData);
         // this.loadProducts()
         this.loading = false;
         this.gridView = process(result?.data, this.state);
@@ -253,5 +255,11 @@ export class MinMaxPrPurchaseOrderComponent {
         this.loading = false;
       },
     });
+  }
+
+
+
+  searchButtonCLick(){
+      this.getPendingPPO();
   }
 }

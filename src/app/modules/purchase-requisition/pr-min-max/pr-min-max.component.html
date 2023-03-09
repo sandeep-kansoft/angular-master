@@ -123,7 +123,7 @@
         <!--end::Card toolbar-->
     </div>
     <div class="card-body">
-        <kendo-grid class="fixed-header" [columnMenu]="{ filter: true ,sort : true  }" [groupable]="true"
+        <kendo-grid [loading]="loading" class="fixed-header" [columnMenu]="{ filter: true ,sort : true  }" [groupable]="true"
             [data]="gridView" [group]="state.group" [filter]="state.filter" [filterable]="false" [reorderable]="true"
             [resizable]="true" [skip]="state.skip" [pageSize]="pageSize" [pageable]="true"
             (dataStateChange)="onStateChange($event)" [sortable]="{
@@ -139,30 +139,20 @@
                     {{rowIndex+1}}
                 </ng-template>
             </kendo-grid-column>
-            <kendo-grid-column field="Site" title="SITE" [width]="columnWidth"[headerClass]="headerStyle">
-                <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.site}}
-                </ng-template>
+            <kendo-grid-column field="site" title="SITE" [width]="columnWidth"[headerClass]="headerStyle">
+             
             </kendo-grid-column>
-            <kendo-grid-column field="Warehouse" title="WAREHOUSE" [width]="columnWidth"[headerClass]="headerStyle">
-                <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.warehouse}}
-                </ng-template>
+            <kendo-grid-column field="warehouse" title="WAREHOUSE" [width]="columnWidth"[headerClass]="headerStyle">
+             
             </kendo-grid-column>
-            <kendo-grid-column field="Buyer_Group" title="BUYER GROUP" [width]="columnWidth"[headerClass]="headerStyle">
-                <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.buyerGroup}}
-                </ng-template>
+            <kendo-grid-column field="buyerGroup" title="BUYER GROUP" [width]="columnWidth"[headerClass]="headerStyle">
+
             </kendo-grid-column>
-            <kendo-grid-column field="Item_Group" title="ITEM GROUP" [width]="columnWidth"[headerClass]="headerStyle">
-                <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.itemGroup}}
-                </ng-template>
+            <kendo-grid-column field="itemGroup" title="ITEM GROUP" [width]="columnWidth"[headerClass]="headerStyle">
+             
             </kendo-grid-column>
-            <kendo-grid-column field="PPO_No" title="PPO NUMBER" [width]="columnWidth"[headerClass]="headerStyle">
-                <ng-template kendoGridCellTemplate let-dataItem>
-                    {{dataItem.ppoNo}}
-                </ng-template>
+            <kendo-grid-column field="ppoNo" title="PPO NUMBER" [width]="columnWidth"[headerClass]="headerStyle">
+               
             </kendo-grid-column>
             <!-- <kendo-grid-column field="PROJECT_NAME" title="PROJECT ID" [width]="columnWidth"></kendo-grid-column> -->
             <kendo-grid-column field="PPO_Date" title="PPO DATE" [width]="columnWidth"[headerClass]="headerStyle">
