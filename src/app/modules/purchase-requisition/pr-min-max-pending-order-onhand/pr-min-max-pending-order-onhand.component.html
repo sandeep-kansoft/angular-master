@@ -9,7 +9,7 @@
                 <span class="justify-content-center " [inlineSVG]="'../../../../assets/media/wonder/cross.svg'"></span>
             </div>
         </div>
-        <div class="card-body">`
+        <div class="card-body">
             <kendo-grid class="fixed-header" [loading]="isLoading" [columnMenu]="{ filter: true ,sort : true  }" [groupable]="true"
                 [data]="gridView" [group]="state.group" [filter]="state.filter" [filterable]="false"
                 [reorderable]="true" [resizable]="true" [skip]="state.skip" [pageSize]="pageSize" [pageable]="true"
@@ -17,39 +17,23 @@
         allowUnsort: true,           mode: 'multiple' }" [sort]="state.sort" (dataStateChange)="onStateChange($event)">
 
 
-                <kendo-grid-column field="round" title="ROUND" [width]="columnWidth"
+                <kendo-grid-column field="round" title="SITE" [width]="columnWidth"
                     [headerClass]="headerStyle"></kendo-grid-column>
-                <kendo-grid-column field="pR_No" title="PR NO" [width]="columnWidth"
+                <kendo-grid-column field="pR_No" title="ITEM" [width]="columnWidth"
                     [headerClass]="headerStyle"></kendo-grid-column>
-                <kendo-grid-column title="STATUS" [width]="columnWidth" [headerClass]="headerStyle">
-                    <ng-template kendoGridCellTemplate let-item>
-                        <ng-container>
-                            <span [ngClass]="showBadgeStatusColorClass(item.status)"
-                                class="badge">{{item.status}}</span>
-                        </ng-container>
-                    </ng-template>
-                </kendo-grid-column>
-                <kendo-grid-column field="pR_Description" title="PR DESCRIPTION" [width]="columnWidth"
+              
+                <kendo-grid-column field="pR_Description" title="CONFIG" [width]="columnWidth"
                     [headerClass]="headerStyle"></kendo-grid-column>
-                <kendo-grid-column field="wF_No" title="WF NO" [width]="columnWidth"
+                <kendo-grid-column field="wF_No" title="WAREHOUSE" [width]="columnWidth"
                     [headerClass]="headerStyle"></kendo-grid-column>
-                <kendo-grid-column field="level" title="LEVEL" [width]="columnWidth"
+                <kendo-grid-column field="level" title="LOCATION" [width]="columnWidth"
                     [headerClass]="headerStyle"></kendo-grid-column>
-                <kendo-grid-column field="required_By" title="APPROVAL REQUIRED BY" [width]="columnWidth"
+                <kendo-grid-column field="required_By" title="STOCK" [width]="columnWidth"
                     [headerClass]="headerStyle"></kendo-grid-column>
-                <kendo-grid-column field="assigned_Date" title="ASSIGNED DATE" [width]="columnWidth"
+                <kendo-grid-column field="assigned_Date" title="COSUME" [width]="columnWidth"
                     [headerClass]="headerStyle">
                 </kendo-grid-column>
-                
-                <kendo-grid-column field="action_Taken_By" title="ACTION TAKEN BY" [width]="columnWidth"
-                    [headerClass]="headerStyle">
-                </kendo-grid-column>
-                <kendo-grid-column field="action_Taken_Date" title="ACTION TAKEN DATE" [width]="columnWidth"
-                    [headerClass]="headerStyle"></kendo-grid-column>
-
-                <kendo-grid-column field="remarks" title="REMARKS" [width]="columnWidth"
-                    [headerClass]="headerStyle"></kendo-grid-column>
-
+              
             </kendo-grid>
         </div>
 

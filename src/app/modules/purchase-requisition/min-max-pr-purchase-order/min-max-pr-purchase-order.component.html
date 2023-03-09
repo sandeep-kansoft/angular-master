@@ -69,7 +69,7 @@
             <kendo-grid-command-column [headerClass]="headerStyle" title="STOCK" [width]="columnWidth">
                 <ng-template kendoGridCellTemplate let-item>
                     <ng-container>
-                        <a (click)="onModelClick('Lines', item,true);"
+                        <a (click)="onModelClick('Hand', item);"
                             class="link-primary text-decoration-underline text-center">On Hand</a>
                     </ng-container>
                 </ng-template>

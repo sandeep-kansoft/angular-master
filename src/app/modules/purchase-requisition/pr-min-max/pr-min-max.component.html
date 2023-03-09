@@ -155,7 +155,7 @@
                
             </kendo-grid-column>
             <!-- <kendo-grid-column field="PROJECT_NAME" title="PROJECT ID" [width]="columnWidth"></kendo-grid-column> -->
-            <kendo-grid-column field="PPO_Date" title="PPO DATE" [width]="columnWidth"[headerClass]="headerStyle">
+            <kendo-grid-column field="ppoDate" title="PPO DATE" [width]="columnWidth"[headerClass]="headerStyle">
                 <ng-template kendoGridCellTemplate let-dataItem>
                     {{dataItem.ppoDate}}
                 </ng-template>
@@ -171,12 +171,12 @@
                    
                 </ng-template>
             </kendo-grid-column>
-            <kendo-grid-column field="Config" title="CONFIG" [width]="columnWidth"[headerClass]="headerStyle">
+            <kendo-grid-column field="config" title="CONFIG" [width]="columnWidth"[headerClass]="headerStyle">
                 <ng-template kendoGridCellTemplate let-dataItem>
                     {{dataItem.config}}
                 </ng-template>
             </kendo-grid-column>
-            <kendo-grid-column field="UOM" title="UOM" [width]="columnWidth"[headerClass]="headerStyle">
+            <kendo-grid-column field="uom" title="UOM" [width]="columnWidth"[headerClass]="headerStyle">
                 <ng-template kendoGridCellTemplate let-dataItem>
                   
                 </ng-template>
@@ -191,8 +191,8 @@
             <kendo-grid-column field="Pending_PO" title="PENDING PO" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
             <kendo-grid-column field="PO_In_Process" title="PO IN PROCESS" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
             <kendo-grid-column field="In_Process_PR" title="IN PROCESS PR" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
-            <kendo-grid-column field="NetOrder_Qty" title="NET ORDER QTY" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
-            <kendo-grid-column field="Ordered_Qty" title="ORDER QTY" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="netOrderQty" title="NET ORDER QTY" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
+            <kendo-grid-column field="orderQty" title="ORDER QTY" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
             <kendo-grid-column field="Order_Qty" title="PENDING PR" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
             <kendo-grid-column field="Pending_PR" title="PR INTERVIEW" [width]="columnWidth"[headerClass]="headerStyle"></kendo-grid-column>
             <kendo-grid-column field="PR_InReview" title="LAST PURCHASE PRICE"

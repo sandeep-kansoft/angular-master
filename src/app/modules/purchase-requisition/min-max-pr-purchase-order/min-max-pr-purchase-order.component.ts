@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
 import { ExcelExportEvent, GridDataResult } from '@progress/kendo-angular-grid';
 
-import { process, State } from '@progress/kendo-data-query';
+import { filterBy, process, State } from '@progress/kendo-data-query';
 import { CommonService } from 'src/app/shared/services/common.service';
 import { PrGridDataDto } from '../pr-grid-view';
 import { SortDescriptor } from '@progress/kendo-data-query';
@@ -17,6 +17,7 @@ import { saveAs } from '@progress/kendo-file-saver';
 import { Observable, zip } from 'rxjs';
 import { PurchaseRequistionServiceService } from '../purchase-requistion-service.service';
 import { PPOPendingOrderDto, PrHistoryResponseDto, PrResponseDto } from '../purchase-requisition';
+import { PrMinMaxPendingOrderOnhandComponent } from '../pr-min-max-pending-order-onhand/pr-min-max-pending-order-onhand.component';
 
 @Component({
   selector: 'app-min-max-pr-purchase-order',
@@ -34,6 +35,8 @@ export class MinMaxPrPurchaseOrderComponent {
   pageNumber = 0;
   loading: boolean = false;
   searchText:string = ''
+
+  
 
   
   public state: State = {
@@ -116,7 +119,9 @@ export class MinMaxPrPurchaseOrderComponent {
       case 'History':
         this.openHistoryModel(item.prid);
         break;
-
+      case "Hand":  
+      this.openOnHandModel(item)
+      break
       default:
         break;
     }
@@ -143,6 +148,16 @@ export class MinMaxPrPurchaseOrderComponent {
     });
     modelRef.componentInstance.prId = id;
   }
+
+  
+  openOnHandModel(data: PrResponseDto) {
+    const modelRef = this.prHistoryModel.open(PrMinMaxPendingOrderOnhandComponent, {
+      centered: true,
+      fullscreen: true,
+      scrollable: true,
+    });
+    modelRef.componentInstance.data = data;
+  }
   showdata(data: any) {
     console.log('data', data);
   }
@@ -165,69 +180,7 @@ export class MinMaxPrPurchaseOrderComponent {
     }
     return color;
   }
-  // public onExcelExport(args: ExcelExportEvent): void {
-  //   // Prevent automatically saving the file. We will save it manually after we fetch and add the details
-  //   args.preventDefault();
-
-  //   // this.loading = true;
-
-  //   const observables = [];
-  //   const workbook = args.workbook;
-  //   const rows = workbook.sheets[0].rows;
-
-  //   // Get the default header styles.
-  //   // Aternatively set custom styles for the details
-  //   // https://www.telerik.com/kendo-angular-ui/components/excelexport/api/WorkbookSheetRowCell/
-  //   const headerOptions = rows[0].cells[0];
-
-  //   const data = this.gridView.data;
-
-  //   // Fetch the data for all details
-  //   for (let idx = 0; idx < data.length; idx++) {
-  //     observables.push(this.productService.fetchForCategory(data[idx]));
-  //   }
-
-  //   zip.apply(Observable, observables).subscribe((result: GridDataResult[]) => {
-  //     // add the detail data to the generated master sheet rows
-  //     // loop backwards in order to avoid changing the rows index
-  //     for (let idx = result.length - 1; idx >= 0; idx--) {
-  //       const products = (<GridDataResult>result[idx]).data;
-
-  //       // add the detail data
-  //       for (
-  //         let productIdx = products.length - 1;
-  //         productIdx >= 0;
-  //         productIdx--
-  //       ) {
-  //         const product = products[productIdx];
-  //         rows.splice(idx + 2, 0, {
-  //           cells: [
-  //             {},
-  //             { value: product.ProductID },
-  //             { value: product.ProductName },
-  //           ],
-  //         });
-  //       }
-
-  //       // add the detail header
-  //       rows.splice(idx + 2, 0, {
-  //         cells: [
-  //           {},
-  //           Object.assign({}, headerOptions, { value: 'Product ID' }),
-  //           Object.assign({}, headerOptions, { value: 'Product Name' }),
-  //         ],
-  //       });
-  //     }
-
-  //     // create a Workbook and save the generated data URL
-  //     // https://www.telerik.com/kendo-angular-ui/components/excelexport/api/Workbook/
-  //     new Workbook(workbook).toDataURL().then((dataUrl: string) => {
-  //       // https://www.telerik.com/kendo-angular-ui/components/filesaver/
-  //       saveAs(dataUrl, 'Categories.xlsx');
-  //     });
-  //   });
-  // }
-
+ 
   public allData(): ExcelExportData {
     const result: ExcelExportData = {
       data: process(this.ppoPendingData, { sort: this.state.sort }).data,
@@ -260,6 +213,7 @@ export class MinMaxPrPurchaseOrderComponent {
 
 
   searchButtonCLick(){
-      this.getPendingPPO();
+    // this.gridData = filterBy(this.ppoPendingData, this.filter);
+      // this.getPendingPPO();
   }
 }

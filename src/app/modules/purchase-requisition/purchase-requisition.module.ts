@@ -16,6 +16,7 @@ import { DemoPageComponent } from './demo-page/demo-page.component';
 import { PrAllViewComponent } from './pr-all-view/pr-all-view.component';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PrMinMaxPendingOrderOnhandComponent } from './pr-min-max-pending-order-onhand/pr-min-max-pending-order-onhand.component';
 @NgModule({
   declarations: [
     PrOverviewComponent,
@@ -26,6 +27,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PrMinMaxComponent,
     PrAllViewComponent,
     DemoPageComponent,
+    PrMinMaxPendingOrderOnhandComponent,
   ],
   imports: [
     CommonModule,
